@@ -37,12 +37,34 @@ Lembre-se que você deve ser enumerar e descrever precisamente e personalizada t
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Com o acompanhamento de alguns usuários, listamos abaixo o nome da persona, o que ela/ele deseja e o motivo: 
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+
+|EU COMO... `PERSONA`          | QUERO/PRECISO ... `FUNCIONALIDADE`  |     PARA ... `MOTIVO/VALOR`    |
+|------------------------------|------------------------------------ |-----------------------------   |
+|      Casimiro Miguel         | Pagar pela divulgação do perfil de  | Encontrar com mais eficiência  |
+|                              | uma pessoa desaparecida em redes    | o filho que desapareceu em     |
+|                              | sociais.                            | uma loja.                      |
+|----------------------------------------------------------------------------------------------------                              
+|     Casimiro Miguel          | Alavancar a visibilidade de pessoas | Potencializar a probabilidade  |
+|                              | desaparecidas.                      | do encontro dessas pessoas.    |
+|-----------------------------------------------------------------------------------------------------|
+|     Casimiro Miguel          | Canal seguro de comunicação com     | Passar algumas informações     |
+|                              | pessoas que podem ter visto o filho.| mais específicas para a        |
+|                              |                                     | pessoa identificar o filho.    |
+|-----------------------------------------------------------------------------------------------------|
+|      Demetria Lovato         |                                     | Está com o irmão desaparecido  |
+|                              | Atualizar dados sobre a perfil da   | há uma ano e meio e a única    |
+|                              | pessoa desaparecida                 | pista que possui é o local onde| 
+|                              |                                     |foi visto pela última vez. Tem  |
+|                              |                                     | esperanças de encontrá-lo vivo.|
+|-----------------------------------------------------------------------------------------------------|
+|                              | Encontrar, com facilidade,          | Tomar ciência da existência    |
+|      Demetria Lovato         | ferramentas que possam auxiliar na  | de alguma informação           |
+|                              |
+
+
+
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
