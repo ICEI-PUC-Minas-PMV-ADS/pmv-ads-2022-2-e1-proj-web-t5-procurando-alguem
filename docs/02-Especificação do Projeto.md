@@ -200,11 +200,40 @@ A tabela a seguir apresenta os requisitos funcionais do projeto, identificando a
 
 
 ### Requisitos não Funcionais
+A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá atender.
 
-|ID     | Descrição do Requisito    |Prioridade   |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|  ID  |                  Descrição do Requisito                   |Prioridade|
+|------|-----------------------------------------------------------|----------|
+|RNF-01| O site deve ser publicado em um ambiente acessível        |   ALTA   | 
+|      | publicamente na Internet (Repl.it, GitHub Pages, Heroku); |          |
+|------|-----------------------------------------------------------|----------|
+|RNF-02| O site deverá ser responsivo permitindo a visualização em |   ALTA   | 
+|      | um celular de forma adequada.                             |          |
+|------|-----------------------------------------------------------|----------|
+|RNF-03| O site deve ter bom nível de contraste entre os elementos |  MÉDIA   |
+|      | da tela em conformidade .                                 |          |
+|------|-----------------------------------------------------------|----------|
+|RNF-04| O site deve ser compatível com os principais navegadores  |  ALTA    |
+|      | do mercado (Google Chrome, Firefox, Microsoft Edge)       |          |
+|------|-----------------------------------------------------------|----------|
+|RNF-05| O site deve funcionar 24 horas por dia, todos os dias da  |  ALTA    |
+|      | semana.                                                   |          |
+|------|-----------------------------------------------------------|----------|
+|RNF-06| O site deve ter ótimo desempenho.                         |  ALTA    |
+|------|-----------------------------------------------------------|----------|
+|RNF-07| O site deve recuperar de uma falha no processo em 1(um)  |  MÉDIA   |
+|      | segundo.                                                  |          |
+|------|-----------------------------------------------------------|----------|
+|RNF-08| O site deve permitir migração para outra plataforma em    |  BAIXA   |
+|      | 3(três) meses.                                            |          |
+|------|-----------------------------------------------------------|----------|
+|RNF-09| O site deve cadastrar o cliente em 10 minutos.            |  MÉDIA   |
+|------|-----------------------------------------------------------|----------|
+|RNF-10| O site deve atender 200 requisições por segundo.          |  MÉDIA   |
+|------|-----------------------------------------------------------|----------|
+|RNF-11| O site deve ser passível de manutenção para migração      |  ALTA    |
+|      | para outra plataforma em 2(duas) semanas.                 |          |
+|------|-----------------------------------------------------------|----------|
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
