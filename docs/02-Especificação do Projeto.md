@@ -2,15 +2,28 @@
 
 <span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+O cerne deste projeto, o problema que queremos tratar e as suas principais questões foram levantadas baseadas em pesquisas feitas pela equipe, mas também com a participação de usuários, por meio de entrevistas e observações do cotidiano. E para representar os dados obtidos durante este processo, utilizamos Personas e Histórias de Usuários. 
 
 ## Personas
+As personas levantadas para o nosso projeto estão representadas abaixo: 
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+Casimiro Miguel, tem 28 anos, trabalha como servidor público, formado, casado, com renda média mensal de R$8000,00 somando com a renda de sua esposa. Tem um filho de 5 anos chamado Enzo, adora passar momentos em família e jogar futebol toda quarta-feira. Há duas semanas foi fazer compras com sua família e Enzo acabou saindo de perto dele e Rita (sua esposa) e desde então estão a procura de meios de encontrar seu filho.
+ 
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+Demetria Lovato, tem 30 anos, trabalha na area administrativa de uma cervejaria famosa, solteira, mora sozinha e tem uma renda mensal de R$2500,00. Seu hobbie é fazer cerâmicas e ainda lucrar um dinheiro com isso. Adora curtir um barzinho nos finais de semanas com os amigos. Ela tem um irmão de 16 anos, o Matheus, 3 dias atrás ele foi para o colégio e não retornou. Demetria já entrou em contato com a policia mas procura sites ou apps que possam ajudar a procurar seu irmão.
+ 
+
+Christopher Catesby Harington
+Ele tem 24 anos e estuda Direito na UFPR, é estagiário na policia militar local, seu desejo é se tornar delegado. Nas horas vagas fica pesquisando casos de pessoas desaparecidas e se teve um desfecho as histórias. Ter um lugar para pesquisar casos mais próximos dele o ajudaria muito no seu TCC e também ajudar a descobrir pistas e o paradeiro das pessoas desaparecidas.
+ 
+
+Candida Augusta 
+Ela tem 51 anos, casada há 29 anos com Renato, eles tem 1 filho de 25 anos que atualmente mora na Islândia, parou de trabalhar faz 3 anos para cuidar de seu esposo. Renato possui Alzheimer e por muitas vezes não sabe onde está ou o que está acontecendo, isso desencadeou a sua fuga há 6 horas, Candida procura por seu marido e lugares onde possa ajuda-la a encontra-lo.
+ 
+José da Silva Marques 
+Ele tem 40 anos, trabalha como programador, casado com 2 filhos, seu pai tem 70 anos e por conta da idade mora junto com ele. Todos os domingos se reuni com o seu pai e filhos para poder assistir ao futebol.
+Um dia seu pai se perdeu no metrô por uma hora e ele ficou com medo de no futuro ser algo recorrente, então quer aprender mais sobre como prevenir que seu pai se perca e se caso aconteça como proceder.
+
 
 > **Links Úteis**:
 > - [Rock Content](https://rockcontent.com/blog/personas/)
