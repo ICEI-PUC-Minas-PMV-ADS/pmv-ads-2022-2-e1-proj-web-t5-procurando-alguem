@@ -251,14 +251,26 @@ característica alvo da sua solução. Além disso, certifique-se de que
 todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
+As questões que limitam a execução desse projeto e que se configuram como obrigações claras para o desenvolvimento do projeto em questão são apresentadas na tabela a seguir. 
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
+| ID  |                       Restrição                                             |
+|-----|-----------------------------------------------------------------------------|
+|RE-01| O projeto deverá ser entregue até 11/12/ 2022.                              |
+|-----|-----------------------------------------------------------------------------| 
+|RE-02| O aplicativo deve se restringir às tecnologias básicas da Web no Front-end. |
+|-----|-----------------------------------------------------------------------------|
+|RE-03| A equipe não pode subcontratar o desenvolvimento do trabalho.               |
+|-----|-----------------------------------------------------------------------------|
+|RE-04| A equipe de desenvolvedores deve ser composta de programadores sem          |
+|     | experiência.                                                                |
+|-----|-----------------------------------------------------------------------------|
+|RE-05| O sistema deve ser desenvolvido segundo o processo SCRUM.                   |
+|-----|-----------------------------------------------------------------------------|
+|RE-06| Deve existir documentação no formato Help online para o usuário.            |
+|-----|-----------------------------------------------------------------------------|
+|RE-07| Alguns dados não poderão ser publicados por possuir dados sensíveis.        |
+|-----|-----------------------------------------------------------------------------|
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
