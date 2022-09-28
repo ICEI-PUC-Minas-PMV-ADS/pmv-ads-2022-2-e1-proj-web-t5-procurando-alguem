@@ -125,10 +125,78 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 ### Requisitos Funcionais
 A tabela a seguir apresenta os requisitos funcionais do projeto, identificando a prioridade em que os mesmos devem ser entregues.
 
-|ID    |          Descrição do Requisito           | Prioridade |
-|------|----------------------------------------       |------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas       | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|ID   |              Descrição do Requisito                       | Prioridade |
+|-----|-----------------------------------------------------------|------------|
+|RF-01| O sistema deve cadastrar a pessoa desaparecida            |   ALTA     | 
+|-----|-----------------------------------------------------------|------------|
+|     | O sistema deve permitir inserir dados relacionados ao     |            |
+|RF-02| perfil/características de uma pessoa desaparecida (ex:    |   ALTA     |
+|     | nome, nome social, idade, sexo, fotografia, caracterização|            |
+|     | da roupa que foi vista pela última vez, hábitos, estado de|            |
+|     | saúde, locais que costumava frequentar).                  |            |
+|-----|-----------------------------------------------------------|------------|
+|RF-03| O sistema deve perguntar ao usuário sobre a autorização   |  ALTA      |
+|     | da divulgação dos dados fornecidos pelo usuário.          |            |
+|-----|-----------------------------------------------------------|------------|
+|RF-04| O sistema deve permitir inserir o último local em que a   |  ALTA      |
+|     | pessoa desaparecida foi vista, com relatado de data e     |            |
+|     | horário.                                                  |            |
+|-----|-----------------------------------------------------------|------------|
+|RF-05| O sistema deve possibilitar enviar comentário para o      |  ALTA      |
+|     | familiar de alguém desaparecido.                          |            |
+|-----|-----------------------------------------------------------|------------|
+|RF-06|O sistema deve possibilitar inserir todos os locais em que |  ALTA      |
+|     | a pessoa desaparecida tenha sido vista.                   |            |
+|-----|-----------------------------------------------------------|------------|
+|     | O sistema deve permitir cadastrar WhatsApp/Telegram       |            |
+|RF-07| específicos (de bairro/local de trabalho/escola etc.) para|  MÉDIA     |
+|     | divulgação do perfil da pessoa desaparecida, tendo o      |            |
+|     | objetivo de emitir alertas sobre o desaparecimento de uma |            |
+|     | pessoa.                                                   |            |
+|-----|-----------------------------------------------------------|------------|
+|RF-08| O sistema deve emitir alerta caso a pessoa desaparecida   |  ALTA      |
+|     | tenha sido encontrada.                                    |            |
+|-----|-----------------------------------------------------------|------------|
+|     | O sistema deve mensurar o tempo entre a divulgação das    |            |
+|RF-09| informações da pessoa desaparecida e o sinal de alerta    |  MÉDIA     |
+|     | informando que foi encontrada.                            |            |
+|-----|-----------------------------------------------------------|------------|
+|     | O sistema deve encontrar ferramentas disponíveis que      |            |
+|RF-10| estão próximas ao local onde aconteceu o                  |  MÉDIA     |
+|     | desaparecimento.                                          |            |
+|-----|-----------------------------------------------------------|------------|
+|RF-11| O sistema deve permitir visualizar fotos, dados e outras  |  ALTA      |
+|     | informações relevantes de pessoas desaparecidas.          |            |
+|-----|-----------------------------------------------------------|------------|
+|     | O sistema deve permitir acessar, prontamente, informações |            |
+|RF-12| sobre o que fazer e quais providências tomar, para alguém |  ALTA      |
+|     | que acaba de vivenciar o desaparecimento de alguém.       |            |
+|-----|-----------------------------------------------------------|------------|
+|RF-13| O sistema deve possibilitar o armazenamento dos           |  BAIXA     |
+|     | depoimentos de nossos usuários.                           |            |
+|-----|-----------------------------------------------------------|------------|
+|RF-14| O sistema deve oferecer um campo de suporte para o        |  ALTA      |
+|     | usuário, no caso de dúvidas ou reclamações.               |            |
+|-----|-----------------------------------------------------------|------------|
+|RF-15| O sistema deve possuir filtro/pesquisa para busca de      |  ALTA      |
+|     | pessoas já encontradas.                                   |            |
+|-----|-----------------------------------------------------------|------------|
+|RF-16| O sistema deve conter registro da autorização da          |  ALTA      |
+|     | publicação dos dados pessoais.                            |            |
+|-----|-----------------------------------------------------------|------------|
+|     | O sistema deve manter o contato e direcionamento de sites,|            |
+|RF-17| aplicativos e órgãos públicos caso o usuário possa        |  ALTA      |
+|     | contactar em caso de desaparecimento ou caso tenha        |            |
+|     | localizado alguém que está desaparecido.                  |            |
+|-----|-----------------------------------------------------------|------------|
+|     | O sistema deve permitir o compartilhamento de             |            |
+|RF-18| notícias/atualizações de informações sobre a pessoa       |  MÉDIA     |
+|     | desaparecida.                                             |            |
+|-----|-----------------------------------------------------------|------------|
+|RF-19| O sistema pode permitir pagar pela divulgação do perfil   |  BAIXA     |
+|     | de uma pessoa desaparecida em redes sociais.              |            |
+|-----|-----------------------------------------------------------|------------|
+
 
 
 ### Requisitos não Funcionais
