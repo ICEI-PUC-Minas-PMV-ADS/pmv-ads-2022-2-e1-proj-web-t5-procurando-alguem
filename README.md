@@ -6,7 +6,7 @@
 
 `SEMESTRE`: 02/2022.
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Estamos criando uma aplicação Web para oferecer um meio alternativo para a busca de pessoas desaparecidas no Brasil. Procuramos criar um ambiente onde seja possível a intereção entre os usuários de uma forma fluida, garantindo conforto para aqueles que utilizarem nossa plataforma e gerando empatia entre aqueles que passam por uma situação semelhantes, tendo um conhecido ou ente querido desaparecido.
 
 ## Integrantes
 
