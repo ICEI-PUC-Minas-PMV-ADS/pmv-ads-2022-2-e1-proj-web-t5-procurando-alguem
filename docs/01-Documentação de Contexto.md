@@ -26,25 +26,25 @@ A quantidade de pessoas que desaparecem todos os dias, não só no Brasil, mas t
 > - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
-    Objetivo Geral: Auxiliar na busca por pessoas desaparecidas. 
+   Objetivo Geral: Auxiliar na busca por pessoas desaparecidas. 
 
-    Objetivos Específicos: 
+   Objetivos Específicos: 
 
-    Oferecer meios alternativos para pessoas encontrarem seus familiares e conhecidos. 
+   - Oferecer meios alternativos para pessoas encontrarem seus familiares e conhecidos. 
 
-    Possibilitar a inserção e divulgação do perfil de pessoas desaparecidas em nossa aplicação WEB, para que as pessoas possam se ajudar na busca por aquele que estiver desaparecido. 
+   - Possibilitar a inserção e divulgação do perfil de pessoas desaparecidas em nossa aplicação WEB, para que as pessoas possam se ajudar na busca por aquele que estiver desaparecido. 
 
-    Criar um ambiente virtual (uma espécie de chat para comunicação) onde as pessoas possam interagir a respeito de seus respectivos entes ou conhecidos desaparecidos, gerando empatia e apoio mútuo. 
+   - Criar um ambiente virtual (uma espécie de chat para comunicação) onde as pessoas possam interagir a respeito de seus respectivos entes ou conhecidos desaparecidos, gerando empatia e apoio mútuo. 
 
-    Armazenar e compartilhar depoimentos de pessoas que tiveram um caso de desaparecimento na sua família ou em seu ciclo social. Claramente, daqueles que se sentirem confortáveis com isso, gerando mais apoio para aqueles que passam por situações semelhantes. 
+   - Armazenar e compartilhar depoimentos de pessoas que tiveram um caso de desaparecimento na sua família ou em seu ciclo social. Claramente, daqueles que se sentirem confortáveis com isso, gerando mais apoio para aqueles que passam por situações semelhantes. 
 
-    Estimar a porcentagem de pessoas que desaparecem, mas são encontradas eventualmente. Trazendo esperança. 
+   - Estimar a porcentagem de pessoas que desaparecem, mas são encontradas eventualmente. Trazendo esperança. 
 
-    Criar um guia que demonstre pequenas formas de precaução para conscientizar os usuários a dobrar sua atenção, principalmente quando tiverem pessoas mentalmente comprometidas, idosos ou crianças na família, evitando o possível desaparecimento delas. 
+   - Criar um guia que demonstre pequenas formas de precaução para conscientizar os usuários a dobrar sua atenção, principalmente quando tiverem pessoas mentalmente comprometidas, idosos ou crianças na família, evitando o possível desaparecimento delas. 
 
-    Sugerir tratamentos psicológicos ou ambientes de apoio para aqueles que se encontram muito abalados perante uma situação de desaparecimento em seu ciclo social, sendo um ente querido ou apenas um conhecido. 
+   - Sugerir tratamentos psicológicos ou ambientes de apoio para aqueles que se encontram muito abalados perante uma situação de desaparecimento em seu ciclo social, sendo um ente querido ou apenas um conhecido. 
 
-    Realizar pesquisas com nossos usuários para saber o nível de satisfação deles com a nossa aplicação e poder fazer melhorias futuras em nosso projeto, de acordo com essas pesquisas. 
+   - Realizar pesquisas com nossos usuários para saber o nível de satisfação deles com a nossa aplicação e poder fazer melhorias futuras em nosso projeto, de acordo com essas pesquisas. 
  
 > **Links Úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
