@@ -20,7 +20,7 @@ Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapea
 
 
 ## Wireframes
-
+Segue o Link para acessar o nosso protótipo, com o fluxo de telas completo, dentro do Figma:
 https://www.figma.com/proto/4X6IkQW6zxZqD24onch9Z8/Procurando-Algu%C3%A9m%3F-(Fluxo-de-P%C3%A1ginas-Pronto)?node-id=1%3A650&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A650
  
 > **Links Úteis**:
