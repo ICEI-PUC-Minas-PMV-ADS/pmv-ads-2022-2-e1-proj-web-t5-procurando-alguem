@@ -22,7 +22,6 @@ body * {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-
 }
 
 .login-left > h1{
@@ -75,21 +74,21 @@ body * {
 	border: none;
 	border-radius: 10px;
 	padding: 15px;
-	background-color: #514869;
-	color: #f0ffffde;
+	background-color: #2F2841;
+	color: #ffffff;
 	font-size: 12pt;
-	box-shadow: 0px 5px 80px #00000056;
+	box-shadow: 0px 5px 80px #000000;
 	outline: none;
 	box-sizing: border-box;
 }
 
 .textfield > label{
-	color: #f0ffffde;
+	color: #ffffff;
 	margin-bottom: 10px;
 }
 
 .textfield > input::placeholder{
-	 color: #f0ffff94;
+	 color: #ffffff;
 }
 
 .button-login{
@@ -105,8 +104,6 @@ body * {
 
 
 /** Mídias de Responsividade **/
-
-
 @media only screen and (max-width: 950px){
 	.login-card{
 		width: 85%;
