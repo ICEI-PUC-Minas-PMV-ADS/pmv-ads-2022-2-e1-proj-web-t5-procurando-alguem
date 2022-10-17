@@ -1,9 +1,16 @@
-body {
+body{
     background-color: rgba(32, 27, 44, 1);
     font-family: Karma;
     font-weight: bold;
     text-align: center;
     color: #ffffff;
+}
+
+a{
+    font-family: Karma;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff; 
 }
 
 h1, h2, h3, h4{
@@ -28,7 +35,7 @@ h5{
     text-align: center;
 }
 
-.button{
+button{
 	border: none;
 	border-radius: 10px;
 	margin: 25px;
