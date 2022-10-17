@@ -4,6 +4,7 @@ body{
 
 body * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 .main-login{
@@ -25,14 +26,38 @@ body * {
 
 }
 
-.login-left > h1{
+.logo > h1{
 	color: #77ffc0;
 	font-family: Times-New-Roman;
-	font-size: 2vw;
+	font-size: 30px;
+	float: auto;
+	background-color: #2f2841;
+	border-radius: 50px;
+	box-shadow: 10px 0px 100px #00000056;
+	padding: 15px 20px 15px 50px;
+	position: relative;
+	top: 20px;
+	left: 80px;
+	
+	
 }
 
-.imagem-left-login{
-	width: 35vw;
+.imagem-logo{
+	float: auto;
+	width: 10vw;
+	position: relative;
+	top: -100px;
+	background-color: #2f2841;
+	border-radius: 100px;
+	box-shadow: 10px 0px 100px #00000056;
+	left: -70px;
+}
+
+.imagem-login{
+	float: auto;
+	width: 30vw;
+	position: relative;
+	
 }
 
 .login-right{
@@ -117,22 +142,39 @@ body * {
 	.main-login{
 		flex-direction: column;
 	}
-	.login-left > h1{
-		display: none;
-	}
+
 	.login-left{
 		width: 100%;
 		height: auto;
 	}
+
 	.login-right{
 		width: 100%;
 		height: auto;
 	}
-	.imagem-left-login{
-		width: 50vw;
+
+	.imagem-login{
+		width: 50%;
+		display: flex;
 	}
+	
 	.login-card{
 		width: 80%;
 		box-sizing: border-box;
 	}
 }
+@media screen and (min-width: 480px) {
+	.imagem-logo {width: 200px; float: auto;}
+	.imagem-login {float: left;}
+	.logo > h1{float: auto;  }
+  }
+
+@media screen and (max-width: 600px) {
+	.imagem-logo {display: none;}
+	.imagem-login {display: none;}
+	.logo > h1{display: none;}
+	
+	
+  }  
+
+ 
