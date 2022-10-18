@@ -1,59 +1,74 @@
-body{
+body {
     background-color: rgba(32, 27, 44, 1);
     font-family: Karma;
     font-weight: bold;
     text-align: center;
     color: #ffffff;
 }
+
 /* Página cadastro desaparecidos */
 .barra {
     font-size: 20px;
-    text-align-last: right;
-
+    
+}
+.menor {
+    font-size: 15px;
+    
 }
 
-a{
+a {
     font-family: Karma;
     font-weight: bold;
     text-align: center;
-    color: #ffffff; 
+    color: #ffffff;
 }
 
-h1, h2, h3, h4{
-    text-shadow: 
-        -1.8px -1.8px #000, /*esquerda - pra cima*/
-        -1.8px 1.8px #000, /*esquerda - pra baixo*/                    
-        1.8px -1.8px #000, /*direita - pra cima*/                 
-        1.8px 1.8px 15px #000; /*direita - pra baixo*/
+h1,
+h2,
+h3,
+h4 {
+    text-shadow:
+        -1.8px -1.8px #000,
+        /*esquerda - pra cima*/
+        -1.8px 1.8px #000,
+        /*esquerda - pra baixo*/
+        1.8px -1.8px #000,
+        /*direita - pra cima*/
+        1.8px 1.8px 15px #000;
+    /*direita - pra baixo*/
     font-weight: bolder;
     text-align: center;
 }
 
-h5{
-    text-shadow: 
-        -1.8px -1.8px #000, /*esquerda - pra cima*/
-        -1.8px 1.8px #000, /*esquerda - pra baixo*/                    
-        1.8px -1.8px #000, /*direita - pra cima*/                 
-        1.8px 1.8px 15px #000; /*direita - pra baixo*/
+h5 {
+    text-shadow:
+        -1.8px -1.8px #000,
+        /*esquerda - pra cima*/
+        -1.8px 1.8px #000,
+        /*esquerda - pra baixo*/
+        1.8px -1.8px #000,
+        /*direita - pra cima*/
+        1.8px 1.8px 15px #000;
+    /*direita - pra baixo*/
     text-align: center;
-    color: #00FF88;     
+    color: #00FF88;
     font-weight: bolder;
     text-align: center;
 }
 
-button{
-	border: none;
-	border-radius: 10px;
-	margin: 25px;
-	padding: 8px;
-	background-color: #00ff88;
+button {
+    border: none;
+    border-radius: 10px;
+    margin: 25px;
+    padding: 8px;
+    background-color: #00ff88;
     color: #000;
-    font-size: 20px;   
+    font-size: 20px;
     font-weight: bolder;
     -webkit-text-stroke: 1px 1px 5px #000;
 }
 
-.container-fluid{
+.container-fluid {
     position: absolute;
     width: 911px;
     height: 111px;
@@ -64,26 +79,26 @@ button{
 }
 
 /* Modelo 1 */
-.textfield{
+.textfield {
     /* width: 100%; */
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	margin: 10px 10px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px 10px 10px 20px;
 }
 
-.textfield > input{
-	/* width: 100%; */
-	border: none;
-	border-radius: 10px;
-	padding: 15px;
-	background-color: #2F2841;
-	color: #ffffff;
-	font-size: 12px;
-	box-shadow: 0px 5px 80px #000000;
-	outline: none;
-	box-sizing: border-box;
+.textfield>input {
+    /* width: 100%; */
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #2F2841;
+    color: #ffffff;
+    font-size: 12px;
+    box-shadow: 0px 5px 80px #000000;
+    outline: none;
+    box-sizing: border-box;
 }
 
 /* .textfield > label{
@@ -93,10 +108,10 @@ button{
 
 .textfield > input::placeholder{
 	color: #ffffff;
-} */ 
+} */
 
 /* Modelo 2 */
-.section-content{
+.section-content {
     background-color: #2F2841;
     border-radius: 15px;
     padding: 0px 15px 0px 15px;
@@ -104,16 +119,16 @@ button{
     box-shadow: 15px 15px #161220;
 }
 
-.div-content{
+.div-content {
     padding: 15px;
 }
 
-.col-content{
+.col-content {
     background-color: #514869;
     color: #ffffff;
     margin: 10px;
     height: 100%;
     border-radius: 15px;
-    padding-bottom: 60%; 
+    padding-bottom: 60%;
     margin-bottom: 15px;
 }
