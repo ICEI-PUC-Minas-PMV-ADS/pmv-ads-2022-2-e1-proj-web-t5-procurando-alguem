@@ -5,6 +5,12 @@ body{
     text-align: center;
     color: #ffffff;
 }
+/* Página cadastro desaparecidos */
+.barra {
+    font-size: 20px;
+    text-align-last: right;
+
+}
 
 a{
     font-family: Karma;
