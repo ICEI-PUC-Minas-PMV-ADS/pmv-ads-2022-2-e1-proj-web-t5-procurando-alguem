@@ -9,12 +9,13 @@ body {
 /* Página cadastro desaparecidos */
 .barra {
     font-size: 25px;
-    
-    
+       
 }
 .menor {
-    font-size: 15px;
-    
+    font-size: 15px;  
+}
+.menu-encontrado {
+    padding: 23px 23px;
 }
 
 a {
@@ -24,10 +25,7 @@ a {
     color: #ffffff;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     text-shadow:
         -1.8px -1.8px #000,
         /*esquerda - pra cima*/
