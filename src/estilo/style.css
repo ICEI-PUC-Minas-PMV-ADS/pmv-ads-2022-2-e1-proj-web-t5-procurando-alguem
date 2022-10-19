@@ -8,27 +8,31 @@ body {
 
 /* Página cadastro desaparecidos começa*/
 .barra {
-    font-size: 25px;     
+    font-size: 25px;
 }
+
 .menor {
-    font-size: 15px;  
+    font-size: 15px;
 }
+
 .menu-encontrado {
     padding: 23px 23px;
 }
-.imagem-logo{
-	float: auto;
-	width: 10vw;
-	position: relative;
-	top: -30px;
-	background-color: #2f2841;
-	border-radius: 100px;
-	box-shadow: 100px 0px 100px #00000056;
-	left: 50px;
-	display: flex;
+
+.imagem-logo {
+    float: auto;
+    width: 10vw;
+    position: relative;
+    top: -30px;
+    background-color: #2f2841;
+    border-radius: 100px;
+    box-shadow: 100px 0px 100px #00000056;
+    left: 50px;
+    display: flex;
 
 }
-.p1 > h1 {
+
+.p1>h1 {
     font-size: 25px;
     font-family: Karma;
     display: flex;
