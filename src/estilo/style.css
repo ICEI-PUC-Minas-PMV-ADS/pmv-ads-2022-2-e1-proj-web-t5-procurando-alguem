@@ -6,10 +6,9 @@ body {
     color: #ffffff;
 }
 
-/* Página cadastro desaparecidos */
+/* Página cadastro desaparecidos começa*/
 .barra {
-    font-size: 25px;
-       
+    font-size: 25px;     
 }
 .menor {
     font-size: 15px;  
@@ -17,6 +16,38 @@ body {
 .menu-encontrado {
     padding: 23px 23px;
 }
+.imagem-logo{
+	float: auto;
+	width: 10vw;
+	position: relative;
+	top: -30px;
+	background-color: #2f2841;
+	border-radius: 100px;
+	box-shadow: 100px 0px 100px #00000056;
+	left: 50px;
+	display: flex;
+
+}
+.p1 > h1 {
+    font-size: 25px;
+    font-family: Karma;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    position: relative;
+    top: 80px;
+    left: 175px;
+    background-color: #2f2841;
+    width: 280px;
+    border-radius: 30px;
+    color: #00FF88;
+    padding: 10px 10px;
+    padding-left: 40px;
+
+}
+
+/* Página cadastro desaparecidos termina aqui*/
 
 a {
     font-family: Karma;
