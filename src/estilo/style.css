@@ -133,3 +133,27 @@ button {
     padding-bottom: 60%;
     margin-bottom: 15px;
 }
+
+.barra-menu{
+    position: absolute;
+    width: 911px;
+    height: 111px;
+    left: 800px;
+    top: 65px;
+    background: linear-gradient(270deg, #2F2841 0%, rgba(47, 40, 65, 0) 100%);
+    border-radius: 20px;
+    display: flex;
+}
+
+.itens-menu {
+    flex-direction: column;
+    font-family: Karma;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    position: relative;
+    left: 500px;
+    top: 25px;
+}
+
