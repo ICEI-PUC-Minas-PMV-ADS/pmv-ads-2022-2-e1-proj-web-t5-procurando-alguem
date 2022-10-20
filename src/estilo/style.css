@@ -7,21 +7,11 @@ body {
 }
 
 /* Página cadastro desaparecidos começa*/
-.barra {
-    font-size: 25px;
-}
 
-.menor {
-    font-size: 15px;
-}
-
-.menu-encontrado {
-    padding: 23px 23px;
-}
 
 .imagem-logo {
     float: auto;
-    width: 10vw;
+    width: 150px;
     position: relative;
     top: -30px;
     background-color: #2f2841;
@@ -49,24 +39,148 @@ body {
     padding: 10px 10px;
     padding-left: 40px;
 }
+
+.barra {
+    font-size: 25px;
+}
+
+.menu-encontrado {
+    padding: 23px 23px;
+}
+
+
+.menor {
+    font-size: 15px;
+}
+
+.titulo-caixa {
+    color: #00FF88;
+    background-color: #2F2841;
+    border-radius: 15px;
+    padding: 10px 10px;
+    width: 800px;
+    position: relative;
+    left: 400px;
+    top: 50px;
+
+
+}
+
 .caixa-central {
-    display: flex;  
-    height: 800px;
-    padding: 0px 80px;
-    border-width: 500px;  
+    background-color: #2F2841;
+    border-radius: 15px;
+    padding: 0px 15px 0px 15px;
+    margin: 50px;
+    box-shadow: 15px 15px #161220;
+    height: 500px;
 }
-.dados-desaparecido {
-    display: flex;
-    text-align: start;
-    font-size: 20px;
+
+.nome-desaparecido>input {
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #2F2841;
+    color: #ffffff;
+    font-size: 12pt;
+    box-shadow: 0px 5px 80px #000000;
+    outline: none;
+    box-sizing: border-box;
+    position: relative;
+    top: 10px;
 }
-.form-control {
-    diplay: flex;
-    
+
+.nome-desaparecido>label {
+    position: relative;
+    top: 15px;
+    left: 10px;
 }
-#digite-nome {
-    text-align: left;
+
+
+.label1 {
+    position: relative;
+    top: 5px;
+    left: -355px;   
 }
+.label2 {
+    position: relative;
+    top: 5px;
+    left: -385px;   
+}
+.label3 {
+    position: relative;
+    top: 5px;
+    left: -405px;   
+}
+.label4 {
+    position: relative;
+    top: 5px;
+    left: -460px;   
+}
+
+.input1 {
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #2F2841;
+    color: #ffffff;
+    font-size: 12pt;
+    box-shadow: 0px 5px 80px #000000;
+    outline: none;
+    box-sizing: border-box;
+    position: relative;
+    top: 43px;
+    left: -410px;
+}
+.input2 {
+    width: 130px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #2F2841;
+    color: #ffffff;
+    font-size: 12pt;
+    box-shadow: 0px 5px 80px #000000;
+    outline: none;
+    box-sizing: border-box;
+    position: relative;
+    top: 43px;
+    left: -430px;
+}
+.input3 {
+    width: 130px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #2F2841;
+    color: #ffffff;
+    font-size: 12pt;
+    box-shadow: 0px 5px 80px #000000;
+    outline: none;
+    box-sizing: border-box;
+    position: relative;
+    top: 43px;
+    left: -485px;
+}
+.input4 {
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #2F2841;
+    color: #ffffff;
+    font-size: 12pt;
+    box-shadow: 0px 5px 80px #000000;
+    outline: none;
+    box-sizing: border-box;
+    position: relative;
+    top: 43px;
+    left: -520px;
+}
+
+
+
 
 
 /* Página cadastro desaparecidos termina aqui*/
@@ -78,7 +192,10 @@ a {
     color: #ffffff;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     text-shadow:
         -1.8px -1.8px #000,
         /*esquerda - pra cima*/
