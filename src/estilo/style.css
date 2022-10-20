@@ -48,8 +48,26 @@ body {
     color: #00FF88;
     padding: 10px 10px;
     padding-left: 40px;
-
 }
+.caixa-central {
+    display: flex;  
+    height: 800px;
+    padding: 0px 80px;
+    border-width: 500px;  
+}
+.dados-desaparecido {
+    display: flex;
+    text-align: start;
+    font-size: 20px;
+}
+.form-control {
+    diplay: flex;
+    
+}
+#digite-nome {
+    text-align: left;
+}
+
 
 /* Página cadastro desaparecidos termina aqui*/
 
