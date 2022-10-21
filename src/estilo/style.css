@@ -4,7 +4,9 @@ body {
     font-weight: bold;
     text-align: center;
     color: #ffffff;
+    height: 100%;
 }
+
 
 /* Página cadastro desaparecidos */
 .barra {
@@ -256,4 +258,56 @@ li.dropdown {
     border-radius: 15px 15px 0px 0px;
   }
 /* Configurações de Estilo do Botão "Meu Perfil" com o DropDown (Termina Aqui)*/
+
+.section-desaparecido{
+    position: relative;
+    top: -80px;
+    background-color: #2F2841;
+    border-radius: 20px;
+    padding: 0px 15px 0px 15px;
+    margin: 50px;
+    box-shadow: 10px 10px #161220;
+    width: 87%;
+    height: 600px;
+}
+.colunas-desaparecido{
+    position: relative;
+    top: 10px;
+    
+    
+}
+
+
+
+
+
+
+.coluna-fotos{
+    width: 25%;
+    height: 480px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    background-color: #514869;
+    border-radius: 20px;
+}
+.coluna-infos{
+    width: 40%;
+    height: 480px;
+    background-color: #514869;
+    position: relative;
+    left: 480px; 
+    top: -500px; 
+    border-radius: 20px; 
+}
+.coluna-infos-compartilhadas{
+    width: 25%;
+    height: 480px;
+    background-color: #514869;
+    position: relative;
+    left: 1210px; 
+    top: -1000px;
+    border-radius: 20px;      
+}
+
 
