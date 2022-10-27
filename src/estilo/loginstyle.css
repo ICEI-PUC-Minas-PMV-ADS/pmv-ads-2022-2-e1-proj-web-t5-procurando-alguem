@@ -115,13 +115,29 @@ body * {
 	 color: #ffffff;
 }
 
-.button-login{
+.btn-login{
 	width: 100%;
 	border: none;
 	border-radius: 10px;
 	margin: 25px;
-	padding: 16px 0px;
+	padding: 15px 30px;
 	background-color: #00ff88;
+	position: relative;
+	left: -195px;
+	top: 20px;
+	cursor: pointer;
+}
+.btn-newuser{
+	width: 310px;
+	border: none;
+	border-radius: 10px;
+	margin: 25px;
+	padding: 15px 30px;
+	background-color: #00ff88;
+	position: relative;
+	left: 90px;
+	top: -76px;
+	cursor: pointer;
 }
 
 

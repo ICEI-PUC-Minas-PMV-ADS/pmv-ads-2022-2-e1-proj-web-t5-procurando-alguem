@@ -5,42 +5,144 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="..\estilo\loginstyle.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm">
 	<title>Faça seu Login</title>
 </head>
 <body>
 
-	<div class="main-login">
+<div class="main-login">
 
-		<div class="login-left">
+	<div class="login-left">
 			
-				<div class="logo">
-					<h1>Procurando Alguém?</h1>
-					<img src="..\imagens\imagem-logo.svg" class="imagem-logo" alt="Imagem da Logo">
+			<div class="logo">
+				<h1>Procurando Alguém?</h1>
+				<img src="..\imagens\imagem-logo.svg" class="imagem-logo" alt="Imagem da Logo">
+			</div>
+
+		<img src="..\imagens\imagem-login.svg" class="imagem-login" alt="Imagem de Login">
+	</div>
+
+	
+	<div class="login-right">
+
+		<form id="login-form" class="form" method="post" onsubmit="loginUser (this)"></form>
+
+				<div class="login-card">
+
+					<h1>LOGIN</h1>
+
+					<div class="form-group textfield-login">
+						<label for="usuario">Digite seu Usuário</label>
+						<input type="text" name="usuario" placeholder="Usuário" class="form-control">
+					</div>
+
+					<div class="form-group textfield-login">
+						<label for="senha">Digite sua Senha</label>
+						<input type="password" name="senha" placeholder="Senha" class="form-control">					
+					</div>
+
+					<div>
+						<input type="submit" name="submit" value="LOGIN" class="btn btn-info btn-md btn-login">
+					</div>
+
+					<button type="button" class="btn btn-newuser" data-toggle="modal" data-target="#loginModal">Cadastro de Novo Usuário</button>
+
 				</div>
+			</div>
+		</form>
+	</div>
+	
 
-			<img src="..\imagens\imagem-login.svg" class="imagem-login" alt="Imagem de Login">
-		</div>
-
-		<div class="login-right">
-
-			<div class="login-card">
-				<h1>LOGIN</h1>
-
-				<div class="textfield-login">
-					<label for="usuario">Digite seu Usuário</label>
-					<input type="text" name="usuario" placeholder="Usuário">
+	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="loginModalLabel">Overlay de Novo Usuário</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
 				</div>
-
-				<div class="textfield-login">
-					<label for="senha">Digite sua Senha</label>
-					<input type="password" name="senha" placeholder="Senha">					
+				<div class="modal-body">
+					<div id="caixa-login" class="col-md-12">
+						<form id="formulario-login" class="form" method="post" onsubmit="loginUser (this)"> 
+							<h3 class="text-center text-info">Cadastro de Novo Usuário</h3>
+							<div class="form-group">
+								<label for="login" class="text-info">Insira seu Usuário</label>
+								<input type="text" name="txt_login" id="txt_login" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="nome-completo" class="text-info">Insira seu Nome Completo</label>
+								<input type="text" name="txt_nome-completo" id="txt_nome-completo" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="email" class="text-info">Insira seu E-Mail</label>
+								<input type="text" name="txt_email" id="txt_email" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="senha" class="text-info">Insira uma Senha Válida</label>
+								<input type="password" name="txt_senha" id="txt_senha" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="senha2" class="text-info">Confirme a sua Senha</label>
+								<input type="password" name="txt_senha2" id="txt_senha2" class="form-control">
+							</div>
+						</form>
+					</div>
 				</div>
-
-				<button class="button-login">LOGIN</button>
-
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar Cadastro</button>
+					<button type="button" id="btn_salvar" class="btn btn-info" data-dismiss="modal">Enviar Cadastro</button>
+				</div>
 			</div>
 		</div>
 	</div>
+
+	<script src="..\js\login.js"></script>
+	<script>
+
+		function processaFormLogin (event) {
+			event.preventDefault ();
+
+			var username = document.getElementById('username').value;
+			var password = document.getElementById('password').value;
+
+			resultadoLogin = loginUser (username, password);
+			if (resultadoLogin){
+				window.location.href = 'index.html';
+			}
+			else{
+				alert ('Usuário ou Senha incorretos')
+			}
+		}
+		function salvaLogin (event){
+			event.preventDefault ();
+
+			let login = document.getElementById ('txt_login').value;
+			let nome = document.getElementById ('txt_nome').value;
+			let email = document.getElementById ('txt_email').value;
+			let senha = document.getElementById ('txt_senha').value;
+			let senha2 = document.getElementById ('txt_senha2').value;
+
+			if (senha!=senha2){
+				alert ('As senhas informadas são inválidas');
+				return
+			}
+
+
+			addUser (nome, email, senha, login);
+			alert ('Cadastro de Usuário Concluído. Prossiga com o login para');
+
+			$('#loginModal').modal('hide');
+		}
+
+		document.getElementById ('login-form').addEventListener ('submit', processaFormLogin);
+		document.getElementById ('btn-salvar').addEventListener ('click', salvaLogin);
+
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
 
 </body>
 </html>
