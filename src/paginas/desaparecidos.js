@@ -93,7 +93,7 @@ function insertDesaparecido(desaparecido) {
     localStorage.setItem('db_desaparecido', JSON.stringify(db));
 }
 
-function updateDesaparecido(nome, cidade) {
+function updateDesaparecido(id, nome) {
     // Localiza o indice do objeto a ser alterado no array a partir do seu ID
     let index = db.data.map(obj => obj.id).indexOf(id);
 
@@ -112,7 +112,7 @@ function updateDesaparecido(nome, cidade) {
     localStorage.setItem('db_desaparecido', JSON.stringify(db));
 }
 
-function deleteDesaparecido(nome) {    
+function deleteDesaparecido(id) {    
     // Filtra o array removendo o elemento com o id passado
     db.data = db.data.filter(function (element) { return element.id != id });
 
