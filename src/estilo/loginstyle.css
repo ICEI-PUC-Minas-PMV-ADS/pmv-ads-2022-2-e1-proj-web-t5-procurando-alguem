@@ -35,21 +35,20 @@ body * {
 	box-shadow: 10px 0px 100px #00000056;
 	padding: 15px 20px 15px 50px;
 	position: relative;
-	top: 20px;
-	left: 80px;
-	
-	
+	top: 80px;
+	left: 90px;	
 }
 
 .imagem-logo{
 	float: auto;
 	width: 10vw;
 	position: relative;
-	top: -100px;
+	top: -50px;
 	background-color: #2f2841;
 	border-radius: 100px;
 	box-shadow: 10px 0px 100px #00000056;
 	left: -70px;
+	display: flex;
 }
 
 .imagem-login{
@@ -85,7 +84,7 @@ body * {
 	margin: 0;
 }
 
-.textfield{
+.textfield-login{
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -94,7 +93,7 @@ body * {
 	margin: 10px 0px;
 }
 
-.textfield > input{
+.textfield-login > input{
 	width: 100%;
 	border: none;
 	border-radius: 10px;
@@ -107,12 +106,12 @@ body * {
 	box-sizing: border-box;
 }
 
-.textfield > label{
+.textfield-login > label{
 	color: #ffffff;
 	margin-bottom: 10px;
 }
 
-.textfield > input::placeholder{
+.textfield-login > input::placeholder{
 	 color: #ffffff;
 }
 
@@ -129,7 +128,7 @@ body * {
 
 
 /** Mídias de Responsividade **/
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 1000px){
 	.login-card{
 		width: 85%;
 	}
@@ -160,18 +159,42 @@ body * {
 		box-sizing: border-box;
 	}
 }
+
+
 @media screen and (min-width: 480px) {
-	.imagem-logo {width: 200px; float: auto;}
+	.imagem-logo {width: 200px; float: auto; display: flex;}
 	.imagem-login {float: left;}
 	.logo > h1{float: auto;  }
   }
 
+@media screen and (max-width: 480px) {
+	.imagem-logo {width: 200px; float: auto; display: flex;} 
+}
+
+@media screen and (max-width: 400px) {
+	.imagem-logo {width: 150px; float: auto; display: flex;} 
+}
+
+
 @media screen and (max-width: 600px) {
-	.imagem-logo {display: none;}
+	.imagem-logo {display: flex; position: relative; left: 0px;}
 	.imagem-login {display: none;}
 	.logo > h1{display: none;}
-	
-	
-  }  
+
+
+}  
+
+
+/* Logo e Título da Logo some quando a tela for menor do que 1000px */
+@media screen and (max-width: 1000px){
+	.imagem-logo {display: none; position: relative; left: 0px;}
+	.logo > h1{display: none; width: auto; height: auto;}
+}
+
+/* Título da logo some e a imagem da logo centralizada encima do formulário em telas menores do que 600px */
+@media screen and (max-width: 600px){
+	.imagem-logo {display: flex; position: relative; left: 0px;}
+	.logo > h1{display: none; width: auto; height: auto;}
+}
 
  
