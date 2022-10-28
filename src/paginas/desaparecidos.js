@@ -98,11 +98,12 @@ function updateDesaparecido(nome, cidade) {
 
     // Altera os dados do objeto no array
     db.data[index].nome = desaparecido.nome,
+    db.data[index].idade = desaparecido.idade,
+    db.data[index].sexo = desaparecido.sexo,
     db.data[index].corRaca = desaparecido.corRaca,
     db.data[index].altura = desaparecido.altura,
     db.data[index].cidade = desaparecido.cidade,
-    db.data[index].sexo = desaparecido.sexo,
-    db.data[index].cidade = desaparecido.cidade
+    db.data[index].maisInformacoes  = desaparecido.maisInformacoes,
 
     displayMessage("desaparecido alterado com sucesso");
 
@@ -117,5 +118,5 @@ function deleteDesaparecido(nome) {
     displayMessage("Desaparecidoo removido com sucesso");
 
     // Atualiza os dados no Local Storage
-    localStorage.setItem('db_desaparecidoo', JSON.stringify(db));
+    localStorage.setItem('db_desaparecido', JSON.stringify(db));
 }

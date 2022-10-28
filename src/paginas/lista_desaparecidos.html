@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cadastro de Contatos</title>
+    <title>Cadastro de Desaparecidos</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">    
 </head>
 
-<body onload="ListaContatos()">
-    <h1>Listagem de Contatos</h1>
+<body onload="ListaDesaparecidos()">
+    <h1>Listagem de Desaparecidos</h1>
 
     <div class="container">
         <div class="row">
@@ -29,17 +29,18 @@
         <form id="form-contato">            
             <div class="form-group row">
                 <div class="col-sm-4">
-                    <select name="filtro_cidade" id="filtro_cidade" onchange="ListaContatos()" class="form-control">
-                        <option value="">Selecione a Cidade</option>
+                    <select name="filtro_cidade" id="filtro_cidade" onchange="ListaDesaparecidos()" class="form-control">
+                        <option value="">Cidade</option>
                         <option value="Betim">Betim</option>
                         <option value="Belo Horizonte">Belo Horizonte</option>
                         <option value="Rio de Janeiro">Rio de Janeiro</option>
                         <option value="São Paulo">São Paulo</option>
                         <option value="Goiânia">Goiânia</option>
+
                     </select>                    
                 </div>
                 <div class="col-sm-8">
-                    <select name="filtro_categoria" id="filtro_categoria" onchange="ListaContatos()"  class="form-control">
+                    <select name="filtro_categoria" id="filtro_categoria" onchange="ListaDesaparecidos()"  class="form-control">
                         <option value="">Selecione a Categoria</option>
                         <option value="amigos">Amigos</option>
                         <option value="familia">Familia</option>
@@ -52,16 +53,16 @@
 
         <div class="row">
             <div class="col-sm-12">
-                <table id="grid-contatos" class="table table-striped">
+                <table id="grid-desaparecidos" class="table table-striped">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Nome</th>
-                            <th scope="col">Telefone</th>
-                            <th scope="col">E-mail</th>
+                            <th scope="col">Idade</th>
+                            <th scope="col">Cor/Raça</th>
+                            <th scope="col">Altura</th>
                             <th scope="col">Cidade</th>
-                            <th scope="col">Categoria</th>
-                            <th scope="col">Site</th>
+                            <th scope="col">Mais Informações</th>
                         </tr>
                     </thead>
                     <tbody id="table-desaparecidos">
@@ -95,11 +96,12 @@
                     // Inclui o desaparecido na tabela    
                     $("#table-contatos").append(`<tr><td scope="row">${desaparecido.id}</td>
                                                     <td>${desaparecido.nome}</td>
-                                                    <td>${desaparecido.telefone}</td>
-                                                    <td>${desaparecido.email}</td>
+                                                    <td>${desaparecido.idade}</td>
+                                                    <td>${desaparecido.sexo}</td>
+                                                    <td>${desaparecido.corRaca}</td>
+                                                    <td>${desaparecido.altura}</td>
                                                     <td>${desaparecido.cidade}</td>
-                                                    <td>${desaparecido.categoria}</td>
-                                                    <td>${desaparecido.website}</td>
+                                                    <td>${desaparecido.maisInformacoes}</td>
                                                 </tr>`);
                 }
             }

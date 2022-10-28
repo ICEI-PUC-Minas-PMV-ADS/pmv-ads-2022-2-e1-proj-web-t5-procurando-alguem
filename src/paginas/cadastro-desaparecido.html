@@ -72,28 +72,34 @@
   </div>
 
   <section class="caixa-central">
+ <!--Inclui começa aqui-->
+    
 
-    <form id="form-contato">
-      <!--Inclui-->
-
+ <form id="form-contato">
+      <div class="form-group row">
+        <div class="informacoes-especificas">
       <div class="nome-desaparecido text-md-left">
         <label for="inputNome">Digite o nome do Desaparecido:</label></br>
         <input type="text" id="inputNome" name="nome" placeholder="Nome do Desaparecido">
       </div>
-      <div class="informacoes-especificas">
-        <label class="label1" for="inputIdade">Idade:</label>
-        <input class="input1" type="text" id="inputIdade" name="idade" placeholder="Idade">
-        <label class="label2" for="inputSexo">Sexo:</label>
-        <input class="input2" type="text" id="inputSexo" name="Sexo" placeholder="Sexo">
-        <label class="label3" for="inputCorRaça">Cor/Raça:</label>
-        <input class="input3" type="text" id="inputCorRaça" name="cor/raça" placeholder="cor/raça">
-        <label class="label4" for="inputAltura">Altura:</label>
-        <input class="input4" type="text" id="inputAltura" name="altura" placeholder="Altura">
-        <label class="label5" for="inputCidade">Cidade:</label>
-        <input class="input5" type="text" id="inputCidade" name="cidade" placeholder="Cidade">
+    
 
 
-        <label class="label6" for="mais-informacoes">Mais Informações:</label>
+        <label class="label1" for="inputId">Id</label>
+        <input class="input1" type="text" id="inputId" placeholder="ID" disabled>
+        <label class="label2" for="inputIdade">Idade:</label>
+        <input class="input2" type="text" id="inputIdade" name="idade" placeholder="Idade">
+        <label class="label3" for="inputSexo">Sexo:</label>
+        <input class="input3" type="text" id="inputSexo" name="Sexo" placeholder="Sexo">
+        <label class="label4" for="inputCorRaça">Cor/Raça:</label>
+        <input class="input4" type="text" id="inputCorRaça" name="cor/raça" placeholder="cor/raça">
+        <label class="label5" for="inputAltura">Altura:</label>
+        <input class="input5" type="text" id="inputAltura" name="altura" placeholder="Altura">
+        <label class="label6" for="inputCidade">Cidade:</label>
+        <input class="input6" type="text" id="inputCidade" name="cidade" placeholder="Cidade">
+
+
+        <label class="label7" for="mais-informacoes">Mais Informações:</label>
         <textarea id="textarea-mais-informacoes" cols="10" maxlength="800"
           placeholder="Digite nesse campo informações adicionais como: medicamentos essenciais ou alguma informação importante e relevante sobre o Desaparecido."></textarea>
 
@@ -104,15 +110,17 @@
             src="../imagens/imagem-botao-foto.svg" width="40"></button>
 
         <button id="enviar-cadastro" name="enviar-cadastro">Enviar cadastro</button>
-
+       <!-- <input type="button" class="btn btn-success" id="btnInsert" value="Inserir">-->
       </div>
 
-  </section>
-  <!--Começa aqui-->
+ 
+  <!--Começa aqui
+  
   <div class="container">
     <div class="row">
       <div id="msg" class="col-sm-10 offset-sm-1 ">
         <!--<div class="alert alert-warning">Contato não encontrado.</div>-->
+        <!--                 
       </div>
     </div>
 
@@ -153,25 +161,26 @@
     <div class="col-sm-4">
       <small>(*) Campos obrigatórios</small>
     </div>
-  </div>
+  </div> 
+  -->
   <div class="form-group row">
-    <div class="col-sm-12">
+    <div class="botoesextras col-sm-12">
       <input type="button" class="btn btn-success" id="btnInsert" value="Inserir">
       <input type="button" class="btn btn-warning" id="btnUpdate" value="Alterar">
       <input type="button" class="btn btn-danger" id="btnDelete" value="Excluir">
       <input type="button" class="btn btn-secondary" id="btnClear" value="Limpar Form">
       <a href="lista_desaparecidos.html"><input type="button" class="btn btn-warning" id="btnClear"
-          value="Pesquisar Contatos"></a>
+          value="Pesquisar Desaparecidos"></a>
     </div>
-  </div>
+  </div> 
   </form>
-
+</section>
   <div class="row">
     <div class="col-sm-12">
       <table id="grid-contatos" class="table table-striped">
         <thead>
           <tr>
-            <th scope="col">#</th>
+            <th scope="col">Id</th>
             <th scope="col">Nome</th>
             <th scope="col">Idade</th>
             <th scope="col">Sexo</th>
@@ -200,20 +209,21 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="desaparecidos.js"></script>
   <script>
-    function exibeContatos() {
+    function exibeDesaparecidos() {
       // Remove todas as linhas do corpo da tabela
-      $("#table-contatos").html("");
+      $("#table-desaparecids").html("");
 
       // Popula a tabela com os registros do banco de dados
       for (i = 0; i < db.data.length; i++) {
         let contato = db.data[i];
-        $("#table-contatos").append(`<tr><td scope="row">${contato.nome}</td>
-                                            <td>${contato.nome}</td>
-                                            <td>${contato.telefone}</td>
-                                            <td>${contato.email}</td>
-                                            <td>${contato.cidade}</td>
-                                            <td>${contato.categoria}</td>
-                                            <td>${contato.website}</td>
+        $("#table-desaparecidos").append(`<tr><td scope="row">${desaparecido.nome}</td>
+                                            <td>${desaparecido.nome}</td>
+                                            <td>${desaparecido.idade}</td>
+                                            <td>${desaparecido.sexo}</td>
+                                            <td>${desaparecido.carRaca}</td>
+                                            <td>${desaparecido.altura}</td>
+                                            <td>${desaparecido.cidade}</td>
+                                            <td>${desaparecido.maisInformacoes}</td>
                                         </tr>`);
       }
     }
@@ -222,34 +232,36 @@
       // Adiciona funções para tratar os eventos 
       $("#btnInsert").click(function () {
         // Verfica se o formulário está preenchido corretamente
-        if (!$('#form-contato')[0].checkValidity()) {
+        if (!$('#form-desaparecido')[0].checkValidity()) {
           displayMessage("Preencha o formulário corretamente.");
           return;
         }
 
         // Obtem os valores dos campos do formulário
         let campoNome = $("#inputNome").val();
-        let campoTelefone = $("#inputTelefone").val();
-        let campoEmail = $('#inputEmail').val();
-        let campoCidade = $("#inputCidade").val();
-        let campoCategoria = $('#inputCategoria').val();
-        let campoSite = $('#inputSite').val();
+        let campoIdade = $("#inputIdade").val();
+        let campoSexo = $('#inputSexo').val();
+        let campoCorRaca = $("#inputCorRaca").val();
+        let campoAltura = $('#inputAltura').val();
+        let campoCidade = $('#inputCidade').val();
+        let campoMaisInformacoes = $('#inputMaisInformacoes').val();
         let contato = {
           nome: campoNome,
-          telefone: campoTelefone,
-          email: campoEmail,
+          idade: campoIdade,
+          sexo: campoSexo,
+          corRaca: campoCorRaca,
+          altura: campoAltura,
           cidade: campoCidade,
-          categoria: campoCategoria,
-          website: campoSite
+          maisInformacoes: campoMaisInformacoes,
         };
 
-        insertContato(contato);
+        insertDesaparecido(desaparecido);
 
-        // Reexibe os contatos
-        exibeContatos();
+        // Reexibe os desaparecidos
+        exibeDesaparecidos();
 
         // Limpa o formulario
-        $("#form-contato")[0].reset();
+        $("#form-desaparecido")[0].reset();
       });
 
       // Intercepta o click do botão Alterar
@@ -257,52 +269,55 @@
         // Obtem os valores dos campos do formulário
         let campoId = $("#inputId").val();
         if (campoId == "") {
-          displayMessage("Selecione um contato para ser alterado.");
+          displayMessage("Selecione um desaparecido para ser alterado.");
           return;
         }
         let campoNome = $("#inputNome").val();
-        let campoTelefone = $("#inputTelefone").val();
-        let campoEmail = $("#inputEmail").val();
-        let campoCidade = $("#inputCidade").val();
-        let campoCategoria = $("#inputCategoria").val();
-        let campoSite = $('#inputSite').val();
-        let contato = {
+        let campoIdade = $("#inputIdade").val();
+        let campoSexo = $("#inputSexo").val();
+        let campoCorRaca = $("#inputCorRaca").val();
+        let campoAltura = $("#inputAltura").val();
+        let campoCidade = $('#inputCidade').val();
+        let campoMaisInformacoes = $('#inputMaisInformacoes').val();
+
+        let desaparecido = {
           nome: campoNome,
-          telefone: campoTelefone,
-          email: campoEmail,
-          cidade: campoCidade,
-          categoria: campoCategoria,
-          website: campoSite
+          idade: campoIdade,
+          sexo: campoSexo,
+          corRaca: campoCorRaca,
+          altura: campoAltura,
+          cidade: campoCidade
+          maisInformacoes: campoMaisInformacoes
         };
 
-        updateContato(parseInt(campoId), contato);
+        updateDesaparecido(parseInt(campoId), desaparecido);
 
-        // Reexibe os contatos
-        exibeContatos();
+        // Reexibe os desaparecidos
+        exibeDesaparecidos();
 
         // Limpa o formulario
-        $("#form-contato")[0].reset();
+        $("#form-desaparecido")[0].reset();
       });
 
       // Intercepta o click do botão Excluir
       $("#btnDelete").click(function () {
         let campoId = $("#inputId").val();
         if (campoId == "") {
-          displayMessage("Selecione um contato a ser excluído.");
+          displayMessage("Selecione um desaparecido a ser excluído.");
           return;
         }
-        deleteContato(parseInt(campoId));
+        deleteDesaparecido(parseInt(campoId));
 
         // Reexibe os contatos
-        exibeContatos();
+        exibeDesaparecidos();
 
         // Limpa o formulario
-        $("#form-contato")[0].reset();
+        $("#form-desaparecido")[0].reset();
       });
 
       // Intercepta o click do botão Listar Contatos
       $("#btnClear").click(function () {
-        $("#form-contato")[0].reset();
+        $("#form-desaparecido")[0].reset();
       });
 
       // Oculta a mensagem de aviso após alguns segundos
@@ -315,9 +330,9 @@
       });
 
       // Preenche o formulário quando o usuario clicar em uma linha da tabela 
-      $("#grid-contatos").on("click", "tr", function (e) {
+      $("#grid-desaparecidos").on("click", "tr", function (e) {
         let linhaContato = this;
-        colunas = linhaContato.querySelectorAll("td");
+        colunas = linhaDesaparecido.querySelectorAll("td");
 
         $("#inputId").val(colunas[0].innerText);
         $("#inputNome").val(colunas[1].innerText);
@@ -328,7 +343,7 @@
         $("#inputSite").val(colunas[6].innerText);
       });
 
-      exibeContatos();
+      exibeDesaparecidos();
     }
   </script>
 </body>

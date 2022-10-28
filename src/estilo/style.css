@@ -100,15 +100,35 @@ body {
     top: 30px;
     left: 27px;
 }
-
-
 .label1 {
     font-size: 18px;
     position: relative;
     top: 25px;
-    left: -150px;
+    left: -180px;
 }
 .input1 {
+    width: 90px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #2F2841;
+    color: #ffffff;
+    font-size: 12pt;
+    box-shadow: 0px 5px 80px #000000;
+    outline: none;
+    box-sizing: border-box;
+    position: relative;
+    top: 65px;
+    left: -210px;
+}
+
+.label2 {
+    font-size: 18px;
+    position: relative;
+    top: 25px;
+    left: -190px;
+}
+.input2 {
     width: 100px;
     border: none;
     border-radius: 10px;
@@ -121,36 +141,14 @@ body {
     box-sizing: border-box;
     position: relative;
     top: 65px;
-    left: -390px;
-}
-
-.label2 {
-    font-size: 18px;
-    position: relative;
-    top: 25px;
-    left: -250px;
-}
-.input2 {
-    width: 130px;
-    border: none;
-    border-radius: 10px;
-    padding: 15px;
-    background-color: #2F2841;
-    color: #ffffff;
-    font-size: 12pt;
-    box-shadow: 0px 5px 80px #000000;
-    outline: none;
-    box-sizing: border-box;
-    position: relative;
-    top: 65px;
-    left: -400px;
+    left: -245px;
 }
 
 .label3 {
     font-size: 18px;
     position: relative;
     top: 25px;
-    left: -300px;
+    left: -230px;
 }
 .input3 {
     width: 130px;
@@ -165,17 +163,17 @@ body {
     box-sizing: border-box;
     position: relative;
     top: 65px;
-    left: -470px;
+    left: -280px;
 }
 
 .label4 {
     font-size: 18px;
     position: relative;
     top: 25px;
-    left: -400px;
+    left: -235px;
 }
 .input4 {
-    width: 100px;
+    width: 130px;
     border: none;
     border-radius: 10px;
     padding: 15px;
@@ -187,13 +185,14 @@ body {
     box-sizing: border-box;
     position: relative;
     top: 65px;
-    left: 250x;
+    left: -320px;
 }
+
 .label5 {
     font-size: 18px;
     position: relative;
     top: 25px;
-    left: -400px;
+    left: -300px;
 }
 .input5 {
     width: 100px;
@@ -208,15 +207,31 @@ body {
     box-sizing: border-box;
     position: relative;
     top: 65px;
-    left: -475px;
+    left: -365px;
+}
+.label6 {
+    font-size: 18px;
+    position: relative;
+    top: 25px;
+    left: -350px;
+}
+.input6 {
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #2F2841;
+    color: #ffffff;
+    font-size: 12pt;
+    box-shadow: 0px 5px 80px #000000;
+    outline: none;
+    box-sizing: border-box;
+    position: relative;
+    top: 65px;
+    left: -415px;
 }
 
-
-
-
-
-
-.label6 {
+.label7 {
     font-size: 18px;
     position: absolute;
     top: 230px;
@@ -277,9 +292,11 @@ body {
     position: relative;
     top: 210px;
     left: -505px;
-
-
-
+}
+.botoesextras {
+    position: relative;
+    top: 190px;
+    left: 350px;
 }
 
 /* Página cadastro desaparecidos termina aqui*/
