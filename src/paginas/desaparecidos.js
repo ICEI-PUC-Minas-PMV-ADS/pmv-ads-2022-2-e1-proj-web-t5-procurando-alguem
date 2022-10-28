@@ -2,7 +2,7 @@
 var db_desaparecidos_inicial = {
     "data": [
         {
-            
+            "id": 1,
             "nome": "Abraam Jorge",
             "idade": "33",
             "sexo": "M",
@@ -11,7 +11,7 @@ var db_desaparecidos_inicial = {
             "cidade": "Rio de Janeiro-RJ"
         },
         {
-            
+            "id": 2,
             "nome": "Emília Vasconcelos",
             "idade": "43",
             "sexo": "F",
@@ -20,7 +20,7 @@ var db_desaparecidos_inicial = {
             "cidade": "Betim-MG"
         },
         {
-            
+            "id": 3,
             "nome": "Cristiane Albuquerque",
             "idade": "19",
             "sexo": "F",
@@ -29,7 +29,7 @@ var db_desaparecidos_inicial = {
             "cidade": "São Paulo-SP"
         },
         {
-            
+            "id": 4,
             "nome": "Patrick Abreu",
             "idade": "14",
             "sexo": "M",
@@ -38,7 +38,7 @@ var db_desaparecidos_inicial = {
             "cidade": "Ribeirão das Neves-MG"
         },
         {
-           
+            "id": 5,
             "nome": "Jack Nick",
             "idade": "88",
             "sexo": "M",
@@ -47,7 +47,7 @@ var db_desaparecidos_inicial = {
             "cidade": "Carapicuiba-SP"
         },
         {
-            
+            "id": 6,
             "nome": "Giselle Barroso",
             "idade": "20",
             "sexo": "F",
@@ -75,7 +75,7 @@ function insertDesaparecido(desaparecido) {
     if (db.data.length != 0) 
       novoId = db.data[db.data.length - 1].id + 1;
     let novoDesaparecido = {
-       
+        "id": novoId,
         "nome": desaparecido.nome,
         "idade" : desaparecido.idade,
         "sexo": desaparecido.sexo,
@@ -93,7 +93,7 @@ function insertDesaparecido(desaparecido) {
     localStorage.setItem('db_desaparecido', JSON.stringify(db));
 }
 
-function updateDesaparecido(id, nome) {
+function updateDesaparecido(id, desaparecido) {
     // Localiza o indice do objeto a ser alterado no array a partir do seu ID
     let index = db.data.map(obj => obj.id).indexOf(id);
 
