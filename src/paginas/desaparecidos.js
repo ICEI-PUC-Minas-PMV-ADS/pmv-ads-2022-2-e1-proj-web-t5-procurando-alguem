@@ -81,7 +81,8 @@ function insertDesaparecido(desaparecido) {
         "sexo": desaparecido.sexo,
         "corRaca" : desaparecido.corRaca,
         "altura": desaparecido.altura,
-        "cidade": desaparecido.cidade
+        "cidade": desaparecido.cidade,
+        "maisInformacoes": desaparecido.maisInformacoes,
     };
 
     // Insere o novo objeto no array

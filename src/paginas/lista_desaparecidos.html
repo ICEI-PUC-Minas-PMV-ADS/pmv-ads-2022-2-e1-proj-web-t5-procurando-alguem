@@ -26,26 +26,26 @@
             </div>
         </div>        
         
-        <form id="form-contato">            
+        <form id="form-desaparecido">            
             <div class="form-group row">
                 <div class="col-sm-4">
                     <select name="filtro_cidade" id="filtro_cidade" onchange="ListaDesaparecidos()" class="form-control">
                         <option value="">Cidade</option>
-                        <option value="Betim">Betim</option>
+                       <!-- <option value="Betim">Betim</option>
                         <option value="Belo Horizonte">Belo Horizonte</option>
                         <option value="Rio de Janeiro">Rio de Janeiro</option>
                         <option value="São Paulo">São Paulo</option>
-                        <option value="Goiânia">Goiânia</option>
+                        <option value="Goiânia">Goiânia</option>-->
 
                     </select>                    
                 </div>
                 <div class="col-sm-8">
-                    <select name="filtro_categoria" id="filtro_categoria" onchange="ListaDesaparecidos()"  class="form-control">
-                        <option value="">Selecione a Categoria</option>
-                        <option value="amigos">Amigos</option>
+                    <select name="filtro_nome" id="filtro_nome" onchange="ListaDesaparecidos()"  class="form-control">
+                        <option value="">Nome</option>
+                        <!-- <option value="amigos">Amigos</option>
                         <option value="familia">Familia</option>
                         <option value="trabalho">Trabalho</option>
-                    </select>
+                    </select> -->
                 </div>
             </div>
         </form>
@@ -80,10 +80,10 @@
             
             // Obtem os dados informados pelo usuário nos filtros
             let fc = document.getElementById('filtro_cidade').value;
-            let fcg = document.getElementById('filtro_categoria').value;
+            let fcg = document.getElementById('filtro_desaparecido').value;
 
             // limpa a lista de desaparecidos apresentados
-            $("#table-contatos").empty();
+            $("#table-desaparecidos").empty();
 
             // Popula a tabela com os registros do banco de dados
             for (let index = 0; index < db.data.length; index++) {
@@ -94,7 +94,7 @@
                     ((desaparecido.categoria == fcg) || (fcg == ''))) {
                     
                     // Inclui o desaparecido na tabela    
-                    $("#table-contatos").append(`<tr><td scope="row">${desaparecido.id}</td>
+                    $("#table-desaparecidos").append(`<tr><td scope="row">${desaparecido.id}</td>
                                                     <td>${desaparecido.nome}</td>
                                                     <td>${desaparecido.idade}</td>
                                                     <td>${desaparecido.sexo}</td>
