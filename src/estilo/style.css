@@ -110,4 +110,13 @@ button{
     border-radius: 15px;
     padding-bottom: 60%; 
     margin-bottom: 15px;
+    padding-top: 1.5%;
+}
+
+/*Home Page*/
+.lista-desaparecido{    
+    font-family: Karma;
+    font-weight: bold;
+    color: #ffffff;
+    padding-left: 0%;
 }
