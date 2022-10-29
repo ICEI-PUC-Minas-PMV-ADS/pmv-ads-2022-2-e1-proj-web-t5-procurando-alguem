@@ -1,5 +1,9 @@
-// declara um conjunto inicial de desaparecidos
-var db_desaparecidos_inicial = {
+    
+    
+    
+    
+    // declara um conjunto inicial de desaparecidos
+var db_exibeDesaparecidos_inicial = {
     "data": [
         {
             "id": 1,
@@ -59,9 +63,10 @@ var db_desaparecidos_inicial = {
 }
 
 // Caso os dados já estejam no Local Storage, caso contrário, carrega os dados iniciais
-var db = JSON.parse(localStorage.getItem('db_desaparecido'));
+
+var db = JSON.parse(localStorage.getItem('db_exibeDesaparecidos'));
 if (!db) {
-    db = db_desaparecidos_inicial
+    db = db_exibeDesaparecidos_inicial
 };
 
 // Exibe mensagem em um elemento de ID msg
@@ -90,7 +95,7 @@ function insertDesaparecido(desaparecido) {
     displayMessage("Desaperecido inserido com sucesso");
 
     // Atualiza os dados no Local Storage
-    localStorage.setItem('db_desaparecido', JSON.stringify(db));
+    localStorage.setItem('db_desaparecidos', JSON.stringify(db));
 }
 
 function updateDesaparecido(id, desaparecido) {
@@ -109,15 +114,15 @@ function updateDesaparecido(id, desaparecido) {
     displayMessage("desaparecido alterado com sucesso");
 
     // Atualiza os dados no Local Storage
-    localStorage.setItem('db_desaparecido', JSON.stringify(db));
+    localStorage.setItem('db_desaparecidos', JSON.stringify(db));
 }
 
 function deleteDesaparecido(id) {    
     // Filtra o array removendo o elemento com o id passado
     db.data = db.data.filter(function (element) { return element.id != id });
 
-    displayMessage("Desaparecidoo removido com sucesso");
+    displayMessage("Desaparecido removido com sucesso");
 
     // Atualiza os dados no Local Storage
-    localStorage.setItem('db_desaparecido', JSON.stringify(db));
+    localStorage.setItem('db_desaparecidos', JSON.stringify(db));
 }
