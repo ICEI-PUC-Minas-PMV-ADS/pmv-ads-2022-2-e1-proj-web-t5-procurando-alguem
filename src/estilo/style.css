@@ -238,7 +238,7 @@ body {
     top: 230px;
     left: 48px;
 }
-#textarea-mais-informacoes {
+#maisInformacoes {
     width: 90%;
     height: 200px;
     border: none;
@@ -294,10 +294,7 @@ body {
     top: 210px;
     left: -505px;
 }
-.botoesextras {
-    position: relative;
-    top: 190px;
-    left: 350px;
+
 }
 
 /* Página cadastro desaparecidos termina aqui*/
