@@ -53,7 +53,7 @@
         //Buscando banco de dados do localstorage.
         //Se não existir ou estivar vazio será mostrado uma mensagem que não existem notícias
         //Se existir registros será mostrado uma listagem de notícas
-        let db_noticias = JSON.parse(localStorage.getItem('db_noticias'));
+        let db_desaparecidos = JSON.parse(localStorage.getItem('db_noticias'));
 
         if (!db_desaparecidos || db_desaparecidos.length == 0) {
             let tabelaConteudo = document.getElementById("Tabela-Conteudo");
@@ -75,8 +75,8 @@
                 conteudoHTML += `<td>${db_desaparecidos[i].maisInformacoes}</td>`;
                 conteudoHTML +=
                     `<td>
-                            <a href='editar-desaparecido.html?id=${db_noticias[i].id}' class="btn btn-info">Editar</a>
-                            <a href='excluir-desaparecido.html?id=${db_noticias[i].id}' class="btn btn-danger">Excluir</a>
+                            <a href='editar-desaparecido.html?id=${db_desaparecidos[i].id}' class="btn btn-info">Editar</a>
+                            <a href='excluir-desaparecido.html?id=${db_desaparecidos[i].id}' class="btn btn-danger">Excluir</a>
                         </td>`;
                 conteudoHTML += "</tr>";
             }

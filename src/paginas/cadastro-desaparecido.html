@@ -169,7 +169,7 @@
                 id = db_desaparecidos[db_desaparecidos.length - 1].id + 1;
             }
     
-            //Criando noticia para inserir no banco de dados do localstorage
+            //Criando desaparecido para inserir no banco de dados do localstorage
             const desaparecidos = {
                 "id": id,
                 "nome": nome,
@@ -181,10 +181,10 @@
                 "maisInformacoes": maisInformacoes
             };
     
-            //Inserindo notícia no array de notícias buscado anteriormente
+            //Inserindo desaparecido no array de notícias buscado anteriormente
             db_desaparecidos.push(desaparecido);
             
-            //Atualizando banco de dados com o array de notícas atualizado
+            //Atualizando banco de dados com o array de desaparecidos atualizado
             localStorage.setItem('db_desaparecidos', JSON.stringify(db_desaparecidos));
             alert("Notícia inserida com sucesso!");
     
