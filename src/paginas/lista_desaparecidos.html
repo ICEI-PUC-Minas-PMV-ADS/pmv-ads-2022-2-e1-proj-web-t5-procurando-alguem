@@ -53,7 +53,7 @@
         //Buscando banco de dados do localstorage.
         //Se não existir ou estivar vazio será mostrado uma mensagem que não existem notícias
         //Se existir registros será mostrado uma listagem de notícas
-        let db_desaparecidos = JSON.parse(localStorage.getItem('db_noticias'));
+        let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
 
         if (!db_desaparecidos || db_desaparecidos.length == 0) {
             let tabelaConteudo = document.getElementById("Tabela-Conteudo");
