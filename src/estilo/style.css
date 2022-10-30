@@ -278,7 +278,7 @@ body {
     top: 135px;
     left: -655px;
 }
-#enviar-cadastro {
+.enviar-cadastro {
     width: 250px;
     height: 70px;
     border: none;
@@ -295,7 +295,23 @@ body {
     left: -505px;
 }
 
+.botao-voltar {
+    width: 250px;
+    height: 70px;
+    border: none;
+    border-radius: 10px;
+    margin: 25px;
+    padding: 8px;
+    background-color: #6a6f6d;
+    color: #000;
+    font-size: 20px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px 1px 5px #000;
+    position: relative;
+    top: 280px;
+    left: -695px;
 
+}
 
 /* Página cadastro desaparecidos termina aqui*/
 
