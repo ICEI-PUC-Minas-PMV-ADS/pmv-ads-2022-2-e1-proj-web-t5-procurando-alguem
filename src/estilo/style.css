@@ -282,6 +282,7 @@ li.dropdown {
 
 
 
+
 .coluna-fotos{
     width: 25%;
     height: 480px;
@@ -308,6 +309,19 @@ li.dropdown {
     left: 1210px; 
     top: -1000px;
     border-radius: 20px;      
+}
+
+
+
+
+.all-btns{
+    position: relative;
+    top: 300px;
+}
+.lista_depoimentos{
+    position: relative;
+    left: -550px;
+    top: 50px;
 }
 
 

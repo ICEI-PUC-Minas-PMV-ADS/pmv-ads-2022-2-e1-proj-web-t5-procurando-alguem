@@ -78,10 +78,12 @@ body * {
 	box-shadow: 0px 10px 100px #00000056;
 }
 
-.login-card > h1{
+.titulo-login{
 	color: #00ff88;
 	font-weight: 800;
 	margin: 0;
+	
+	
 }
 
 .textfield-login{
@@ -123,12 +125,12 @@ body * {
 	padding: 15px 30px;
 	background-color: #00ff88;
 	position: relative;
-	left: -195px;
-	top: 20px;
+	left: -22px;
+	top: 50px;
 	cursor: pointer;
 }
 .btn-newuser{
-	width: 310px;
+	width: 60%;
 	border: none;
 	border-radius: 10px;
 	margin: 25px;
@@ -136,7 +138,65 @@ body * {
 	background-color: #00ff88;
 	position: relative;
 	left: 90px;
-	top: -76px;
+	top: -55px;
+	cursor: pointer;
+}
+.modal{
+	width: 300px;
+	height: 500px;
+	background-color: #2f2841;
+	border-radius: 30px;
+	position: relative;
+	left: 10px;
+	display: flex;
+	padding: 25px 25px;
+}
+.form-control-cadastro{
+	width: 100%;
+	border: none;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: #2F2841;
+	color: #ffffff;
+	font-size: 12pt;
+	box-shadow: 0px 5px 80px #000000;
+	outline: none;
+	box-sizing: border-box;
+}
+.btn-cancel{
+	width: 100%;
+	border-radius: 10px;
+	border: none;
+	padding: 10px 10px;
+	background-color: #00ff88;
+	position: relative;
+	top: 20px;
+	cursor: pointer;
+}
+.btn-send{
+	width: 100%;
+	border-radius: 10px;
+	border: none;
+	padding: 10px 10px;
+	background-color: #00ff88;
+	position: relative;
+	top: 45px;
+	cursor: pointer;
+}
+.text-info-modal{
+	color: #ffffff;
+}
+.modal-title{
+	color: #00ff88;
+	font-size: large;
+}
+.close{
+	position: relative;
+	left: 220px;
+	top: -20px;
+	border: none;
+	border-radius: 20px;
+	background-color: #00ff88;
 	cursor: pointer;
 }
 

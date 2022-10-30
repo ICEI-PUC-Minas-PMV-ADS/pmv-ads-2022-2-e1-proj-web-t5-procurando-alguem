@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="..\estilo\loginstyle.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm">
+
 	<title>Faça seu Login</title>
 </head>
 <body>
@@ -23,79 +23,82 @@
 	</div>
 
 	
-	<div class="login-right">
+	<div class="login-right" id="login">
 
-		<form id="login-form" class="form" method="post" onsubmit="loginUser (this)"></form>
+		
 
-				<div class="form-group login-card">
+			<div class="form-group login-card">
 
-					<h1>LOGIN</h1>
-
+				<form id="login-form" class="textfield-login" method="post" onsubmit="loginUser (this)">		
+					<h1 class="titulo-login">LOGIN</h1>
+					
 					<div class="form-group textfield-login">
-						<label for="username" class="text-info">Digite seu Usuário</label>
-						<input type="text" name="usuario" id="username" placeholder="Usuário" class="form-control">
+						<label for="login" class="text-info">Digite seu Usuário</label>
+						<input type="text" name="username" id="login" placeholder="Usuário" class="form-control">
 					</div>
 
 					<div class="form-group textfield-login">
-						<label for="password" class="text-info">Digite sua Senha</label>
-						<input type="password" name="senha" id="password" placeholder="Senha" class="form-control">					
+						<label for="senha" class="text-info">Digite sua Senha</label>
+						<input type="password" name="password" id="senha" placeholder="Senha" class="form-control">					
 					</div>
 
 					<div class="form-group text-right">
-						<input type="submit" name="submit" value="LOGIN" class="btn btn-info btn-md btn-login">
+						<input type="submit" name="submit" id="login" value="LOGIN" class="btn btn-info btn-md btn-login">
 					</div>
-					
+				</form>
 					<button type="button" class="btn btn-info btn-newuser" data-toggle="modal" data-target="#loginModal">Cadastro de Novo Usuário</button>
 
-				</div>
 			</div>
-		</form>
-	</div>
-	
 
-	<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="loginModalLabel">Login App</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<div id="login-box" class="col-md-12">
-						<form id="login-form" class="form" method="post" onsubmit="loginUser (this)"> 
-							<h3 class="text-center text-info">Cadastro de Novo Usuário</h3>
-							<div class="form-group">
-								<label for="login" class="text-info">Insira seu Usuário</label>
-								<input type="text" name="txt_login" id="txt_login" class="form-control">
+
+
+			<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="loginModalLabel">Menu de Cadastro</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div id="login-box" class="col-md-12">
+								<form id="login-form" class="form" method="post" onsubmit="loginUser (this)"> 
+									<h3 class="text-info-modal">Cadastro de Novo Usuário</h3>
+									<div class="form-group">
+										<label for="login" class="text-info-modal">Insira seu Usuário</label><br>
+										<input type="text" name="txt_login" id="txt_login" class="form-control-cadastro">
+									</div>
+									<div class="form-group">
+										<label for="nome" class="text-info-modal">Insira seu Nome Completo</label><br>
+										<input type="text" name="txt_nome" id="txt_nome" class="form-control-cadastro">
+									</div>
+									<div class="form-group">
+										<label for="email" class="text-info-modal">Insira seu E-Mail</label><br>
+										<input type="text" name="txt_email" id="txt_email" class="form-control-cadastro">
+									</div>
+									<div class="form-group">
+										<label for="senha" class="text-info-modal">Insira sua Senha</label><br>
+										<input type="password" name="txt_senha" id="txt_senha" class="form-control-cadastro">
+									</div>
+									<div class="form-group">
+										<label for="senha2" class="text-info-modal">Confirme a sua Senha</label><br>
+										<input type="password" name="txt_senha2" id="txt_senha2" class="form-control-cadastro">
+									</div>
+								</form>
 							</div>
-							<div class="form-group">
-								<label for="nome" class="text-info">Insira seu Nome Completo</label>
-								<input type="text" name="txt_nome" id="txt_nome" class="form-control">
-							</div>
-							<div class="form-group">
-								<label for="email" class="text-info">Insira seu E-Mail</label>
-								<input type="text" name="txt_email" id="txt_email" class="form-control">
-							</div>
-							<div class="form-group">
-								<label for="senha" class="text-info">Insira uma Senha Válida</label>
-								<input type="password" name="txt_senha" id="txt_senha" class="form-control">
-							</div>
-							<div class="form-group">
-								<label for="senha2" class="text-info">Confirme a sua Senha</label>
-								<input type="password" name="txt_senha2" id="txt_senha2" class="form-control">
-							</div>
-						</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary btn-cancel" data-dismiss="modal">Cancelar Cadastro</button>
+							<button type="button" id="btn-salvar" class="btn btn-info btn-send">Enviar Cadastro</button>
+						</div>
 					</div>
 				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar Cadastro</button>
-					<button type="button" id="btn_salvar" class="btn btn-info">Enviar Cadastro</button>
-				</div>
 			</div>
-		</div>
 	</div>
+</div>	
+
+
 
 	<script src="..\js\login.js"></script>
 	<script>
@@ -103,12 +106,12 @@
 		function processaFormLogin (event) {
 			event.preventDefault ();
 
-			var username = document.getElementById('username').value;
-			var password = document.getElementById('password').value;
+			var username = document.getElementById('login').value;
+			var password = document.getElementById('senha').value;
 
-			resultadoLogin = loginUser (username, password);
+			resultadoLogin = loginUser (login, senha);
 			if (resultadoLogin) {
-				window.location.href = 'index.html';
+				window.location.href = 'login-index.html';
 			}
 			else{
 				alert ('Usuário ou Senha incorretos')
@@ -129,10 +132,10 @@
 			}
 
 
-			addUser (nome, email, senha, login);
+			addUser (nome, email, senha, senha2, login);
 			alert ('Cadastro de Usuário Concluído. Prossiga com o login para');
 
-			$('#loginModal').modal('hide');
+			document.getElementById ('loginModal').style.display = 'none';
 		}
 
 		document.getElementById ('login-form').addEventListener ('submit', processaFormLogin);
