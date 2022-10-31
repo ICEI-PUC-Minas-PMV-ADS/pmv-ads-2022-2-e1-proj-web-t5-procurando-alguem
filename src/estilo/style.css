@@ -4,6 +4,7 @@ body {
     font-weight: bold;
     text-align: center;
     color: #ffffff;
+    height: 100%;
 }
 
 /* Página cadastro desaparecidos começa*/
@@ -40,6 +41,8 @@ body {
     padding-left: 40px;
 }
 
+
+/* Página cadastro desaparecidos */
 .barra {
     font-size: 25px;
 }
@@ -431,3 +434,193 @@ button {
     padding-bottom: 60%;
     margin-bottom: 15px;
 }
+
+
+.imagem-logo{
+	float: auto;
+	width: 10vw;
+	position: relative;
+	top: -65px;
+	background-color: #2f2841;
+	border-radius: 100px;
+	box-shadow: 10px 0px 100px #00000056;
+	left: 70px;
+	display: flex;
+}
+
+.logo > h1{
+	color: #77ffc0;
+	font-family: Times-New-Roman;
+	font-size: 30px;
+	float: auto;
+	background-color: #2f2841;
+	border-radius: 50px;
+	box-shadow: 10px 0px 100px #00000056;
+	padding: 15px 20px 15px 50px;
+	position: relative;
+	top: 80px;
+	left: 200px;	
+    width: 300px;
+}
+
+.barra-menu{
+    position: absolute;
+    width: 911px;
+    height: 111px;
+    left: 800px;
+    top: 65px;
+    background: linear-gradient(270deg, #2F2841 0%, rgba(47, 40, 65, 0) 100%);
+    border-radius: 20px;
+    display: flex;
+}
+
+.itens-menu {
+    flex-direction: column;
+    font-family: Karma;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    position: relative;
+    left: 300px;
+    top: 25px;
+    list-style: none;
+    padding: 0px 10px;
+    
+}
+
+.links-menu{
+    text-decoration: none;
+}
+
+
+/* Configurações de Estilo do Botão "Meu Perfil" com o DropDown (Começa Aqui)*/
+.dropdown{
+    flex-direction: column;
+    font-family: Karma;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    position: relative;
+    left: 270px;
+    top: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.links-drop:hover, .dropdown:hover .dropbtn {
+    background-color: #161220; 
+  }
+
+.links-menu:hover{
+    background-color: #161220;
+    border-radius: 20px;
+    padding: 5px 5px;  
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+li.dropdown {
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 123px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 15px 22px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+}
+
+ .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 35px;
+    width: 100px;
+    text-decoration: none;
+    border-radius: 15px 15px 0px 0px;
+  }
+/* Configurações de Estilo do Botão "Meu Perfil" com o DropDown (Termina Aqui)*/
+
+.section-desaparecido{
+    position: relative;
+    top: -80px;
+    background-color: #2F2841;
+    border-radius: 20px;
+    padding: 0px 15px 0px 15px;
+    margin: 50px;
+    box-shadow: 10px 10px #161220;
+    width: 87%;
+    height: 600px;
+}
+.colunas-desaparecido{
+    position: relative;
+    top: 10px;
+    
+    
+}
+
+
+
+
+
+
+
+.coluna-fotos{
+    width: 25%;
+    height: 480px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    background-color: #514869;
+    border-radius: 20px;
+}
+.coluna-infos{
+    width: 40%;
+    height: 480px;
+    background-color: #514869;
+    position: relative;
+    left: 480px; 
+    top: -500px; 
+    border-radius: 20px; 
+}
+.coluna-infos-compartilhadas{
+    width: 25%;
+    height: 480px;
+    background-color: #514869;
+    position: relative;
+    left: 1210px; 
+    top: -1000px;
+    border-radius: 20px;      
+}
+
+
+
+
+.all-btns{
+    position: relative;
+    top: 300px;
+}
+.lista_depoimentos{
+    position: relative;
+    left: -550px;
+    top: 50px;
+}
+
+

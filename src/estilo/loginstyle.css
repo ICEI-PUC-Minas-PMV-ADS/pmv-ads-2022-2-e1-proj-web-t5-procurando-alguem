@@ -78,13 +78,15 @@ body * {
 	box-shadow: 0px 10px 100px #00000056;
 }
 
-.login-card > h1{
+.titulo-login{
 	color: #00ff88;
 	font-weight: 800;
 	margin: 0;
+	
+	
 }
 
-.textfield{
+.textfield-login{
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -93,7 +95,7 @@ body * {
 	margin: 10px 0px;
 }
 
-.textfield > input{
+.textfield-login > input{
 	width: 100%;
 	border: none;
 	border-radius: 10px;
@@ -106,29 +108,103 @@ body * {
 	box-sizing: border-box;
 }
 
-.textfield > label{
+.textfield-login > label{
 	color: #ffffff;
 	margin-bottom: 10px;
 }
 
-.textfield > input::placeholder{
+.textfield-login > input::placeholder{
 	 color: #ffffff;
 }
 
-.button-login{
+.btn-login{
 	width: 100%;
 	border: none;
 	border-radius: 10px;
 	margin: 25px;
-	padding: 16px 0px;
+	padding: 15px 30px;
 	background-color: #00ff88;
+	position: relative;
+	left: -22px;
+	top: 50px;
+	cursor: pointer;
+}
+.btn-newuser{
+	width: 60%;
+	border: none;
+	border-radius: 10px;
+	margin: 25px;
+	padding: 15px 30px;
+	background-color: #00ff88;
+	position: relative;
+	left: 90px;
+	top: -55px;
+	cursor: pointer;
+}
+.modal{
+	width: 300px;
+	height: 500px;
+	background-color: #2f2841;
+	border-radius: 30px;
+	position: relative;
+	left: 10px;
+	display: flex;
+	padding: 25px 25px;
+}
+.form-control-cadastro{
+	width: 100%;
+	border: none;
+	border-radius: 10px;
+	padding: 10px;
+	background-color: #2F2841;
+	color: #ffffff;
+	font-size: 12pt;
+	box-shadow: 0px 5px 80px #000000;
+	outline: none;
+	box-sizing: border-box;
+}
+.btn-cancel{
+	width: 100%;
+	border-radius: 10px;
+	border: none;
+	padding: 10px 10px;
+	background-color: #00ff88;
+	position: relative;
+	top: 20px;
+	cursor: pointer;
+}
+.btn-send{
+	width: 100%;
+	border-radius: 10px;
+	border: none;
+	padding: 10px 10px;
+	background-color: #00ff88;
+	position: relative;
+	top: 45px;
+	cursor: pointer;
+}
+.text-info-modal{
+	color: #ffffff;
+}
+.modal-title{
+	color: #00ff88;
+	font-size: large;
+}
+.close{
+	position: relative;
+	left: 220px;
+	top: -20px;
+	border: none;
+	border-radius: 20px;
+	background-color: #00ff88;
+	cursor: pointer;
 }
 
 
 
 
 /** Mídias de Responsividade **/
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 1000px){
 	.login-card{
 		width: 85%;
 	}
@@ -159,6 +235,8 @@ body * {
 		box-sizing: border-box;
 	}
 }
+
+
 @media screen and (min-width: 480px) {
 	.imagem-logo {width: 200px; float: auto; display: flex;}
 	.imagem-login {float: left;}
@@ -183,12 +261,13 @@ body * {
 }  
 
 
-
+/* Logo e Título da Logo some quando a tela for menor do que 1000px */
 @media screen and (max-width: 1000px){
 	.imagem-logo {display: none; position: relative; left: 0px;}
 	.logo > h1{display: none; width: auto; height: auto;}
 }
 
+/* Título da logo some e a imagem da logo centralizada encima do formulário em telas menores do que 600px */
 @media screen and (max-width: 600px){
 	.imagem-logo {display: flex; position: relative; left: 0px;}
 	.logo > h1{display: none; width: auto; height: auto;}

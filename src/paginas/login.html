@@ -4,44 +4,149 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="C:\Users\pehhe\OneDrive\Área de Trabalho\Repositório\pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem\src\estilo\loginstyle.css">
-	<title>Cadastre-se ou Faça seu Login</title>
-	<link rel="stylesheet" type="text/css" href="../estilo/loginstyle.css">
+	<link rel="stylesheet" type="text/css" href="..\estilo\loginstyle.css">
+
+	<title>Faça seu Login</title>
 </head>
 <body>
 
-	<div class="main-login">
+<div class="main-login">
 
-		<div class="login-left">
+	<div class="login-left">
 			
-				<div class="logo">
-					<h1>Procurando Alguém?</h1>
-					<img src="../imagens/imagem-logo.svg" class="imagem-logo" alt="Imagem da Logo">
-				</div>
+			<div class="logo">
+				<h1>Procurando Alguém?</h1>
+				<img src="..\imagens\imagem-logo.svg" class="imagem-logo" alt="Imagem da Logo">
+			</div>
 
-			<img src="../imagens/imagem-login.svg" class="imagem-login" alt="Imagem de Login">
-		</div>
+		<img src="..\imagens\imagem-login.svg" class="imagem-login" alt="Imagem de Login">
+	</div>
 
-		<div class="login-right">
+	
+	<div class="login-right">
 
-			<div class="login-card">
-				<h1>LOGIN</h1>
+		
 
-				<div class="textfield">
-					<label for="usuario">Digite seu Usuário</label>
-					<input type="text" name="usuario" placeholder="Usuário">
-				</div>
+			<div class="form-group login-card">
 
-				<div class="textfield">
-					<label for="senha">Digite sua Senha</label>
-					<input type="password" name="senha" placeholder="Senha">					
-				</div>
+				<form id="login-form" class="textfield-login" method="post" onsubmit="loginUser (this)">		
+					<h1 class="titulo-login">LOGIN</h1>
+					
+					<div class="form-group textfield-login">
+						<label for="login" class="text-info">Digite seu Usuário</label>
+						<input type="text" name="username" id="login" placeholder="Usuário" class="form-control">
+					</div>
 
-				<button class="button-login">LOGIN</button>
+					<div class="form-group textfield-login">
+						<label for="senha" class="text-info">Digite sua Senha</label>
+						<input type="password" name="password" id="senha" placeholder="Senha" class="form-control">					
+					</div>
+
+					<div class="form-group text-right">
+						<input type="submit" name="submit" id="login-form" value="LOGIN" class="btn btn-info btn-md btn-login">
+					</div>
+				</form>
+					<button type="button" class="btn btn-info btn-newuser" data-toggle="modal" data-target="#loginModal">Cadastro de Novo Usuário</button>
 
 			</div>
-		</div>
+
+
+
+			<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="loginModalLabel">Menu de Cadastro</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div id="login-box" class="col-md-12">
+								<form id="login-form" class="form" method="post" onsubmit="addUser (this)"> 
+									<h3 class="text-info-modal">Cadastro de Novo Usuário</h3>
+									<div class="form-group">
+										<label for="login" class="text-info-modal">Insira seu Usuário</label><br>
+										<input type="text" name="txt_login" id="txt_login" class="form-control-cadastro">
+									</div>
+									<div class="form-group">
+										<label for="nome" class="text-info-modal">Insira seu Nome Completo</label><br>
+										<input type="text" name="txt_nome" id="txt_nome" class="form-control-cadastro">
+									</div>
+									<div class="form-group">
+										<label for="email" class="text-info-modal">Insira seu E-Mail</label><br>
+										<input type="text" name="txt_email" id="txt_email" class="form-control-cadastro">
+									</div>
+									<div class="form-group">
+										<label for="senha" class="text-info-modal">Insira sua Senha</label><br>
+										<input type="password" name="txt_senha" id="txt_senha" class="form-control-cadastro">
+									</div>
+									<div class="form-group">
+										<label for="senha2" class="text-info-modal">Confirme a sua Senha</label><br>
+										<input type="password" name="txt_senha2" id="txt_senha2" class="form-control-cadastro">
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary btn-cancel" data-dismiss="modal">Cancelar Cadastro</button>
+							<button type="button" id="btn-salvar" class="btn btn-info btn-send">Enviar Cadastro</button>
+						</div>
+					</div>
+				</div>
+			</div>
 	</div>
+</div>	
+
+
+
+	<script src="..\js\login.js"></script>
+	<script>
+
+		function processaFormLogin (event) {
+			event.preventDefault ();
+
+			var username = document.getElementById('login').value;
+			var password = document.getElementById('senha').value;
+
+			resultadoLogin = loginUser (username, password);
+			if (resultadoLogin) {
+				alert ('Login Efetuado com Sucesso!')
+				location.href = 'login-index.html';
+			}
+			else{
+				alert ('Usuário ou Senha incorretos!')
+			}
+		}
+		function salvaLogin (event){
+			event.preventDefault ();
+
+			let login = document.getElementById ('txt_login').value;
+			let nome = document.getElementById ('txt_nome').value;
+			let email = document.getElementById ('txt_email').value;
+			let senha = document.getElementById ('txt_senha').value;
+			let senha2 = document.getElementById ('txt_senha2').value;
+
+			if (senha!=senha2){
+				alert ('As senhas informadas são inválidas');
+				return
+			}
+
+
+			addUser (login, nome, email, senha, senha2);
+			alert ('Cadastro de Usuário Concluído. Prossiga com o login para');
+
+			document.getElementById ('loginModal').style.display = 'none';
+		}
+
+		document.getElementById ('login-form').addEventListener ('submit', processaFormLogin);
+		document.getElementById ('btn-salvar').addEventListener ('click', salvaLogin);
+
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
 
 </body>
 </html>
