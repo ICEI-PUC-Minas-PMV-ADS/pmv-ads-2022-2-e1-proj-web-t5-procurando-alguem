@@ -23,7 +23,7 @@
 	</div>
 
 	
-	<div class="login-right" id="login">
+	<div class="login-right">
 
 		
 
@@ -43,7 +43,7 @@
 					</div>
 
 					<div class="form-group text-right">
-						<input type="submit" name="submit" id="login" value="LOGIN" class="btn btn-info btn-md btn-login">
+						<input type="submit" name="submit" id="login-form" value="LOGIN" class="btn btn-info btn-md btn-login">
 					</div>
 				</form>
 					<button type="button" class="btn btn-info btn-newuser" data-toggle="modal" data-target="#loginModal">Cadastro de Novo Usuário</button>
@@ -63,7 +63,7 @@
 						</div>
 						<div class="modal-body">
 							<div id="login-box" class="col-md-12">
-								<form id="login-form" class="form" method="post" onsubmit="loginUser (this)"> 
+								<form id="login-form" class="form" method="post" onsubmit="addUser (this)"> 
 									<h3 class="text-info-modal">Cadastro de Novo Usuário</h3>
 									<div class="form-group">
 										<label for="login" class="text-info-modal">Insira seu Usuário</label><br>
@@ -109,12 +109,13 @@
 			var username = document.getElementById('login').value;
 			var password = document.getElementById('senha').value;
 
-			resultadoLogin = loginUser (login, senha);
+			resultadoLogin = loginUser (username, password);
 			if (resultadoLogin) {
-				window.location.href = 'login-index.html';
+				alert ('Login Efetuado com Sucesso!')
+				location.href = 'login-index.html';
 			}
 			else{
-				alert ('Usuário ou Senha incorretos')
+				alert ('Usuário ou Senha incorretos!')
 			}
 		}
 		function salvaLogin (event){
@@ -132,7 +133,7 @@
 			}
 
 
-			addUser (nome, email, senha, senha2, login);
+			addUser (login, nome, email, senha, senha2);
 			alert ('Cadastro de Usuário Concluído. Prossiga com o login para');
 
 			document.getElementById ('loginModal').style.display = 'none';

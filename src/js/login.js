@@ -3,7 +3,7 @@
 
 
 // Página inicial de Login
-const LOGIN_URL = "..\paginas\login.html";
+const LOGIN_URL = "login.html";
 
 
 var db_usuarios = {};
@@ -71,7 +71,7 @@ function loginUser (login, senha) {
 
     for (var i = 0; i < db_usuarios.usuarios.length; i++) {
         var usuario = db_usuarios.usuarios[i];
-        
+
         // Se encontrou login, carrega usuário e salva
         if (login == usuario.login && senha == usuario.senha) {
             usuarioCorrente.id = usuario.id;
@@ -98,11 +98,11 @@ function logoutUser () {
     window.location = LOGIN_URL;
 }
 
-function addUser (nome, login, senha, email) {
+function addUser (login, nome, email, senha, senha2 ) {
     
     // Cria um objeto de novo usuario 
     let newId = generateUUID ();
-    let usuario = { "id": newId, "login": login, "senha": senha, "nome": nome, "email": email };
+    let usuario = { "id": newId, "login": login, "senha": senha, "senha2":senha2, "nome": nome, "email": email };
     
     // Adiciona o novo usuário ao banco de dados
     db_usuarios.usuarios.push (usuario);
