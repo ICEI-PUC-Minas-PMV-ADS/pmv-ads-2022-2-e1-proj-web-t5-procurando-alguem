@@ -1,0 +1,133 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Desaparecidos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <br>
+        <div class="row">
+            <div class="col-11">
+                <h1>Listagem de desaparecidos</h1>
+            </div>
+            <div class="col-1">
+                <a href="cadastro-desaparecido.html" class="btn btn-primary">Inserir</a>
+            </div>
+            <div>
+
+                <br>
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Idade</th>
+                            <th scope="col">Sexo</th>
+                            <th scope="col">Cor/Raça</th>
+                            <th scope="col">Altura</th>
+                            <th scope="col">Cidade</th>
+                            <th scope="col">Mais Informações</th>
+                            <th scope="col">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="Tabela-Conteudo">
+                    </tbody>
+                </table>
+
+            </div>
+
+</body>
+
+<script type="application/javascript">
+    window.onload = (event) => {
+        //window.onload acontece quando a tela é carregada
+        //Buscando banco de dados do localstorage.
+        //Se não existir ou estivar vazio será mostrado uma mensagem que não existem notícias
+        //Se existir registros será mostrado uma listagem de notícas
+        let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
+
+        if (!db_desaparecidos || db_desaparecidos.length == 0) {
+            let tabelaConteudo = document.getElementById("Tabela-Conteudo");
+            tabelaConteudo.innerHTML = "<tr><td colspan='9' class='text-center'>Nenhum desaparecido cadastrado atualmente</td></tr>";
+        }
+        else {
+            let tabelaConteudo = document.getElementById("Tabela-Conteudo");
+
+            let conteudoHTML = "";
+            for (let i = 0; i <= db_desaparecidos.length - 1; i++) {
+                conteudoHTML += "<tr>";
+                conteudoHTML += `<td>${db_desaparecidos[i].id}</td>`;
+                conteudoHTML += `<td>${db_desaparecidos[i].nome}</td>`;
+                conteudoHTML += `<td>${db_desaparecidos[i].idade}</td>`;
+                conteudoHTML += `<td>${db_desaparecidos[i].sexo}</td>`;
+                conteudoHTML += `<td>${db_desaparecidos[i].corRaca}</td>`;
+                conteudoHTML += `<td>${db_desaparecidos[i].altura}</td>`;
+                conteudoHTML += `<td>${db_desaparecidos[i].cidade}</td>`;
+                conteudoHTML += `<td>${db_desaparecidos[i].maisInformacoes}</td>`;
+                conteudoHTML +=
+                    `<td>
+                            <a href='editar-desaparecido.html?inputId=${db_desaparecidos[i].id}' class="btn btn-info">Editar</a>
+                            <a href='excluir-desaparecido.html?inputId=${db_desaparecidos[i].id}' class="btn btn-danger">Excluir</a>
+                        </td>`;
+                conteudoHTML += "</tr>";
+            }
+
+            tabelaConteudo.innerHTML = conteudoHTML;
+        }
+    };
+</script>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

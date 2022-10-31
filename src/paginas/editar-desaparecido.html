@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="../estilo/style.css">
 
 
-  <title>Cadastro desaparecido</title>
+  <title>Editar desaparecido</title>
 
 </head>
 
@@ -70,16 +70,15 @@
               <li><a class="dropdown-item" href="depoimento.html">Depoimentos</a></li>
               <li><a class="dropdown-item" href="#">Configurações</a></li>
 
-            </ul>
+
           </li>
-          
         </ul>
       </div>
     </div>
   </nav>
 
   <div class="titulo-caixa">
-    <p>Insira as Informações do Desaparecido que você deseja Cadastrar no Site</p>
+    <p>Insira as Informações do Desaparecido que você deseja editar</p>
   </div>
 
   <section class="caixa-central">
@@ -129,10 +128,10 @@
           pessoa desaparecida:</label>
         <button id="botao-foto" name="botao-foto">Buscar arquivo<img id="imagem-botao"
             src="../imagens/imagem-botao-foto.svg" width="40">
-         <!-- <input type="file" id="myfile" name="myfile">-->
+          <input type="file" id="myfile" name="myfile">
 
-          <button class="enviar-cadastro" onclick="inserirDesaparecido()">Enviar cadastro</button>
-          <a href="lista-desaparecidos.html" class="botao-voltar">Voltar</a>
+          <button class="enviar-cadastro" onclick="editarDesaparecido()">Enviar cadastro</button>
+          <a href="lista_desaparecidos.html" class="botao-voltar">Voltar</a>
 
 
 
@@ -140,9 +139,33 @@
 
 </body>
 <script type="application/javascript">
-  function inserirDesaparecido() {
+window.onload = (event) => {
+    //window.onload acontece quando a tela é carregada
+    //Pega o id recebido na url
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    let id = urlParams.get('inputId');
+
+    //Busca desaparecido no banco de dados do localStorage, usando o id como chave, colocando o conteúdo em um array
+    let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
+    let desaparecido = db_desaparecidos.find(x => x.id == id);
+
+    //Preenche os campos do formulário
+    document.getElementById("inputId").value = desaparecido.id;
+    document.getElementById("inputNome").value = desaparecido.nome;
+    document.getElementById("inputIdade").value = desaparecido.idade;
+    document.getElementById("inputSexo").value = desaparecido.sexo;
+    document.getElementById("inputCorRaca").value = desaparecido.corRaca;
+    document.getElementById("inputAltura").value = desaparecido.altura;
+    document.getElementById("inputCidade").value = desaparecido.cidade;
+    document.getElementById("maisInformacoes").value = desaparecido.maisInformacoes;
+
+
+}
+
+function editarDesaparecido() {
     // Validação se os campos estão preenchidos
-    let id = 0;
+    const id = parseInt(document.getElementById("inputId").value);
     const nome = document.getElementById("inputNome").value;
     const idade = document.getElementById("inputIdade").value;
     const sexo = document.getElementById("inputSexo").value;
@@ -162,18 +185,10 @@
       return;
     }
 
-    //Buscando banco de dados do localstorage. Caso não exista, será inicializado com um array vazio
-    //Caso exista, prepara o id para a nova notícia, pegando o maior id existente + 1
+    //Obtendo o banco de dados do localStorage, colocando o conteúdo em um array
     var db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
-    if (!db_desaparecidos || db_desaparecidos.length == 0) {
-      db_desaparecidos = [];
-      id = 1;
-    }
-    else {
-      id = db_desaparecidos[db_desaparecidos.length - 1].id + 1;
-    }
 
-    //Criando desaparecido para inserir no banco de dados do localstorage
+    //Montando objeto de desaparecido para alterado no banco de dados do localstorage
     const desaparecido = {
       "id": id,
       "nome": nome,
@@ -185,16 +200,18 @@
       "maisInformacoes": maisInformacoes
     };
 
-    //Inserindo desaparecido no array de notícias buscado anteriormente
-    db_desaparecidos.push(desaparecido);
+    //Editando desaparecido no array de desaparecidos buscado anteriormente
+    index = db_desaparecidos.findIndex((desaparecido => desaparecido.id == id));
+    db_desaparecidos[index] = desaparecido;
 
     //Atualizando banco de dados com o array de desaparecidos atualizado
     localStorage.setItem('db_desaparecidos', JSON.stringify(db_desaparecidos));
-    alert("Desaparecido incluído com sucesso!");
+    alert("Desaparecido editado com sucesso!");
 
     //Redirecionando para a página de listagem
     window.location.href = "lista-desaparecidos.html";
   }
 </script>
+  
 
 </html>

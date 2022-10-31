@@ -4,18 +4,320 @@ body {
     font-weight: bold;
     text-align: center;
     color: #ffffff;
+    height: 100%;
+}
+
+/* Página cadastro desaparecidos começa*/
+.imagem-logo {
+    float: auto;
+    width: 150px;
+    position: relative;
+    top: -30px;
+    background-color: #2f2841;
+    border-radius: 100px;
+    box-shadow: 100px 0px 100px #00000056;
+    left: 50px;
+    display: flex;
+}
+
+.p1 > h1 {
+    font-size: 25px;
+    font-family: Karma;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    position: relative;
+    top: 80px;
+    left: 175px;
+    background-color: #2f2841;
+    width: 280px;
+    border-radius: 30px;
+    color: #00FF88;
+    padding: 10px 10px;
+    padding-left: 40px;
 }
 
 /* Página cadastro desaparecidos */
 .barra {
     font-size: 25px;
-    
-    
 }
+
+.menu-encontrado {
+    padding: 23px 23px;
+}
+
 .menor {
     font-size: 15px;
-    
 }
+
+.titulo-caixa {
+    color: #00FF88;
+    background-color: #2F2841;
+    border-radius: 25px;
+    padding: 3px 5px 1px 5px;
+    width: 650px;
+    position: relative;
+    left: 390px;
+    top: 10px;
+    font-size: 20px;
+    box-shadow: 7px 7px #161220;
+    z-index: 1;
+}
+
+.caixa-central {
+    background-color: #2F2841;
+    border-radius: 15px;
+    padding: 0px 15px 0px 15px;
+    margin: 50px;
+    box-shadow: 15px 15px #161220;
+    height: 750px;
+    position: relative;
+    top: -70px;
+}
+
+.nome-desaparecido > label {
+    font-size: 18px;
+    position: relative;
+    top: 35px;
+    left: 34px;
+}
+
+.nome-desaparecido > input {
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #2F2841;
+    color: #ffffff;
+    font-size: 12pt;
+    box-shadow: 0px 5px 80px #000000;
+    outline: none;
+    box-sizing: border-box;
+    position: relative;
+    top: 30px;
+    left: 27px;
+}
+
+.label1 {
+    font-size: 18px;
+    position: relative;
+    top: 25px;
+    left: -160px;
+}
+
+.input1 {
+    width: 90px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #2F2841;
+    color: #ffffff;
+    font-size: 12pt;
+    box-shadow: 0px 5px 80px #000000;
+    outline: none;
+    box-sizing: border-box;
+    position: relative;
+    top: 65px;
+    left: -190px;
+}
+
+.label2 {
+    font-size: 18px;
+    position: relative;
+    top: 25px;
+    left: -165px;
+}
+
+.input2 {
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #2F2841;
+    color: #ffffff;
+    font-size: 12pt;
+    box-shadow: 0px 5px 80px #000000;
+    outline: none;
+    box-sizing: border-box;
+    position: relative;
+    top: 65px;
+    left: -220px;
+}
+
+.label3 {
+    font-size: 18px;
+    position: relative;
+    top: 25px;
+    left: -200px;
+}
+
+.input3 {
+    width: 130px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #2F2841;
+    color: #ffffff;
+    font-size: 12pt;
+    box-shadow: 0px 5px 80px #000000;
+    outline: none;
+    box-sizing: border-box;
+    position: relative;
+    top: 65px;
+    left: -250px;
+}
+
+.label4 {
+    font-size: 18px;
+    position: relative;
+    top: 25px;
+    left: -235px;
+}
+
+.input4 {
+    width: 130px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #2F2841;
+    color: #ffffff;
+    font-size: 12pt;
+    box-shadow: 0px 5px 80px #000000;
+    outline: none;
+    box-sizing: border-box;
+    position: relative;
+    top: 65px;
+    left: -320px;
+}
+
+.label5 {
+    font-size: 18px;
+    position: relative;
+    top: 25px;
+    left: -300px;
+}
+
+.input5 {
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #2F2841;
+    color: #ffffff;
+    font-size: 12pt;
+    box-shadow: 0px 5px 80px #000000;
+    outline: none;
+    box-sizing: border-box;
+    position: relative;
+    top: 65px;
+    left: -365px;
+}
+
+.label6 {
+    font-size: 18px;
+    position: relative;
+    top: 25px;
+    left: -350px;
+}
+
+.input6 {
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #2F2841;
+    color: #ffffff;
+    font-size: 12pt;
+    box-shadow: 0px 5px 80px #000000;
+    outline: none;
+    box-sizing: border-box;
+    position: relative;
+    top: 65px;
+    left: -415px;
+}
+
+.label7 {
+    font-size: 18px;
+    position: absolute;
+    top: 230px;
+    left: 48px;
+}
+
+#maisInformacoes {
+    width: 90%;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #2F2841;
+    color: #ffffff;
+    font-size: 12pt;
+    box-shadow: 0px 5px 80px #000000;
+    position: relative;
+    top: 116px;
+    left: -40px;
+    resize: none;
+}
+
+.mensagem-botao-foto {
+    font-size: 18px;  
+    position: relative;
+    top: 80px;
+    left: -30px;
+}
+
+#botao-foto {
+    width: 250px;
+    height: 70px;
+    border: none;
+    border-radius: 10px;
+    margin: 25px;
+    padding: 8px;
+    background-color: #00ff88;
+    color: #000;
+    font-size: 20px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px 1px 5px #000;
+    position: relative;
+    top: 125px;
+    left: -600px;
+}
+
+.enviar-cadastro {
+    width: 250px;
+    height: 70px;
+    border: none;
+    border-radius: 10px;
+    margin: 25px;
+    padding: 8px;
+    background-color: #00ff88;
+    color: #000;
+    font-size: 20px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px 1px 5px #000;
+    position: relative;
+    top: 210px;
+    left: -465px;
+}
+
+.botao-voltar {
+    width: 250px;
+    height: 70px;
+    border: none;
+    border-radius: 10px;
+    margin: 25px;
+    padding: 8px;
+    background-color: #6a6f6d;
+    color: #000;
+    font-size: 20px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px 1px 5px #000;
+    position: relative;
+    top: 280px;
+    left: -675px;
+}
+/* Página cadastro desaparecidos termina aqui*/
 
 a {
     font-family: Karma;
@@ -78,7 +380,6 @@ button {
 
 /* Modelo 1 */
 .textfield {
-    /* width: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,7 +388,6 @@ button {
 }
 
 .textfield > input {
-    /* width: 100%; */
     border: none;
     border-radius: 10px;
     padding: 15px;
@@ -98,15 +398,6 @@ button {
     outline: none;
     box-sizing: border-box;
 }
-
-/* .textfield > label{
-	color: #ffffff;
-	margin-bottom: 10px;
-}
-
-.textfield > input::placeholder{
-	color: #ffffff;
-} */
 
 /* Modelo 2 */
 .section-content {
@@ -213,7 +504,7 @@ button {
 
 .links-drop:hover, .dropdown:hover .dropbtn {
     background-color: #161220; 
-  }
+}
 
 .links-menu:hover{
     background-color: #161220;
@@ -221,7 +512,7 @@ button {
     padding: 5px 5px;  
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover { background-color: #f1f1f1; }
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -248,7 +539,7 @@ li.dropdown {
     text-align: left;    
 }
 
- .dropbtn {
+.dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
@@ -256,5 +547,63 @@ li.dropdown {
     width: 100px;
     text-decoration: none;
     border-radius: 15px 15px 0px 0px;
-  }
+}
 /* Configurações de Estilo do Botão "Meu Perfil" com o DropDown (Termina Aqui)*/
+
+.section-desaparecido{
+    position: relative;
+    top: -80px;
+    background-color: #2F2841;
+    border-radius: 20px;
+    padding: 0px 15px 0px 15px;
+    margin: 50px;
+    box-shadow: 10px 10px #161220;
+    width: 87%;
+    height: 600px;
+}
+
+.colunas-desaparecido{
+    position: relative;
+    top: 10px;
+}
+
+.coluna-fotos{
+    width: 25%;
+    height: 480px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    background-color: #514869;
+    border-radius: 20px;
+}
+
+.coluna-infos{
+    width: 40%;
+    height: 480px;
+    background-color: #514869;
+    position: relative;
+    left: 480px; 
+    top: -500px; 
+    border-radius: 20px; 
+}
+
+.coluna-infos-compartilhadas{
+    width: 25%;
+    height: 480px;
+    background-color: #514869;
+    position: relative;
+    left: 1210px; 
+    top: -1000px;
+    border-radius: 20px;      
+}
+
+.all-btns{
+    position: relative;
+    top: 300px;
+}
+
+.lista_depoimentos{
+    position: relative;
+    left: -550px;
+    top: 50px;
+}
