@@ -75,7 +75,7 @@ body {
     padding: 0px 15px 0px 15px;
     margin: 50px;
     box-shadow: 15px 15px #161220;
-    height: 700px;
+    height: 750px;
     position: relative;
     top: -70px;
 }
@@ -105,7 +105,7 @@ body {
     font-size: 18px;
     position: relative;
     top: 25px;
-    left: -180px;
+    left: -160px;
 }
 .input1 {
     width: 90px;
@@ -120,14 +120,14 @@ body {
     box-sizing: border-box;
     position: relative;
     top: 65px;
-    left: -210px;
+    left: -190px;
 }
 
 .label2 {
     font-size: 18px;
     position: relative;
     top: 25px;
-    left: -190px;
+    left: -165px;
 }
 .input2 {
     width: 100px;
@@ -142,14 +142,14 @@ body {
     box-sizing: border-box;
     position: relative;
     top: 65px;
-    left: -245px;
+    left: -220px;
 }
 
 .label3 {
     font-size: 18px;
     position: relative;
     top: 25px;
-    left: -230px;
+    left: -200px;
 }
 .input3 {
     width: 130px;
@@ -164,7 +164,7 @@ body {
     box-sizing: border-box;
     position: relative;
     top: 65px;
-    left: -280px;
+    left: -250px;
 }
 
 .label4 {
@@ -259,7 +259,7 @@ body {
     font-size: 18px;  
     position: relative;
     top: 80px;
-    left: -90px;
+    left: -30px;
 }
 
 #botao-foto {
@@ -275,8 +275,8 @@ body {
     font-weight: bolder;
     -webkit-text-stroke: 1px 1px 5px #000;
     position: relative;
-    top: 135px;
-    left: -655px;
+    top: 165px;
+    left: -600px;
 }
 .enviar-cadastro {
     width: 250px;
