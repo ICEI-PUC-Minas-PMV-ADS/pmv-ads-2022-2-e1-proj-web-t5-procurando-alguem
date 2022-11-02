@@ -21,7 +21,7 @@
 
 
 
-  <link rel="stylesheet" href="../../estilo/style.css">
+  <link rel="stylesheet" href="../usuario/style.usuario.css">
 
 
   <title>Cadastro desaparecido</title>
@@ -32,25 +32,25 @@
 
   <nav class=" p1">
     <h1>Procurando Alguém?</h1>
-    <img src="../usuario/imagens/imagem-logo.svg" alt="Imagem da Logo">
-    
+    <img src="../usuario/imagens/imagem-logo.svg" class="imagem-logo" alt="Imagem da Logo">
+
   </nav>
 
   <nav class="navbar-expand-md barra">
     <div class="container-fluid">
 
-      <div class="nav">
+      <div class="nav ">
         <!--mudei de class="collapse navbar-collapse" id="navbarSupportedContent" e não mudou nada -->
 
         <ul class="navbar-nav ml-auto">
-          <!--tentei outras "classes", mas essa alinhou melhor -->
+          <!--tentei outras "classes", mas essa alinhou melhor inclui ml-auto e parte moveu para a direita, menos o dropdown-->
 
-          <li class="nav">
-            <!--mudei de class="nav-item" -->
+          <li class="nav-item">
+            <!--mudei de class="nav" -->
             <a class="nav-link menu-encontrado" aria-current="page" href="encontrados.html">Encontrados</a>
           </li>
-          <li class="nav">
-            <!--mudei de class="nav-item" -->
+          <li class="nav-item">
+            <!--mudei de class="nav" -->
 
             <a class="nav-link menu-encontrado" href="contato.html">Contato</a>
           </li>
@@ -59,7 +59,8 @@
           </li>
           <li class="nav-item dropdown menor">
             <a class="nav-item dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="../imagens/imagem-perfil.png" width="40" height="30"></br>Meu perfil</br>Login/Cadastro</a>
+              <img src="../usuario/imagens/imagem-perfil.png" width="40" height="30"></br>Meu
+              perfil</br>Login/Cadastro</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="meu-perfil.html">Meu Perfil</a></li>
               <li><a class="dropdown-item" href="login.html">Login</a></li>
@@ -73,18 +74,17 @@
 
             </ul>
           </li>
-          
+
         </ul>
       </div>
     </div>
   </nav>
-
   <div class="titulo-caixa">
     <p>Insira as Informações do Desaparecido que você deseja Cadastrar no Site</p>
   </div>
 
   <section class="caixa-central">
-    <!--Inclui começa aqui-->
+   
 
 
     <!--<form id="form-contato">-->
@@ -129,8 +129,8 @@
         <label class="mensagem-botao-foto" for="mensagem-botao-foto">Clique no botão abaixo para inserir uma foto da
           pessoa desaparecida:</label>
         <button id="botao-foto" name="botao-foto">Buscar arquivo<img id="imagem-botao"
-            src="../imagens/imagem-botao-foto.svg" width="40">
-         <!-- <input type="file" id="myfile" name="myfile">-->
+            src="../usuario/imagens/imagem-botao-foto.svg" width="40">
+          <!-- <input type="file" id="myfile" name="myfile">-->
 
           <button class="enviar-cadastro" onclick="inserirDesaparecido()">Enviar cadastro</button>
           <a href="lista-desaparecidos.html" class="botao-voltar">Voltar</a>
