@@ -26,36 +26,33 @@
 </head>
 
 <body>
-  <nav class=" p1">
+  <nav class="p1">
     <h1>Procurando Alguém?</h1>
-    <img src="../../imagens/imagem-logo.svg" class="imagem-logo" alt="Imagem da Logo">
+    <img src="../../imagens/imagem-logo.svg" class="imagem-logo-desaparecidos" alt="Imagem da Logo">
+  </nav>
 
- 
 
-  <nav class="navbar-expand-sm barra">
-    <div class="container-fluid justify-content-end">
-
+    <nav class="navbar-expand-sm barra">
+      <div class="container-fluid">
         <!--mudei de class="collapse navbar-collapse" id="navbarSupportedContent" e não mudou nada -->
 
         <ul class="nav">
           <!--tentei outras "classes", mas essa alinhou melhor inclui ml-auto e parte moveu para a direita, menos o dropdown-->
 
           <li class="nav-item">
-            <!--mudei de class="nav" -->
-            <a class="nav-link menu-encontrado" aria-current="page" href="encontrados.html">Encontrados</a>
-          </li>
-          <li class="nav-item">
-            <!--mudei de class="nav" -->
+            <a class="menu-procurando-cadastro" href="encontrados.html">Encontrados &emsp;</a></li>
 
-            <a class="nav-link menu-encontrado" href="contato.html">Contato</a>
-          </li>
           <li class="nav-item">
-            <a class="nav-link menu-encontrado" href="sobre.html">Sobre</a>
-          </li>
-          <li class="nav-item dropdown menor">
-            <a class="nav-item dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="menu-procurando-cadastro"  href="contato.html">Contato &emsp;</a></li>
+
+          <li class="nav-item">
+            <a class="menu-procurando-cadastro" href="sobre.html">Sobre</a></li>
+            
+          <li class="nav-item dropdown ">
+            <a class="nav-item dropdown-toggle menor-drop-cadastro" data-bs-toggle="dropdown" aria-expanded="false">
               <img src="../../imagens/imagem-perfil.png" width="40" height="30"></br>Meu
               perfil</br>Login/Cadastro</a>
+            
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="meu-perfil.html">Meu Perfil</a></li>
               <li><a class="dropdown-item" href="login.html">Login</a></li>
@@ -68,74 +65,74 @@
               <li><a class="dropdown-item" href="#">Configurações</a></li>
 
             </ul>
-          </li>
+          
 
         </ul>
       </div>
+
+    </nav>
+
+    <div class="titulo-caixa">
+      <p>Insira as Informações do Desaparecido que você deseja Cadastrar no Site</p>
     </div>
-  </nav>
 
-  <div class="titulo-caixa">
-    <p>Insira as Informações do Desaparecido que você deseja Cadastrar no Site</p>
-  </div>
-
-  <section class="caixa-central">
+    <section class="caixa-central">
 
 
 
-    <!--<form id="form-contato">-->
+      <!--<form id="form-contato">-->
 
-    <div class="form-group">
-      <div class="informacoes-especificas">
-        <div class="nome-desaparecido text-md-left">
-          <label for="inputNome">Digite o nome do Desaparecido:</label></br>
-          <input type="text" name="inputNome" id="inputNome" placeholder="Nome do Desaparecido">
+      <div class="form-group">
+        <div class="informacoes-especificas">
+          <div class="nome-desaparecido text-md-left">
+            <label for="inputNome">Digite o nome do Desaparecido:</label></br>
+            <input type="text" name="inputNome" id="inputNome" placeholder="Nome do Desaparecido">
+          </div>
+
+
+
+          <label class="label1" for="inputId">Id</label>
+          <input class="input1" type="number" name="inputId" id="inputId" placeholder="ID" disabled>
+
+
+          <label class="label2" for="inputIdade">Idade:</label>
+          <input class="input2" type="number" min="0" name="inputIdade" id="inputIdade" placeholder="Idade">
+
+
+          <label class="label3" for="inputSexo">Sexo:</label>
+          <input class="input3" type="text" name="inputSexo" id="inputSexo" placeholder="Sexo">
+
+
+          <label class="label4" for="inputCorRaca">Cor/Raça:</label>
+          <input class="input4" type="text" name="inputCorRaca" id="inputCorRaca" placeholder="cor/raça">
+
+
+          <label class="label5" for="inputAltura">Altura:</label>
+          <input class="input5" type="text" name="inputAltura" id="inputAltura" placeholder="Altura">
+
+          <label class="label6" for="inputCidade">Cidade:</label>
+          <input class="input6" type="text" name="inputCidade" id="inputCidade" placeholder="Cidade">
+
+
+          <label class="label7" for="maisInformacoes">Mais Informações:</label>
+          <textarea type="text" name="maisInformacoes" id="maisInformacoes" cols="10" maxlength="800"
+            placeholder="Digite nesse campo informações adicionais como: medicamentos essenciais ou alguma informação importante e relevante sobre o Desaparecido."></textarea>
+
+
+          <label class="mensagem-botao-foto" for="mensagem-botao-foto">Clique no botão abaixo para inserir uma foto da
+            pessoa desaparecida:</label>
+          <button id="botao-foto" name="botao-foto">Buscar arquivo<img id="imagem-botao"
+              src="../../imagens/imagem-botao-foto.svg" width="40">
+            <!-- <input type="file" id="myfile" name="myfile">-->
+
+            <button class="enviar-cadastro" onclick="inserirDesaparecido()">Enviar cadastro</button>
+            <a href="lista-desaparecidos.html" class="botao-voltar">Voltar</a>
+
+
+
         </div>
-
-
-
-        <label class="label1" for="inputId">Id</label>
-        <input class="input1" type="number" name="inputId" id="inputId" placeholder="ID" disabled>
-
-
-        <label class="label2" for="inputIdade">Idade:</label>
-        <input class="input2" type="number" min="0" name="inputIdade" id="inputIdade" placeholder="Idade">
-
-
-        <label class="label3" for="inputSexo">Sexo:</label>
-        <input class="input3" type="text" name="inputSexo" id="inputSexo" placeholder="Sexo">
-
-
-        <label class="label4" for="inputCorRaca">Cor/Raça:</label>
-        <input class="input4" type="text" name="inputCorRaca" id="inputCorRaca" placeholder="cor/raça">
-
-
-        <label class="label5" for="inputAltura">Altura:</label>
-        <input class="input5" type="text" name="inputAltura" id="inputAltura" placeholder="Altura">
-
-        <label class="label6" for="inputCidade">Cidade:</label>
-        <input class="input6" type="text" name="inputCidade" id="inputCidade" placeholder="Cidade">
-
-
-        <label class="label7" for="maisInformacoes">Mais Informações:</label>
-        <textarea type="text" name="maisInformacoes" id="maisInformacoes" cols="10" maxlength="800"
-          placeholder="Digite nesse campo informações adicionais como: medicamentos essenciais ou alguma informação importante e relevante sobre o Desaparecido."></textarea>
-
-
-        <label class="mensagem-botao-foto" for="mensagem-botao-foto">Clique no botão abaixo para inserir uma foto da
-          pessoa desaparecida:</label>
-        <button id="botao-foto" name="botao-foto">Buscar arquivo<img id="imagem-botao"
-            src="../../imagens/imagem-botao-foto.svg" width="40">
-          <!-- <input type="file" id="myfile" name="myfile">-->
-
-          <button class="enviar-cadastro" onclick="inserirDesaparecido()">Enviar cadastro</button>
-          <a href="lista-desaparecidos.html" class="botao-voltar">Voltar</a>
-
-
-
       </div>
-    </div>
-  </section>
+    </section>
 
 </body>
 <script type="application/javascript">
