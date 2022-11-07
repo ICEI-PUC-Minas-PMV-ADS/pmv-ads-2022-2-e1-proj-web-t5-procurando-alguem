@@ -17,6 +17,10 @@ body {
     position: relative;
     left: 40px;
 }
+.subir-cad-desap-sobre {
+    position: relative;
+    top: 20px;
+}
 /* Página cadastro desaparecidos começa*/
 .imagem-logo-desaparecidos {
     float: auto;
