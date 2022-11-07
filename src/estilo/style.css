@@ -21,6 +21,18 @@ body {
     position: relative;
     top: 20px;
 }
+.menu-procurando-lista {
+    font-size: 25px;
+    position: relative;
+    top: 41px;
+    left: 400px;
+}
+.menor-drop-lista {
+    font-size: medium;
+    position: relative;
+    left: 147px;
+    top: 11px;
+}
 /* Página cadastro desaparecidos começa*/
 .imagem-logo-desaparecidos {
     float: auto;
