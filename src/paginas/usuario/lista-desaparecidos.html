@@ -28,86 +28,94 @@
     <h1>Procurando Alguém?</h1>
     <img src="../../imagens/imagem-logo.svg" class="imagem-logo-todas" alt="Imagem da Logo">
 
+  </nav>
+
+  <nav class="navbar-expand-sm barra">
+    <div class="container-fluid">
+      <!--mudei de class="collapse navbar-collapse" id="navbarSupportedContent" e não mudou nada -->
+
+      <ul class="nav barra-total">
+        <!--tentei outras "classes", mas essa alinhou melhor inclui ml-auto e parte moveu para a direita, menos o dropdown-->
+
+        <li class="nav-item space-menu">
+          <a class="nav-item" href="encontrados.html">Encontrados</a>
+        </li>
+
+        <li class="nav-item space-menu">
+          <a class="nav-item" href="contato.html">Contato</a>
+        </li>
+
+        <li class="nav-item space-menu">
+          <a class="nav-item" href="sobre.html">Sobre</a>
+        </li>
+
+        <li class="nav-item dropdown ">
+          <a class="nav-item dropdown-toggle menor-drop" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="../../imagens/imagem-perfil.png" width="40" height="30"></br>Meu
+            perfil</br>Login/Cadastro</a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="meu-perfil.html">Meu Perfil</a></li>
+            <li><a class="dropdown-item" href="login.html">Login</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="cadastra-se.html">Cadastro</a></li>
+            <li><a class="dropdown-item" href="chat-e-amigos.html">Chat e Amigos</a></li>
+            <li><a class="dropdown-item" href="depoimento.html">Depoimentos</a></li>
+            <li><a class="dropdown-item" href="#">Configurações</a></li>
+
+          </ul>
+        </li>
 
 
-    <nav class="navbar-expand-sm barra">
-      <div class="container-fluid">
-        <!--mudei de class="collapse navbar-collapse" id="navbarSupportedContent" e não mudou nada -->
+      </ul>
+    </div>
 
-        <ul class="nav barra-total">
-          <!--tentei outras "classes", mas essa alinhou melhor inclui ml-auto e parte moveu para a direita, menos o dropdown-->
+  </nav>
 
-          <li class="nav-item li-menu">
-            <a class="menu-procurando-lista" href="encontrados.html">Encontrados</a>
-          </li>
-
-          <li class="nav-item li-menu">
-            <a class="menu-procurando-lista" href="contato.html">Contato</a>
-          </li>
-
-          <li class="nav-item li-menu">
-            <a class="menu-procurando-lista" href="sobre.html">Sobre</a>
-          </li>
-
-          <li class="nav-item dropdown ">
-            <a class="nav-item dropdown-toggle menor-drop-lista" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="../../imagens/imagem-perfil.png" width="40" height="30"></br>Meu
-              perfil</br>Login/Cadastro</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="meu-perfil.html">Meu Perfil</a></li>
-              <li><a class="dropdown-item" href="login.html">Login</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="cadastra-se.html">Cadastro</a></li>
-              <li><a class="dropdown-item" href="chat-e-amigos.html">Chat e Amigos</a></li>
-              <li><a class="dropdown-item" href="depoimento.html">Depoimentos</a></li>
-              <li><a class="dropdown-item" href="#">Configurações</a></li>
-
-            </ul>
-
-
-
-        </ul>
-      </div>
-
-    </nav>
-
+  <div class="titulo-caixa">
+    <p>Sua lista de Desaparecidos</p>
+  </div>
+  <section class="caixa-central">
 
     <div class="container">
-
+      
+      <!---
       <br>
       <div class="row">
         <div class="col-11">
           <h1>Listagem de desaparecidos</h1>
-        </div>
-        <div class="col-1">
-          <a href="cadastro-desaparecido.html" class="btn btn-primary">Inserir</a>
-        </div>
-        <div>
+        </div>-->
 
-          <br>
-
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th scope="col">Id</th>
-                <th scope="col">Nome</th>
-                <th scope="col">Idade</th>
-                <th scope="col">Sexo</th>
-                <th scope="col">Cor/Raça</th>
-                <th scope="col">Altura</th>
-                <th scope="col">Cidade</th>
-                <th scope="col">Mais Informações</th>
-                <th scope="col">Ações</th>
-              </tr>
-            </thead>
-            <tbody id="Tabela-Conteudo">
-            </tbody>
-          </table>
-
-        </div>
+      <div class="inserir-lista">
+        <a href="cadastro-desaparecido.html" class="btn btn-primary">Inserir</a>
       </div>
+      <div>
+
+        <br>
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Idade</th>
+              <th scope="col">Sexo</th>
+              <th scope="col">Cor/Raça</th>
+              <th scope="col">Altura</th>
+              <th scope="col">Cidade</th>
+              <th scope="col">Mais Informações</th>
+              <th scope="col">Ações</th>
+            </tr>
+          </thead>
+          <tbody id="Tabela-Conteudo">
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </section>
 </body>
 
 <script type="application/javascript">

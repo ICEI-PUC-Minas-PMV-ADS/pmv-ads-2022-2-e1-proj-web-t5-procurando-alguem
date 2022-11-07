@@ -25,116 +25,122 @@
 </head>
 
 <body>
-
   <nav class="p1">
     <h1>Procurando Alguém?</h1>
     <img src="../../imagens/imagem-logo.svg" class="imagem-logo-todas" alt="Imagem da Logo">
 
- 
-
-  <nav class="navbar-expand-sm barra">
-    <div class="container-fluid">
-        <!--mudei de class="collapse navbar-collapse" id="navbarSupportedContent" e não mudou nada -->
-
-        <ul class="nav">
-          <!--tentei outras "classes", mas essa alinhou melhor inclui ml-auto e parte moveu para a direita, menos o dropdown-->
-
-          <li class="nav-item li-menu">
-            <a class="menu-procurando-editar" href="encontrados.html">Encontrados &emsp;</a></li>
-
-          <li class="nav-item li-menu">
-            <a class="menu-procurando-editar" href="contato.html">Contato &emsp;</a></li>
-
-          <li class="nav-item li-menu">
-            <a class="menu-procurando-editar" href="sobre.html">Sobre</a></li>
-            
-          <li class="nav-item dropdown ">
-            <a class="nav-item dropdown-toggle menor-drop-editar" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="../../imagens/imagem-perfil.png" width="40" height="30"></br>Meu
-              perfil</br>Login/Cadastro</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="meu-perfil.html">Meu Perfil</a></li>
-              <li><a class="dropdown-item" href="login.html">Login</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="cadastra-se.html">Cadastro</a></li>
-              <li><a class="dropdown-item" href="chat-e-amigos.html">Chat e Amigos</a></li>
-              <li><a class="dropdown-item" href="depoimento.html">Depoimentos</a></li>
-              <li><a class="dropdown-item" href="#">Configurações</a></li>
-
-            </ul>
-          </li>
- 
-        </ul>
-      </div>
-    </div>
   </nav>
 
-  <div class="titulo-caixa">
-    <p>Insira as Informações do Desaparecido que você deseja editar</p>
-  </div>
+    <nav class="navbar-expand-sm barra">
+      <div class="container-fluid">
+        <!--mudei de class="collapse navbar-collapse" id="navbarSupportedContent" e não mudou nada -->
 
-  <section class="caixa-central">
-    <!--Inclui começa aqui-->
+        <ul class="nav barra-total">
+          <!--tentei outras "classes", mas essa alinhou melhor inclui ml-auto e parte moveu para a direita, menos o dropdown-->
 
+          <li class="nav-item space-menu">
+            <a class="nav-item" href="encontrados.html">Encontrados</a>
+          </li>
 
-    <!--<form id="form-contato">-->
+          <li class="nav-item space-menu">
+            <a class="nav-item" href="contato.html">Contato</a>
+          </li>
 
-    <div class="form-group">
-      <div class="informacoes-especificas">
-        <div class="nome-desaparecido text-md-left">
-          <label for="inputNome">Digite o nome do Desaparecido:</label></br>
-          <input type="text" name="inputNome" id="inputNome" placeholder="Nome do Desaparecido">
-        </div>
+          <li class="nav-item space-menu">
+            <a class="nav-item" href="sobre.html">Sobre</a>
+          </li>
 
+          <li class="nav-item dropdown ">
+            <a class="nav-item dropdown-toggle menor-drop" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="../../imagens/imagem-perfil.png" width="40" height="30"></br>Meu
+              perfil</br>Login/Cadastro</a>
+          
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="meu-perfil.html">Meu Perfil</a></li>
+            <li><a class="dropdown-item" href="login.html">Login</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="cadastra-se.html">Cadastro</a></li>
+            <li><a class="dropdown-item" href="chat-e-amigos.html">Chat e Amigos</a></li>
+            <li><a class="dropdown-item" href="depoimento.html">Depoimentos</a></li>
+            <li><a class="dropdown-item" href="#">Configurações</a></li>
 
+          </ul>
 
-        <label class="label1" for="inputId">Id</label>
-        <input class="input1" type="number" name="inputId" id="inputId" placeholder="ID" disabled>
+          </li>
 
-
-        <label class="label2" for="inputIdade">Idade:</label>
-        <input class="input2" type="number" min="0" name="inputIdade" id="inputIdade" placeholder="Idade">
-
-
-        <label class="label3" for="inputSexo">Sexo:</label>
-        <input class="input3" type="text" name="inputSexo" id="inputSexo" placeholder="Sexo">
-
-
-        <label class="label4" for="inputCorRaca">Cor/Raça:</label>
-        <input class="input4" type="text" name="inputCorRaca" id="inputCorRaca" placeholder="cor/raça">
-
-
-        <label class="label5" for="inputAltura">Altura:</label>
-        <input class="input5" type="text" name="inputAltura" id="inputAltura" placeholder="Altura">
-
-        <label class="label6" for="inputCidade">Cidade:</label>
-        <input class="input6" type="text" name="inputCidade" id="inputCidade" placeholder="Cidade">
-
-
-        <label class="label7" for="maisInformacoes">Mais Informações:</label>
-        <textarea type="text" name="maisInformacoes" id="maisInformacoes" cols="10" maxlength="800"
-          placeholder="Digite nesse campo informações adicionais como: medicamentos essenciais ou alguma informação importante e relevante sobre o Desaparecido."></textarea>
-
-
-        <label class="mensagem-botao-foto" for="mensagem-botao-foto">Clique no botão abaixo para inserir uma foto da
-          pessoa desaparecida:</label>
-          <button id="botao-foto" name="botao-foto">Buscar arquivo<img id="imagem-botao"
-            src="../../imagens/imagem-botao-foto.svg" width="40">
-          <!-- <input type="file" id="myfile" name="myfile">-->
-
-          <button class="enviar-cadastro" onclick="editarDesaparecido()">Enviar cadastro</button>
-          <a href="lista-desaparecidos.html" class="botao-voltar">Voltar</a>
-
-
-
+        </ul>
       </div>
+
+    </nav>
+
+
+    <div class="titulo-caixa">
+      <p>Insira as Informações do Desaparecido que você deseja editar</p>
     </div>
-  </section>
+
+    <section class="caixa-central">
+
+
+
+      <!--<form id="form-contato">-->
+
+      <div class="form-group">
+        <div class="informacoes-especificas">
+          <div class="nome-desaparecido text-md-left">
+            <label for="inputNome">Digite o nome do Desaparecido:</label></br>
+            <input type="text" name="inputNome" id="inputNome" placeholder="Nome do Desaparecido">
+          </div>
+
+
+
+          <label class="label1" for="inputId">Id</label>
+          <input class="input1" type="number" name="inputId" id="inputId" placeholder="ID" disabled>
+
+
+          <label class="label2" for="inputIdade">Idade:</label>
+          <input class="input2" type="number" min="0" name="inputIdade" id="inputIdade" placeholder="Idade">
+
+
+          <label class="label3" for="inputSexo">Sexo:</label>
+          <input class="input3" type="text" name="inputSexo" id="inputSexo" placeholder="Sexo">
+
+
+          <label class="label4" for="inputCorRaca">Cor/Raça:</label>
+          <input class="input4" type="text" name="inputCorRaca" id="inputCorRaca" placeholder="cor/raça">
+
+
+          <label class="label5" for="inputAltura">Altura:</label>
+          <input class="input5" type="text" name="inputAltura" id="inputAltura" placeholder="Altura">
+
+          <label class="label6" for="inputCidade">Cidade:</label>
+          <input class="input6" type="text" name="inputCidade" id="inputCidade" placeholder="Cidade">
+
+
+          <label class="label7" for="maisInformacoes">Mais Informações:</label>
+          <textarea type="text" name="maisInformacoes" id="maisInformacoes" cols="10" maxlength="800"
+            placeholder="Digite nesse campo informações adicionais como: medicamentos essenciais ou alguma informação importante e relevante sobre o Desaparecido."></textarea>
+
+
+          <label class="mensagem-botao-foto" for="mensagem-botao-foto">Clique no botão abaixo para inserir uma foto da
+            pessoa desaparecida:</label>
+          <button id="botao-foto" name="botao-foto">Buscar arquivo<img id="imagem-botao"
+              src="../../imagens/imagem-botao-foto.svg" width="40">
+            <!-- <input type="file" id="myfile" name="myfile">-->
+
+            <button class="enviar-cadastro" onclick="editarDesaparecido()">Enviar cadastro</button>
+            <a href="lista-desaparecidos.html" class="botao-voltar">Voltar</a>
+
+
+
+        </div>
+      </div>
+    </section>
 </body>
+
 <script type="application/javascript">
-window.onload = (event) => {
+  window.onload = (event) => {
     //window.onload acontece quando a tela é carregada
     //Pega o id recebido na url
     const queryString = window.location.search;
@@ -156,9 +162,9 @@ window.onload = (event) => {
     document.getElementById("maisInformacoes").value = desaparecido.maisInformacoes;
 
 
-}
+  }
 
-function editarDesaparecido() {
+  function editarDesaparecido() {
     // Validação se os campos estão preenchidos
     const id = parseInt(document.getElementById("inputId").value);
     const nome = document.getElementById("inputNome").value;
@@ -207,6 +213,6 @@ function editarDesaparecido() {
     window.location.href = "lista-desaparecidos.html";
   }
 </script>
-  
+
 
 </html>

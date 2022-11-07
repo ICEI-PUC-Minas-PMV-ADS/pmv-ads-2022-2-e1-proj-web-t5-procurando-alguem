@@ -21,17 +21,15 @@ body {
     position: relative;
     left: 40px;
 }
-.subir-cad-desap-sobre {
+.subir-sobre {
     position: relative;
     top: 20px;
 }
-.
+
 
 /* Página cadastro, lista, editar e excluir-desaparecidos começa*/
-.li-menu {
-    padding-left: 10px;
-}
-.menu-procurando {
+.space-menu {
+    padding-left: 20px;
     font-size: 25px;
     position: relative;
     top: 41px;
@@ -39,9 +37,10 @@ body {
 }
 
 .menor-drop {
-    font-size: medium;
+    padding-left: 30px;
+    font-size: 15px;
     position: relative;
-    left: 110px;
+    left: 160px;
     top: 15px;
 }
 .imagem-logo-todas {
@@ -55,32 +54,6 @@ body {
     box-shadow: 100px 0px 100px #00000056;
     display: flex;
 }
-
-/* Página cadastro, lista, editar e excluir-desaparecidos termina*/
-
-/* Página editar-desaparecidos começa*/
-/*
-.menu-procurando-editar {
-    font-size: 25px;
-    position: relative;
-    top: 40px;
-    left: 380px;
-}
-
-.menor-drop-editar {
-    font-size: medium;
-    position: relative;
-    left: 155px;
-}
-/* Página editar-desaparecidos termina*/
-/* Página cadastro-desaparecido começa*/
-/*
-.menor-drop-cadastro {
-    font-size: medium;
-    position: relative;
-    left: 160px;
-}
-
 .p1>h1 {
     font-size: 25px;
     font-family: Karma;
@@ -98,15 +71,10 @@ body {
     padding: 10px 10px;
     padding-left: 40px;
 }
-
-
-.menu-procurando-cadastro {
-    font-size: 25px;
+.inserir-lista {
     position: relative;
-    top: 40px;
-    left: 400px;
-
-}*/
+    left: 600px;
+}
 
 .titulo-caixa {
     color: #00FF88;
@@ -374,7 +342,7 @@ body {
     top: 280px;
     left: -675px;
 }
-/* Página cadastro desaparecidos termina aqui*/
+/* /* Página cadastro, lista, editar e excluir-desaparecidos termina aqui*/
 
 a {
     font-family: Karma;
