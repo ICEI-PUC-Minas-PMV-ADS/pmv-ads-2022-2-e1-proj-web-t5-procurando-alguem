@@ -112,8 +112,13 @@
 			resultadoLogin = loginUser (username, password);
 			if (resultadoLogin) {
 				alert ('Login Efetuado com Sucesso!')
-				location.href = 'login-index.html';
+				location.href = 'cadastro-desaparecido.html';
 			}
+			if (username == "admin" && password == "admin"){
+                localStorage.setItem("acesso", true);
+                alert ('Login Efetuado com Sucesso, Prossiga Admin!');
+                location.href = 'login-index.html';                
+            }
 			else{
 				alert ('Usuário ou Senha incorretos!')
 			}

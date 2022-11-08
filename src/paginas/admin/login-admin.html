@@ -11,29 +11,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Painel do Administrador</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="login-index.html">Usuários</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="lista-desaparecidos.html">Desaparecidos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="lista-noticia.html">Notícias</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+
 
     <form>
         <h1>Insira suas credenciais de Admin!</h1>
@@ -42,21 +20,22 @@
         <input type="submit" name="submit" id="btn_login" value="Login" onclick="loginAdmin()">
     </form>
 
-    <script src="..\..\js\login.js"></script>
+    <script src="..\..\js\login-admin.js"></script>
     <script>
         function loginAdmin () {
             
             var username = document.getElementById('username').value;
             var password = document.getElementById('password').value;
           
-            console.log(window.location.href = 'C:\Users\pehhe\OneDrive\Área de Trabalho\Repositório\pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem\src\paginas\admin\login-index.html');
+
 
             if (username == "admin" && password == "admin"){
-                localStorage.setItem("acesso", true)
+                localStorage.setItem("acesso", true);
                 alert ('Login Efetuado com Sucesso, Prossiga Admin!');
-
-                window.location.href = 'login-index.html';
-            }else{
+                location.href = '../usuario/login-index.html';
+                
+            }
+            else{
                 alert ('Login Inválido para sessão de Admin!');
             }
 
