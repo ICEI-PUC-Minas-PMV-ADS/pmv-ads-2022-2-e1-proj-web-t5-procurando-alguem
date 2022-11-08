@@ -167,7 +167,7 @@
     }
 
     //Buscando banco de dados do localstorage. Caso não exista, será inicializado com um array vazio
-    //Caso exista, prepara o id para a nova notícia, pegando o maior id existente + 1
+    //Caso exista, prepara o id para a novo desaparecido, pegando o maior id existente + 1
     var db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
     if (!db_desaparecidos || db_desaparecidos.length == 0) {
       db_desaparecidos = [];
@@ -189,7 +189,7 @@
       "maisInformacoes": maisInformacoes
     };
 
-    //Inserindo desaparecido no array de notícias buscado anteriormente
+    //Inserindo desaparecido no array de desaparecidos buscado anteriormente
     db_desaparecidos.push(desaparecido);
 
     //Atualizando banco de dados com o array de desaparecidos atualizado
