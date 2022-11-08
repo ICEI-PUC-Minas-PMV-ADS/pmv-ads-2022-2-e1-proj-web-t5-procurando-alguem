@@ -7,8 +7,6 @@ body {
     height: 100%;
 }
 
-
-
 /* Página sobre começa*/
 .menu-procurando-sobre {
     font-size: 25px;
@@ -16,33 +14,39 @@ body {
     top: 40px;
     left: 290px;
 }
+
 .menor-drop-sobre {
     font-size: medium;
     position: relative;
     left: 40px;
 }
+
 .subir-sobre {
     position: relative;
     top: 20px;
 }
 
-
 /* Página cadastro, lista, editar e excluir-desaparecidos começa*/
+
 .space-menu {
-    padding-left: 20px;
+    padding-left: 40px;
     font-size: 25px;
     position: relative;
     top: 41px;
-    left: 370px;
+    left: 310px;
 }
 
 .menor-drop {
-    padding-left: 30px;
-    font-size: 15px;
-    position: relative;
-    left: 160px;
-    top: 15px;
+    padding-left: 97px;
+    padding-top: 3px;   
 }
+
+.menor-size {
+    font-size: 15px;   
+}
+
+
+
 .imagem-logo-todas {
     float: auto;
     width: 150px;
@@ -54,7 +58,8 @@ body {
     box-shadow: 100px 0px 100px #00000056;
     display: flex;
 }
-.p1>h1 {
+
+.p1 > h1 {
     font-size: 25px;
     font-family: Karma;
     display: flex;
@@ -71,9 +76,11 @@ body {
     padding: 10px 10px;
     padding-left: 40px;
 }
+
 .inserir-lista {
     position: relative;
     left: 600px;
+    top: 10px;
 }
 
 .titulo-caixa {
