@@ -31,6 +31,10 @@ Desenvolvi a página de LOGIN, com a possibilidade de CADASTRO na mesma, de acor
 ![Validação de Cadastro](https://user-images.githubusercontent.com/112659128/200729566-5bd76d00-23ef-41eb-ae8a-8e9ed55bb86a.PNG)
 
 
+<h1>Daniel Mendes Rufino Silva</>
+Desenvolvi as páginas de Cadastro de Desaparecidos, Editar Desaparecidos e Excluir Desaparecidos. As páginas desenvolvidas abordam os Requisitos Funcionais RF-01, RF-02, RF-11 e Não Funcionais RNF-01.
+1-
+
 > **Links Úteis**:
 >
 > - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
