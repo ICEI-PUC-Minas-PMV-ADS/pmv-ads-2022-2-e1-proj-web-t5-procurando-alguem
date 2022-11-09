@@ -67,7 +67,7 @@ body * {
 }
 
 .login-card{
-	width: 60%;
+	width: 50%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -206,7 +206,7 @@ body * {
 /** Mídias de Responsividade **/
 @media only screen and (max-width: 1000px){
 	.login-card{
-		width: 85%;
+		width: 80%;
 	}
 }
 
@@ -236,7 +236,6 @@ body * {
 	}
 }
 
-
 @media screen and (min-width: 480px) {
 	.imagem-logo {width: 200px; float: auto; display: flex;}
 	.imagem-login {float: left;}
@@ -251,15 +250,11 @@ body * {
 	.imagem-logo {width: 150px; float: auto; display: flex;} 
 }
 
-
 @media screen and (max-width: 600px) {
 	.imagem-logo {display: flex; position: relative; left: 0px;}
 	.imagem-login {display: none;}
 	.logo > h1{display: none;}
-
-
 }  
-
 
 /* Logo e Título da Logo some quando a tela for menor do que 1000px */
 @media screen and (max-width: 1000px){
@@ -272,5 +267,7 @@ body * {
 	.imagem-logo {display: flex; position: relative; left: 0px;}
 	.logo > h1{display: none; width: auto; height: auto;}
 }
+
+
 
  

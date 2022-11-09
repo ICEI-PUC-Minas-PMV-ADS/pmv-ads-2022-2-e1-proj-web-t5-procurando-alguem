@@ -23,7 +23,7 @@
             }
 
             
-            document.getElementById("table-usuarios").innerHTML = listaUsuarios
+            document.getElementById("table-usuarios").innerHTML = listaUsuarios;
 
         }
 
@@ -33,7 +33,7 @@
             document.getElementById('btn_logout').addEventListener('click', logoutUser);
 
             
-            document.getElementById('nomeUsuario').innerHTML = usuarioCorrente.login;
+            document.getElementById('nomeUsuario').innerHTML = usuarioCorrente.login = "Administrador, seja bem vindo!";
 
             
             exibeUsuarios ();

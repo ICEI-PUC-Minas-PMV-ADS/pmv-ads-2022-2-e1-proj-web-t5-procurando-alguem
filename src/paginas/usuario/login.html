@@ -114,9 +114,9 @@
 				alert ('Login Efetuado com Sucesso!')
 				location.href = 'cadastro-desaparecido.html';
 			}
-			if (username == "admin" && password == "admin"){
+			else if (username == "admin" && password == "admin"){
                 localStorage.setItem("acesso", true);
-                alert ('Login Efetuado com Sucesso, Prossiga Admin!');
+                alert ('(Administrador Identificado) Login Efetuado com SUCESSO!');
                 location.href = 'login-index.html';                
             }
 			else{
@@ -141,7 +141,7 @@
 			addUser (login, nome, email, senha, senha2);
 			alert ('Cadastro de Usuário Concluído. Prossiga com o login para');
 
-			document.getElementById ('loginModal').style.display = 'none';
+			$('#loginModal').modal('hide');
 		}
 
 		document.getElementById ('login-form').addEventListener ('submit', processaFormLogin);
