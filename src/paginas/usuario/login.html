@@ -100,7 +100,7 @@
 
 
 
-	<script src="..\..\js\login.js"></script>
+	<script src="login.usuario.js"></script>
 	<script>
 
 		function processaFormLogin (event) {
@@ -112,8 +112,10 @@
 			resultadoLogin = loginUser (username, password);
 			if (resultadoLogin) {
 				alert ('Login Efetuado com Sucesso!')
-				location.href = 'login-index.html';
+				location.href = 'meu-perfil.html';
 			}
+			
+
 			else{
 				alert ('Usuário ou Senha incorretos!')
 			}
