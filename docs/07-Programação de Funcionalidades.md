@@ -9,6 +9,8 @@ Para cada requisito funcional, pode ser entregue um artefato desse tipo
 <h1>Pedro Henrique da Silva Santos</h1>
 Desenvolvi a página de LOGIN, com a possibilidade de CADASTRO na mesma, de acordo com os padrões que criamos para o nosso projeto nos quesitos visuais e funcionais. Fiz uma separação entre o Usuário Comum e o Administrador, logo o administrador terá suas próprias credenciais pré-definidas por nós para acessar toda a parte de administração da nossa aplicação. Foquei em fazer estas funcionalidades, pois o meu grupo vai precisar delas para desenvolver suas próprias funcionalidades na etapa seguinte, ou seja, precisavamos ter isso pronto para poder avançar. 
 
+<h3>Os requisitos atendidos por essas funcionalidades que eu desenvolvi são: RF-20 e RNF-12.</h3>
+
 1 - Tela de Login padrão sem o overlay de cadastro, bastando inserir suas credencias caso já seja cadastrado.
 ![Tela de Login (Sem Modal Cadastro)](https://user-images.githubusercontent.com/112659128/200725925-4c739b9e-1467-4037-ad3d-4d872221149a.PNG)
 
