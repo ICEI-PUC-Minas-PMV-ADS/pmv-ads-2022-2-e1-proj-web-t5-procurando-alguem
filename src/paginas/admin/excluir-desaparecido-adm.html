@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 
 <head>
     <meta charset="UTF-8">
@@ -7,11 +7,11 @@
     <title>Cadastro Desaparecidos/Adm</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <link rel="stylesheet" href="../../estilo/style.adm.css">
-    
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-        <title>Editar Desaparecido/Adm</title>
-        
+    <link rel="stylesheet" href="../../estilo/style.adm.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <title>Editar Desaparecido/Adm</title>
+
 </head>
 
 <body>
@@ -29,7 +29,8 @@
                         <a class="nav-link active" aria-current="page" href="#">Usuários</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="lista-desaparecidos-adm.html">Desaparecidos</a>
+                        <a class="nav-link active" aria-current="page"
+                            href="lista-desaparecidos-adm.html">Desaparecidos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="lista-noticia.html">Notícias</a>
@@ -39,75 +40,132 @@
         </div>
     </nav>
     <div class="titulo-cadastro-adm">
-        <p>Dados estão editados e podem ser alterados</p>
-      </div>
-  
-      <section class="container">
-  
-  
-  
+        <p>Informações do Desaparecido que serão excluídas do site</p>
+    </div>
+
+    <section class="container">
+
+
+
         <!--<form id="form-contato">-->
-  
+
         <div class="form-group">
             <div class="nome-desaparecido-adm">
-              <label for="inputNome-adm">Digite o nome do Desaparecido:</label></br>
-              <input type="text" name="inputNome" id="inputNome-adm" placeholder="Nome do Desaparecido">
+                <label for="inputNome-adm">Digite o nome do Desaparecido:</label></br>
+                <input type="text" name="inputNome" id="inputNome-adm" placeholder="Nome do Desaparecido">
             </div>
-  
-  
-  
-            <label class="label1-adm" for="inputId-adm">Id</label>
+
+
+
+            <label class="label1-adm" for="inputId">Id</label>
             <input class="input1-adm" type="number" name="inputId" id="inputId-adm" placeholder="ID" disabled>
-  
-  
-            <label class="label2-adm" for="inputIdade-adm">Idade:</label>
-            <input class="input2-adm" type="number" min="0" name="inputIdade" id="inputIdade-adm" placeholder="Idade">
-  
-  
-            <label class="label3-adm" for="inputSexo-adm">Sexo:</label>
-            <input class="input3-adm" type="text" name="inputSexo" id="inputSexo-adm" placeholder="Sexo">
-  
-  
-            <label class="label4-adm" for="inputCorRaca-adm">Cor/Raça:</label>
-            <input class="input4-adm" type="text" name="inputCorRaca" id="inputCorRaca-adm" placeholder="cor/raça">
-  
-  
-            <label class="label5-adm" for="inputAltura-adm">Altura:</label>
-            <input class="input5-adm" type="text" name="inputAltura" id="inputAltura-adm" placeholder="Altura">
-  
-            <label class="label6-adm" for="inputCidade-adm">Cidade/Estado:</label>
-            <input class="input6-adm" type="text" name="inputCidade" id="inputCidade-adm" placeholder="Cidade">
-  
-  
-            <label class="label7-adm" for="maisInformacoes-adm">Mais Informações:</label>
+
+
+            <label class="label2-adm" for="inputIdade">Idade:</label>
+            <input class="input2-adm" type="number" min="0" name="inputIdade" id="inputIdade-adm" placeholder="Idade"
+                disabled>
+
+
+            <label class="label3-adm" for="inputSexo">Sexo:</label>
+            <input class="input3-adm" type="text" name="inputSexo" id="inputSexo-adm" placeholder="Sexo" disabled>
+
+
+            <label class="label4-adm" for="inputCorRaca">Cor/Raça:</label>
+            <input class="input4-adm" type="text" name="inputCorRaca" id="inputCorRaca-adm" placeholder="cor/raça"
+                disabled>
+
+
+            <label class="label5-adm" for="inputAltura">Altura:</label>
+            <input class="input5-adm" type="text" name="inputAltura" id="inputAltura-adm" placeholder="Altura" disabled>
+
+            <label class="label6-adm" for="inputCidade">Cidade/Estado:</label>
+            <input class="input6-adm" type="text" name="inputCidade" id="inputCidade-adm" placeholder="Cidade" disabled>
+
+
+            <label class="label7-adm" for="maisInformacoes">Mais Informações:</label>
             <textarea type="text" name="maisInformacoes" id="maisInformacoes-adm" cols="10" maxlength="800"
-              placeholder="Digite nesse campo informações adicionais como: medicamentos essenciais ou alguma informação importante e relevante sobre o Desaparecido."></textarea>
-  
-  
-            <label class="mensagem-botao-foto-adm" for="mensagem-botao-foto">Clique no botão abaixo para inserir uma foto da
-              pessoa desaparecida:</label>
+                placeholder="Digite nesse campo informações adicionais como: medicamentos essenciais ou alguma informação importante e relevante sobre o Desaparecido."
+                disabled></textarea>
+
+
+            <label class="mensagem-botao-foto-adm" for="mensagem-botao-foto">Clique no botão abaixo para inserir uma
+                foto da
+                pessoa desaparecida:</label>
             <button id="botao-foto-adm" name="botao-foto">Buscar arquivo<img id="imagem-botao"
-                src="../../imagens/imagem-botao-foto.svg" width="40">
-              <!-- <input type="file" id="myfile" name="myfile">-->
-  
-              <button class="enviar-cadastro-adm" onclick="editarDesaparecido()">Enviar cadastro</button>
-              <a href="lista-desaparecidos-adm.html" class="botao-voltar-adm">Voltar</a>
-  
-  
-  
-          
+                    src="../../imagens/imagem-botao-foto.svg" width="40" disabled>
+                <!-- <input type="file" id="myfile" name="myfile">-->
+
+                <button class="enviar-cadastro-adm" onclick="excluirDesaparecido()">Excluir Desaparecido</button>
+                <a href="lista-desaparecidos-adm.html" class="botao-voltar-adm">Voltar</a>
+
+
+
+
         </div>
-      </section>
-  
-  </body>
-  
+    </section>
+
+</body>
+
+<script type="application/javascript">
+window.onload = (event) => {
+//window.onload acontece quando a tela é carregada
+//Pega o id recebido na url
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+let id = urlParams.get('inputId-adm');
+
+//Busca desaparecido no banco de dados do localStorage, usando o id como chave, colocando o conteúdo em um array
+let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
+let desaparecido = db_desaparecidos.find(x => x.id == id);
+
+//Preenche os campos do formulário
+document.getElementById("inputId-adm").value = desaparecido.id;
+document.getElementById("inputNome-adm").value = desaparecido.nome;
+document.getElementById("inputIdade-adm").value = desaparecido.idade;
+document.getElementById("inputSexo-adm").value = desaparecido.sexo;
+document.getElementById("inputCorRaca-adm").value = desaparecido.corRaca;
+document.getElementById("inputAltura-adm").value = desaparecido.altura;
+document.getElementById("inputCidade-adm").value = desaparecido.cidade;
+document.getElementById("maisInformacoes-adm").value = desaparecido.maisInformacoes;
+
+
+}
+
+function excluirDesaparecido() {
+//Obtendo id do formulário
+const id = document.getElementById("inputId-adm").value;
+
+//Obtendo o banco de dados do localStorage, colocando o conteúdo em um array
+let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
+
+//Removendo desaparecido do array
+db_desaparecidos.splice(db_desaparecidos.findIndex(function (desaparecido) {
+return desaparecido.id == id;
+}), 1);
+
+//Atualizando banco de dados com o array de desaparecido atualizado
+localStorage.setItem('db_desaparecidos', JSON.stringify(db_desaparecidos));
+alert("Desaparecido excluído com sucesso!");
+
+//Redirecionando para a página de listagem
+window.location.href = "lista-desaparecidos-adm.html";
+}
+</script>
+
+</html>
+
+
+
+
+
+<!--
   <script type="application/javascript">
     window.onload = (event) => {
       //window.onload acontece quando a tela é carregada
       //Pega o id recebido na url
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
-      let id = urlParams.get('inputId-adm');
+      let id = urlParams.get('inputId');
   
       //Busca desaparecido no banco de dados do localStorage, usando o id como chave, colocando o conteúdo em um array
       let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
@@ -126,7 +184,7 @@
   
     }
   
-    function editarDesaparecido() {
+    function excluirDesaparecido() {
       // Validação se os campos estão preenchidos
       const id = parseInt(document.getElementById("inputId-adm").value);
       const nome = document.getElementById("inputNome-adm").value;
@@ -169,7 +227,7 @@
   
       //Atualizando banco de dados com o array de desaparecidos atualizado
       localStorage.setItem('db_desaparecidos', JSON.stringify(db_desaparecidos));
-      alert("Desaparecido editado com sucesso!");
+      alert("Desaparecido excluído com sucesso!");
   
       //Redirecionando para a página de listagem
       window.location.href = "lista-desaparecidos-adm.html";
@@ -177,4 +235,4 @@
   </script>
   
   
-  </html>
+  </html>-->
