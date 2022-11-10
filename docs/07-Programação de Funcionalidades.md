@@ -106,9 +106,11 @@ Desenvolvi a página de LOGIN, com a possibilidade de CADASTRO na mesma, de acor
 ![Desaparecido incluído com sucesso-adm](https://user-images.githubusercontent.com/98750413/201093679-9284243c-2212-4758-9cc3-ecd60531abd0.png)
 
 
-<h4>4- Ao clicar no botão de alerta, o administrador é direcionado para a página -Lista de Desaparecidos-adm- onde é possível visualizar o(s) desaparecido(s) cadastrados pelo administrador com as devidas informações que foram inseridas. Na página -Lista de Desaparecidos-adm- o administrador tem as opções de Inserir-para cadastrar um novo desaparecido-, Editar-para editar um desaparecido- e Excluir-para excluir um desaparecido. </h4>
+<h4>4- Ao clicar no botão de alerta, o administrador é direcionado para a página -Lista de Desaparecidos-adm- onde é possível visualizar o(s) desaparecido(s) cadastrados pelo administrador e pelos usuários com as devidas informações que foram inseridas. Na página -Lista de Desaparecidos-adm- o administrador tem as opções de Inserir-para cadastrar um novo desaparecido-, Editar-para editar um desaparecido- e Excluir-para excluir um desaparecido. </h4>
 
 ![Lista Desaparecidos-adm](https://user-images.githubusercontent.com/98750413/201094242-793d5311-35bf-47eb-ba98-e3027bbf7dfc.png)
+![Cadastrado no usuário](https://user-images.githubusercontent.com/98750413/201182944-d13da4c1-ed7a-44cf-aa4b-343c78b490f1.png)
+![Cadastrado no usuário e indo para a Lista de Desaparecidos-adm](https://user-images.githubusercontent.com/98750413/201183498-76ca398f-c62c-494d-a25b-3112eaad8d48.png)
 
 
 <h4>5- Ao clicar em Inserir, na página-Lista de Desaparecidos-adm, o administrador é direcionado para a página-Cadastro de Desaparecidos-adm.</h4>
