@@ -100,7 +100,7 @@
 
 
 
-	<script src="login.usuario.js"></script>
+	<script src="..\..\js\login.js"></script>
 	<script>
 
 		function processaFormLogin (event) {
@@ -112,10 +112,13 @@
 			resultadoLogin = loginUser (username, password);
 			if (resultadoLogin) {
 				alert ('Login Efetuado com Sucesso!')
-				location.href = 'meu-perfil.html';
+				location.href = 'cadastro-desaparecido.html';
 			}
-			
-
+			else if (username == "admin" && password == "admin"){
+                localStorage.setItem("acesso", true);
+                alert ('(Administrador Identificado) Login Efetuado com SUCESSO!');
+                location.href = 'login-index.html';                
+            }
 			else{
 				alert ('Usuário ou Senha incorretos!')
 			}
@@ -138,7 +141,7 @@
 			addUser (login, nome, email, senha, senha2);
 			alert ('Cadastro de Usuário Concluído. Prossiga com o login para');
 
-			document.getElementById ('loginModal').style.display = 'none';
+			$('#loginModal').modal('hide');
 		}
 
 		document.getElementById ('login-form').addEventListener ('submit', processaFormLogin);

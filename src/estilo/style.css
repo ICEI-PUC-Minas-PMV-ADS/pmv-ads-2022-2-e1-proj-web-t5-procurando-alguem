@@ -646,3 +646,38 @@ li.dropdown {
     left: -550px;
     top: 50px;
 }
+
+/*Estilo da página "Meu Perfil" começa aqui*/
+.dados-usuario{
+    background-color: #2F2841;
+    border-radius: 20px;
+    width: 60vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 585px;
+    top: 200px;
+    
+}
+
+.menu-opcoes{
+    width: 15vw;
+    height: 70vh;
+    background-color: #2F2841;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 200px;
+    left: 280px;
+}
+.itens-menu-opcoes{
+    text-decoration: none;
+    list-style: none;
+    
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    
+}
