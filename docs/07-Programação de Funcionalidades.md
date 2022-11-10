@@ -66,7 +66,7 @@ Desenvolvi as páginas de Cadastro de Desaparecidos, Editar Desaparecidos e Excl
 ![Desaparecido excluído com sucesso!](https://user-images.githubusercontent.com/98750413/200854170-e196aa9f-c285-4ccd-9928-0218bcdeebbd.jpeg)
 
 10- Ao clicar no botão de alerta, o Usuário é direcionado para a página -Lista de Desaparecidos- onde é possível confirmar que Desaparecido excluído não está mais listado.
-![Lista de Desaparecidos vazia](https://user-images.githubusercontent.com/98750413/201129569-e5e299f6-46c9-4b90-bff3-ec31dbf025e5.png)
+![Lista de Desaparecidos vazia](https://user-images.githubusercontent.com/98750413/201131856-b0f1f3d5-ca1d-4e1d-a3f8-efed0f3b655e.png)
 
 
 <h3>Páginas Administradores</h3>
