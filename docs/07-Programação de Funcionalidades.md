@@ -94,7 +94,7 @@ Desenvolvi as páginas de Cadastro de Desaparecidos, Editar Desaparecidos e Excl
 9- Ao clicar em Excluir, na página-Excluir Desaparecidos-, um alerta é emitido, confirmando "Desaparecido excluído com sucesso".
 ![Desaparecido excluído com sucesso!](https://user-images.githubusercontent.com/98750413/201096737-15704763-5c84-4346-94cf-fd6ede44c290.png)
 
-10-
+
 
 
 
