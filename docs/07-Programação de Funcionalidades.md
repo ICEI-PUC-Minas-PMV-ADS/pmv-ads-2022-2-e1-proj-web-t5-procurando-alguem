@@ -37,6 +37,7 @@ Desenvolvi a página de LOGIN, com a possibilidade de CADASTRO na mesma, de acor
 Desenvolvi as páginas de Cadastro de Desaparecidos, Editar Desaparecidos e Excluir Desaparecidos. As páginas desenvolvidas abordam os Requisitos Funcionais RF-01, RF-02, RF-11 e Não Funcionais RNF-01 e RNF-04
 
 <h3>Páginas Usuários</h3>
+
 1- Página de Cadastro de Desaparecidos, onde é possível cadastrar uma pessoa desaparecida. Além disso, é possível acessar outras páginas do site por meio dos botões disponíveis.
 ![Cadastro Desaparecidos](https://user-images.githubusercontent.com/98750413/200814117-c90653c0-307d-4bbc-a8eb-f065ca596a95.png)
 
@@ -64,9 +65,12 @@ Desenvolvi as páginas de Cadastro de Desaparecidos, Editar Desaparecidos e Excl
 9- Ao clicar em Excluir, na página-Excluir Desaparecidos-, um alerta é emitido, confirmando "Desaparecido excluído com sucesso".
 ![Desaparecido excluído com sucesso!](https://user-images.githubusercontent.com/98750413/200854170-e196aa9f-c285-4ccd-9928-0218bcdeebbd.jpeg)
 
-10- 
+10- Ao clicar no botão de alerta, o Usuário é direcionado para a página -Lista de Desaparecidos- onde é possível confirmar que Desaparecido excluído não está mais listado.
+![Lista de Desaparecidos vazia](https://user-images.githubusercontent.com/98750413/201129569-e5e299f6-46c9-4b90-bff3-ec31dbf025e5.png)
+
 
 <h3>Páginas Administradores</h3>
+
 1- Página de Cadastro de Desaparecidos-adm, onde é possível cadastrar uma pessoa desaparecida. Além disso, é possível acessar outras páginas do site por meio dos botões disponíveis.
 ![Cadastro Desaparecido-adm](https://user-images.githubusercontent.com/98750413/201091604-a4182cc3-2cc5-4853-89ee-f1db90a4147c.png)
 
@@ -76,34 +80,27 @@ Desenvolvi as páginas de Cadastro de Desaparecidos, Editar Desaparecidos e Excl
 3- Quando desaparecido é cadastrado e botão Enviar Cadastro é acionado, um alerta é emitido, confirmando "Desaparecido incluído com sucesso".
 ![Desaparecido incluído com sucesso-adm](https://user-images.githubusercontent.com/98750413/201093679-9284243c-2212-4758-9cc3-ecd60531abd0.png)
 
-4- Ao clicar no botão de alerta, usuário é direcionado para a página -Lista de Desaparecidos-adm- onde é possível visualizar o(s) desaparecido(s) cadastrados pelo úsuário com as devidas informações que foram inseridas. Na página -Lista de Desaparecidos-adm- o usuário tem as opções de Inserir-para cadastrar um novo desaparecido-, Editar-para editar um desaparecido- e Excluir-para excluir um desaparecido. 
+4- Ao clicar no botão de alerta, o Administrador é direcionado para a página -Lista de Desaparecidos-adm- onde é possível visualizar o(s) desaparecido(s) cadastrados pelo úsuário com as devidas informações que foram inseridas. Na página -Lista de Desaparecidos-adm- o usuário tem as opções de Inserir-para cadastrar um novo desaparecido-, Editar-para editar um desaparecido- e Excluir-para excluir um desaparecido. 
 ![Lista Desaparecidos-adm](https://user-images.githubusercontent.com/98750413/201094242-793d5311-35bf-47eb-ba98-e3027bbf7dfc.png)
 
-5- Ao clicar em Inserir, na página-Lista de Desaparecidos-adm, o usuário é direcionado para a página-Cadastro de Desaparecidos-adm.
+5- Ao clicar em Inserir, na página-Lista de Desaparecidos-adm, o Administrador é direcionado para a página-Cadastro de Desaparecidos-adm.
 ![Cadastro Desaparecido-adm](https://user-images.githubusercontent.com/98750413/201091604-a4182cc3-2cc5-4853-89ee-f1db90a4147c.png)
 
-6- Ao clicar em Editar, na página-Lista de Desaparecidos-adm-, o usuário é direcionado para a página-Editar Desaparecido-adm, onde é possível modificar qualquer campo do cadastro feito.
+6- Ao clicar em Editar, na página-Lista de Desaparecidos-adm-, o Administrador é direcionado para a página-Editar Desaparecido-adm, onde é possível modificar qualquer campo do cadastro feito.
 ![Editar Desaparecido-adm](https://user-images.githubusercontent.com/98750413/201095562-7a19db74-48cb-4234-afb0-3630673e70ba.png)
 
 7- Quando desaparecido é editado e botão Enviar Cadastro é acionado, um alerta é emitido, confirmando "Desaparecido editado com sucesso".
 ![Desaparecido editado com sucesso-adm!](https://user-images.githubusercontent.com/98750413/201096197-24712aba-618a-4b15-8af8-1c138452ef34.png)
 
 8- Ao clicar em Excluir, na página-Lista de Desaparecidos-, o usuário é direcionado para a página-Excluir Desaparecido, onde é possível apenas excluir o cadastro, clicando no botão "Excluir".
-![Excluir Desaparecido-adm](https://user-images.githubusercontent.com/98750413/201105948-e378c4cf-1476-4770-9c38-473c46c10ebb.png)
+![Excluir Desaparecido-adm](https://user-images.githubusercontent.com/98750413/201124576-8d20bec8-6512-48ca-93b2-cf4464e8be39.png)
+
 
 9- Ao clicar em Excluir, na página-Excluir Desaparecidos-, um alerta é emitido, confirmando "Desaparecido excluído com sucesso".
 ![Desaparecido excluído com sucesso!](https://user-images.githubusercontent.com/98750413/201096737-15704763-5c84-4346-94cf-fd6ede44c290.png)
 
-
-
-
-
-
-
-
-
-
-
+10- Ao clicar no botão de alerta, o Administrador é direcionado para a página -Lista de Desaparecidos-adm- onde é possível confirmar que Desaparecido excluído não está mais listado. 
+![Lista de Desaparecidos-adm vazia](https://user-images.githubusercontent.com/98750413/201127542-81117fcd-7160-444a-a45d-58025a6ad9b4.png)
 
 
 
