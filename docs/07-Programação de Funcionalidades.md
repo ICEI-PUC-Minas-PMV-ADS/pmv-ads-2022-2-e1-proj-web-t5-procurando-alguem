@@ -111,8 +111,6 @@ Desenvolvi a página de LOGIN, com a possibilidade de CADASTRO na mesma, de acor
 ![Lista Desaparecidos-adm](https://user-images.githubusercontent.com/98750413/201094242-793d5311-35bf-47eb-ba98-e3027bbf7dfc.png)
 ![Cadastrado no usuário](https://user-images.githubusercontent.com/98750413/201182944-d13da4c1-ed7a-44cf-aa4b-343c78b490f1.png)
 ![Cadastrado no usuário e indo para a Lista de Desaparecidos-adm](https://user-images.githubusercontent.com/98750413/201183498-76ca398f-c62c-494d-a25b-3112eaad8d48.png)
-
-
 <h4>5- Ao clicar em Inserir, na página-Lista de Desaparecidos-adm, o administrador é direcionado para a página-Cadastro de Desaparecidos-adm.</h4>
 
 ![Cadastro Desaparecido-adm](https://user-images.githubusercontent.com/98750413/201091604-a4182cc3-2cc5-4853-89ee-f1db90a4147c.png)
