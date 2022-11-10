@@ -34,7 +34,7 @@ Desenvolvi a página de LOGIN, com a possibilidade de CADASTRO na mesma, de acor
 
 
 <h1>Daniel Mendes Rufino Silva</h1>
-<h3>Desenvolvi as páginas de Cadastro de Desaparecidos, Editar Desaparecidos e Excluir Desaparecidos. As páginas desenvolvidas abordam os Requisitos Funcionais RF-01, RF-02, RF-11 e Não Funcionais RNF-01 e RNF-04</h3>
+<h3>Desenvolvi as páginas de Cadastro de Desaparecidos, Editar Desaparecidos e Excluir Desaparecidos, páginas dos administradores e dos usuários. As páginas desenvolvidas abordam os Requisitos Funcionais RF-01, RF-02, RF-11 e Não Funcionais RNF-01 e RNF-04</h3>
 
 <h2>Páginas Usuários</h2>
 
