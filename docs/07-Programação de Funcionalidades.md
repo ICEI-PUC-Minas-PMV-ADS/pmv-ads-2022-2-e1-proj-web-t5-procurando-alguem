@@ -36,9 +36,9 @@ Desenvolvi a página de LOGIN, com a possibilidade de CADASTRO na mesma, de acor
 <h1>Daniel Mendes Rufino Silva</h1>
 Desenvolvi as páginas de Cadastro de Desaparecidos, Editar Desaparecidos e Excluir Desaparecidos. As páginas desenvolvidas abordam os Requisitos Funcionais RF-01, RF-02, RF-11 e Não Funcionais RNF-01 e RNF-04
 
-<h3>Páginas Usuários</h3>
+<h2>Páginas Usuários</h2>
 
-<h5>1- Página de Cadastro de Desaparecidos, onde é possível cadastrar uma pessoa desaparecida. Além disso, é possível acessar outras páginas do site por meio dos botões disponíveis.</h5>
+<h4>1- Página de Cadastro de Desaparecidos, onde é possível cadastrar uma pessoa desaparecida. Além disso, é possível acessar outras páginas do site por meio dos botões disponíveis.</h4>
 
 ![Cadastro Desaparecidos](https://user-images.githubusercontent.com/98750413/200814117-c90653c0-307d-4bbc-a8eb-f065ca596a95.png)
 
