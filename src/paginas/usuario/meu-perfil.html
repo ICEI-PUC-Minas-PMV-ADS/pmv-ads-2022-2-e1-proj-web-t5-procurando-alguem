@@ -16,48 +16,49 @@
         <img src="..\..\imagens\imagem-logo.svg" class="imagem-logo" alt="Imagem da Logo">
     </div>
 
-    <nav class="navbar-expand-md barra">
-        <div class="container-fluid">
-    
-          <div class="nav">
-            <!--mudei de class="collapse navbar-collapse" id="navbarSupportedContent" e não mudou nada -->
-    
-            <ul class="navbar-nav ml-auto">
-              <!--tentei outras "classes", mas essa alinhou melhor -->
-    
-              <li class="nav">
-                <!--mudei de class="nav-item" -->
-                <a class="nav-link menu-encontrado" aria-current="page" href="encontrados.html">Encontrados</a>
-              </li>
-              <li class="nav">
-                <!--mudei de class="nav-item" -->
-    
-                <a class="nav-link menu-encontrado" href="contato.html">Contato</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link menu-encontrado" href="sobre.html">Sobre</a>
-              </li>
-              <li class="nav-item dropdown menor">
-                <a class="nav-item dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="../../imagens/imagem-perfil.png" width="40" height="30"></br>Meu perfil</br>Login/Cadastro</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="meu-perfil.html">Meu Perfil</a></li>
-                  <li><a class="dropdown-item" href="login.html">Login</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="cadastra-se.html">Cadastro</a></li>
-                  <li><a class="dropdown-item" href="chat-e-amigos.html">Chat e Amigos</a></li>
-                  <li><a class="dropdown-item" href="depoimento.html">Depoimentos</a></li>
-                  <li><a class="dropdown-item" href="#">Configurações</a></li>
-    
-                </ul>
-              </li>
-              
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <div class="barra-menu">
+      <ul>
+          <li class="itens-menu"><a class="links-menu" href="#">Sobre</a></li>
+      </ul>
+      <ul>    
+          <li class="itens-menu"><a class="links-menu" href="#">Contato</a></li>
+      </ul>
+      <ul>
+          <li class="itens-menu"><a class="links-menu" href="#">Encontrados</a></li>
+      </ul>
+
+      <ul>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Meu Perfil</a>
+            <div class="dropdown-content">
+              <a class="links-drop" href="#">Meu Perfil</a>
+              <a class="links-drop" href="#">Login</a>
+              <a class="links-drop" href="#">Cadastro</a>
+              <a class="links-drop" href="#">Chat e Amigos</a>
+              <a class="links-drop" href="#">Depoimentos</a>
+              <a class="links-drop" href="#">Configurações</a>
+            </div>
+          </li>
+      </ul>
+   </div>
+
+   <div class="menu-opcoes">
+      <h1>Menu de Opções</h1>
+
+        <ul class="itens-menu-opcoes">
+            <li>Meus Dados</li>
+            <li>Segurança e Privacidade</li>
+            <li>Preferências</li>
+            <li>Notificações</li>
+            <li>Configurações</li>
+            <li>SAIR</li>
+        </ul>
+
+   </div>
+
+   <div class="dados-usuario">
+      <h1>Meus Dados</h1>
+   </div>
 
 
 </body>
