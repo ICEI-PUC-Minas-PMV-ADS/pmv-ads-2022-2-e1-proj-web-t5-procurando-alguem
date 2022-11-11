@@ -16,10 +16,10 @@
 			
 			<div class="logo">
 				<h1>Procurando Alguém?</h1>
-				<img src="..\imagens\imagem-logo.svg" class="imagem-logo" alt="Imagem da Logo">
+				<img src="..\..\imagens\imagem-logo.svg" class="imagem-logo" alt="Imagem da Logo">
 			</div>
 
-		<img src="..\imagens\imagem-login.svg" class="imagem-login" alt="Imagem de Login">
+		<img src="..\..\imagens\imagem-login.svg" class="imagem-login" alt="Imagem de Login">
 	</div>
 
 	
@@ -100,7 +100,7 @@
 
 
 
-	<script src="..\js\login.js"></script>
+	<script src="..\..\js\login.js"></script>
 	<script>
 
 		function processaFormLogin (event) {
@@ -112,8 +112,13 @@
 			resultadoLogin = loginUser (username, password);
 			if (resultadoLogin) {
 				alert ('Login Efetuado com Sucesso!')
-				location.href = 'login-index.html';
+				location.href = 'cadastro-desaparecido.html';
 			}
+			else if (username == "admin" && password == "admin"){
+                localStorage.setItem("acesso", true);
+                alert ('(Administrador Identificado) Login Efetuado com SUCESSO!');
+                location.href = 'login-index.html';                
+            }
 			else{
 				alert ('Usuário ou Senha incorretos!')
 			}
@@ -136,7 +141,7 @@
 			addUser (login, nome, email, senha, senha2);
 			alert ('Cadastro de Usuário Concluído. Prossiga com o login para');
 
-			document.getElementById ('loginModal').style.display = 'none';
+			$('#loginModal').modal('hide');
 		}
 
 		document.getElementById ('login-form').addEventListener ('submit', processaFormLogin);
