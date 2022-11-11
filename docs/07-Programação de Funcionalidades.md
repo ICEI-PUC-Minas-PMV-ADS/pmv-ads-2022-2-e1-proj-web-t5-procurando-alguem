@@ -160,7 +160,7 @@ Desenvolvi a página de LOGIN, com a possibilidade de CADASTRO na mesma, de acor
 
 <h1>Stephanye Castellano</h1>
 <h3>Tela de Home Page (usuário)</h3>
-<h4> Tela principal do site (ainda precisa de alguns reajustes reajuste)<h4>
+<h4> Tela principal do site (ainda precisa de alguns reajustes)<h4>
 ![image](https://user-images.githubusercontent.com/53917285/201231838-2d21608b-6d33-4cd3-a1f7-792d0858f15a.png)
 
 <h3>Listar Notícias (admin)</h3>
