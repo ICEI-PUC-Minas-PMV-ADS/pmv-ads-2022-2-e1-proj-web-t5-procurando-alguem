@@ -34,9 +34,20 @@ Arquivo JavaScript utilizado nessas páginas = https://github.com/ICEI-PUC-Minas
 
 
 <h1>Daniel Mendes Rufino Silva</h1>
-<h3>Desenvolvi as páginas de Cadastro de Desaparecidos, Editar Desaparecidos e Excluir Desaparecidos, páginas dos administradores e dos usuários. As páginas desenvolvidas abordam os Requisitos Funcionais RF-01, RF-02, RF-11 e Não Funcionais RNF-01 e RNF-04</h3>
+<h2>Desenvolvi as páginas de Cadastro de Desaparecidos, Editar Desaparecidos e Excluir Desaparecidos, páginas dos administradores e dos usuários. As páginas desenvolvidas abordam os Requisitos Funcionais RF-01, RF-02, RF-11 e Não Funcionais RNF-01 e RNF-04</h2>
 
-<h2>Páginas Usuários</h2>
+<h3> Links dos códigos referentes a todas as funcionalidades que eu Desenvolvi: </h3><br>
+
+Cadastro de Desaparecidos (versão de usuário): https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/cadastro-desaparecido.html<br><br>
+Editar Desaparecidos (versão de usuário): https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/editar-desaparecido.html<br><br>
+Excluir Desaparecidos (versão de usuário): https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/excluir-desaparecido.html<br><br>
+
+Cadastro de Desaparecidos (versão de administrador): https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/cadastro-desaparecidos-adm.html<br><br>
+Editar Desaparecidos (versão de administrador): https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/editar-desaparecido-adm.html<br><br>
+Excluir Desaparecidos (versão de administrador): https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/excluir-desaparecido-adm.html<br><br>
+
+
+<h3>Páginas Usuários</h3>
 
 <h4>1- Página de Cadastro de Desaparecidos, onde é possível cadastrar uma pessoa desaparecida. Além disso, é possível acessar outras páginas do site por meio dos botões disponíveis.</h4>
 
