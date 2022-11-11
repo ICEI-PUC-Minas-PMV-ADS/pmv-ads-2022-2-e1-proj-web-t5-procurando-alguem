@@ -182,7 +182,7 @@ Excluir Notícias -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1
 ![editarNoticia](https://user-images.githubusercontent.com/53917285/201239545-ab29c768-423f-4d12-9c20-3f73fd5283d4.png)
 
 
-<h3>4 - Excluir Notícias (admin)</h3>
+<h3>5 - Excluir Notícias (admin)</h3>
 <h4>Somente administrador poderá excluir notícias<h4>
 ![excluirNoticia](https://user-images.githubusercontent.com/53917285/201239567-eb898dda-cca9-4cd8-ab1f-ddfdadc7863c.png)
 
