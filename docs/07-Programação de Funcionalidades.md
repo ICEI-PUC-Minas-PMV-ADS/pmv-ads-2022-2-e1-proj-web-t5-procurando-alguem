@@ -40,6 +40,9 @@ Desenvolvi a página de LOGIN, com a possibilidade de CADASTRO na mesma, de acor
 
 <h4>1- Página de Cadastro de Desaparecidos, onde é possível cadastrar uma pessoa desaparecida. Além disso, é possível acessar outras páginas do site por meio dos botões disponíveis.</h4>
 
+
+<h2>Link para código da página</h2> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/cadastro-desaparecido.html
+
 ![Cadastro Desaparecidos](https://user-images.githubusercontent.com/98750413/200814117-c90653c0-307d-4bbc-a8eb-f065ca596a95.png)
 
 
@@ -56,6 +59,8 @@ Desenvolvi a página de LOGIN, com a possibilidade de CADASTRO na mesma, de acor
 
 <h4>4- Ao clicar no botão de alerta, usuário é direcionado para a página -Lista de Desaparecidos- onde é possível visualizar o(s) desaparecido(s) cadastrados pelo úsuário com as devidas informações que foram inseridas. Na página -Lista de Desaparecidos- o usuário tem as opções de Inserir-para cadastrar um novo desaparecido-, Editar-para editar um desaparecido- e Excluir-para excluir um desaparecido.</h4>
 
+<h2>Link para código da página</h2>https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/lista-desaparecidos.html
+
 ![Lista Desaparecidos](https://user-images.githubusercontent.com/98750413/200847578-217866aa-a4bd-4700-a1fa-0511e7912d5b.png)
 
 
@@ -66,6 +71,8 @@ Desenvolvi a página de LOGIN, com a possibilidade de CADASTRO na mesma, de acor
 
 <h4>6- Ao clicar em Editar, na página-Lista de Desaparecidos-, o usuário é direcionado para a página-Editar Desaparecido, onde é possível modificar qualquer campo do cadastro feito.</h4>
 
+<h2>Link para código da página</h2>https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/editar-desaparecido.html
+
 ![Editar Desaparecido](https://user-images.githubusercontent.com/98750413/200850356-9005f509-2447-4608-93bf-608571f25211.png)
 
 
@@ -75,6 +82,8 @@ Desenvolvi a página de LOGIN, com a possibilidade de CADASTRO na mesma, de acor
 
 
 <h4>8- Ao clicar em Excluir, na página-Lista de Desaparecidos-, o usuário é direcionado para a página-Excluir Desaparecido, onde é possível apenas excluir o cadastro, clicando no botão "Excluir".</h4>
+
+<h2>Link para código da página</h2>https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/excluir-desaparecido.html
 
 ![Excluir Desaparecido](https://user-images.githubusercontent.com/98750413/200853143-bf5e4de7-55de-4daa-9ba0-32cb346ebffe.png)
 
@@ -93,6 +102,8 @@ Desenvolvi a página de LOGIN, com a possibilidade de CADASTRO na mesma, de acor
 
 <h4>1- Página de Cadastro de Desaparecidos-adm, onde é possível que o administrador cadastre uma pessoa desaparecida. Além disso, é possível acessar outras páginas do site por meio dos botões disponíveis.</h4>
 
+<h2>Link para código da página</h2>https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/cadastro-desaparecidos-adm.html
+
 ![Cadastro Desaparecido-adm](https://user-images.githubusercontent.com/98750413/201091604-a4182cc3-2cc5-4853-89ee-f1db90a4147c.png)
 
 
@@ -108,6 +119,8 @@ Desenvolvi a página de LOGIN, com a possibilidade de CADASTRO na mesma, de acor
 
 <h4>4- Ao clicar no botão de alerta, o administrador é direcionado para a página -Lista de Desaparecidos-adm- onde é possível visualizar o(s) desaparecido(s) cadastrados pelo administrador e pelos usuários com as devidas informações que foram inseridas. Na página -Lista de Desaparecidos-adm- o administrador tem as opções de Inserir-para cadastrar um novo desaparecido-, Editar-para editar um desaparecido- e Excluir-para excluir um desaparecido. </h4>
 
+<h2>Link para código da página</h2>https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/lista-desaparecidos-adm.html
+
 ![Lista Desaparecidos-adm](https://user-images.githubusercontent.com/98750413/201094242-793d5311-35bf-47eb-ba98-e3027bbf7dfc.png)
 ![Cadastrado no usuário](https://user-images.githubusercontent.com/98750413/201182944-d13da4c1-ed7a-44cf-aa4b-343c78b490f1.png)
 ![Cadastrado no usuário e indo para a Lista de Desaparecidos-adm](https://user-images.githubusercontent.com/98750413/201183498-76ca398f-c62c-494d-a25b-3112eaad8d48.png)
@@ -118,6 +131,8 @@ Desenvolvi a página de LOGIN, com a possibilidade de CADASTRO na mesma, de acor
 
 <h4>6- Ao clicar em Editar, na página-Lista de Desaparecidos-adm-, o administrador é direcionado para a página-Editar Desaparecido-adm, onde é possível modificar qualquer campo do cadastro feito.</h4>
 
+<h2>Link para código da página</h2>https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/editar-desaparecido-adm.html
+
 ![Editar Desaparecido-adm](https://user-images.githubusercontent.com/98750413/201095562-7a19db74-48cb-4234-afb0-3630673e70ba.png)
 
 
@@ -127,6 +142,8 @@ Desenvolvi a página de LOGIN, com a possibilidade de CADASTRO na mesma, de acor
 
 
 <h4>8- Ao clicar em Excluir, na página-Lista de Desaparecidos-, o administrador é direcionado para a página-Excluir Desaparecido, onde é possível apenas excluir o cadastro, clicando no botão "Excluir".</h4>
+
+<h2>Link para código da página</h2>https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/excluir-desaparecido-adm.html
 
 ![Excluir Desaparecido-adm](https://user-images.githubusercontent.com/98750413/201124576-8d20bec8-6512-48ca-93b2-cf4464e8be39.png)
 
