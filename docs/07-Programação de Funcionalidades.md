@@ -141,7 +141,29 @@ Desenvolvi a página de LOGIN, com a possibilidade de CADASTRO na mesma, de acor
 ![Lista de Desaparecidos-adm vazia](https://user-images.githubusercontent.com/98750413/201127542-81117fcd-7160-444a-a45d-58025a6ad9b4.png)
 
 
+<h1>Stephanye Castellano</h1>
+<h3>Tela de Home Page (usuário)</h3>
+<h4> Tela principal do site (ainda precisa de alguns reajustes reajuste)<h4>
+![image](https://user-images.githubusercontent.com/53917285/201231838-2d21608b-6d33-4cd3-a1f7-792d0858f15a.png)
 
+<h3>Listar Notícias (admin)</h3>
+<h4>Visão administrador da listagem<h4>
+![image](https://user-images.githubusercontent.com/53917285/201229444-4fb7eb63-d315-41ac-98ec-5c33a7bec352.png)
+![image](https://user-images.githubusercontent.com/53917285/201229887-20035a2a-1f9b-4cfe-8fdb-deabfd967573.png)
+  
+<h3>Incluir Notícias (admin)</h3>
+<h4>Somente administrador poderá incluir notícias<h4>
+![image](https://user-images.githubusercontent.com/53917285/201229602-c9512117-e73a-4b1b-85ab-9c86db0cf361.png)
+  
+<h3>Editar Notícias (admin)</h3>
+<h4>Somente administrador poderá editar notícias<h4>
+![image](https://user-images.githubusercontent.com/53917285/201229961-59027d4b-8f9e-4422-9710-4588f0f17a3b.png)
+
+<h3>Excluir Notícias (admin)</h3>
+<h4>Somente administrador poderá excluir notícias<h4>
+![image](https://user-images.githubusercontent.com/53917285/201230052-36b09cda-49ed-410b-9fc0-0737398ca2e8.png)
+
+  
 > **Links Úteis**:
 >
 > - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
