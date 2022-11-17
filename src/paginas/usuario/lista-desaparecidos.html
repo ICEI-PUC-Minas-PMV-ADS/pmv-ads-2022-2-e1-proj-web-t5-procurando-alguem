@@ -99,6 +99,7 @@
           <thead>
             <tr>
               <th scope="col">Id</th>
+              <th scope="col">Foto</th>
               <th scope="col">Nome</th>
               <th scope="col">Idade</th>
               <th scope="col">Sexo</th>
@@ -116,6 +117,8 @@
       </div>
     </div>
   </section>
+  <script></script>
+
 </body>
 
 <script type="application/javascript">
@@ -137,6 +140,7 @@
       for (let i = 0; i <= db_desaparecidos.length - 1; i++) {
         conteudoHTML += "<tr>";
         conteudoHTML += `<td>${db_desaparecidos[i].id}</td>`;
+        conteudoHTML += `<td>${db_desaparecidos[i].foto}</td>`;
         conteudoHTML += `<td>${db_desaparecidos[i].nome}</td>`;
         conteudoHTML += `<td>${db_desaparecidos[i].idade}</td>`;
         conteudoHTML += `<td>${db_desaparecidos[i].sexo}</td>`;
