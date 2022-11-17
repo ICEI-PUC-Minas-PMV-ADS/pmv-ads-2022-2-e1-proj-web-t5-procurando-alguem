@@ -1,15 +1,15 @@
 # Programação de Funcionalidades
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="5-Arquitetura da Solução.md"> Arquitetura da Solução</a>
-
-Implementação do sistema descritas por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos os artefatos criados (código fonte) além das estruturas de dados utilizadas e as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
-
-Para cada requisito funcional, pode ser entregue um artefato desse tipo
-
 <h1>Pedro Henrique da Silva Santos</h1>
 Desenvolvi a página de LOGIN, com a possibilidade de CADASTRO na mesma, de acordo com os padrões que criamos para o nosso projeto nos quesitos visuais e funcionais. Fiz uma separação entre o Usuário Comum e o Administrador, logo o administrador terá suas próprias credenciais pré-definidas por nós para acessar toda a parte de administração da nossa aplicação. Foquei em fazer estas funcionalidades, pois o meu grupo vai precisar delas para desenvolver suas próprias funcionalidades na etapa seguinte, ou seja, precisavamos ter isso pronto para poder avançar. 
 
 <h3>Os requisitos atendidos por essas funcionalidades que eu desenvolvi são: RF-20 e RNF-12.</h3>
+
+<h4>Links Referentes as Funcionalidades que Desenvolvi:<br></h4>
+Página de Login e Cadastro = https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/login.html<br><br>
+Página de Administrador = https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/login-index.html<br><br>
+Arquivo JavaScript utilizado nessas páginas = https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/js/login.js<br><br><br>
+
 
 1 - Tela de Login padrão sem o overlay de cadastro, bastando inserir suas credencias caso já seja cadastrado.
 ![Tela de Login (Sem Modal Cadastro)](https://user-images.githubusercontent.com/112659128/200725925-4c739b9e-1467-4037-ad3d-4d872221149a.PNG)
@@ -34,9 +34,20 @@ Desenvolvi a página de LOGIN, com a possibilidade de CADASTRO na mesma, de acor
 
 
 <h1>Daniel Mendes Rufino Silva</h1>
-<h3>Desenvolvi as páginas de Cadastro de Desaparecidos, Editar Desaparecidos e Excluir Desaparecidos, páginas dos administradores e dos usuários. As páginas desenvolvidas abordam os Requisitos Funcionais RF-01, RF-02, RF-11 e Não Funcionais RNF-01 e RNF-04</h3>
+<h2>Desenvolvi as páginas de Cadastro de Desaparecidos, Editar Desaparecidos e Excluir Desaparecidos, páginas dos administradores e dos usuários. As páginas desenvolvidas abordam os Requisitos Funcionais RF-01, RF-02, RF-11 e Não Funcionais RNF-01 e RNF-04</h2>
 
-<h2>Páginas Usuários</h2>
+<h3> Links dos códigos referentes a todas as funcionalidades que eu Desenvolvi: </h3><br>
+
+Cadastro de Desaparecidos (versão de usuário): https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/cadastro-desaparecido.html<br><br>
+Editar Desaparecidos (versão de usuário): https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/editar-desaparecido.html<br><br>
+Excluir Desaparecidos (versão de usuário): https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/excluir-desaparecido.html<br><br>
+
+Cadastro de Desaparecidos (versão de administrador): https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/cadastro-desaparecidos-adm.html<br><br>
+Editar Desaparecidos (versão de administrador): https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/editar-desaparecido-adm.html<br><br>
+Excluir Desaparecidos (versão de administrador): https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/excluir-desaparecido-adm.html<br><br>
+
+
+<h3>Páginas Usuários</h3>
 
 <h4>1- Página de Cadastro de Desaparecidos, onde é possível cadastrar uma pessoa desaparecida. Além disso, é possível acessar outras páginas do site por meio dos botões disponíveis.</h4>
 
@@ -142,26 +153,39 @@ Desenvolvi a página de LOGIN, com a possibilidade de CADASTRO na mesma, de acor
 
 
 <h1>Stephanye Castellano</h1>
-<h3>Tela de Home Page (usuário)</h3>
+RF referenciados: RF-12, RF-18 (esse o intuito era cadastrar noticias do desaparecidos, mas houve uma mudança e resolvemos deixar as atualizações no perfil do usuário e criar na home page as notícias sobre desaparecimentos)
+Página de usuário desenvolvida:
+Home Page -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/edit/main/src/paginas/usuario/home-page.html
+
+Páginas de administrador desenvolvidas:
+Listar Notícias -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/lista-noticia.html
+Incluir Notícias -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/incluir-noticia.html
+Editar Notícias -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/editar-noticia.html
+Excluir Notícias -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/excluir-noticia.html
+<h3>1 - Tela de Home Page (usuário)</h3>
 <h4> Tela principal do site (ainda precisa de alguns reajustes reajuste)<h4>
-![image](https://user-images.githubusercontent.com/53917285/201231838-2d21608b-6d33-4cd3-a1f7-792d0858f15a.png)
+![homepage](https://user-images.githubusercontent.com/53917285/201239445-41669c88-f957-4446-8275-a2629ea761c9.png)
 
-<h3>Listar Notícias (admin)</h3>
+
+<h3>2 - Listar Notícias (admin)</h3>
 <h4>Visão administrador da listagem<h4>
-![image](https://user-images.githubusercontent.com/53917285/201229444-4fb7eb63-d315-41ac-98ec-5c33a7bec352.png)
-![image](https://user-images.githubusercontent.com/53917285/201229887-20035a2a-1f9b-4cfe-8fdb-deabfd967573.png)
-  
-<h3>Incluir Notícias (admin)</h3>
-<h4>Somente administrador poderá incluir notícias<h4>
-![image](https://user-images.githubusercontent.com/53917285/201229602-c9512117-e73a-4b1b-85ab-9c86db0cf361.png)
-  
-<h3>Editar Notícias (admin)</h3>
-<h4>Somente administrador poderá editar notícias<h4>
-![image](https://user-images.githubusercontent.com/53917285/201229961-59027d4b-8f9e-4422-9710-4588f0f17a3b.png)
+![listarNoticia](https://user-images.githubusercontent.com/53917285/201239478-1be53284-c537-4b9f-8db4-6c8ff6b97b74.png)
 
-<h3>Excluir Notícias (admin)</h3>
+  
+<h3>3 - Incluir Notícias (admin)</h3>
+<h4>Somente administrador poderá incluir notícias<h4>
+![incluirNoticia](https://user-images.githubusercontent.com/53917285/201239513-66b07c40-b403-4161-ae23-d927c5630ef5.png)
+
+  
+<h3>4 - Editar Notícias (admin)</h3>
+<h4>Somente administrador poderá editar notícias<h4>
+![editarNoticia](https://user-images.githubusercontent.com/53917285/201239545-ab29c768-423f-4d12-9c20-3f73fd5283d4.png)
+
+
+<h3>5 - Excluir Notícias (admin)</h3>
 <h4>Somente administrador poderá excluir notícias<h4>
-![image](https://user-images.githubusercontent.com/53917285/201230052-36b09cda-49ed-410b-9fc0-0737398ca2e8.png)
+![excluirNoticia](https://user-images.githubusercontent.com/53917285/201239567-eb898dda-cca9-4cd8-ab1f-ddfdadc7863c.png)
+
 
   
 > **Links Úteis**:
