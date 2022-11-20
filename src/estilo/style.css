@@ -291,7 +291,15 @@ body {
     left: -40px;
     resize: none;
 }
+#myfile {
+    font-size: 10px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: -10px;
+    left: 10px;
 
+}
 .mensagem-botao-foto {
     font-size: 18px;
     position: relative;
