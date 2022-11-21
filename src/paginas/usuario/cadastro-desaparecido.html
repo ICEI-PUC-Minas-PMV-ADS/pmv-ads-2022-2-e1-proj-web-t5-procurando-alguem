@@ -14,7 +14,7 @@
     integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
     crossorigin="anonymous"></script>
   <!--se retirar dropdown para-->
-  <script src="dbdesaparecidosUsuarios.js"></script>
+  
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <!--se retirar estraga navbar-->
 
@@ -190,6 +190,7 @@
     }
     else {
       id = db_desaparecidos[db_desaparecidos.length - 1].id + 1;
+    }
 
 
       const usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
@@ -219,7 +220,7 @@
       //Redirecionando para a página de listagem
       window.location.href = "lista-desaparecidos.html";
     }
-  }
+  
 </script>
 
 </html>
