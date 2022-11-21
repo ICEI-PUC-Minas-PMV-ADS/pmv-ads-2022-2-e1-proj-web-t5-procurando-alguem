@@ -4,6 +4,22 @@
 
 Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
 
+Em nossa aplicação, as páginas não serão todas exatamente iguais, mas teremos alguns elementos padrões que vamos usar. E alguns deles são:
+
+1 - NavBar funcional para os usuários terem um acesso rápido a todas as páginas da nossa aplicação.
+![Barra de Menu que ficará em todas as páginas de usuário](https://user-images.githubusercontent.com/112659128/200711917-315f5a75-27be-4bdd-bbcc-985f1d944854.PNG)
+
+2 - Logo padrão, compondo a identidade visual da nossa aplicação WEB.
+![Logo que ficará em todas as páginas](https://user-images.githubusercontent.com/112659128/200712195-02f13219-b5d7-4ea1-96e2-1f2d51984837.PNG)
+
+3 - Painel de Administrador que irá compor o cabeçalho de todas as páginas de administração.
+![Painel que ficará em todas as páginas de Administrador](https://user-images.githubusercontent.com/112659128/200712343-5843f50d-87d6-4877-a04c-fe158cb7469b.PNG)
+
+4 - Com relação ao padrão de cores, estamos ultilizando um tema escuro, com tons de roxo, verde fluorescente e branco.
+
+
+
+
 > **Links Úteis**:
 >
 > - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
