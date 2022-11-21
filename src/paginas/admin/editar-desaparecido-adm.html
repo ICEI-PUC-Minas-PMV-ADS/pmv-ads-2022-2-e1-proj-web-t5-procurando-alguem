@@ -88,7 +88,7 @@
               pessoa desaparecida:</label>
             <button id="botao-foto-adm" name="botao-foto">Buscar arquivo<img id="imagem-botao"
                 src="../../imagens/imagem-botao-foto.svg" width="40">
-              <!-- <input type="file" id="myfile" name="myfile">-->
+              <input type="file" id="myfile-adm" name="myfile-adm">
   
               <button class="enviar-cadastro-adm" onclick="editarDesaparecido()">Enviar cadastro</button>
               <a href="lista-desaparecidos-adm.html" class="botao-voltar-adm">Voltar</a>
@@ -115,6 +115,7 @@
   
       //Preenche os campos do formulário
       document.getElementById("inputId-adm").value = desaparecido.id;
+      document.getElementById("myfile-adm").value = desaparecido.id;
       document.getElementById("inputNome-adm").value = desaparecido.nome;
       document.getElementById("inputIdade-adm").value = desaparecido.idade;
       document.getElementById("inputSexo-adm").value = desaparecido.sexo;
@@ -129,6 +130,7 @@
     function editarDesaparecido() {
       // Validação se os campos estão preenchidos
       const id = parseInt(document.getElementById("inputId-adm").value);
+      const foto = document.getElementById("myfile-adm").value;
       const nome = document.getElementById("inputNome-adm").value;
       const idade = document.getElementById("inputIdade-adm").value;
       const sexo = document.getElementById("inputSexo-adm").value;
@@ -154,6 +156,7 @@
       //Montando objeto de desaparecido para alterado no banco de dados do localstorage
       const desaparecido = {
         "id": id,
+        "foto": foto,
         "nome": nome,
         "idade": idade,
         "sexo": sexo,

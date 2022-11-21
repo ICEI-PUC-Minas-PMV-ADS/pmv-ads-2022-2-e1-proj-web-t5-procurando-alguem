@@ -150,7 +150,14 @@
     top: 150px;
     left: -20px;
 }
+#myfile-adm {
+    font-size: 10px;
+    position: relative;
+    top: -10px;
+    left: 20px;
+    z-index: 1;
 
+}
 #botao-foto-adm {
     width: 250px;
     height: 70px;
