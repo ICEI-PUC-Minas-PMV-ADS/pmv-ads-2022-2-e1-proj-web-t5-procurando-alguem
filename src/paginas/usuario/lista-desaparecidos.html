@@ -125,11 +125,19 @@
     //Se não existir ou estivar vazio será mostrado uma mensagem que não existem notícias
     //Se existir registros será mostrado uma listagem de notícas
     let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
-    var usuarioCorrente = JSON.parse(localStorage.getItem("usuarioCorrente"));
-    const listaUsuarioCorrente = db_desaparecidos.map(atualDesaparecido => atualDesaparecido.id == usuarioCorrente.id);
+    var usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
+
+    var listaUsuarioCorrente = [];    
+
+    for(i = 0; i < db_desaparecidos.length; i++){
+      if(db_desaparecidos[i].usuarioQueCadastrou == usuarioCorrente.id){
+        listaUsuarioCorrente.push(db_desaparecidos[i]);
+      }
+    }
+
     console.log(listaUsuarioCorrente);
 
-    if (!db_desaparecidos || db_desaparecidos.length == 0) {
+    if (!listaUsuarioCorrente || listaUsuarioCorrente.length == 0) {
       let tabelaConteudo = document.getElementById("Tabela-Conteudo");
       tabelaConteudo.innerHTML = "<tr><td colspan='9' class='text-center'>Nenhum desaparecido cadastrado atualmente</td></tr>";
     }
@@ -137,20 +145,20 @@
       let tabelaConteudo = document.getElementById("Tabela-Conteudo");
 
       let conteudoHTML = "";
-      for (let i = 0; i <= db_desaparecidos.length - 1; i++) {
+      for (let i = 0; i <= listaUsuarioCorrente.length - 1; i++) {
         conteudoHTML += "<tr>";
-        conteudoHTML += `<td>${db_desaparecidos[i].id}</td>`;
-        conteudoHTML += `<td>${db_desaparecidos[i].nome}</td>`;
-        conteudoHTML += `<td>${db_desaparecidos[i].idade}</td>`;
-        conteudoHTML += `<td>${db_desaparecidos[i].sexo}</td>`;
-        conteudoHTML += `<td>${db_desaparecidos[i].corRaca}</td>`;
-        conteudoHTML += `<td>${db_desaparecidos[i].altura}</td>`;
-        conteudoHTML += `<td>${db_desaparecidos[i].cidade}</td>`;
-        conteudoHTML += `<td>${db_desaparecidos[i].maisInformacoes}</td>`;
+        conteudoHTML += `<td>${listaUsuarioCorrente[i].id}</td>`;
+        conteudoHTML += `<td>${listaUsuarioCorrente[i].nome}</td>`;
+        conteudoHTML += `<td>${listaUsuarioCorrente[i].idade}</td>`;
+        conteudoHTML += `<td>${listaUsuarioCorrente[i].sexo}</td>`;
+        conteudoHTML += `<td>${listaUsuarioCorrente[i].corRaca}</td>`;
+        conteudoHTML += `<td>${listaUsuarioCorrente[i].altura}</td>`;
+        conteudoHTML += `<td>${listaUsuarioCorrente[i].cidade}</td>`;
+        conteudoHTML += `<td>${listaUsuarioCorrente[i].maisInformacoes}</td>`;
         conteudoHTML +=
           `<td>
-                                <a href='editar-desaparecido.html?inputId=${db_desaparecidos[i].id}' class="btn btn-info">Editar</a>
-                                <a href='excluir-desaparecido.html?inputId=${db_desaparecidos[i].id}' class="btn btn-danger">Excluir</a>
+                                <a href='editar-desaparecido.html?inputId=${listaUsuarioCorrente[i].id}' class="btn btn-info">Editar</a>
+                                <a href='excluir-desaparecido.html?inputId=${listaUsuarioCorrente[i].id}' class="btn btn-danger">Excluir</a>
                             </td>`;
         conteudoHTML += "</tr>";
       }
@@ -159,6 +167,4 @@
     }
   };
 </script>
-
-
 </html>

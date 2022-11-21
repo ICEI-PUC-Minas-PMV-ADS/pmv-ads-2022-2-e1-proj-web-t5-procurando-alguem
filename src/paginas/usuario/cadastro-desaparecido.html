@@ -178,6 +178,9 @@
       id = db_desaparecidos[db_desaparecidos.length - 1].id + 1;
     }
 
+    const usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
+    console.log(usuarioCorrente);
+
     //Criando desaparecido para inserir no banco de dados do localstorage
     const desaparecido = {
       "id": id,
@@ -188,7 +191,8 @@
       "corRaca": corRaca,
       "altura": altura,
       "cidade": cidade,
-      "maisInformacoes": maisInformacoes
+      "maisInformacoes": maisInformacoes,
+      "usuarioQueCadastrou": usuarioCorrente.id
     };
 
     //Inserindo desaparecido no array de desaparecidos buscado anteriormente
