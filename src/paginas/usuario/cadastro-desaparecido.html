@@ -14,7 +14,7 @@
     integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
     crossorigin="anonymous"></script>
   <!--se retirar dropdown para-->
-
+  <script src="dbdesaparecidosUsuarios.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <!--se retirar estraga navbar-->
 
@@ -115,7 +115,7 @@
 
 
           <label class="label5" for="inputAltura">Altura:</label>
-          <input class="input5" type="text" name="inputAltura" id="inputAltura" placeholder="Altura">
+          <input class="input5" type="number" name="inputAltura" id="inputAltura" placeholder="Altura">
 
           <label class="label6" for="inputCidade">Cidade:</label>
           <input class="input6" type="text" name="inputCidade" id="inputCidade" placeholder="Cidade">
@@ -128,9 +128,13 @@
 
           <label class="mensagem-botao-foto" for="mensagem-botao-foto">Clique no botão abaixo para inserir uma foto da
             pessoa desaparecida:</label>
-          <button id="botao-foto" name="botao-foto">Buscar arquivo<img id="imagem-botao"
+            <input type="file" id="myfile" name="myfile"><button id="botao-foto" name="botao-foto">Buscar arquivo<img id="imagem-botao"
               src="../../imagens/imagem-botao-foto.svg" width="40">
+<<<<<<< HEAD
             <input type="file" id="myfile" name="myfile">
+=======
+            
+>>>>>>> main
 
             <button class="enviar-cadastro" onclick="inserirDesaparecido()">Enviar cadastro</button>
             <a href="lista-desaparecidos.html" class="botao-voltar">Voltar</a>
@@ -157,6 +161,7 @@
   function inserirDesaparecido() {
     // Validação se os campos estão preenchidos
     let id = 0;
+    const foto = document.getElementById("myfile").value;
     const nome = document.getElementById("inputNome").value;
     const foto = document.getElementById("myfile").value;
     const idade = document.getElementById("inputIdade").value;
