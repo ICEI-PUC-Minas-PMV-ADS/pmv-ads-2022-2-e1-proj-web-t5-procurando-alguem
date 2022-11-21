@@ -171,7 +171,8 @@
 
   function excluirDesaparecido() {
     //Obtendo id do formulário
-    const id = document.getElementById("inputId").value;
+    const id = parseInt(document.getElementById("inputId").value);
+    
 
     //Obtendo o banco de dados do localStorage, colocando o conteúdo em um array
     let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
