@@ -120,12 +120,19 @@
 
 <script type="application/javascript">
   window.onload = (event) => {
+    var usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
+    console.log(usuarioCorrente)
+
+    if(usuarioCorrente == null){
+      window.location.href = "login.html";
+      alert("Você deve efetuar o login para acessar essa página!")
+    }
+
     //window.onload acontece quando a tela é carregada
     //Buscando banco de dados do localstorage.
     //Se não existir ou estivar vazio será mostrado uma mensagem que não existem notícias
     //Se existir registros será mostrado uma listagem de notícas
     let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
-    var usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
 
     var listaUsuarioCorrente = [];    
 
