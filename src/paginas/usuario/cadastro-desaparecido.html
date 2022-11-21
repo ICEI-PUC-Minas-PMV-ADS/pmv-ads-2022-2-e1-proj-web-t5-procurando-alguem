@@ -128,8 +128,9 @@
 
         <label class="mensagem-botao-foto" for="mensagem-botao-foto">Clique no botão abaixo para inserir uma foto da
           pessoa desaparecida:</label>
-        <input type="file" id="myfile" name="myfile"><button id="botao-foto" name="botao-foto">Buscar arquivo<img
-            id="imagem-botao" src="../../imagens/imagem-botao-foto.svg" width="40">
+        <button id="botao-foto" name="botao-foto">Buscar arquivo<img id="imagem-botao"
+            src="../../imagens/imagem-botao-foto.svg" width="40">
+          <input type="file" id="myfile" name="myfile">
 
 
           <button class="enviar-cadastro" onclick="inserirDesaparecido()">Enviar cadastro</button>
@@ -148,15 +149,15 @@
   function inserirDesaparecido() {
     // Validação se os campos estão preenchidos
     let id = 0;
-    const foto = document.getElementById("myfile").value;
     const nome = document.getElementById("inputNome").value;
+    const foto = document.getElementById("myfile").value;
     const idade = document.getElementById("inputIdade").value;
     const sexo = document.getElementById("inputSexo").value;
     const corRaca = document.getElementById("inputCorRaca").value;
     const altura = document.getElementById("inputAltura").value;
     const cidade = document.getElementById("inputCidade").value;
     const maisInformacoes = document.getElementById("maisInformacoes").value;
-    
+
 
     if (nome === undefined || nome === null || nome === "" ||
       idade === undefined || idade === null || idade === "" ||
@@ -180,7 +181,7 @@
       id = db_desaparecidos[db_desaparecidos.length - 1].id + 1;
 
 
-      const usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));  
+      const usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
 
 
       //Criando desaparecido para inserir no banco de dados do localstorage
