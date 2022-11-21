@@ -129,7 +129,7 @@
           pessoa desaparecida:</label>
         <button id="botao-foto" name="botao-foto">Buscar arquivo<img id="imagem-botao"
             src="../../imagens/imagem-botao-foto.svg" width="40">
-          <!-- <input type="file" id="myfile" name="myfile">-->
+          <input type="file" id="myfile" name="myfile">
 
           <button class="enviar-cadastro" onclick="editarDesaparecido()">Enviar cadastro</button>
           <a href="lista-desaparecidos.html" class="botao-voltar">Voltar</a>
@@ -189,8 +189,8 @@
       maisInformacoes === undefined || maisInformacoes === null || maisInformacoes === "") {
       alert("Preencha todos os campos obrigatórios!")
       return;
-    }
-
+      }
+    
     //Obtendo o banco de dados do localStorage, colocando o conteúdo em um array
     var db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));    
     const usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
@@ -222,5 +222,5 @@
   }
 </script>
 
-
 </html>
+  

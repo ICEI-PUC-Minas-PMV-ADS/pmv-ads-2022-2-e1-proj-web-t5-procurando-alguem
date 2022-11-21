@@ -310,8 +310,8 @@ body {
 #myfile {
     font-size: 10px;
     position: relative;
-    top: 170px;
-    left: -430px;
+    top: -10px;
+    left: 10px;
     z-index: 1;
 
 }
