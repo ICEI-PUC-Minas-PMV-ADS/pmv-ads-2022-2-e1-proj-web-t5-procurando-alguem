@@ -144,15 +144,6 @@
 </body>
 
 <script type="application/javascript">
-  window.onload = (event) => {
-    var usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
-    console.log(usuarioCorrente)
-
-    if (usuarioCorrente == null) {
-      window.location.href = "login.html";
-      alert("Você deve efetuar o login para acessar essa página!")
-    }
-  }
 
   function inserirDesaparecido() {
     // Validação se os campos estão preenchidos
