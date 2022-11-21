@@ -165,7 +165,7 @@
     const altura = document.getElementById("inputAltura").value;
     const cidade = document.getElementById("inputCidade").value;
     const maisInformacoes = document.getElementById("maisInformacoes").value;
-    const usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
+    
 
     if (nome === undefined || nome === null || nome === "" ||
       idade === undefined || idade === null || idade === "" ||
@@ -187,6 +187,10 @@
     }
     else {
       id = db_desaparecidos[db_desaparecidos.length - 1].id + 1;
+
+
+      const usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
+
 
       //Criando desaparecido para inserir no banco de dados do localstorage
       const desaparecido = {
