@@ -178,6 +178,7 @@
     const altura = document.getElementById("inputAltura").value;
     const cidade = document.getElementById("inputCidade").value;
     const maisInformacoes = document.getElementById("maisInformacoes").value;
+    const usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
 
     if (nome === undefined || nome === null || nome === "" ||
       idade === undefined || idade === null || idade === "" ||
@@ -203,7 +204,8 @@
       "corRaca": corRaca,
       "altura": altura,
       "cidade": cidade,
-      "maisInformacoes": maisInformacoes
+      "maisInformacoes": maisInformacoes,
+      "usuarioQueCadastrou": usuarioCorrente.id
     };
 
     //Editando desaparecido no array de desaparecidos buscado anteriormente
