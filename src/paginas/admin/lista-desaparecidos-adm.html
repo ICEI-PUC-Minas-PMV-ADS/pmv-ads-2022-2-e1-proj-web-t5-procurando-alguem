@@ -84,8 +84,8 @@
     window.onload = (event) => {
         //window.onload acontece quando a tela é carregada
         //Buscando banco de dados do localstorage.
-        //Se não existir ou estivar vazio será mostrado uma mensagem que não existem notícias
-        //Se existir registros será mostrado uma listagem de notícas
+        //Se não existir ou estiver vazio será mostrado uma mensagem que não existem desaparecidos cadastrados
+        //Se existir registros será mostrado uma lista de desaparecidos
         let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
 
         if (!db_desaparecidos || db_desaparecidos.length == 0) {

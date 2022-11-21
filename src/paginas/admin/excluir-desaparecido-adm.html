@@ -89,8 +89,7 @@
 
 
             <label class="mensagem-botao-foto-adm" for="mensagem-botao-foto">Clique no botão abaixo para inserir uma
-                foto da
-                pessoa desaparecida:</label>
+                foto da pessoa desaparecida:</label>
             <button id="botao-foto-adm" name="botao-foto">Buscar arquivo<img id="imagem-botao"
                     src="../../imagens/imagem-botao-foto.svg" width="40" disabled>
                 <input type="file" id="myfile-adm" name="myfile-adm" disabled>
@@ -114,6 +113,7 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 let id = urlParams.get('inputId-adm');
 
+
 //Busca desaparecido no banco de dados do localStorage, usando o id como chave, colocando o conteúdo em um array
 let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
 let desaparecido = db_desaparecidos.find(x => x.id == id);
@@ -131,6 +131,7 @@ document.getElementById("maisInformacoes-adm").value = desaparecido.maisInformac
 
 
 }
+
 
 function excluirDesaparecido() {
 //Obtendo id do formulário
