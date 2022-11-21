@@ -304,17 +304,9 @@ body {
     font-size: 18px;
     position: relative;
     top: 90px;
-    left: 30px;
+    left: -20px;
 }
 
-#myfile {
-    font-size: 10px;
-    position: relative;
-    top: -10px;
-    left: 10px;
-    z-index: 1;
-
-}
 
 #botao-foto {
     width: 250px;
@@ -330,7 +322,7 @@ body {
     -webkit-text-stroke: 1px 1px 5px #000;
     position: relative;
     top: 155px;
-    left: -630px;
+    left: -580px;
 }
 
 .enviar-cadastro {
