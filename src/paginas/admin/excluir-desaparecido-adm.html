@@ -93,7 +93,7 @@
                 pessoa desaparecida:</label>
             <button id="botao-foto-adm" name="botao-foto">Buscar arquivo<img id="imagem-botao"
                     src="../../imagens/imagem-botao-foto.svg" width="40" disabled>
-                <!-- <input type="file" id="myfile" name="myfile">-->
+                <input type="file" id="myfile" name="myfile" disabled>
 
                 <button class="enviar-cadastro-adm" onclick="excluirDesaparecido()">Excluir Desaparecido</button>
                 <a href="lista-desaparecidos-adm.html" class="botao-voltar-adm">Voltar</a>
@@ -120,6 +120,7 @@ let desaparecido = db_desaparecidos.find(x => x.id == id);
 
 //Preenche os campos do formulário
 document.getElementById("inputId-adm").value = desaparecido.id;
+document.getElementById("myfile-adm").value = desaparecido.foto;
 document.getElementById("inputNome-adm").value = desaparecido.nome;
 document.getElementById("inputIdade-adm").value = desaparecido.idade;
 document.getElementById("inputSexo-adm").value = desaparecido.sexo;
