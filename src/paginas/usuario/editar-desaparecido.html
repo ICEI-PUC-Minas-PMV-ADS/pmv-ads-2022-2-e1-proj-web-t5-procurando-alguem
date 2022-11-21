@@ -189,7 +189,8 @@
     }
 
     //Obtendo o banco de dados do localStorage, colocando o conteúdo em um array
-    var db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
+    var db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));    
+    const usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
 
     //Montando objeto de desaparecido para alterado no banco de dados do localstorage
     const desaparecido = {
@@ -200,7 +201,8 @@
       "corRaca": corRaca,
       "altura": altura,
       "cidade": cidade,
-      "maisInformacoes": maisInformacoes
+      "maisInformacoes": maisInformacoes,
+      "usuarioQueCadastrou": usuarioCorrente.id
     };
 
     //Editando desaparecido no array de desaparecidos buscado anteriormente
