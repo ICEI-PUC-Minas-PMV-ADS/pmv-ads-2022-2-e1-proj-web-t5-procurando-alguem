@@ -304,7 +304,7 @@ body {
     font-size: 18px;
     position: relative;
     top: 90px;
-    left: 10px;
+    left: 30px;
 }
 
 #myfile {
@@ -330,7 +330,7 @@ body {
     -webkit-text-stroke: 1px 1px 5px #000;
     position: relative;
     top: 155px;
-    left: -700px;
+    left: -630px;
 }
 
 .enviar-cadastro {
@@ -347,7 +347,7 @@ body {
     -webkit-text-stroke: 1px 1px 5px #000;
     position: relative;
     top: 220px;
-    left: -555px;
+    left: -455px;
 }
 
 .botao-voltar {
@@ -363,8 +363,8 @@ body {
     font-weight: bolder;
     -webkit-text-stroke: 1px 1px 5px #000;
     position: relative;
-    top: 220px;
-    left: -50px;
+    top: 280px;
+    left: -670px;
 }
 /* /* Página cadastro, lista, editar e excluir-desaparecidos termina aqui*/
 
