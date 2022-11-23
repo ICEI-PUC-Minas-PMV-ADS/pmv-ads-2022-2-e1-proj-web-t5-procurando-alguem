@@ -361,7 +361,7 @@ a {
 h1,
 h2,
 h3,
-h4 {
+h4, h6 {
     text-shadow:
         -1.8px -1.8px #000,
         /*esquerda - pra cima*/
@@ -520,6 +520,10 @@ button {
 
 .links-menu {
     text-decoration: none;
+}
+
+.texto-noticia-home-page {
+    text-align: justify;
 }
 
 /* Configurações de Estilo do Botão "Meu Perfil" com o DropDown (Começa Aqui)*/
