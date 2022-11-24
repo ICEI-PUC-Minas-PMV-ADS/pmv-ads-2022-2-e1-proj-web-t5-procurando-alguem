@@ -113,7 +113,7 @@
 
       for (let i = db_noticias.length - 1; i >= 0; i--) {
         conteudoHTML += `<h6> <br> ${db_noticias[i].titulo}</h6>`;
-        conteudoHTML += `<p class="texto-noticia-home-page">${limitarTexto(db_noticias[i].texto)} <a href="../admin/editar-noticia.html?id=${db_noticias[i].id}">Ver mais</a> </p>`;
+        conteudoHTML += `<p class="texto-noticia">${limitarTexto(db_noticias[i].texto)} <a class="link-ver-mais-noticias" href="noticia.html?id=${db_noticias[i].id}">Ver mais</a> </p>`;
       }
 
       listarNoticias.innerHTML = conteudoHTML;
@@ -123,10 +123,16 @@
   function limitarTexto(texto) {
     const words = texto.split(' ');
     let resultado = "";
-    for (let i = 0; i < 50; i++) {
-      resultado += words[i] + " ";
+
+    if (words.length <= 50) {
+      resultado = texto;
+    } else {
+      for (let i = 0; i < 50; i++) {
+        resultado += words[i] + " ";
+      }      
+      resultado += "...";
     }
-    resultado += "...";
+
     return resultado;
   }
 </script>

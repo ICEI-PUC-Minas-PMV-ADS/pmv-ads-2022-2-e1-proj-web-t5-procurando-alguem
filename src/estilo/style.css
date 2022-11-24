@@ -522,8 +522,14 @@ button {
     text-decoration: none;
 }
 
-.texto-noticia-home-page {
+.texto-noticia {
     text-align: justify;
+    text-indent: 15px;
+}
+
+.link-ver-mais-noticias {
+    color: rgb(58, 58, 245);
+    text-decoration: underline;
 }
 
 /* Configurações de Estilo do Botão "Meu Perfil" com o DropDown (Começa Aqui)*/
