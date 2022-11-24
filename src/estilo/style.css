@@ -291,12 +291,29 @@ body {
     left: -40px;
     resize: none;
 }
+#myfile {
+    font-size: 10px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: -10px;
+    left: 10px;
 
+}
 .mensagem-botao-foto {
     font-size: 18px;
     position: relative;
-    top: 80px;
-    left: -30px;
+    top: 90px;
+    left: 30px;
+}
+
+#myfile {
+    font-size: 10px;
+    position: relative;
+    top: 170px;
+    left: -430px;
+    z-index: 1;
+
 }
 
 #botao-foto {
@@ -312,8 +329,8 @@ body {
     font-weight: bolder;
     -webkit-text-stroke: 1px 1px 5px #000;
     position: relative;
-    top: 125px;
-    left: -600px;
+    top: 155px;
+    left: -630px;
 }
 
 .enviar-cadastro {
@@ -329,8 +346,8 @@ body {
     font-weight: bolder;
     -webkit-text-stroke: 1px 1px 5px #000;
     position: relative;
-    top: 210px;
-    left: -465px;
+    top: 220px;
+    left: -455px;
 }
 
 .botao-voltar {
@@ -347,7 +364,7 @@ body {
     -webkit-text-stroke: 1px 1px 5px #000;
     position: relative;
     top: 280px;
-    left: -675px;
+    left: -670px;
 }
 /* /* Página cadastro, lista, editar e excluir-desaparecidos termina aqui*/
 

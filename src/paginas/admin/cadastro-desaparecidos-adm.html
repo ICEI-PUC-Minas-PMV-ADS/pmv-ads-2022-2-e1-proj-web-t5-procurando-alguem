@@ -29,7 +29,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Usuários</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="lista-desaparecidos.html">Desaparecidos</a>
+                        <a class="nav-link active" aria-current="page" href="lista-desaparecidos-adm.html">Desaparecidos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="lista-noticia.html">Notícias</a>
@@ -81,14 +81,14 @@
   
             <label class="label7-adm" for="maisInformacoes-adm">Mais Informações:</label>
             <textarea type="text" name="maisInformacoes" id="maisInformacoes-adm" cols="10" maxlength="800"
-              placeholder="Digite nesse campo informações adicionais como: medicamentos essenciais ou alguma informação importante e relevante sobre o Desaparecido."></textarea>
+              placeholder="Digite nesse campo informações adicionais como: medicamentos essenciais ou alguma informação importante e relevante sobre o Desaparecido, locais que frequenta e últimos locais onde foi visto, além do que estava vestindo no último dia que foi visto."></textarea>
   
   
             <label class="mensagem-botao-foto-adm" for="mensagem-botao-foto">Clique no botão abaixo para inserir uma foto da
               pessoa desaparecida:</label>
             <button id="botao-foto-adm" name="botao-foto">Buscar arquivo<img id="imagem-botao"
                 src="../../imagens/imagem-botao-foto.svg" width="40">
-              <!-- <input type="file" id="myfile" name="myfile">-->
+              <input type="file" id="myfile-adm" name="myfile-adm">
   
               <button class="enviar-cadastro-adm" onclick="inserirDesaparecido()">Enviar cadastro</button>
               <a href="lista-desaparecidos-adm.html" class="botao-voltar-adm">Voltar</a>
@@ -104,6 +104,7 @@
     function inserirDesaparecido() {
       // Validação se os campos estão preenchidos
       let id = 0;
+      const foto = document.getElementById("myfile-adm").value;
       const nome = document.getElementById("inputNome-adm").value;
       const idade = document.getElementById("inputIdade-adm").value;
       const sexo = document.getElementById("inputSexo-adm").value;
@@ -133,17 +134,21 @@
       else {
         id = db_desaparecidos[db_desaparecidos.length - 1].id + 1;
       }
+
+      // const usuarioCorrente = JSON.parse(localStorage.getItem("usuarioCorrente"));
   
       //Criando desaparecido para inserir no banco de dados do localstorage
       const desaparecido = {
         "id": id,
+        "foto": foto,
         "nome": nome,
         "idade": idade,
         "sexo": sexo,
         "corRaca": corRaca,
         "altura": altura,
         "cidade": cidade,
-        "maisInformacoes": maisInformacoes
+        "maisInformacoes": maisInformacoes,
+        // "usuarioQueCadastrou": usuarioCorrente.id
       };
   
       //Inserindo desaparecido no array de desaparecidos buscado anteriormente

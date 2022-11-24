@@ -30,7 +30,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Usuários</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="lista-desaparecidos.html">Desaparecidos</a>
+                        <a class="nav-link active" aria-current="page" href="lista-desaparecidos-adm.html">Desaparecidos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="lista-noticia.html">Notícias</a>
@@ -58,6 +58,7 @@
               <thead>
                 <tr>
                   <th scope="col">Id</th>
+                  <th scope="col">Foto</th>
                   <th scope="col">Nome</th>
                   <th scope="col">Idade</th>
                   <th scope="col">Sexo</th>
@@ -83,8 +84,8 @@
     window.onload = (event) => {
         //window.onload acontece quando a tela é carregada
         //Buscando banco de dados do localstorage.
-        //Se não existir ou estivar vazio será mostrado uma mensagem que não existem notícias
-        //Se existir registros será mostrado uma listagem de notícas
+        //Se não existir ou estiver vazio será mostrado uma mensagem que não existem desaparecidos cadastrados
+        //Se existir registros será mostrado uma lista de desaparecidos
         let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
 
         if (!db_desaparecidos || db_desaparecidos.length == 0) {
@@ -98,6 +99,7 @@
             for (let i = 0; i <= db_desaparecidos.length - 1; i++) {
                 conteudoHTML += "<tr>";
                 conteudoHTML += `<td>${db_desaparecidos[i].id}</td>`;
+                conteudoHTML += `<td>${db_desaparecidos[i].foto}</td>`;
                 conteudoHTML += `<td>${db_desaparecidos[i].nome}</td>`;
                 conteudoHTML += `<td>${db_desaparecidos[i].idade}</td>`;
                 conteudoHTML += `<td>${db_desaparecidos[i].sexo}</td>`;
