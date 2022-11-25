@@ -156,12 +156,12 @@
     }
   }
 
-  function inserirDesaparecido() {
+   async function inserirDesaparecido() {
     // Validação se os campos estão preenchidos
     let id = 0;
 
     const nome = document.getElementById("inputNome").value;
-    const foto = document.getElementById("myfile").value;
+    const foto = document.getElementById("myfile").files[0];
     const idade = document.getElementById("inputIdade").value;
     const sexo = document.getElementById("inputSexo").value;
     const corRaca = document.getElementById("inputCorRaca").value;
@@ -170,7 +170,8 @@
     const maisInformacoes = document.getElementById("maisInformacoes").value;
 
 
-    if (nome === undefined || nome === null || nome === "" ||
+    if (foto == null || foto == undefined ||
+      nome === undefined || nome === null || nome === "" ||
       idade === undefined || idade === null || idade === "" ||
       sexo === undefined || sexo === null || sexo === "" ||
       corRaca === undefined || corRaca === null || corRaca === "" ||
@@ -199,7 +200,7 @@
       //Criando desaparecido para inserir no banco de dados do localstorage
       const desaparecido = {
         "id": id,
-        "foto": foto,
+        "foto": await toBase64(foto),
         "nome": nome,
         "idade": idade,
         "sexo": sexo,
@@ -220,6 +221,12 @@
       //Redirecionando para a página de listagem
       window.location.href = "lista-desaparecidos.html";
     }
+    const toBase64 = file => new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = error => reject(error);
+  });
   
 </script>
 
