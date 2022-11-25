@@ -10,7 +10,7 @@
 
 
     <link rel="stylesheet" href="../../estilo/style.adm.css">
-
+    <script type="text/javascript" src="../../js/banco-desaparecidos.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 
 </head>
@@ -99,7 +99,7 @@
             for (let i = 0; i <= db_desaparecidos.length - 1; i++) {
                 conteudoHTML += "<tr>";
                 conteudoHTML += `<td>${db_desaparecidos[i].id}</td>`;
-                conteudoHTML += `<td>${db_desaparecidos[i].foto}</td>`;
+                conteudoHTML += `<td><img src="${db_desaparecidos[i].foto}" width="50px" height="50px"></td>`;
                 conteudoHTML += `<td>${db_desaparecidos[i].nome}</td>`;
                 conteudoHTML += `<td>${db_desaparecidos[i].idade}</td>`;
                 conteudoHTML += `<td>${db_desaparecidos[i].sexo}</td>`;

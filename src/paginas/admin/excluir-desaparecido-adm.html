@@ -120,7 +120,7 @@ let desaparecido = db_desaparecidos.find(x => x.id == id);
 
 //Preenche os campos do formulário
 document.getElementById("inputId-adm").value = desaparecido.id;
-document.getElementById("myfile-adm").value = desaparecido.foto;
+document.getElementById("myfile-adm").files[0] = desaparecido.foto;
 document.getElementById("inputNome-adm").value = desaparecido.nome;
 document.getElementById("inputIdade-adm").value = desaparecido.idade;
 document.getElementById("inputSexo-adm").value = desaparecido.sexo;
