@@ -174,28 +174,17 @@
 
   }
 
-
-
   async function editarDesaparecido() {
-
     // Validação se os campos estão preenchidos
 
     const id = document.getElementById("inputId").value;
-
     const foto = document.getElementById("myfile").files[0];
-
     const nome = document.getElementById("inputNome").value;
-
     const idade = document.getElementById("inputIdade").value;
-
     const sexo = document.getElementById("inputSexo").value;
-
     const corRaca = document.getElementById("inputCorRaca").value;
-
     const altura = document.getElementById("inputAltura").value;
-
     const cidade = document.getElementById("inputCidade").value;
-
     const maisInformacoes = document.getElementById("maisInformacoes").value;
 
     if (
@@ -242,44 +231,34 @@
 
   const toBase64 = file => new Promise((resolve, reject) => {
 
-const reader = new FileReader();
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = error => reject(error);
 
-reader.readAsDataURL(file);
+  });
 
-reader.onload = () => resolve(reader.result);
+  function dataURLtoFile(dataurl) {
 
-reader.onerror = error => reject(error);
+    var arr = dataurl.split(','),
+      mime = arr[0].match(/:(.*?);/)[1],
+      bstr = atob(arr[1]),
+      n = bstr.length,
+      u8arr = new Uint8Array(n);
 
-});
+    while (n--) {
 
-function dataURLtoFile(dataurl) {
+      u8arr[n] = bstr.charCodeAt(n);
 
-var arr = dataurl.split(','),
+    }
 
-  mime = arr[0].match(/:(.*?);/)[1],
-
-  bstr = atob(arr[1]),
-
-  n = bstr.length,
-
-  u8arr = new Uint8Array(n);
-
-while (n--) {
-
-  u8arr[n] = bstr.charCodeAt(n);
-
-}
-
-let type = dataurl.split("/")
+    let type = dataurl.split("/")
 
     type = type[1].split(";")
-
     type = type[0];
 
     var file = new File([u8arr], `foto.${type}`, { type: mime });
-
     let container = new DataTransfer();
-
     container.items.add(file);
 
     return container.files;

@@ -107,7 +107,7 @@
               <th scope="col">Altura</th>
               <th scope="col">Cidade</th>
               <th scope="col">Mais Informações</th>
-              
+
             </tr>
           </thead>
           <tbody id="Tabela-Conteudo">
@@ -125,14 +125,10 @@
     var usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
     console.log(usuarioCorrente)
 
-    if(usuarioCorrente == null){
+    if (usuarioCorrente == null) {
       window.location.href = "login.html";
       alert("Você deve efetuar o login para acessar essa página!")
     }
-
-
-
-
 
     //window.onload acontece quando a tela é carregada
     //Buscando banco de dados do localstorage.
@@ -140,10 +136,10 @@
     //Se existir registros será mostrado uma listagem de notícas
     let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
 
-    var listaUsuarioCorrente = [];    
+    var listaUsuarioCorrente = [];
 
-    for(i = 0; i < db_desaparecidos.length; i++){
-      if(db_desaparecidos[i].usuarioQueCadastrou == usuarioCorrente.id){
+    for (i = 0; i < db_desaparecidos.length; i++) {
+      if (db_desaparecidos[i].usuarioQueCadastrou == usuarioCorrente.id) {
         listaUsuarioCorrente.push(db_desaparecidos[i]);
       }
     }
