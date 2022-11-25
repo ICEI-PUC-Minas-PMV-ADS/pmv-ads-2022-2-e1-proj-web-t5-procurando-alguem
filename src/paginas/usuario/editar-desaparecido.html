@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Editar Desaparecidos</title>
 
-  
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <!--se retirar dropdown para-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
@@ -155,32 +155,51 @@
 
     //Preenche os campos do formulário
     document.getElementById("inputId").value = desaparecido.id;
-    document.getElementById("myfile").value = desaparecido.foto;
-    document.getElementById("inputNome").value = desaparecido.nome;
-    document.getElementById("inputIdade").value = desaparecido.idade;
-    document.getElementById("inputSexo").value = desaparecido.sexo;
-    document.getElementById("inputCorRaca").value = desaparecido.corRaca;
-    document.getElementById("inputAltura").value = desaparecido.altura;
-    document.getElementById("inputCidade").value = desaparecido.cidade;
-    document.getElementById("maisInformacoes").value = desaparecido.maisInformacoes;
 
+    document.getElementById("myfile").files = dataURLtoFile(desaparecido.foto);
+
+    document.getElementById("inputNome").value = desaparecido.nome;
+
+    document.getElementById("inputIdade").value = desaparecido.idade;
+
+    document.getElementById("inputSexo").value = desaparecido.sexo;
+
+    document.getElementById("inputCorRaca").value = desaparecido.corRaca;
+
+    document.getElementById("inputAltura").value = desaparecido.altura;
+
+    document.getElementById("inputCidade").value = desaparecido.cidade;
+
+    document.getElementById("maisInformacoes").value = desaparecido.maisInformacoes;
 
   }
 
-  function editarDesaparecido() {
-    // Validação se os campos estão preenchidos
-    const id = parseInt(document.getElementById("inputId").value);
-    const foto = document.getElementById("myfile").value;
-    const nome = document.getElementById("inputNome").value;
-    const idade = document.getElementById("inputIdade").value;
-    const sexo = document.getElementById("inputSexo").value;
-    const corRaca = document.getElementById("inputCorRaca").value;
-    const altura = document.getElementById("inputAltura").value;
-    const cidade = document.getElementById("inputCidade").value;
-    const maisInformacoes = document.getElementById("maisInformacoes").value;
-    
 
-    if (nome === undefined || nome === null || nome === "" ||
+
+  async function editarDesaparecido() {
+
+    // Validação se os campos estão preenchidos
+
+    const id = document.getElementById("inputId").value;
+
+    const foto = document.getElementById("myfile").files[0];
+
+    const nome = document.getElementById("inputNome").value;
+
+    const idade = document.getElementById("inputIdade").value;
+
+    const sexo = document.getElementById("inputSexo").value;
+
+    const corRaca = document.getElementById("inputCorRaca").value;
+
+    const altura = document.getElementById("inputAltura").value;
+
+    const cidade = document.getElementById("inputCidade").value;
+
+    const maisInformacoes = document.getElementById("maisInformacoes").value;
+
+    if (
+      nome === undefined || nome === null || nome === "" ||
       idade === undefined || idade === null || idade === "" ||
       sexo === undefined || sexo === null || sexo === "" ||
       corRaca === undefined || corRaca === null || corRaca === "" ||
@@ -189,10 +208,10 @@
       maisInformacoes === undefined || maisInformacoes === null || maisInformacoes === "") {
       alert("Preencha todos os campos obrigatórios!")
       return;
-      }
-    
+    }
+
     //Obtendo o banco de dados do localStorage, colocando o conteúdo em um array
-    var db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));    
+    var db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
     const usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
 
     //Montando objeto de desaparecido para alterado no banco de dados do localstorage
@@ -220,7 +239,52 @@
     //Redirecionando para a página de listagem
     window.location.href = "lista-desaparecidos.html";
   }
+
+  const toBase64 = file => new Promise((resolve, reject) => {
+
+const reader = new FileReader();
+
+reader.readAsDataURL(file);
+
+reader.onload = () => resolve(reader.result);
+
+reader.onerror = error => reject(error);
+
+});
+
+function dataURLtoFile(dataurl) {
+
+var arr = dataurl.split(','),
+
+  mime = arr[0].match(/:(.*?);/)[1],
+
+  bstr = atob(arr[1]),
+
+  n = bstr.length,
+
+  u8arr = new Uint8Array(n);
+
+while (n--) {
+
+  u8arr[n] = bstr.charCodeAt(n);
+
+}
+
+let type = dataurl.split("/")
+
+    type = type[1].split(";")
+
+    type = type[0];
+
+    var file = new File([u8arr], `foto.${type}`, { type: mime });
+
+    let container = new DataTransfer();
+
+    container.items.add(file);
+
+    return container.files;
+
+  }
 </script>
 
 </html>
-  
