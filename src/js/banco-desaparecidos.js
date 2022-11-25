@@ -5,6 +5,7 @@
         db_desaparecidos = [
             {
                 "id": 1,
+                "status": true,
                 "nome": "Lucas Santos",
                 "idade": 27,
                 "sexo": "Masculino",
@@ -16,6 +17,7 @@
             },
             {
                 "id": 2,
+                "status": true,
                 "nome": "Daniela Santos",
                 "idade": 14,
                 "sexo": "Feminino",
@@ -27,6 +29,7 @@
             },
             {
                 "id": 3,
+                "status": true,
                 "nome": "Mattheus Soares",
                 "idade": 26,
                 "sexo": "Masculino",
@@ -38,6 +41,7 @@
             },
             {
                 "id": 4,
+                "status": false,
                 "nome": "Letícia Oliveira ",
                 "idade": 19,
                 "sexo": "Feminino",
@@ -49,6 +53,7 @@
             },
             {
                 "id": 5,
+                "status": false,
                 "nome": "Jenipher Vignatti",
                 "idade": 25,
                 "sexo": "Feminino",
@@ -60,6 +65,7 @@
             },
             {
                 "id": 6,
+                "status": false,
                 "nome": "Christopher Kerik",
                 "idade": 22,
                 "sexo": "Masculino",

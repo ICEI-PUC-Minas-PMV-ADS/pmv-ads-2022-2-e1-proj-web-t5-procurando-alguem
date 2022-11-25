@@ -134,7 +134,12 @@
           <button class="enviar-cadastro" onclick="editarDesaparecido()">Enviar cadastro</button>
           <a href="lista-desaparecidos.html" class="botao-voltar">Voltar</a>
 
+          <label for="status">O desaparecido foi encontrado?</label>
+          <select name="status" id="status">
+          <option value="true">Sim</option>
+          <option value="false">Não</option>
 
+          </select>
 
       </div>
     </div>
@@ -155,23 +160,15 @@
 
     //Preenche os campos do formulário
     document.getElementById("inputId").value = desaparecido.id;
-
     document.getElementById("myfile").files = dataURLtoFile(desaparecido.foto);
-
     document.getElementById("inputNome").value = desaparecido.nome;
-
     document.getElementById("inputIdade").value = desaparecido.idade;
-
     document.getElementById("inputSexo").value = desaparecido.sexo;
-
     document.getElementById("inputCorRaca").value = desaparecido.corRaca;
-
     document.getElementById("inputAltura").value = desaparecido.altura;
-
     document.getElementById("inputCidade").value = desaparecido.cidade;
-
     document.getElementById("maisInformacoes").value = desaparecido.maisInformacoes;
-
+    document.getElementById("status").value = desaparecido.status;
   }
 
   async function editarDesaparecido() {
@@ -186,6 +183,7 @@
     const altura = document.getElementById("inputAltura").value;
     const cidade = document.getElementById("inputCidade").value;
     const maisInformacoes = document.getElementById("maisInformacoes").value;
+    const status = document.getElementById("status").value;
 
     if (
       nome === undefined || nome === null || nome === "" ||
@@ -203,6 +201,8 @@
     var db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
     const usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
 
+    
+
     //Montando objeto de desaparecido para alterado no banco de dados do localstorage
     const desaparecido = {
       "id": id,
@@ -214,9 +214,11 @@
       "altura": altura,
       "cidade": cidade,
       "maisInformacoes": maisInformacoes,
-      "usuarioQueCadastrou": usuarioCorrente.id
+      "usuarioQueCadastrou": usuarioCorrente.id,
+      "status": status
     };
 
+   
     //Editando desaparecido no array de desaparecidos buscado anteriormente
     index = db_desaparecidos.findIndex((desaparecido => desaparecido.id == id));
     db_desaparecidos[index] = desaparecido;

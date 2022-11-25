@@ -107,6 +107,7 @@
               <th scope="col">Altura</th>
               <th scope="col">Cidade</th>
               <th scope="col">Mais Informações</th>
+              <th scope="col">Status</th>
 
             </tr>
           </thead>
@@ -130,11 +131,14 @@
       alert("Você deve efetuar o login para acessar essa página!")
     }
 
+    
     //window.onload acontece quando a tela é carregada
     //Buscando banco de dados do localstorage.
     //Se não existir ou estivar vazio será mostrado uma mensagem que não existem notícias
     //Se existir registros será mostrado uma listagem de notícas
     let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
+
+   
 
     var listaUsuarioCorrente = [];
 
@@ -161,7 +165,8 @@
         conteudoHTML += `<td>${listaUsuarioCorrente[i].corRaca}</td>`;
         conteudoHTML += `<td>${listaUsuarioCorrente[i].altura}</td>`;
         conteudoHTML += `<td>${listaUsuarioCorrente[i].cidade}</td>`;
-        conteudoHTML += `<td>${listaUsuarioCorrente[i].maisInformacoes}</td>`;
+        conteudoHTML += `<td>${limitarTexto(listaUsuarioCorrente[i].maisInformacoes)}</td>`;
+        conteudoHTML += `<td>${listaUsuarioCorrente[i].status}</td>`;
         conteudoHTML +=
           `<td>
                                 <a href='editar-desaparecido.html?inputId=${listaUsuarioCorrente[i].id}' class="btn btn-info">Editar</a>
@@ -173,6 +178,21 @@
       tabelaConteudo.innerHTML = conteudoHTML;
     }
   };
+  function limitarTexto(texto) {
+    const words = texto.split(' ');
+    let resultado = "";
+
+    if (words.length <= 1) {
+      resultado = texto;
+    } else {
+      for (let i = 0; i < 1; i++) {
+        resultado += words[i] + " ";
+      }      
+      resultado += "...";
+    }
+
+    return resultado;
+  }
 </script>
 
 </html>
