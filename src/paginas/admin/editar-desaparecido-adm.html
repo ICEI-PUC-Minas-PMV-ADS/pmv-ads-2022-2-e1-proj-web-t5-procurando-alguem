@@ -77,10 +77,16 @@
       <label class="label6-adm" for="inputCidade-adm">Cidade/Estado:</label>
       <input class="input6-adm" type="text" name="inputCidade" id="inputCidade-adm" placeholder="Cidade">
 
+      <label for="inputStatus">Status</label>
+      <select id="inputStatus">
+        <option value="true">Desaparecido</option>
+        <option value="false">Encontrado</option>
+      </select>
 
       <label class="label7-adm" for="maisInformacoes-adm">Mais Informações:</label>
       <textarea type="text" name="maisInformacoes" id="maisInformacoes-adm" cols="10" maxlength="800"
         placeholder="Digite nesse campo informações adicionais como: medicamentos essenciais ou alguma informação importante e relevante sobre o Desaparecido, locais que frequenta e últimos locais onde foi visto, além do que estava vestindo no último dia que foi visto."></textarea>
+
 
 
       <label class="mensagem-botao-foto-adm" for="mensagem-botao-foto">Clique no botão abaixo para inserir uma foto da
@@ -122,11 +128,12 @@
     document.getElementById("inputAltura-adm").value = desaparecido.altura;
     document.getElementById("inputCidade-adm").value = desaparecido.cidade;
     document.getElementById("maisInformacoes-adm").value = desaparecido.maisInformacoes;
+    document.getElementById("inputStatus").value = desaparecido.status;
   }
 
   async function editarDesaparecido() {
     // Validação se os campos estão preenchidos
-    const id = document.getElementById("inputId-adm").value;
+    const id = parseInt(document.getElementById("inputId-adm").value);
     const foto = document.getElementById("myfile-adm").files[0];
     const nome = document.getElementById("inputNome-adm").value;
     const idade = document.getElementById("inputIdade-adm").value;
@@ -135,6 +142,7 @@
     const altura = document.getElementById("inputAltura-adm").value;
     const cidade = document.getElementById("inputCidade-adm").value;
     const maisInformacoes = document.getElementById("maisInformacoes-adm").value;
+    let status = document.getElementById("inputStatus").value;
 
     if (foto == null || foto == undefined ||
       nome === undefined || nome === null || nome === "" ||
@@ -143,9 +151,16 @@
       corRaca === undefined || corRaca === null || corRaca === "" ||
       altura === undefined || altura === null || altura === "" ||
       cidade === undefined || cidade === null || cidade === "" ||
-      maisInformacoes === undefined || maisInformacoes === null || maisInformacoes === "") {
+      maisInformacoes === undefined || maisInformacoes === null || maisInformacoes === "" ||
+      status === undefined || status === null || status === "") {
       alert("Preencha todos os campos obrigatórios!")
       return;
+    }
+
+    if (status == "true") {
+      status = true;
+    } else {
+      status = false;
     }
 
     //Obtendo o banco de dados do localStorage, colocando o conteúdo em um array
@@ -161,7 +176,8 @@
       "corRaca": corRaca,
       "altura": altura,
       "cidade": cidade,
-      "maisInformacoes": maisInformacoes
+      "maisInformacoes": maisInformacoes,
+      "status": status
     };
 
     //Editando desaparecido no array de desaparecidos buscado anteriormente
@@ -192,6 +208,7 @@
     while (n--) {
       u8arr[n] = bstr.charCodeAt(n);
     }
+
     let type = dataurl.split("/")
     type = type[1].split(";")
     type = type[0];

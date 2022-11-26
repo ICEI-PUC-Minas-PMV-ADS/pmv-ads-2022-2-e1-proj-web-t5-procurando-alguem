@@ -119,6 +119,11 @@
         <label class="label6" for="inputCidade">Cidade:</label>
         <input class="input6" type="text" name="inputCidade" id="inputCidade" placeholder="Cidade">
 
+        <label for="inputStatus">Status</label>
+        <select id="inputStatus">
+          <option value="true">Desaparecido</option>
+          <option value="false">Encontrado</option>
+        </select>
 
         <label class="label7" for="maisInformacoes">Mais Informações:</label>
         <textarea type="text" name="maisInformacoes" id="maisInformacoes" cols="10" maxlength="800"
@@ -133,13 +138,6 @@
 
           <button class="enviar-cadastro" onclick="editarDesaparecido()">Enviar cadastro</button>
           <a href="lista-desaparecidos.html" class="botao-voltar">Voltar</a>
-
-          <label for="status">O desaparecido foi encontrado?</label>
-          <select name="status" id="status">
-          <option value="true">Sim</option>
-          <option value="false">Não</option>
-
-          </select>
 
       </div>
     </div>
@@ -168,13 +166,13 @@
     document.getElementById("inputAltura").value = desaparecido.altura;
     document.getElementById("inputCidade").value = desaparecido.cidade;
     document.getElementById("maisInformacoes").value = desaparecido.maisInformacoes;
-    document.getElementById("status").value = desaparecido.status;
+    document.getElementById("inputStatus").value = desaparecido.status;
   }
 
   async function editarDesaparecido() {
     // Validação se os campos estão preenchidos
 
-    const id = document.getElementById("inputId").value;
+    const id = parseInt(document.getElementById("inputId").value);
     const foto = document.getElementById("myfile").files[0];
     const nome = document.getElementById("inputNome").value;
     const idade = document.getElementById("inputIdade").value;
@@ -183,18 +181,25 @@
     const altura = document.getElementById("inputAltura").value;
     const cidade = document.getElementById("inputCidade").value;
     const maisInformacoes = document.getElementById("maisInformacoes").value;
-    const status = document.getElementById("status").value;
+    let status = document.getElementById("inputStatus").value;
 
-    if (
+    if (foto == null || foto == undefined || 
       nome === undefined || nome === null || nome === "" ||
       idade === undefined || idade === null || idade === "" ||
       sexo === undefined || sexo === null || sexo === "" ||
       corRaca === undefined || corRaca === null || corRaca === "" ||
       altura === undefined || altura === null || altura === "" ||
       cidade === undefined || cidade === null || cidade === "" ||
-      maisInformacoes === undefined || maisInformacoes === null || maisInformacoes === "") {
+      maisInformacoes === undefined || maisInformacoes === null || maisInformacoes === "" ||
+      status === undefined || status === null || status === "") {
       alert("Preencha todos os campos obrigatórios!")
       return;
+    }
+   
+    if (status == "true") {
+      status = true;
+    } else {
+      status = false;
     }
 
     //Obtendo o banco de dados do localStorage, colocando o conteúdo em um array
@@ -206,7 +211,7 @@
     //Montando objeto de desaparecido para alterado no banco de dados do localstorage
     const desaparecido = {
       "id": id,
-      "foto": foto,
+      "foto":  await toBase64(foto),
       "nome": nome,
       "idade": idade,
       "sexo": sexo,
@@ -232,7 +237,6 @@
   }
 
   const toBase64 = file => new Promise((resolve, reject) => {
-
     const reader = new FileReader();
     reader.readAsDataURL(file);
     reader.onload = () => resolve(reader.result);
@@ -241,7 +245,6 @@
   });
 
   function dataURLtoFile(dataurl) {
-
     var arr = dataurl.split(','),
       mime = arr[0].match(/:(.*?);/)[1],
       bstr = atob(arr[1]),
@@ -249,13 +252,10 @@
       u8arr = new Uint8Array(n);
 
     while (n--) {
-
       u8arr[n] = bstr.charCodeAt(n);
-
     }
 
     let type = dataurl.split("/")
-
     type = type[1].split(";")
     type = type[0];
 
@@ -264,7 +264,6 @@
     container.items.add(file);
 
     return container.files;
-
   }
 </script>
 

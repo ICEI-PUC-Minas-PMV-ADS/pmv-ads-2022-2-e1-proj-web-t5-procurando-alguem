@@ -90,7 +90,7 @@
                 conteudoHTML += `<td>${db_noticias[i].titulo}</td>`;
                 conteudoHTML += `<td>${db_noticias[i].categoria}</td>`;
                 conteudoHTML += `<td>${db_noticias[i].data}</td>`;
-                conteudoHTML += `<td>${db_noticias[i].texto}</td>`;
+                conteudoHTML += `<td>${limitarTexto(db_noticias[i].texto)}</td>`;
                 conteudoHTML += 
                     `<td>
                         <a href='editar-noticia.html?id=${db_noticias[i].id}' class="btn btn-info">Editar</a>
@@ -102,6 +102,22 @@
             tabelaConteudo.innerHTML = conteudoHTML;
         }
     };
+
+    function limitarTexto(texto) {
+    const words = texto.split(' ');
+    let resultado = "";
+
+    if (words.length <= 10) {
+      resultado = texto;
+    } else {
+      for (let i = 0; i < 10; i++) {
+        resultado += words[i] + " ";
+      }      
+      resultado += "...";
+    }
+
+    return resultado;
+  }
 </script>
 
 </html>
