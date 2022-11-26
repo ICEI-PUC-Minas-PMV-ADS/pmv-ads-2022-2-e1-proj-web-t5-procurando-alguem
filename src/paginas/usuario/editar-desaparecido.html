@@ -160,7 +160,7 @@
 
     //Preenche os campos do formulário
     document.getElementById("inputId").value = desaparecido.id;
-    document.getElementById("myfile").files = dataURLtoFile(desaparecido.foto);
+    document.getElementById("myfile").files[0] = desaparecido.foto;
     document.getElementById("inputNome").value = desaparecido.nome;
     document.getElementById("inputIdade").value = desaparecido.idade;
     document.getElementById("inputSexo").value = desaparecido.sexo;
@@ -171,7 +171,7 @@
     document.getElementById("status").value = desaparecido.status;
   }
 
-  async function editarDesaparecido() {
+  function editarDesaparecido() {
     // Validação se os campos estão preenchidos
 
     const id = document.getElementById("inputId").value;
@@ -202,7 +202,6 @@
     const usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
 
     
-
     //Montando objeto de desaparecido para alterado no banco de dados do localstorage
     const desaparecido = {
       "id": id,
