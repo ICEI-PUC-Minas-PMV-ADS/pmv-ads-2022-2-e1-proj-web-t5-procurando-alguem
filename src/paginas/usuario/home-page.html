@@ -75,7 +75,7 @@
         </div>
       </div>
       <div class="col col-content">
-        <h4>Últimos Desaparecido</h4>
+        <h4>Últimos Desaparecidos</h4>
 
         <ul id="lista-desaparecidos-home-page">
         </ul>
@@ -111,7 +111,7 @@
     }
 
     //Seção desaparecidos
-    let db_desaparecidos = JSON.parse(localStorage.getItem('db_noticias'));
+    let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
 
     let listarDesaparecidos = document.getElementById("lista-desaparecidos-home-page")
 
@@ -122,7 +122,9 @@
       let conteudoHTML = "";
 
       for (let i = db_desaparecidos.length - 1; i >= 0; i--) {
-        conteudoHTML += `<li class="dropdown-item lista-desaparecido> <a href="perfil-desaparecido.html?id=${db_desaparecidos[i].id}">${db_desaparecidos[i].nome}</a> </li>`;
+        if (db_desaparecidos[i].status == true) {
+          conteudoHTML += `<li class="dropdown-item lista-desaparecido"> <a href="perfil-desaparecido.html?id=${db_desaparecidos[i].id}">${db_desaparecidos[i].nome}</a> </li>`;
+        }
       }
 
       listarDesaparecidos.innerHTML = conteudoHTML;
@@ -138,7 +140,7 @@
     } else {
       for (let i = 0; i < 50; i++) {
         resultado += words[i] + " ";
-      }      
+      }
       resultado += "...";
     }
 
