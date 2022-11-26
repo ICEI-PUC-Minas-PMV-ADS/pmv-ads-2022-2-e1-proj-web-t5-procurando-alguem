@@ -95,8 +95,6 @@
           <input type="text" name="inputNome" id="inputNome" placeholder="Nome do Desaparecido">
         </div>
 
-
-
         <label class="label1" for="inputId">Id</label>
         <input class="input1" type="number" name="inputId" id="inputId" placeholder="ID" disabled>
 
@@ -119,11 +117,9 @@
         <label class="label6" for="inputCidade">Cidade:</label>
         <input class="input6" type="text" name="inputCidade" id="inputCidade" placeholder="Cidade">
 
-
         <label class="label7" for="maisInformacoes">Mais Informações:</label>
         <textarea type="text" name="maisInformacoes" id="maisInformacoes" cols="10" maxlength="800"
           placeholder="Digite nesse campo informações adicionais como: medicamentos essenciais ou alguma informação importante e relevante sobre o Desaparecido."></textarea>
-
 
         <label class="mensagem-botao-foto" for="mensagem-botao-foto">Clique no botão abaixo para inserir uma foto da
           pessoa desaparecida:</label>
@@ -201,7 +197,6 @@
     var db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
     const usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
 
-    
     //Montando objeto de desaparecido para alterado no banco de dados do localstorage
     const desaparecido = {
       "id": id,
@@ -217,7 +212,6 @@
       "status": status
     };
 
-   
     //Editando desaparecido no array de desaparecidos buscado anteriormente
     index = db_desaparecidos.findIndex((desaparecido => desaparecido.id == id));
     db_desaparecidos[index] = desaparecido;
