@@ -53,51 +53,41 @@ Excluir Desaparecidos (versão de administrador): https://github.com/ICEI-PUC-Mi
 
 ![Cadastro Desaparecidos](https://user-images.githubusercontent.com/98750413/200814117-c90653c0-307d-4bbc-a8eb-f065ca596a95.png)
 
-
-
 <h4>2- Caso algum dos campos do cadastro não tenha sido preenchido, um alerta é emitido- "Preencha todos os campos obrigatórios!"</h4>
 
 ![Preencha todos os campos obrigatórios!](https://user-images.githubusercontent.com/98750413/200843538-7391ffd1-b804-4cf3-91da-be9186fe6f6a.jpeg)
-
 
 <h4>3- Quando desaparecido é cadastrado e botão Enviar Cadastro é acionado, um alerta é emitido, confirmando "Desaparecido incluído com sucesso".</h4>
 
 ![Desaparecido incluído com sucesso](https://user-images.githubusercontent.com/98750413/200842602-4bbbe8cd-3ba7-4345-8ed5-2852d38ac334.jpeg)
 
+<h4>4- Ao clicar no botão de alerta, usuário é direcionado para a página -Lista de Desaparecidos- onde é possível visualizar o(s) desaparecido(s) cadastrados pelo úsuário com as devidas informações que foram inseridas. Na página -Lista de Desaparecidos- o usuário tem as opções de Inserir-para cadastrar um novo desaparecido-, Editar-para editar um desaparecido- e Excluir-para excluir um desaparecido. Além disso, consta nesta página se o Desaparecido foi ou não encontrado</h4>
 
-<h4>4- Ao clicar no botão de alerta, usuário é direcionado para a página -Lista de Desaparecidos- onde é possível visualizar o(s) desaparecido(s) cadastrados pelo úsuário com as devidas informações que foram inseridas. Na página -Lista de Desaparecidos- o usuário tem as opções de Inserir-para cadastrar um novo desaparecido-, Editar-para editar um desaparecido- e Excluir-para excluir um desaparecido.</h4>
-
-![Lista Desaparecidos](https://user-images.githubusercontent.com/98750413/200847578-217866aa-a4bd-4700-a1fa-0511e7912d5b.png)
-
+![Lista Desaparecido, usuário](https://user-images.githubusercontent.com/98750413/204157947-7d097307-39cb-42c1-9d92-91872f6a8dd5.png)
 
 <h4>5- Ao clicar em Inserir, na página-Lista de Desaparecidos, o usuário é direcionado para a página-Cadastro de Desaparecidos.</h4>
 
 ![Cadastro Desaparecidos](https://user-images.githubusercontent.com/98750413/200814117-c90653c0-307d-4bbc-a8eb-f065ca596a95.png)
 
-
 <h4>6- Ao clicar em Editar, na página-Lista de Desaparecidos-, o usuário é direcionado para a página-Editar Desaparecido, onde é possível modificar qualquer campo do cadastro feito.</h4>
 
 ![Editar Desaparecido](https://user-images.githubusercontent.com/98750413/200850356-9005f509-2447-4608-93bf-608571f25211.png)
-
 
 <h4>7- Quando desaparecido é editado e botão Enviar Cadastro é acionado, um alerta é emitido, confirmando "Desaparecido editado com sucesso".</h4>
 
 ![Desaparecido editado com sucesso!](https://user-images.githubusercontent.com/98750413/200852305-3b7c0381-5dc3-48f4-9823-9adf9511dfcc.jpeg)
 
-
 <h4>8- Ao clicar em Excluir, na página-Lista de Desaparecidos-, o usuário é direcionado para a página-Excluir Desaparecido, onde é possível apenas excluir o cadastro, clicando no botão "Excluir".</h4>
 
 ![Excluir Desaparecido](https://user-images.githubusercontent.com/98750413/200853143-bf5e4de7-55de-4daa-9ba0-32cb346ebffe.png)
-
 
 <h4>9- Ao clicar em Excluir, na página-Excluir Desaparecidos-, um alerta é emitido, confirmando "Desaparecido excluído com sucesso".</h4>
 
 ![Desaparecido excluído com sucesso!](https://user-images.githubusercontent.com/98750413/200854170-e196aa9f-c285-4ccd-9928-0218bcdeebbd.jpeg)
 
-
 <h4>10- Ao clicar no botão de alerta, o usuário é direcionado para a página -Lista de Desaparecidos- onde é possível confirmar que Desaparecido excluído não está mais listado.</h4>
 
-![Lista de Desaparecidos vazia](https://user-images.githubusercontent.com/98750413/201131856-b0f1f3d5-ca1d-4e1d-a3f8-efed0f3b655e.png)
+![Lista Desaparecidos, usuário, vazia](https://user-images.githubusercontent.com/98750413/204158170-979578eb-0ad6-4587-bfad-ed7773ca483c.png)
 
 
 <h2>Páginas Administradores</h2>
@@ -106,26 +96,24 @@ Excluir Desaparecidos (versão de administrador): https://github.com/ICEI-PUC-Mi
 
 ![Cadastro Desaparecido-adm](https://user-images.githubusercontent.com/98750413/201091604-a4182cc3-2cc5-4853-89ee-f1db90a4147c.png)
 
-
 <h4>2- Caso algum dos campos do cadastro não tenha sido preenchido, um alerta é emitido- "Preencha todos os campos obrigatórios!"</h4>
 
 ![Preencha os campos obrigatório-adm](https://user-images.githubusercontent.com/98750413/201092573-61e9e7af-56c0-445e-a62c-25b3c80cfd0b.png)
-
 
 <h4>3- Quando desaparecido é cadastrado e botão Enviar Cadastro é acionado, um alerta é emitido, confirmando "Desaparecido incluído com sucesso".</h4>
 
 ![Desaparecido incluído com sucesso-adm](https://user-images.githubusercontent.com/98750413/201093679-9284243c-2212-4758-9cc3-ecd60531abd0.png)
 
-
 <h4>4- Ao clicar no botão de alerta, o administrador é direcionado para a página -Lista de Desaparecidos-adm- onde é possível visualizar o(s) desaparecido(s) cadastrados pelo administrador e pelos usuários com as devidas informações que foram inseridas. Na página -Lista de Desaparecidos-adm- o administrador tem as opções de Inserir-para cadastrar um novo desaparecido-, Editar-para editar um desaparecido- e Excluir-para excluir um desaparecido. </h4>
 
-![Lista Desaparecidos-adm](https://user-images.githubusercontent.com/98750413/201094242-793d5311-35bf-47eb-ba98-e3027bbf7dfc.png)
+
+![Lista Desaparecidos, adm](https://user-images.githubusercontent.com/98750413/204158475-782a93cf-ac7c-4596-8d74-723d643453ac.png)
 ![Cadastrado no usuário](https://user-images.githubusercontent.com/98750413/201182944-d13da4c1-ed7a-44cf-aa4b-343c78b490f1.png)
-![Cadastrado no usuário e indo para a Lista de Desaparecidos-adm](https://user-images.githubusercontent.com/98750413/201183498-76ca398f-c62c-494d-a25b-3112eaad8d48.png)
+![Cadastrado no usuário indo para a lista do adm](https://user-images.githubusercontent.com/98750413/204158726-d1a2702f-ae41-4b68-aa66-fabdcf7191d4.png)
+
 <h4>5- Ao clicar em Inserir, na página-Lista de Desaparecidos-adm, o administrador é direcionado para a página-Cadastro de Desaparecidos-adm.</h4>
 
 ![Cadastro Desaparecido-adm](https://user-images.githubusercontent.com/98750413/201091604-a4182cc3-2cc5-4853-89ee-f1db90a4147c.png)
-
 
 <h4>6- Ao clicar em Editar, na página-Lista de Desaparecidos-adm-, o administrador é direcionado para a página-Editar Desaparecido-adm, onde é possível modificar qualquer campo do cadastro feito.</h4>
 
@@ -136,16 +124,13 @@ Excluir Desaparecidos (versão de administrador): https://github.com/ICEI-PUC-Mi
 
 ![Desaparecido editado com sucesso-adm!](https://user-images.githubusercontent.com/98750413/201096197-24712aba-618a-4b15-8af8-1c138452ef34.png)
 
-
 <h4>8- Ao clicar em Excluir, na página-Lista de Desaparecidos-, o administrador é direcionado para a página-Excluir Desaparecido, onde é possível apenas excluir o cadastro, clicando no botão "Excluir".</h4>
 
 ![Excluir Desaparecido-adm](https://user-images.githubusercontent.com/98750413/201124576-8d20bec8-6512-48ca-93b2-cf4464e8be39.png)
 
-
 <h4>9- Ao clicar em Excluir, na página-Excluir Desaparecidos,adm-, um alerta é emitido, confirmando "Desaparecido excluído com sucesso".</h4>
 
 ![Desaparecido excluído com sucesso!](https://user-images.githubusercontent.com/98750413/201096737-15704763-5c84-4346-94cf-fd6ede44c290.png)
-
 
 <h4>10- Ao clicar no botão de alerta, o administrador é direcionado para a página -Lista de Desaparecidos-adm- onde é possível confirmar que Desaparecido excluído não está mais listado.</h4> 
 
