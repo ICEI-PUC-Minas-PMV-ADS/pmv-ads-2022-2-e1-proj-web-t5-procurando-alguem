@@ -11,10 +11,10 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico o
 | Caso de Teste | CT-01 - Verificação se noticia cadastrada pelo administrador consta na Home page |
 |---------------|--------------------------|
 | Requisitos Associados | RF12 e RF18|
-| Objetivo do Teste | Verificar se atualizações de uma tela está constando em outra. |
+| Objetivo do Teste | Verificar se atualizações de uma tela está constando em outra. 
 | Passos |1) Acessar o site como administrador.
 | Passos |2) Cadastrar notícia.
-| Passos |3) Visualizar se notícia aparece na Home page.
+| Passos |3) Visualizar se notícia aparece na Home page.|
 | Critérios de Êxito |4) Notícia aparecer na Home page.|
 
 
