@@ -117,24 +117,27 @@
         <label class="label6" for="inputCidade">Cidade:</label>
         <input class="input6" type="text" name="inputCidade" id="inputCidade" placeholder="Cidade">
 
+        <div class = "label_status">
         <label for="inputStatus">Status</label>
         <select id="inputStatus">
           <option value="true">Desaparecido</option>
           <option value="false">Encontrado</option>
         </select>
+        </div>
 
         <label class="label7" for="maisInformacoes">Mais Informações:</label>
         <textarea type="text" name="maisInformacoes" id="maisInformacoes" cols="10" maxlength="800"
           placeholder="Digite nesse campo informações adicionais como: medicamentos essenciais ou alguma informação importante e relevante sobre o Desaparecido."></textarea>
 
-        <label class="mensagem-botao-foto" for="mensagem-botao-foto">Clique no botão abaixo para inserir uma foto da
-          pessoa desaparecida:</label>
+        <label class="mensagem-botao-foto" for="mensagem-botao-foto">Clique no botão abaixo para inserir uma foto da pessoa desaparecida:</label>
         <button id="botao-foto" name="botao-foto">Buscar arquivo<img id="imagem-botao"
             src="../../imagens/imagem-botao-foto.svg" width="40">
           <input type="file" id="myfile" name="myfile">
 
           <button class="enviar-cadastro" onclick="editarDesaparecido()">Enviar cadastro</button>
           <a href="lista-desaparecidos.html" class="botao-voltar">Voltar</a>
+
+
 
       </div>
     </div>
