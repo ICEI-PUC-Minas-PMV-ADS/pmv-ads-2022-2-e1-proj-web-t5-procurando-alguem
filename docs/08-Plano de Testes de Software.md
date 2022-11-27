@@ -5,6 +5,21 @@
 Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
 
 Enumere quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
+
+<h1>Daniel Mendes Rufino Silva</h1>
+<h2>Desenvolvi testes nas páginas da Stephanye Castellano</h2>
+| Caso de Teste | CT-01 - Verificação se noticia cadastrada pelo administrador consta na Home page |
+|---------------|--------------------------|
+| Requisitos Associados | RF12 e RF18|
+| Objetivo do Teste | Verificar se atualizações de uma tela está constando em outra. |
+| Passos |1) Acessar o site como administrador.
+| Passos |2) Cadastrar notícia.
+| Passos |3) Visualizar se notícia aparece na Home page.
+| Critérios de Êxito |4) Notícia aparecer na Home page.|
+
+
+
+
  
 ## Ferramentas de Testes (Opcional)
 
