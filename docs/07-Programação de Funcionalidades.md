@@ -138,9 +138,16 @@ Excluir Desaparecidos (versão de administrador): https://github.com/ICEI-PUC-Mi
 
 
 <h1>Stephanye Castellano</h1>
-RF referenciados: RF-12, RF-18 (esse o intuito era cadastrar noticias do desaparecidos, mas houve uma mudança e resolvemos deixar as atualizações no perfil do usuário e criar na home page as notícias sobre desaparecimentos)
+RF referenciados: RF-05, RF-11, RF-12, RF-18 (esse o intuito era cadastrar noticias do desaparecidos, mas houve uma mudança e resolvemos deixar as atualizações no perfil do usuário e criar na home page as notícias sobre desaparecimentos)
+
 Página de usuário desenvolvida:
-Home Page -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/edit/main/src/paginas/usuario/home-page.html
+Home Page -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/home-page.html
+Notícia -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/noticia.html
+Perfil do Encontrado -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/perfil-encontrado.html
+Perfil do Desaparecido -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/perfil-desaparecido.html
+Encontrados -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/encontrados.html
+Desaparecidos -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/desaparecidos.html
+
 
 Páginas de administrador desenvolvidas:
 Listar Notícias -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/lista-noticia.html
@@ -148,26 +155,42 @@ Incluir Notícias -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1
 Editar Notícias -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/editar-noticia.html
 Excluir Notícias -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/excluir-noticia.html
 <h3>1 - Tela de Home Page (usuário)</h3>
-<h4> Tela principal do site (ainda precisa de alguns reajustes reajuste)<h4>
-![homepage] (https://user-images.githubusercontent.com/53917285/201239445-41669c88-f957-4446-8275-a2629ea761c9.png)
+<h4> Tela principal do site <h4>
+![image](https://user-images.githubusercontent.com/53917285/204163712-e9a17d91-dc3e-48d7-8023-cd78f1ce7d59.png)
 
+<h3>2 - Tela de Notícia(usuário)</h3>
+<h4> Tela individual da notícia<h4>
+![image](https://user-images.githubusercontent.com/53917285/204163754-26e2d3a2-100a-4a98-8336-b5bd81cb3da1.png)
 
-<h3>2 - Listar Notícias (admin)</h3>
-<h4>Visão administrador da listagem<h4>
-![listarNoticia](https://user-images.githubusercontent.com/53917285/201239478-1be53284-c537-4b9f-8db4-6c8ff6b97b74.png)
+<h3>3 - Tela de Perfil Encontrado(usuário)</h3>
+<h4> Tela perfil de encontrando para qualquer usuário<h4>
+![image](https://user-images.githubusercontent.com/53917285/204163842-d6014542-b21e-4b16-823e-0cbac7f7c9c1.png)
 
+<h3>4 - Tela de Perfil Desaparecido(usuário)</h3>
+<h4> Tela perfil de desaparecido para qualquer usuário<h4>
+![image](https://user-images.githubusercontent.com/53917285/204163878-1b4c672c-8edc-4e71-8dd0-84d5dd5be054.png)
+
+<h3>5 - Tela de Encontrados(usuário)</h3>
+<h4> Tela de listagem de encontrados para qualquer usuário<h4>
+![image](https://user-images.githubusercontent.com/53917285/204164069-a047f9c4-55ec-4923-87d3-8162ae237bdd.png)
   
-<h3>3 - Incluir Notícias (admin)</h3>
+<h3>6 - Tela de Desaparecidos(usuário)</h3>
+<h4> Tela de listagem de desaparecidos para qualquer usuário<h4>
+![image](https://user-images.githubusercontent.com/53917285/204163942-51c598ff-b13b-47e9-92cb-883fadbaeaec.png)
+
+<h3>7 - Listar Notícias (admin)</h3>
+<h4>Visão administrador da listagem<h4>
+![image](https://user-images.githubusercontent.com/53917285/204163212-187aed97-ddf0-4c90-83f3-877b125173ee.png)
+  
+<h3>8 - Incluir Notícias (admin)</h3>
 <h4>Somente administrador poderá incluir notícias<h4>
 ![incluirNoticia] (https://user-images.githubusercontent.com/53917285/201239513-66b07c40-b403-4161-ae23-d927c5630ef5.png)
-
   
-<h3>4 - Editar Notícias (admin)</h3>
+<h3>9 - Editar Notícias (admin)</h3>
 <h4>Somente administrador poderá editar notícias<h4>
 ![editarNoticia] (https://user-images.githubusercontent.com/53917285/201239545-ab29c768-423f-4d12-9c20-3f73fd5283d4.png)
 
-
-<h3>5 - Excluir Notícias (admin)</h3>
+<h3>10 - Excluir Notícias (admin)</h3>
 <h4>Somente administrador poderá excluir notícias<h4>
 ![excluirNoticia](https://user-images.githubusercontent.com/53917285/201239567-eb898dda-cca9-4cd8-ab1f-ddfdadc7863c.png)
 
