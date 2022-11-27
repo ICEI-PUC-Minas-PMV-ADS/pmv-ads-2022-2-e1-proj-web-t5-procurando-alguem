@@ -140,13 +140,13 @@ Excluir Desaparecidos (versão de administrador): https://github.com/ICEI-PUC-Mi
 <h1>Stephanye Castellano</h1>
 RF referenciados: RF-05, RF-11, RF-12, RF-18 (esse o intuito era cadastrar noticias do desaparecidos, mas houve uma mudança e resolvemos deixar as atualizações no perfil do usuário e criar na home page as notícias sobre desaparecimentos)
 
-Página de usuário desenvolvida:
-Home Page -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/home-page.html
-Notícia -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/noticia.html
-Perfil do Encontrado -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/perfil-encontrado.html
-Perfil do Desaparecido -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/perfil-desaparecido.html
-Encontrados -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/encontrados.html
-Desaparecidos -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/desaparecidos.html
+Página de usuário desenvolvida:<br>
+Home Page -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/home-page.html <br>
+Notícia -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/noticia.html <br>
+Perfil do Encontrado -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/perfil-encontrado.html <br>
+Perfil do Desaparecido -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/perfil-desaparecido.html <br>
+Encontrados -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/encontrados.html <br>
+Desaparecidos -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/desaparecidos.html <br>
 
 
 Páginas de administrador desenvolvidas:
