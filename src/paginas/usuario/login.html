@@ -157,9 +157,17 @@
 			}
 
 			let db_usuarios = JSON.parse(localStorage.getItem('db_usuarios'));
-			let cadastroUsuario = db_usuarios.find(x => x.login == login);
-			if (cadastroUsuario != null ){
-				alert('Este usuário já foi cadastrado')
+			let loginCadastrado = db_usuarios.usuarios.find(x => x.login == login);
+
+			if (loginCadastrado != undefined){
+				alert('Este login já foi cadastrado')
+				return
+			}
+			
+			let emailCadastrado = db_usuarios.usuarios.find(x => x.email == email);
+
+			if (emailCadastrado != undefined){
+				alert('Este email já foi cadastrado')
 				return
 			}
 
