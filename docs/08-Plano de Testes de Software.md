@@ -18,7 +18,6 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico o
 Critérios de Êxito: Notícia aparecer na Home page, no topo das Notícias sobre desaparecidos.
 
  <h5>CT-02 - Verificação se na Home page ao clicar em "Ver mais" se o usuário é direcionado para a tela noticia, onde é possível ver a notícia completa.</h5>
- Requisitos Associados: RF12 e RF18.<br>
  Objetivo do Teste: Verificar se aparece a notícia que foi clicada no ver mais aparece completa.<br>    
  Passo 1: Acessar o site como usuário<br>                                              
  Passos 2: Ir para a Home page.<br>                                                                
@@ -26,7 +25,6 @@ Critérios de Êxito: Notícia aparecer na Home page, no topo das Notícias sobr
  Critérios de Êxito: Notícia aparecer completa na tela de notícia.   
  
  <h5>CT-03 - Verificação se após cadastrar um desaparecido, ele aparece no topo da parte onde constam os últimos desaparecidos na tela Home page.</h5>
- Requisitos Associados: RF12 e RF18.<br>
  Objetivo do Teste: Verificar se desaparecido cadastrado por último aparece no primeiro nome da lista dos últimos desaparecidos.<br>    
  Passo 1: Acessar o site como usuário<br>                                              
  Passos 2: Cadastrar um desaparecido.<br>     
@@ -34,7 +32,6 @@ Critérios de Êxito: Notícia aparecer na Home page, no topo das Notícias sobr
  Critérios de Êxito: Desaparecido cadastrado por último aparecer no primeiro nome da lista dos últimos desaparecidos.
  
   <h5>CT-04 - Verificação se após trocar o status, na tela Editar desaparecido, ele migra da Página de desaparecidos para a tela de Encontrados.</h5>
- Requisitos Associados: RF12 e RF18.<br>
  Objetivo do Teste: Verificar se desaparecido cadastrado por último aparece no primeiro nome da lista dos últimos desaparecidos.<br>    
  Passo 1: Acessar o site como usuário<br>                                              
  Passos 2: Cadastrar um desaparecido.<br>     
