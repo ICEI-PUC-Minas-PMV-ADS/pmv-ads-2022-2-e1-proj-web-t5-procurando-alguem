@@ -67,8 +67,7 @@ Excluir Desaparecidos (versão de administrador): https://github.com/ICEI-PUC-Mi
 
 <h4>4- Ao clicar no botão de alerta, usuário é direcionado para a página -Lista de Desaparecidos- onde é possível visualizar o(s) desaparecido(s) cadastrados pelo úsuário com as devidas informações que foram inseridas. Na página -Lista de Desaparecidos- o usuário tem as opções de Inserir-para cadastrar um novo desaparecido-, Editar-para editar um desaparecido- e Excluir-para excluir um desaparecido.</h4>
 
-![Lista Desaparecidos](https://user-images.githubusercontent.com/98750413/200847578-217866aa-a4bd-4700-a1fa-0511e7912d5b.png)
-
+![Lista Desaparecido, usuário](https://user-images.githubusercontent.com/98750413/204157947-7d097307-39cb-42c1-9d92-91872f6a8dd5.png)
 
 <h4>5- Ao clicar em Inserir, na página-Lista de Desaparecidos, o usuário é direcionado para a página-Cadastro de Desaparecidos.</h4>
 
