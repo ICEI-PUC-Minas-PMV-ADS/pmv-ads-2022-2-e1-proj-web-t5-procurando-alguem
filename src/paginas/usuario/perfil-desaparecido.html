@@ -58,18 +58,19 @@
   <section class="section-content">
     <div class="row div-content">
       <div class="col col-content">
-        <h4>Modelo 2 - Coluna 1</h4>
+        <img id="foto" src="" width="230px" height="300px"></td>
       </div>
       <div class="col-6 col-content">
-        <h2>Modelo 2 - Coluna 2</h2>
-        <label class="label2" for="inputIdade">Idade:</label>
+        <h2>Informações do Desaparecido</h2>
 
-        <label class="label3" for="inputSexo">Sexo:</label>
-        <label class="label4" for="inputCorRaca">Cor/Raça:</label>
-        <label class="label5" for="inputAltura">Altura:</label>
-        <label class="label6" for="inputCidade">Cidade:</label>
-        <label class="label7" for="maisInformacoes">Mais Informações:</label>
-        
+        <label class="textfield-label" id="nome"></label><br>
+        <label class="textfield-label" id="idade"></label><br>
+        <label class="textfield-label" id="sexo"></label><br>
+        <label class="textfield-label" id="corRaca"></label><br>
+        <label class="textfield-label" id="altura"></label><br>
+        <label class="textfield-label" id="cidade"></label><br>
+        <label class="textfield-label" id="maisInformacoesPerfil"></label><br>
+
       </div>
       <div class="col col-content">
         <h4>Modelo 2 - Coluna 3</h4>
@@ -77,5 +78,26 @@
     </div>
   </section>
 </body>
+
+<script>
+  window.onload = (event) => {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    let id = urlParams.get('id');
+
+    let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
+    let desaparecido = db_desaparecidos.find(x => x.id == id);
+
+    // Preenchendo os campos da label
+    document.getElementById("foto").src = desaparecido.foto;
+    document.getElementById("nome").innerHTML = "Nome: " + desaparecido.nome;
+    document.getElementById("idade").innerHTML = "Idade: " + desaparecido.idade;
+    document.getElementById("sexo").innerHTML = "Sexo: " + desaparecido.sexo;
+    document.getElementById("corRaca").innerHTML = "Cor/Raça: " + desaparecido.corRaca;
+    document.getElementById("altura").innerHTML = "Altura: " + desaparecido.altura;
+    document.getElementById("cidade").innerHTML = "Cidade: " + desaparecido.cidade;
+    document.getElementById("maisInformacoesPerfil").innerHTML = "Mais informações: " + desaparecido.maisInformacoes;
+  }
+</script>
 
 </html>
