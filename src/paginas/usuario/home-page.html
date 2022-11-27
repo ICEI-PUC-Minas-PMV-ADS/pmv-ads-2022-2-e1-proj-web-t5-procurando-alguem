@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <!--se retirar estraga navbar-->
   <link rel="stylesheet" href="../../estilo/style.css">
+  <script type="text/javascript" src="../../js/banco-desaparecidos.js"></script>
   <script type="text/javascript" src="../../js/banco-noticias.js"></script>
   <title>Home Page</title>
 </head>
@@ -78,17 +79,9 @@
         </div>
       </div>
       <div class="col col-content">
-        <h4>Últimos Desaparecido</h4>
+        <h4>Últimos Desaparecidos</h4>
 
-        <ul>
-          <li class="dropdown-item lista-desaparecido">Daniela Soares</li>
-          <li class="dropdown-item lista-desaparecido">Lucas Santos</li>
-          <li class="dropdown-item lista-desaparecido">Matheus Sousa</li>
-          <li class="dropdown-item lista-desaparecido">Letícia Oliveira</li>
-          <li class="dropdown-item lista-desaparecido">Jenipher Vignatti</li>
-          <li class="dropdown-item lista-desaparecido">Christopher Kerik</li>
-          <li class="dropdown-item lista-desaparecido">Larissa Josefa</li>
-          <li class="dropdown-item lista-desaparecido">Meredith Grey</li>
+        <ul id="lista-desaparecidos-home-page">
         </ul>
       </div>
     </div>
@@ -111,8 +104,6 @@
       listarNoticias.innerHTML = "<h4> Nenhuma notícia cadastrada</h4>";
     }
     else {
-      let tabelaConteudo = document.getElementById("titulo-noticia");
-
       let conteudoHTML = "";
 
       for (let i = db_noticias.length - 1; i >= 0; i--) {
@@ -121,6 +112,26 @@
       }
 
       listarNoticias.innerHTML = conteudoHTML;
+    }
+
+    //Seção desaparecidos
+    let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
+
+    let listarDesaparecidos = document.getElementById("lista-desaparecidos-home-page")
+
+    if (!db_desaparecidos || db_desaparecidos.length == 0) {
+      listarDesaparecidos.innerHTML = "<h4> Nenhuma notícia cadastrada</h4>";
+    }
+    else {
+      let conteudoHTML = "";
+
+      for (let i = db_desaparecidos.length - 1; i >= 0; i--) {
+        if (db_desaparecidos[i].status == true) {
+          conteudoHTML += `<li class="dropdown-item lista-desaparecido"> <a href="perfil-desaparecido.html?id=${db_desaparecidos[i].id}">${db_desaparecidos[i].nome}</a> </li>`;
+        }
+      }
+
+      listarDesaparecidos.innerHTML = conteudoHTML;
     }
   };
 
@@ -133,7 +144,7 @@
     } else {
       for (let i = 0; i < 50; i++) {
         resultado += words[i] + " ";
-      }      
+      }
       resultado += "...";
     }
 

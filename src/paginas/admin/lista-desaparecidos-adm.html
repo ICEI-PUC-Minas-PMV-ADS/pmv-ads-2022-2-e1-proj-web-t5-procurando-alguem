@@ -67,6 +67,7 @@
                             <th scope="col">Altura</th>
                             <th scope="col">Cidade</th>
                             <th scope="col">Mais Informações</th>
+                            <th scope="col">Status</th>
                             <th scope="col">Ações</th>
                         </tr>
                     </thead>
@@ -91,7 +92,7 @@
 
         if (!db_desaparecidos || db_desaparecidos.length == 0) {
             let tabelaConteudo = document.getElementById("Tabela-Conteudo");
-            tabelaConteudo.innerHTML = "<tr><td colspan='9' class='text-center'>Nenhum desaparecido cadastrado atualmente</td></tr>";
+            tabelaConteudo.innerHTML = "<tr><td colspan='10' class='text-center'>Nenhum desaparecido cadastrado atualmente</td></tr>";
         }
         else {
             let tabelaConteudo = document.getElementById("Tabela-Conteudo");
@@ -108,6 +109,7 @@
                 conteudoHTML += `<td>${db_desaparecidos[i].altura}</td>`;
                 conteudoHTML += `<td>${db_desaparecidos[i].cidade}</td>`;
                 conteudoHTML += `<td>${db_desaparecidos[i].maisInformacoes}</td>`;
+                conteudoHTML += `<td>${tratarStatus(db_desaparecidos[i].status)}</td>`;
                 conteudoHTML +=
                     `<td>
                             <a href='editar-desaparecido-adm.html?inputId-adm=${db_desaparecidos[i].id}' class="btn btn-info">Editar</a>
@@ -119,6 +121,14 @@
             tabelaConteudo.innerHTML = conteudoHTML;
         }
     };
+
+    function tratarStatus(status){
+        if(status == true){
+            return "Desaparecido";
+        } else{
+            return "Encontrado";
+        }
+    }
 </script>
 
 

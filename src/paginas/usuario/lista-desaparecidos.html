@@ -118,6 +118,8 @@
     //Se existir registros será mostrado uma listagem de desaparecidos
     let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
 
+
+
     var listaUsuarioCorrente = [];
 
     for (i = 0; i < db_desaparecidos.length; i++) {
@@ -146,7 +148,7 @@
         conteudoHTML += `<td>${listaUsuarioCorrente[i].altura}</td>`;
         conteudoHTML += `<td>${listaUsuarioCorrente[i].cidade}</td>`;
         conteudoHTML += `<td>${limitarTexto(listaUsuarioCorrente[i].maisInformacoes)}</td>`;
-        conteudoHTML += `<td>${listaUsuarioCorrente[i].status}</td>`;
+        conteudoHTML += `<td>${tratarStatus(listaUsuarioCorrente[i].status)}</td>`;
         conteudoHTML +=
           `<td>
                                 <a href='editar-desaparecido.html?inputId=${listaUsuarioCorrente[i].id}' class="btn btn-info">Editar</a>
@@ -173,6 +175,14 @@
     }
 
     return resultado;
+  }
+
+  function tratarStatus(status) {
+    if (status == true) {
+      return "Desaparecido";
+    } else {
+      return "Encontrado";
+    }
   }
 </script>
 </html>
