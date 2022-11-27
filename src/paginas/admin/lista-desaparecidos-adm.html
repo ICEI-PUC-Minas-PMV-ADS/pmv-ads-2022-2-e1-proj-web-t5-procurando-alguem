@@ -108,7 +108,7 @@
                 conteudoHTML += `<td>${db_desaparecidos[i].corRaca}</td>`;
                 conteudoHTML += `<td>${db_desaparecidos[i].altura}</td>`;
                 conteudoHTML += `<td>${db_desaparecidos[i].cidade}</td>`;
-                conteudoHTML += `<td>${db_desaparecidos[i].maisInformacoes}</td>`;
+                conteudoHTML += `<td>${limitarTexto(db_desaparecidos[i].maisInformacoes)}</td>`;
                 conteudoHTML += `<td>${tratarStatus(db_desaparecidos[i].status)}</td>`;
                 conteudoHTML +=
                     `<td>
@@ -121,6 +121,22 @@
             tabelaConteudo.innerHTML = conteudoHTML;
         }
     };
+
+    function limitarTexto(texto) {
+    const words = texto.split(' ');
+    let resultado = "";
+
+    if (words.length <= 1) {
+      resultado = texto;
+    } else {
+      for (let i = 0; i < 1; i++) {
+        resultado += words[i] + " ";
+      }
+      resultado += "...";
+    }
+
+    return resultado;
+  }
 
     function tratarStatus(status){
         if(status == true){

@@ -71,7 +71,7 @@
 
 
       <label class="label5-adm" for="inputAltura-adm">Altura:</label>
-      <input class="input5-adm" type="text" name="inputAltura" id="inputAltura-adm" placeholder="Altura">
+      <input class="input5-adm" type="number" min="20" name="inputAltura" id="inputAltura-adm" placeholder="Em cm">
 
       <label class="label6-adm" for="inputCidade-adm">Cidade/Estado:</label>
       <input class="input6-adm" type="text" name="inputCidade" id="inputCidade-adm" placeholder="Cidade">
@@ -112,13 +112,13 @@
     const maisInformacoes = document.getElementById("maisInformacoes-adm").value;
 
     if (foto == null || foto == undefined ||
-      nome === undefined || nome === null || nome === "" ||
+      nome === undefined || nome === null || nome.trim() === "" ||
       idade === undefined || idade === null || idade === "" ||
-      sexo === undefined || sexo === null || sexo === "" ||
-      corRaca === undefined || corRaca === null || corRaca === "" ||
+      sexo === undefined || sexo === null || sexo.trim() === "" ||
+      corRaca === undefined || corRaca === null || corRaca.trim() === "" ||
       altura === undefined || altura === null || altura === "" ||
-      cidade === undefined || cidade === null || cidade === "" ||
-      maisInformacoes === undefined || maisInformacoes === null || maisInformacoes === "") {
+      cidade === undefined || cidade === null || cidade.trim() === "" ||
+      maisInformacoes === undefined || maisInformacoes === null || maisInformacoes.trim() === "") {
       alert("Preencha todos os campos obrigatórios!")
       return;
     }
