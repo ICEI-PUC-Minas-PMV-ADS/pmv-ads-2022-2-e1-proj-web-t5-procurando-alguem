@@ -140,7 +140,7 @@ Excluir Desaparecidos (versão de administrador): https://github.com/ICEI-PUC-Mi
 <h1>Stephanye Castellano</h1>
 RF referenciados: RF-05, RF-11, RF-12, RF-18 (esse o intuito era cadastrar noticias do desaparecidos, mas houve uma mudança e resolvemos deixar as atualizações no perfil do usuário e criar na home page as notícias sobre desaparecimentos)
 
-Página de usuário desenvolvida:<br>
+Páginas de usuário desenvolvidas:<br>
 Home Page -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/home-page.html <br>
 Notícia -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/noticia.html <br>
 Perfil do Encontrado -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/perfil-encontrado.html <br>
@@ -149,7 +149,7 @@ Encontrados -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-
 Desaparecidos -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/desaparecidos.html <br>
 
 
-Páginas de administrador desenvolvidas:
+Páginas de administrador desenvolvidas:<br>
 Listar Notícias -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/lista-noticia.html <br>
 Incluir Notícias -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/incluir-noticia.html <br>
 Editar Notícias -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/editar-noticia.html <br>
