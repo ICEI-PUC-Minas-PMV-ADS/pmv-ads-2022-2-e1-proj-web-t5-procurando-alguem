@@ -28,6 +28,12 @@ body {
 
 /* Página cadastro, lista, editar e excluir-desaparecidos começa*/
 
+.local_status{
+    position: relative;
+    top: 150px;
+    left: 200px;
+
+}
 .space-menu {
     padding-left: 40px;
     font-size: 25px;
@@ -667,19 +673,6 @@ li.dropdown {
 }
 
 /*Estilo da página "Meu Perfil" começa aqui*/
-/*.dados-usuario{
-    background-color: #2F2841;
-    border-radius: 20px;
-    width: 60vw;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    left: 585px;
-    top: 200px;
-    
-}*/
-
 
 .itens-menu-opcoes{
     font-size: 25px;
