@@ -22,7 +22,6 @@
   <nav class="p1">
     <h1>Procurando Alguém?</h1>
     <img src="../../imagens/imagem-logo.svg" class="imagem-logo-todas" alt="Imagem da Logo">
-
   </nav>
 
   <nav class="navbar-expand-sm">
@@ -62,11 +61,8 @@
 
           </ul>
         </li>
-
-
       </ul>
     </div>
-
   </nav>
 
   <div class="titulo-caixa">
@@ -75,21 +71,12 @@
   <section class="caixa-central">
 
     <div class="form-group">
-
-      <!---
-      <br>
-      <div class="row">
-        <div class="col-11">
-          <h1>Listagem de desaparecidos</h1>
-        </div>-->
-
       <div class="inserir-lista">
         <a href="cadastro-desaparecido.html" class="btn btn-primary">Inserir</a>
       </div>
+
       <div>
-
         <br>
-
         <table class="table table-striped">
           <thead>
             <tr>
@@ -113,7 +100,6 @@
       </div>
     </div>
   </section>
-
 </body>
 
 <script type="application/javascript">
@@ -126,11 +112,10 @@
       alert("Você deve efetuar o login para acessar essa página!")
     }
 
-    
     //window.onload acontece quando a tela é carregada
     //Buscando banco de dados do localstorage.
     //Se não existir ou estivar vazio será mostrado uma mensagem que não existem notícias
-    //Se existir registros será mostrado uma listagem de notícas
+    //Se existir registros será mostrado uma listagem de desaparecidos
     let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
 
     var listaUsuarioCorrente = [];
@@ -140,11 +125,13 @@
         listaUsuarioCorrente.push(db_desaparecidos[i]);
       }
     }
+
     console.log(listaUsuarioCorrente);
     if (!listaUsuarioCorrente || listaUsuarioCorrente.length == 0) {
       let tabelaConteudo = document.getElementById("Tabela-Conteudo");
       tabelaConteudo.innerHTML = "<tr><td colspan='9' class='text-center'>Nenhum desaparecido cadastrado atualmente</td></tr>";
     }
+
     else {
       let tabelaConteudo = document.getElementById("Tabela-Conteudo");
       let conteudoHTML = "";
@@ -171,6 +158,7 @@
       tabelaConteudo.innerHTML = conteudoHTML;
     }
   };
+
   function limitarTexto(texto) {
     const words = texto.split(' ');
     let resultado = "";
@@ -180,12 +168,11 @@
     } else {
       for (let i = 0; i < 1; i++) {
         resultado += words[i] + " ";
-      }      
+      }
       resultado += "...";
     }
 
     return resultado;
   }
 </script>
-
 </html>

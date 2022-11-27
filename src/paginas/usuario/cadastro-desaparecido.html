@@ -84,11 +84,6 @@
   </div>
 
   <section class="caixa-central">
-
-
-
-    <!--<form id="form-contato">-->
-
     <div class="form-group">
       <div class="informacoes-especificas">
         <div class="nome-desaparecido text-md-left">
@@ -96,23 +91,17 @@
           <input type="text" name="inputNome" id="inputNome" placeholder="Nome do Desaparecido">
         </div>
 
-
-
         <label class="label1" for="inputId">Id</label>
         <input class="input1" type="number" name="inputId" id="inputId" placeholder="ID" disabled>
-
 
         <label class="label2" for="inputIdade">Idade:</label>
         <input class="input2" type="number" min="0" name="inputIdade" id="inputIdade" placeholder="Idade">
 
-
         <label class="label3" for="inputSexo">Sexo:</label>
         <input class="input3" type="text" name="inputSexo" id="inputSexo" placeholder="Sexo">
 
-
         <label class="label4" for="inputCorRaca">Cor/Raça:</label>
         <input class="input4" type="text" name="inputCorRaca" id="inputCorRaca" placeholder="cor/raça">
-
 
         <label class="label5" for="inputAltura">Altura:</label>
         <input class="input5" type="number" min="20"  name="inputAltura" id="inputAltura" placeholder="Em cm">
@@ -120,11 +109,9 @@
         <label class="label6" for="inputCidade">Cidade:</label>
         <input class="input6" type="text" name="inputCidade" id="inputCidade" placeholder="Cidade">
 
-
         <label class="label7" for="maisInformacoes">Mais Informações:</label>
         <textarea type="text" name="maisInformacoes" id="maisInformacoes" cols="10" maxlength="800"
           placeholder="Digite nesse campo informações adicionais como: medicamentos essenciais ou alguma informação importante e relevante sobre o Desaparecido, locais que frequenta e últimos locais onde foi visto, além do que estava vestindo no último dia que foi visto."></textarea>
-
 
         <label class="mensagem-botao-foto" for="mensagem-botao-foto">Clique no botão abaixo para inserir uma foto da
           pessoa desaparecida:</label>
@@ -132,18 +119,13 @@
             src="../../imagens/imagem-botao-foto.svg" width="40">
           <input type="file" id="myfile" name="myfile">
 
-
           <button class="enviar-cadastro" onclick="inserirDesaparecido()">Enviar cadastro</button>
           <a href="lista-desaparecidos.html" class="botao-voltar">Voltar</a>
-
-
 
       </div>
     </div>
   </section>
-
 </body>
-
 
 <script type="application/javascript">
   window.onload = (event) => {
@@ -179,7 +161,6 @@
       return;
     }
 
-
     //Buscando banco de dados do localstorage. Caso não exista, será inicializado com um array vazio
     //Caso exista, prepara o id para a novo desaparecido, pegando o maior id existente + 1
     var db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
@@ -191,9 +172,7 @@
       id = db_desaparecidos[db_desaparecidos.length - 1].id + 1;
     }
 
-
       const usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
-
 
       //Criando desaparecido para inserir no banco de dados do localstorage
       const desaparecido = {
@@ -220,6 +199,7 @@
       //Redirecionando para a página de listagem
       window.location.href = "lista-desaparecidos.html";
     }
+
     const toBase64 = file => new Promise((resolve, reject) => {
     const reader = new FileReader();
     reader.readAsDataURL(file);
@@ -228,5 +208,4 @@
   });
   
 </script>
-
 </html>
