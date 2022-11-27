@@ -88,26 +88,17 @@
       </div>
   </section>
   </body>
-</html>
-  <!--
-  <div class="menu-opcoes">
-      <h1>Menu de Opções</h1>
-
-        <ul class="itens-menu-opcoes">
-            <li>Meus Dados</li>
-            <li>Segurança e Privacidade</li>
-            <li>Preferências</li>
-            <li>Notificações</li>
-            <li>Configurações</li>
-            <li>SAIR</li>
-        </ul>
-
-   </div>
-
-   <div class="dados-usuario">
-      <h1>Meus Dados</h1>
-   </div>
 
 
-</body>
-</html>-->
+<script type="application/javascript">
+  window.onload = (event) => {
+    var usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
+    console.log(usuarioCorrente)
+
+    if (usuarioCorrente == null) {
+      window.location.href = "login.html";
+      alert("Você deve efetuar o login para acessar essa página!")
+    }
+  }
+  </script>
+  </html>
