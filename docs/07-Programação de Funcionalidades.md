@@ -149,7 +149,7 @@ Editar Notícias -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-
 Excluir Notícias -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/excluir-noticia.html
 <h3>1 - Tela de Home Page (usuário)</h3>
 <h4> Tela principal do site (ainda precisa de alguns reajustes reajuste)<h4>
-![homepage](https://user-images.githubusercontent.com/53917285/201239445-41669c88-f957-4446-8275-a2629ea761c9.png)
+![homepage] (https://user-images.githubusercontent.com/53917285/201239445-41669c88-f957-4446-8275-a2629ea761c9.png)
 
 
 <h3>2 - Listar Notícias (admin)</h3>
@@ -159,12 +159,12 @@ Excluir Notícias -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1
   
 <h3>3 - Incluir Notícias (admin)</h3>
 <h4>Somente administrador poderá incluir notícias<h4>
-![incluirNoticia](https://user-images.githubusercontent.com/53917285/201239513-66b07c40-b403-4161-ae23-d927c5630ef5.png)
+![incluirNoticia] (https://user-images.githubusercontent.com/53917285/201239513-66b07c40-b403-4161-ae23-d927c5630ef5.png)
 
   
 <h3>4 - Editar Notícias (admin)</h3>
 <h4>Somente administrador poderá editar notícias<h4>
-![editarNoticia](https://user-images.githubusercontent.com/53917285/201239545-ab29c768-423f-4d12-9c20-3f73fd5283d4.png)
+![editarNoticia] (https://user-images.githubusercontent.com/53917285/201239545-ab29c768-423f-4d12-9c20-3f73fd5283d4.png)
 
 
 <h3>5 - Excluir Notícias (admin)</h3>
