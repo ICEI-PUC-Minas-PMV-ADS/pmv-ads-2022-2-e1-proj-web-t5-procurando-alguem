@@ -467,13 +467,32 @@ button, .button {
 
 .div-content {
     padding: 15px;
+    flex-direction: row;
 }
 
 .col-content {
     background-color: #514869;
     color: #ffffff;
     margin: 10px;
-    height: 100%;
+    height: 800px;
+    border-radius: 15px;
+    padding-bottom: 60%;
+    margin-bottom: 15px;
+    padding-top: 1.5%;
+}
+
+
+
+.div-content-home-page {
+    padding: 15px;
+    flex-direction: row;
+}
+
+.col-content-home-page {
+    background-color: #514869;
+    color: #ffffff;
+    margin: 10px;
+    height: 1300px;
     border-radius: 15px;
     padding-bottom: 60%;
     margin-bottom: 15px;
