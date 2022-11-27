@@ -6,20 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lista Desaparecidos</title>
 
-
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <!--se retirar dropdown para-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
     integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
     crossorigin="anonymous"></script>
   <!--se retirar dropdown para-->
-
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <!--se retirar estraga navbar-->
-
-
   <link rel="stylesheet" href="../../estilo/style.css">
-
 
 </head>
 
@@ -27,7 +22,6 @@
   <nav class="p1">
     <h1>Procurando Alguém?</h1>
     <img src="../../imagens/imagem-logo.svg" class="imagem-logo-todas" alt="Imagem da Logo">
-
   </nav>
 
   <nav class="navbar-expand-sm">
@@ -67,11 +61,8 @@
 
           </ul>
         </li>
-
-
       </ul>
     </div>
-
   </nav>
 
   <div class="titulo-caixa">
@@ -80,21 +71,12 @@
   <section class="caixa-central">
 
     <div class="form-group">
-
-      <!---
-      <br>
-      <div class="row">
-        <div class="col-11">
-          <h1>Listagem de desaparecidos</h1>
-        </div>-->
-
       <div class="inserir-lista">
         <a href="cadastro-desaparecido.html" class="btn btn-primary">Inserir</a>
       </div>
+
       <div>
-
         <br>
-
         <table class="table table-striped">
           <thead>
             <tr>
@@ -107,7 +89,8 @@
               <th scope="col">Altura</th>
               <th scope="col">Cidade</th>
               <th scope="col">Mais Informações</th>
-              <th scope="col">Ações</th>
+              <th scope="col">Status</th>
+
             </tr>
           </thead>
           <tbody id="Tabela-Conteudo">
@@ -117,41 +100,57 @@
       </div>
     </div>
   </section>
-  <script></script>
-
 </body>
 
 <script type="application/javascript">
   window.onload = (event) => {
+    var usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
+    console.log(usuarioCorrente)
+
+    if (usuarioCorrente == null) {
+      window.location.href = "login.html";
+      alert("Você deve efetuar o login para acessar essa página!")
+    }
+
     //window.onload acontece quando a tela é carregada
     //Buscando banco de dados do localstorage.
     //Se não existir ou estivar vazio será mostrado uma mensagem que não existem notícias
-    //Se existir registros será mostrado uma listagem de notícas
+    //Se existir registros será mostrado uma listagem de desaparecidos
     let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
 
-    if (!db_desaparecidos || db_desaparecidos.length == 0) {
+    var listaUsuarioCorrente = [];
+
+    for (i = 0; i < db_desaparecidos.length; i++) {
+      if (db_desaparecidos[i].usuarioQueCadastrou == usuarioCorrente.id) {
+        listaUsuarioCorrente.push(db_desaparecidos[i]);
+      }
+    }
+
+    console.log(listaUsuarioCorrente);
+    if (!listaUsuarioCorrente || listaUsuarioCorrente.length == 0) {
       let tabelaConteudo = document.getElementById("Tabela-Conteudo");
       tabelaConteudo.innerHTML = "<tr><td colspan='9' class='text-center'>Nenhum desaparecido cadastrado atualmente</td></tr>";
     }
+
     else {
       let tabelaConteudo = document.getElementById("Tabela-Conteudo");
-
       let conteudoHTML = "";
-      for (let i = 0; i <= db_desaparecidos.length - 1; i++) {
+      for (let i = 0; i <= listaUsuarioCorrente.length - 1; i++) {
         conteudoHTML += "<tr>";
-        conteudoHTML += `<td>${db_desaparecidos[i].id}</td>`;
-        conteudoHTML += `<td>${db_desaparecidos[i].foto}</td>`;
-        conteudoHTML += `<td>${db_desaparecidos[i].nome}</td>`;
-        conteudoHTML += `<td>${db_desaparecidos[i].idade}</td>`;
-        conteudoHTML += `<td>${db_desaparecidos[i].sexo}</td>`;
-        conteudoHTML += `<td>${db_desaparecidos[i].corRaca}</td>`;
-        conteudoHTML += `<td>${db_desaparecidos[i].altura}</td>`;
-        conteudoHTML += `<td>${db_desaparecidos[i].cidade}</td>`;
-        conteudoHTML += `<td>${db_desaparecidos[i].maisInformacoes}</td>`;
+        conteudoHTML += `<td>${listaUsuarioCorrente[i].id}</td>`;
+        conteudoHTML += `<td><img src="${listaUsuarioCorrente[i].foto}" width="50px" height="50px"></td>`;
+        conteudoHTML += `<td>${listaUsuarioCorrente[i].nome}</td>`;
+        conteudoHTML += `<td>${listaUsuarioCorrente[i].idade}</td>`;
+        conteudoHTML += `<td>${listaUsuarioCorrente[i].sexo}</td>`;
+        conteudoHTML += `<td>${listaUsuarioCorrente[i].corRaca}</td>`;
+        conteudoHTML += `<td>${listaUsuarioCorrente[i].altura}</td>`;
+        conteudoHTML += `<td>${listaUsuarioCorrente[i].cidade}</td>`;
+        conteudoHTML += `<td>${limitarTexto(listaUsuarioCorrente[i].maisInformacoes)}</td>`;
+        conteudoHTML += `<td>${tratarStatus(listaUsuarioCorrente[i].status)}</td>`;
         conteudoHTML +=
           `<td>
-                                <a href='editar-desaparecido.html?inputId=${db_desaparecidos[i].id}' class="btn btn-info">Editar</a>
-                                <a href='excluir-desaparecido.html?inputId=${db_desaparecidos[i].id}' class="btn btn-danger">Excluir</a>
+                                <a href='editar-desaparecido.html?inputId=${listaUsuarioCorrente[i].id}' class="btn btn-info">Editar</a>
+                                <a href='excluir-desaparecido.html?inputId=${listaUsuarioCorrente[i].id}' class="btn btn-danger">Excluir</a>
                             </td>`;
         conteudoHTML += "</tr>";
       }
@@ -159,7 +158,29 @@
       tabelaConteudo.innerHTML = conteudoHTML;
     }
   };
+
+  function limitarTexto(texto) {
+    const words = texto.split(' ');
+    let resultado = "";
+
+    if (words.length <= 1) {
+      resultado = texto;
+    } else {
+      for (let i = 0; i < 1; i++) {
+        resultado += words[i] + " ";
+      }
+      resultado += "...";
+    }
+
+    return resultado;
+  }
+
+  function tratarStatus(status) {
+    if (status == true) {
+      return "Desaparecido";
+    } else {
+      return "Encontrado";
+    }
+  }
 </script>
-
-
 </html>

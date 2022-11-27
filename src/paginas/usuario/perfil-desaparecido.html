@@ -1,90 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="..\..\estilo/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	<title>Perfil Desaparecido</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../estilo/style.css">
+  <script type="text/javascript" src="../../js/banco-desaparecidos.js"></script>
+  <title>Perfil Desaparecido</title>
 </head>
+
 <body>
+  <header>
+    <nav class="p1">
+      <h1>Procurando Alguém?</h1>
+      <img src="../../imagens/imagem-logo.svg" class="imagem-logo-todas" alt="Imagem da Logo">
+    </nav>
 
-    <div class="logo">
-        <h1>Procurando Alguém?</h1>
-        <img src="..\..\imagens\imagem-logo.svg" class="imagem-logo" alt="Imagem da Logo">
-    </div>
+    <nav class="navbar-expand-sm">
+      <div class="container-fluid">
+        <!--mudei de class="collapse navbar-collapse" id="navbarSupportedContent" e não mudou nada -->
+        <ul class="nav">
+          <!--tentei outras "classes", mas essa alinhou melhor inclui ml-auto e parte moveu para a direita, menos o dropdown-->
+          <li class="nav-item space-menu">
+            <a class="nav-item" href="encontrados.html">Encontrados</a>
+          </li>
+          <li class="nav-item space-menu">
+            <a class="nav-item" href="contato.html">Contato</a>
+          </li>
+          <li class="nav-item space-menu">
+            <a class="nav-item" href="sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item dropdown menor-drop">
+            <a class="nav-item dropdown-toggle menor-size" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="../../imagens/imagem-perfil.png" width="40" height="30"></br>Meu
+              perfil</br>Login/Cadastro</a>
 
-
-     <div class="barra-menu">
-        <ul>
-            <li class="itens-menu"><a class="links-menu" href="#">Sobre</a></li>
-        </ul>
-        <ul>    
-            <li class="itens-menu"><a class="links-menu" href="#">Contato</a></li>
-        </ul>
-        <ul>
-            <li class="itens-menu"><a class="links-menu" href="#">Encontrados</a></li>
-        </ul>
-
-        <ul>
-            <li class="dropdown">
-              <a href="javascript:void(0)" class="dropbtn">Meu Perfil</a>
-              <div class="dropdown-content">
-                <a class="links-drop" href="#">Meu Perfil</a>
-                <a class="links-drop" href="#">Login</a>
-                <a class="links-drop" href="#">Cadastro</a>
-                <a class="links-drop" href="#">Chat e Amigos</a>
-                <a class="links-drop" href="#">Depoimentos</a>
-                <a class="links-drop" href="#">Configurações</a>
-              </div>
-            </li>
-        </ul>
-     </div>
-
-    <div class="section-desaparecido">
-        <div class="colunas-desaparecido">
-            <div class="coluna-fotos">
-                <h4>Modelo 2 - Coluna 1</h4>
-            </div>
-            <div class="coluna-infos">
-                <h2>Modelo 2 - Coluna 2</h2>
-            </div>
-            <div class="coluna-infos-compartilhadas">
-                <h4>Modelo 2 - Coluna 3</h4>
-            </div>
-        </div>
-    </div>
-
-
-    <footer class="bg-dark text-light">
-        <div class="container-fluid py-3">
-        <div class="row">
-          <div class="col-4">
-            <ul class="nav flex-column">
-              <li class="nav-link"><a href="#">Retornar à Loja</a></li>
-              <li class="nav-link"><a href="#">Sobre</a></li>
-              <li class="nav-link"><a href="#">Contato</a></li>
-              <li class="nav-link"><a href="#">Suporte</a></li>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="meu-perfil.html">Meu Perfil</a></li>
+              <li><a class="dropdown-item" href="login.html">Login</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="cadastra-se.html">Cadastro</a></li>
+              <li><a class="dropdown-item" href="chat-e-amigos.html">Chat e Amigos</a></li>
+              <li><a class="dropdown-item" href="depoimento.html">Depoimentos</a></li>
+              <li><a class="dropdown-item" href="#">Configurações</a></li>
             </ul>
-          </div>
-          <div class="col-8">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sed necessitatibus id asperiores iste fugiat,             praesentium obcaecati explicabo consequatur voluptatem eos earum blanditiis dolorem eaque veritatis libero?               Magni, nam fugiat.
-            </p>
-            <ul class="nav">
-              <li class="nav-link" ><i class="fab fa-facebook fa-3x "></i></li>
-              <li class="nav-link"><i class="fab fa-instagram fa-3x"></i></li>
-              <li class="nav-link"><i class="fab fa-twitter fa-3x"></i></li>
-              <li class="nav-link"><i class="fab fa-whatsapp fa-3x"></i></li>
-            </ul>
-          </div>
-        </div>
-        </div>
-        <div class="text-center" style="background-color: #333; padding: 20px;" >
-          &copy 2018 Copyright: <a href="#">Lojas Virtuais</a>
-        </div>
-      </footer>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
+  <div class="titulo-caixa">
+    <p>Informações do Desaparecido</p>
+  </div>
+
+  <section class="section-content">
+    <div class="row div-content">
+      <div class="col col-content">
+        <img id="foto" src="" width="230px" height="300px"></td>
+      </div>
+      <div class="col-6 col-content">
+        <h5 class="textfield-label" id="nome"></h5>
+        <h5 class="textfield-label" id="idade"></h5>
+        <h5 class="textfield-label" id="sexo"></h5>
+        <h5 class="textfield-label" id="corRaca"></h5>
+        <h5 class="textfield-label" id="altura"></h5>
+        <h5 class="textfield-label" id="cidade"></h5>
+        <h5 class="textfield-label" id="maisInformacoesPerfil"></h5>
+
+      </div>
+      <div class="col col-content">
+        <h4>Viu esta pessoa? Envie mensagem com as informações para manter a família atualizada e ajuda-la a encontrar com mais facilidade<br></h4>
+        E-mail: contato@procurandoalguem.com
+      </div>
+    </div>
+  </section>
 </body>
-</html> 
+
+<script>
+  window.onload = (event) => {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    let id = urlParams.get('id');
+
+    let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
+    let desaparecido = db_desaparecidos.find(x => x.id == id);
+
+    // Preenchendo os campos da label
+    document.getElementById("foto").src = desaparecido.foto;
+    document.getElementById("nome").innerHTML = "Nome: " + desaparecido.nome;
+    document.getElementById("idade").innerHTML = "Idade: " + desaparecido.idade;
+    document.getElementById("sexo").innerHTML = "Sexo: " + desaparecido.sexo;
+    document.getElementById("corRaca").innerHTML = "Cor/Raça: " + desaparecido.corRaca;
+    document.getElementById("altura").innerHTML = "Altura: " + desaparecido.altura;
+    document.getElementById("cidade").innerHTML = "Cidade: " + desaparecido.cidade;
+    document.getElementById("maisInformacoesPerfil").innerHTML = "Mais informações: " + desaparecido.maisInformacoes;
+  }
+</script>
+
+</html>

@@ -28,6 +28,12 @@ body {
 
 /* Página cadastro, lista, editar e excluir-desaparecidos começa*/
 
+.local_status{
+    position: relative;
+    top: 150px;
+    left: 200px;
+
+}
 .space-menu {
     padding-left: 40px;
     font-size: 25px;
@@ -101,7 +107,7 @@ body {
     padding: 0px 15px 0px 15px;
     margin: 50px;
     box-shadow: 15px 15px #161220;
-    height: 750px;
+    height: 800px;
     position: relative;
     top: -70px;
 }
@@ -269,10 +275,16 @@ body {
     left: -415px;
 }
 
+.label_status {
+    position: relative;
+    top: 100px;
+    left: -580px;
+}
+
 .label7 {
     font-size: 18px;
     position: absolute;
-    top: 230px;
+    top: 280px;
     left: 48px;
 }
 
@@ -287,25 +299,25 @@ body {
     font-size: 12pt;
     box-shadow: 0px 5px 80px #000000;
     position: relative;
-    top: 116px;
+    top: 140px;
     left: -40px;
     resize: none;
+}
+
+#myfile {
+    font-size: 10px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: -10px;
+    left: 10px;
 }
 
 .mensagem-botao-foto {
     font-size: 18px;
     position: relative;
-    top: 90px;
-    left: 10px;
-}
-
-#myfile {
-    font-size: 10px;
-    position: relative;
-    top: 170px;
-    left: -430px;
-    z-index: 1;
-
+    top: 110px;
+    left: -20px;
 }
 
 #botao-foto {
@@ -322,7 +334,7 @@ body {
     -webkit-text-stroke: 1px 1px 5px #000;
     position: relative;
     top: 155px;
-    left: -700px;
+    left: -580px;
 }
 
 .enviar-cadastro {
@@ -338,8 +350,8 @@ body {
     font-weight: bolder;
     -webkit-text-stroke: 1px 1px 5px #000;
     position: relative;
-    top: 220px;
-    left: -555px;
+    top: 260px;
+    left: -455px;
 }
 
 .botao-voltar {
@@ -355,8 +367,8 @@ body {
     font-weight: bolder;
     -webkit-text-stroke: 1px 1px 5px #000;
     position: relative;
-    top: 220px;
-    left: -50px;
+    top: 330px;
+    left: -670px;
 }
 /* /* Página cadastro, lista, editar e excluir-desaparecidos termina aqui*/
 
@@ -370,7 +382,7 @@ a {
 h1,
 h2,
 h3,
-h4 {
+h4, h6 {
     text-shadow:
         -1.8px -1.8px #000,
         /*esquerda - pra cima*/
@@ -400,7 +412,7 @@ h5 {
     text-align: center;
 }
 
-button {
+button, .button {
     border: none;
     border-radius: 10px;
     margin: 25px;
@@ -441,6 +453,19 @@ button {
     box-shadow: 0px 5px 80px #000000;
     outline: none;
     box-sizing: border-box;
+}
+
+.textfield-label {
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #2F2841;
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: 0px 5px 10px #000000;
+    outline: none;
+    box-sizing: border-box;
+    margin: 15px;
 }
 
 /* Modelo 2 */
@@ -529,6 +554,16 @@ button {
 
 .links-menu {
     text-decoration: none;
+}
+
+.texto-noticia {
+    text-align: justify;
+    text-indent: 15px;
+}
+
+.link-ver-mais-noticias {
+    color: rgb(58, 58, 245);
+    text-decoration: underline;
 }
 
 /* Configurações de Estilo do Botão "Meu Perfil" com o DropDown (Começa Aqui)*/
@@ -657,36 +692,15 @@ li.dropdown {
 }
 
 /*Estilo da página "Meu Perfil" começa aqui*/
-.dados-usuario{
-    background-color: #2F2841;
-    border-radius: 20px;
-    width: 60vw;
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    left: 585px;
-    top: 200px;
-    
-}
 
-.menu-opcoes{
-    width: 15vw;
-    height: 70vh;
-    background-color: #2F2841;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 200px;
-    left: 280px;
-}
 .itens-menu-opcoes{
     text-decoration: none;
-    list-style: none;
-    
+    list-style: none;    
     justify-content: center;
     position: absolute;
     top: 100px;
-    
+}
+
+ol{
+    text-align: justify;
 }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../estilo/style.css">
+    <script type="text/javascript" src="../../js/banco-noticias.js"></script>
+    <title>Notícia</title>
+</head>
+
+<body>
+    <!-- Separado para o cabeçalho -->
+
+    <section class="section-content">
+        <div class="row div-content">
+            <div class="col-12 col-content">
+                <h2 id="Titulo"></h2>
+                <h6 id="Categoria"></h6>
+                <h6 id="Data"></h6> <br>
+                <p class="texto-noticia" id="Texto"></p>
+
+            </div>
+        </div>
+    </section>
+
+    <script type="application/javascript">
+        window.onload = (event) => {
+            //window.onload acontece quando a tela é carregada
+            //Pega o id recebido na url
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            let id = urlParams.get('id');
+
+            //Busca a notícia no banco de dados do localStorage, usando o id como chave, colocando o conteúdo em um array
+            let db_noticias = JSON.parse(localStorage.getItem('db_noticias'));
+            let noticia = db_noticias.find(x => x.id == id);
+
+            function formatDate_dd_MM_yyyy_HH_mm(date, separator = "/") {
+                date = new Date(date);
+                const year = date.getFullYear();
+                let month = date.getMonth() + 1;
+                let day = date.getDate();
+                day = (day < 10 ? "0" : "") + day;
+                month = (month < 10 ? "0" : "") + month;
+                return finalDate = day + separator + month + separator + year;
+            }
+
+            //Preenche os campos do html
+            document.getElementById("Titulo").innerHTML = noticia.titulo;
+            document.getElementById("Categoria").innerHTML = "Categoria: " + noticia.categoria;
+            document.getElementById("Data").innerHTML = "Data da publicação: " + formatDate_dd_MM_yyyy_HH_mm(noticia.data);
+            document.getElementById("Texto").innerHTML = noticia.texto;
+        };
+    </script>
+
+</body>
+
+</html>

@@ -131,7 +131,7 @@
             pessoa desaparecida:</label>
           <button id="botao-foto" name="botao-foto">Buscar arquivo<img id="imagem-botao"
               src="../../imagens/imagem-botao-foto.svg" width="40" disabled>
-            <!-- <input type="file" id="myfile" name="myfile">-->
+            <input type="file" id="myfile" name="myfile"disabled>
 
             <button class="enviar-cadastro" onclick="excluirDesaparecido()">Excluir</button>
             <a href="lista-desaparecidos.html" class="botao-voltar">Voltar</a>
@@ -156,21 +156,22 @@
 
     //Preenche os campos do formulário
     document.getElementById("inputId").value = desaparecido.id;
+    document.getElementById("myfile").files[0] = desaparecido.foto;
     document.getElementById("inputNome").value = desaparecido.nome;
     document.getElementById("inputIdade").value = desaparecido.idade;
     document.getElementById("inputSexo").value = desaparecido.sexo;
     document.getElementById("inputCorRaca").value = desaparecido.corRaca;
     document.getElementById("inputAltura").value = desaparecido.altura;
     document.getElementById("inputCidade").value = desaparecido.cidade;
-    document.getElementById("maisInformacoes").value = desaparecido.maisInformacoes;
+    document.getElementById("maisInformacoes").value = desaparecido.maisInformacoes;  
 
 
   }
 
   function excluirDesaparecido() {
     //Obtendo id do formulário
-    const id = document.getElementById("inputId").value;
-
+    const id = parseInt(document.getElementById("inputId").value);
+    
     //Obtendo o banco de dados do localStorage, colocando o conteúdo em um array
     let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
 
