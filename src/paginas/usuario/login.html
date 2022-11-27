@@ -28,6 +28,7 @@
 		<div class="login-right">
 
 
+
 			<div class="form-group login-card">
 
 				<form id="login-form" class="textfield-login" method="post" onsubmit="loginUser (this)">
@@ -107,6 +108,8 @@
 		</div>
 	</div>
 
+
+
 	<script src="..\..\js\login.js"></script>
 	<script>
 
@@ -164,17 +167,9 @@
 			let emailCadastrado = db_usuarios.usuarios.find(x => x.email == email);
 
 			if (emailCadastrado != undefined){
-				alert('Este email já foi cadastrado!')
+				alert('Este email já foi cadastrado')
 				return
 			}
-
-			// for (i = 0; i <= db_usuarios.length-1; i++){
-			// 	if(login == db_usuarios[i].login || email == db_usuarios[i].email){
-
-			// 		alert('Este usuário já foi cadastrado')
-			// 		return 
-			// 	}
-			// }
 
 			addUser(login.trim(), nome.trim(), email.trim(), senha.trim(), senha2.trim());
 			alert('Cadastro de Usuário Concluído. Prossiga com o login!');
