@@ -11,15 +11,11 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico o
 
 <h3>Casos de Teste:</h3>
  <h5>CT-01 - Verificação se noticia cadastrada pelo administrador consta na Home page e por ter sido a última cadastrada, a notícia deve constar no topo das Notícias sobre desaparecidos.</h5>
- Requisitos Associados: RF12 e RF18.<br>
  Objetivo do Teste: Verificar se atualizações de uma tela está constando em outra.<br>    
  Passo 1: Acessar o site como administrador.<br>                                              
  Passos 2: Cadastrar/incluir notícia.<br>                                                                
  Passos 3: Visualizar se notícia aparece na Home page.<br>                                      
 Critérios de Êxito: Notícia aparecer na Home page, no topo das Notícias sobre desaparecidos.
-
-
-
 
  <h5>CT-02 - Verificação se na Home page ao clicar em "Ver mais" se o usuário é direcionado para a tela noticia, onde é possível ver a notícia completa.</h5>
  Requisitos Associados: RF12 e RF18.<br>
@@ -37,13 +33,15 @@ Critérios de Êxito: Notícia aparecer na Home page, no topo das Notícias sobr
  Passos 3: Acessar a Home page.<br> 
  Critérios de Êxito: Desaparecido cadastrado por último aparecer no primeiro nome da lista dos últimos desaparecidos.
  
-  <h5>CT-04 - Verificação se após cadastrar um desaparecido, ele aparece no topo da parte onde constam os últimos desaparecidos na tela Home page.</h5>
+  <h5>CT-04 - Verificação se após trocar o status, na tela Editar desaparecido, ele migra da Página de desaparecidos para a tela de Encontrados.</h5>
  Requisitos Associados: RF12 e RF18.<br>
  Objetivo do Teste: Verificar se desaparecido cadastrado por último aparece no primeiro nome da lista dos últimos desaparecidos.<br>    
  Passo 1: Acessar o site como usuário<br>                                              
  Passos 2: Cadastrar um desaparecido.<br>     
- Passos 3: Acessar a Home page.<br> 
- Critérios de Êxito: Desaparecido cadastrado por último aparecer no primeiro nome da lista dos últimos desaparecidos.
+ Passos 3: Verificar que ele está na página de desaparecidos<br> 
+ Passos 4: Editar o desaparecido e trocar o status para encontrado<br> 
+ Passos 5: Verificar que ele está na página de encontradosdos<br> 
+ Critérios de Êxito: Desaparecido cadastrado deve migrar para a página encontrados após a troca de status.
 
 
 
