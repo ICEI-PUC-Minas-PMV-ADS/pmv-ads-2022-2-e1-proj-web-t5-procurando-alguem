@@ -9,7 +9,8 @@ Enumere quais cenários de testes foram selecionados para teste. Neste tópico o
 <h1>Daniel Mendes Rufino Silva</h1>
 <h2>Desenvolvi testes nas páginas da Stephanye Castellano</h2>
 
-Caso de Teste:  CT-01 - Verificação se noticia cadastrada pelo administrador consta na Home page.
+<h2>Casos de Teste:</h2>
+ CT-01 - Verificação se noticia cadastrada pelo administrador consta na Home page.
  Requisitos Associados: RF12 e RF18.
  Objetivo do Teste: Verificar se atualizações de uma tela está constando em outra.     
  Passo 1: Acessar o site como administrador.                                               
