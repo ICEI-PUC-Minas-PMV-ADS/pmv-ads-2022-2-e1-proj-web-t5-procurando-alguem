@@ -32,7 +32,7 @@ Critérios de Êxito: Notícia aparecer na Home page, no topo das Notícias sobr
  Critérios de Êxito: Desaparecido cadastrado por último aparecer no primeiro nome da lista dos últimos desaparecidos.
  
   <h5>CT-04 - Verificação se após trocar o status, na tela Editar desaparecido, ele migra da Página de desaparecidos para a tela de Encontrados.</h5>
- Objetivo do Teste: Verificar se desaparecido cadastrado por último aparece no primeiro nome da lista dos últimos desaparecidos.<br>    
+ Objetivo do Teste: Verificar se após trocar o status, na tela Editar desaparecido, ele migra da Página de desaparecidos para a tela de Encontrados<br>    
  Passo 1: Acessar o site como usuário<br>                                              
  Passos 2: Cadastrar um desaparecido.<br>     
  Passos 3: Verificar que ele está na página de desaparecidos<br> 
