@@ -150,10 +150,10 @@ Desaparecidos -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-pro
 
 
 Páginas de administrador desenvolvidas:
-Listar Notícias -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/lista-noticia.html
-Incluir Notícias -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/incluir-noticia.html
-Editar Notícias -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/editar-noticia.html
-Excluir Notícias -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/excluir-noticia.html
+Listar Notícias -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/lista-noticia.html <br>
+Incluir Notícias -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/incluir-noticia.html <br>
+Editar Notícias -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/editar-noticia.html <br>
+Excluir Notícias -> https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/admin/excluir-noticia.html <br>
 <h3>1 - Tela de Home Page (usuário)</h3>
 <h4> Tela principal do site <h4>
 ![image](https://user-images.githubusercontent.com/53917285/204163712-e9a17d91-dc3e-48d7-8023-cd78f1ce7d59.png)
