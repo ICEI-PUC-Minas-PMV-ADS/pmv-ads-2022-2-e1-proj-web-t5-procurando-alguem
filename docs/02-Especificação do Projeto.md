@@ -196,6 +196,9 @@ A tabela a seguir apresenta os requisitos funcionais do projeto, identificando a
 |RF-19| O sistema pode permitir pagar pela divulgação do perfil   |  BAIXA     |
 |     | de uma pessoa desaparecida em redes sociais.              |            |
 |-----|-----------------------------------------------------------|------------|
+|RF-20| O sistema deve possibilitar o cadastro e o login de novos |   ALTA     |
+|     | usuários.                                                 |            |
+|-----|-----------------------------------------------------------|------------|
 
 
 
@@ -233,6 +236,9 @@ A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá 
 |------|-----------------------------------------------------------|----------|
 |RNF-11| O site deve ser passível de manutenção para migração      |  ALTA    |
 |      | para outra plataforma em 2(duas) semanas.                 |          |
+|------|-----------------------------------------------------------|----------|
+|RNF-12| O administrador deve ter acesso as informações de usuários|  ALTA    |
+|      | cadastrados, podendo gerenciar essas informações.         |          |
 |------|-----------------------------------------------------------|----------|
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:

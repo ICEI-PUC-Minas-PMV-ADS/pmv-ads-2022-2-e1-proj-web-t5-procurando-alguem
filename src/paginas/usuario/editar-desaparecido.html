@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <title>Editar Desaparecidos</title>
 
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
@@ -19,70 +19,71 @@
   <!--se retirar estraga navbar-->
 
 
-
-
   <link rel="stylesheet" href="../../estilo/style.css">
 
 
-  <title>Editar desaparecido</title>
+
 
 </head>
 
 <body>
-
-  <nav class=" p1">
+  <nav class="p1">
     <h1>Procurando Alguém?</h1>
-    <img src="../imagens/imagem-logo.svg" class="imagem-logo" alt="Imagem da Logo">
+    <img src="../../imagens/imagem-logo.svg" class="imagem-logo-todas" alt="Imagem da Logo">
+
   </nav>
 
-  <nav class="navbar-expand-md barra">
+  <nav class="navbar-expand-sm">
     <div class="container-fluid">
+      <!--mudei de class="collapse navbar-collapse" id="navbarSupportedContent" e não mudou nada -->
 
-      <div class="nav">
-        <!--mudei de class="collapse navbar-collapse" id="navbarSupportedContent" e não mudou nada -->
+      <ul class="nav">
+        <!--tentei outras "classes", mas essa alinhou melhor inclui ml-auto e parte moveu para a direita, menos o dropdown-->
 
-        <ul class="navbar-nav ml-auto">
-          <!--tentei outras "classes", mas essa alinhou melhor -->
+        <li class="nav-item space-menu">
+          <a class="nav-item" href="encontrados.html">Encontrados</a>
+        </li>
 
-          <li class="nav">
-            <!--mudei de class="nav-item" -->
-            <a class="nav-link menu-encontrado" aria-current="page" href="encontrados.html">Encontrados</a>
-          </li>
-          <li class="nav">
-            <!--mudei de class="nav-item" -->
+        <li class="nav-item space-menu">
+          <a class="nav-item" href="contato.html">Contato</a>
+        </li>
 
-            <a class="nav-link menu-encontrado" href="contato.html">Contato</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link menu-encontrado" href="sobre.html">Sobre</a>
-          </li>
-          <li class="nav-item dropdown menor">
-            <a class="nav-item dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="../imagens/imagem-perfil.png" width="40" height="30"></br>Meu perfil</br>Login/Cadastro</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="meu-perfil.html">Meu Perfil</a></li>
-              <li><a class="dropdown-item" href="login.html">Login</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="cadastra-se.html">Cadastro</a></li>
-              <li><a class="dropdown-item" href="chat-e-amigos.html">Chat e Amigos</a></li>
-              <li><a class="dropdown-item" href="depoimento.html">Depoimentos</a></li>
-              <li><a class="dropdown-item" href="#">Configurações</a></li>
+        <li class="nav-item space-menu">
+          <a class="nav-item" href="sobre.html">Sobre</a>
+        </li>
+
+        <li class="nav-item dropdown menor-drop">
+          <a class="nav-item dropdown-toggle menor-size" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="../../imagens/imagem-perfil.png" width="40" height="30"></br>Meu
+            perfil</br>Login/Cadastro</a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="meu-perfil.html">Meu Perfil</a></li>
+            <li><a class="dropdown-item" href="login.html">Login</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="cadastra-se.html">Cadastro</a></li>
+            <li><a class="dropdown-item" href="chat-e-amigos.html">Chat e Amigos</a></li>
+            <li><a class="dropdown-item" href="depoimento.html">Depoimentos</a></li>
+            <li><a class="dropdown-item" href="#">Configurações</a></li>
+
+          </ul>
+        </li>
 
 
-          </li>
-        </ul>
-      </div>
+      </ul>
     </div>
+
   </nav>
+
 
   <div class="titulo-caixa">
     <p>Insira as Informações do Desaparecido que você deseja editar</p>
   </div>
 
   <section class="caixa-central">
-    <!--Inclui começa aqui-->
+
 
 
     <!--<form id="form-contato">-->
@@ -93,8 +94,6 @@
           <label for="inputNome">Digite o nome do Desaparecido:</label></br>
           <input type="text" name="inputNome" id="inputNome" placeholder="Nome do Desaparecido">
         </div>
-
-
 
         <label class="label1" for="inputId">Id</label>
         <input class="input1" type="number" name="inputId" id="inputId" placeholder="ID" disabled>
@@ -113,33 +112,40 @@
 
 
         <label class="label5" for="inputAltura">Altura:</label>
-        <input class="input5" type="text" name="inputAltura" id="inputAltura" placeholder="Altura">
+        <input class="input5" type="number" min="20" name="inputAltura" id="inputAltura" placeholder="Em cm">
 
         <label class="label6" for="inputCidade">Cidade:</label>
         <input class="input6" type="text" name="inputCidade" id="inputCidade" placeholder="Cidade">
 
+        <div class = "label_status">
+        <label for="inputStatus">Status</label>
+        <select id="inputStatus">
+          <option value="true">Desaparecido</option>
+          <option value="false">Encontrado</option>
+        </select>
+        </div>
 
         <label class="label7" for="maisInformacoes">Mais Informações:</label>
         <textarea type="text" name="maisInformacoes" id="maisInformacoes" cols="10" maxlength="800"
           placeholder="Digite nesse campo informações adicionais como: medicamentos essenciais ou alguma informação importante e relevante sobre o Desaparecido."></textarea>
 
-
-        <label class="mensagem-botao-foto" for="mensagem-botao-foto">Clique no botão abaixo para inserir uma foto da
-          pessoa desaparecida:</label>
+        <label class="mensagem-botao-foto" for="mensagem-botao-foto">Clique no botão abaixo para inserir uma foto da pessoa desaparecida:</label>
         <button id="botao-foto" name="botao-foto">Buscar arquivo<img id="imagem-botao"
-            src="../imagens/imagem-botao-foto.svg" width="40">
+            src="../../imagens/imagem-botao-foto.svg" width="40">
           <input type="file" id="myfile" name="myfile">
 
           <button class="enviar-cadastro" onclick="editarDesaparecido()">Enviar cadastro</button>
-          <a href="lista_desaparecidos.html" class="botao-voltar">Voltar</a>
+          <a href="lista-desaparecidos.html" class="botao-voltar">Voltar</a>
 
 
 
       </div>
-
+    </div>
+  </section>
 </body>
+
 <script type="application/javascript">
-window.onload = (event) => {
+  window.onload = (event) => {
     //window.onload acontece quando a tela é carregada
     //Pega o id recebido na url
     const queryString = window.location.search;
@@ -152,6 +158,7 @@ window.onload = (event) => {
 
     //Preenche os campos do formulário
     document.getElementById("inputId").value = desaparecido.id;
+    document.getElementById("myfile").files = dataURLtoFile(desaparecido.foto);
     document.getElementById("inputNome").value = desaparecido.nome;
     document.getElementById("inputIdade").value = desaparecido.idade;
     document.getElementById("inputSexo").value = desaparecido.sexo;
@@ -159,13 +166,14 @@ window.onload = (event) => {
     document.getElementById("inputAltura").value = desaparecido.altura;
     document.getElementById("inputCidade").value = desaparecido.cidade;
     document.getElementById("maisInformacoes").value = desaparecido.maisInformacoes;
+    document.getElementById("inputStatus").value = desaparecido.status;
+  }
 
-
-}
-
-function editarDesaparecido() {
+  async function editarDesaparecido() {
     // Validação se os campos estão preenchidos
+
     const id = parseInt(document.getElementById("inputId").value);
+    const foto = document.getElementById("myfile").files[0];
     const nome = document.getElementById("inputNome").value;
     const idade = document.getElementById("inputIdade").value;
     const sexo = document.getElementById("inputSexo").value;
@@ -173,31 +181,44 @@ function editarDesaparecido() {
     const altura = document.getElementById("inputAltura").value;
     const cidade = document.getElementById("inputCidade").value;
     const maisInformacoes = document.getElementById("maisInformacoes").value;
+    let status = document.getElementById("inputStatus").value;
 
-    if (nome === undefined || nome === null || nome === "" ||
+    if (foto == null || foto == undefined || 
+      nome === undefined || nome === null || nome === "" ||
       idade === undefined || idade === null || idade === "" ||
       sexo === undefined || sexo === null || sexo === "" ||
       corRaca === undefined || corRaca === null || corRaca === "" ||
       altura === undefined || altura === null || altura === "" ||
       cidade === undefined || cidade === null || cidade === "" ||
-      maisInformacoes === undefined || maisInformacoes === null || maisInformacoes === "") {
+      maisInformacoes === undefined || maisInformacoes === null || maisInformacoes === "" ||
+      status === undefined || status === null || status === "") {
       alert("Preencha todos os campos obrigatórios!")
       return;
+    }
+   
+    if (status == "true") {
+      status = true;
+    } else {
+      status = false;
     }
 
     //Obtendo o banco de dados do localStorage, colocando o conteúdo em um array
     var db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
+    const usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
 
     //Montando objeto de desaparecido para alterado no banco de dados do localstorage
     const desaparecido = {
       "id": id,
+      "foto":  await toBase64(foto),
       "nome": nome,
       "idade": idade,
       "sexo": sexo,
       "corRaca": corRaca,
       "altura": altura,
       "cidade": cidade,
-      "maisInformacoes": maisInformacoes
+      "maisInformacoes": maisInformacoes,
+      "usuarioQueCadastrou": usuarioCorrente.id,
+      "status": status
     };
 
     //Editando desaparecido no array de desaparecidos buscado anteriormente
@@ -211,7 +232,36 @@ function editarDesaparecido() {
     //Redirecionando para a página de listagem
     window.location.href = "lista-desaparecidos.html";
   }
+
+  const toBase64 = file => new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = error => reject(error);
+
+  });
+
+  function dataURLtoFile(dataurl) {
+    var arr = dataurl.split(','),
+      mime = arr[0].match(/:(.*?);/)[1],
+      bstr = atob(arr[1]),
+      n = bstr.length,
+      u8arr = new Uint8Array(n);
+
+    while (n--) {
+      u8arr[n] = bstr.charCodeAt(n);
+    }
+
+    let type = dataurl.split("/")
+    type = type[1].split(";")
+    type = type[0];
+
+    var file = new File([u8arr], `foto.${type}`, { type: mime });
+    let container = new DataTransfer();
+    container.items.add(file);
+
+    return container.files;
+  }
 </script>
-  
 
 </html>

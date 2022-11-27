@@ -1,193 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <!--se retirar dropdown para-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
-        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
-        crossorigin="anonymous"></script>
-    <!--se retirar dropdown para-->
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <!--se retirar estraga navbar-->
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excluir Desaparecidos</title>
 
   
-</head>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <!--se retirar dropdown para-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+    crossorigin="anonymous"></script>
+  <!--se retirar dropdown para-->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <!--se retirar estraga navbar-->
 
 
-<link rel="stylesheet" href="../../estilo/style.css">
+  <link rel="stylesheet" href="../../estilo/style.css">
 
 
-<title>Excluir desaparecido</title>
+
 
 </head>
 
 <body>
+  <nav class="p1">
+    <h1>Procurando Alguém?</h1>
+    <img src="../../imagens/imagem-logo.svg" class="imagem-logo-todas" alt="Imagem da Logo">
 
-    <nav class=" p1">
-        <h1>Procurando Alguém?</h1>
-        <img src="../imagens/imagem-logo.svg" class="imagem-logo" alt="Imagem da Logo">
+  </nav>
+
+    <nav class="navbar-expand-sm">
+      <div class="container-fluid">
+        <!--mudei de class="collapse navbar-collapse" id="navbarSupportedContent" e não mudou nada -->
+
+        <ul class="nav">
+          <!--tentei outras "classes", mas essa alinhou melhor inclui ml-auto e parte moveu para a direita, menos o dropdown-->
+
+          <li class="nav-item space-menu">
+            <a class="nav-item" href="encontrados.html">Encontrados</a>
+          </li>
+
+          <li class="nav-item space-menu">
+            <a class="nav-item" href="contato.html">Contato</a>
+          </li>
+
+          <li class="nav-item space-menu">
+            <a class="nav-item" href="sobre.html">Sobre</a>
+          </li>
+
+          <li class="nav-item dropdown menor-drop">
+            <a class="nav-item dropdown-toggle menor-size" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="../../imagens/imagem-perfil.png" width="40" height="30"></br>Meu
+              perfil</br>Login/Cadastro</a>
+  
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="meu-perfil.html">Meu Perfil</a></li>
+              <li><a class="dropdown-item" href="login.html">Login</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="cadastra-se.html">Cadastro</a></li>
+              <li><a class="dropdown-item" href="chat-e-amigos.html">Chat e Amigos</a></li>
+              <li><a class="dropdown-item" href="depoimento.html">Depoimentos</a></li>
+              <li><a class="dropdown-item" href="#">Configurações</a></li>
+  
+            </ul>
+          </li>
+  
+  
+        </ul>
+      </div>
+  
     </nav>
 
-    <nav class="navbar-expand-md barra">
-        <div class="container-fluid">
 
-            <div class="nav">
-                <!--mudei de class="collapse navbar-collapse" id="navbarSupportedContent" e não mudou nada -->
-
-                <ul class="navbar-nav ml-auto">
-                    <!--tentei outras "classes", mas essa alinhou melhor -->
-
-                    <li class="nav">
-                        <!--mudei de class="nav-item" -->
-                        <a class="nav-link menu-encontrado" aria-current="page" href="encontrados.html">Encontrados</a>
-                    </li>
-                    <li class="nav">
-                        <!--mudei de class="nav-item" -->
-
-                        <a class="nav-link menu-encontrado" href="contato.html">Contato</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link menu-encontrado" href="sobre.html">Sobre</a>
-                    </li>
-                    <li class="nav-item dropdown menor">
-                        <a class="nav-item dropdown-toggle" corRaca-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="../imagens/imagem-perfil.png" width="40" height="30"></br>Meu
-                            perfil</br>Login/Cadastro</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="meu-perfil.html">Meu Perfil</a></li>
-                            <li><a class="dropdown-item" href="login.html">Login</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="cadastra-se.html">Cadastro</a></li>
-                            <li><a class="dropdown-item" href="chat-e-amigos.html">Chat e Amigos</a></li>
-                            <li><a class="dropdown-item" href="depoimento.html">Depoimentos</a></li>
-                            <li><a class="dropdown-item" href="#">Configurações</a></li>
-
-
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="idade-caixa">
-        <p>Insira as Informações do Desaparecido que você deseja Cadastrar no Site</p>
+    <div class="titulo-caixa">
+      <p>Informações do Desaparecido que serão excluídas</p>
     </div>
 
     <section class="caixa-central">
-        <!--Inclui começa aqui-->
+      <!--Inclui começa aqui-->
 
 
-        <!--<form id="form-contato">-->
+      <!--<form id="form-contato">-->
 
-        <div class="form-group">
-            <div class="informacoes-especificas">
-                <div class="nome-desaparecido text-md-left">
-                    <label for="inputNome">Digite o nome do Desaparecido:</label></br>
-                    <input type="text" name="inputNome" id="inputNome" placeholder="Nome do Desaparecido" disabled>
-                </div>
-
-
-
-                <label class="label1" for="inputId">Id</label>
-                <input class="input1" type="number" name="inputId" id="inputId" placeholder="ID" disabled>
-
-
-                <label class="label2" for="inputIdade">Idade:</label>
-                <input class="input2" type="number" min="0" name="inputIdade" id="inputIdade" placeholder="Idade"
-                    disabled>
-
-
-                <label class="label3" for="inputSexo">Sexo:</label>
-                <input class="input3" type="text" name="inputSexo" id="inputSexo" placeholder="Sexo">
-
-
-                <label class="label4" for="inputCorRaca">Cor/Raça:</label>
-                <input class="input4" type="text" name="inputCorRaca" id="inputCorRaca" placeholder="cor/raça" disabled>
-
-
-                <label class="label5" for="inputAltura">Altura:</label>
-                <input class="input5" type="text" name="inputAltura" id="inputAltura" placeholder="Altura" disabled>
-
-                <label class="label6" for="inputCidade">Cidade:</label>
-                <input class="input6" type="text" name="inputCidade" id="inputCidade" placeholder="Cidade">
-
-
-                <label class="label7" for="maisInformacoes">Mais Informações:</label>
-                <textarea type="text" name="maisInformacoes" id="maisInformacoes" cols="10" maxlength="800"
-                    placeholder="Digite nesse campo informações adicionais como: medicamentos essenciais ou alguma informação importante e relevante sobre o Desaparecido."
-                    disabled></textarea>
-
-
-                <label class="mensagem-botao-foto" for="mensagem-botao-foto">Clique no botão abaixo para inserir uma
-                    foto da
-                    pessoa desaparecida:</label>
-                <button id="botao-foto" name="botao-foto">Buscar arquivo<img id="imagem-botao"
-                        src="../imagens/imagem-botao-foto.svg" width="40" disabled>
-                    <input type="file" id="myfile" name="myfile">
-
-                    <button class="enviar-cadastro" onclick="excluirDesaparecido()">Excluir</button>
-                    <a href="lista-desaparecidos.html" class="botao-voltar">Voltar</a>
+      <div class="form-group">
+        <div class="informacoes-especificas">
+          <div class="nome-desaparecido text-md-left">
+            <label for="inputNome">Digite o nome do Desaparecido:</label></br>
+            <input type="text" name="inputNome" id="inputNome" placeholder="Nome do Desaparecido" disabled>
+          </div>
 
 
 
-            </div>
+          <label class="label1" for="inputId">Id</label>
+          <input class="input1" type="number" name="inputId" id="inputId" placeholder="ID" disabled>
+
+
+          <label class="label2" for="inputIdade">Idade:</label>
+          <input class="input2" type="number" min="0" name="inputIdade" id="inputIdade" placeholder="Idade" disabled>
+
+
+          <label class="label3" for="inputSexo">Sexo:</label>
+          <input class="input3" type="text" name="inputSexo" id="inputSexo" placeholder="Sexo" disabled>
+
+
+          <label class="label4" for="inputCorRaca">Cor/Raça:</label>
+          <input class="input4" type="text" name="inputCorRaca" id="inputCorRaca" placeholder="cor/raça" disabled>
+
+
+          <label class="label5" for="inputAltura">Altura:</label>
+          <input class="input5" type="text" name="inputAltura" id="inputAltura" placeholder="Altura" disabled>
+
+          <label class="label6" for="inputCidade">Cidade:</label>
+          <input class="input6" type="text" name="inputCidade" id="inputCidade" placeholder="Cidade" disabled>
+
+
+          <label class="label7" for="maisInformacoes">Mais Informações:</label>
+          <textarea type="text" name="maisInformacoes" id="maisInformacoes" cols="10" maxlength="800"
+            placeholder="Digite nesse campo informações adicionais como: medicamentos essenciais ou alguma informação importante e relevante sobre o Desaparecido."
+            disabled></textarea>
+
+
+          <label class="mensagem-botao-foto" for="mensagem-botao-foto">Clique no botão abaixo para inserir uma
+            foto da
+            pessoa desaparecida:</label>
+          <button id="botao-foto" name="botao-foto">Buscar arquivo<img id="imagem-botao"
+              src="../../imagens/imagem-botao-foto.svg" width="40" disabled>
+            <input type="file" id="myfile" name="myfile"disabled>
+
+            <button class="enviar-cadastro" onclick="excluirDesaparecido()">Excluir</button>
+            <a href="lista-desaparecidos.html" class="botao-voltar">Voltar</a>
+
+
+
+        </div>
 
 </body>
 
 <script type="application/javascript">
-    window.onload = (event) => {
-        //window.onload acontece quando a tela é carregada
-        //Pega o id recebido na url
-        const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-        let id = urlParams.get('inputId');
+  window.onload = (event) => {
+    //window.onload acontece quando a tela é carregada
+    //Pega o id recebido na url
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    let id = urlParams.get('inputId');
 
-        //Busca desaparecido no banco de dados do localStorage, usando o id como chave, colocando o conteúdo em um array
-        let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
-        let desaparecido = db_desaparecidos.find(x => x.id == id);
+    //Busca desaparecido no banco de dados do localStorage, usando o id como chave, colocando o conteúdo em um array
+    let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
+    let desaparecido = db_desaparecidos.find(x => x.id == id);
 
-        //Preenche os campos do formulário
-        document.getElementById("inputId").value = desaparecido.id;
-        document.getElementById("inputNome").value = desaparecido.nome;
-        document.getElementById("inputIdade").value = desaparecido.idade;
-        document.getElementById("inputSexo").value = desaparecido.sexo;
-        document.getElementById("inputCorRaca").value = desaparecido.corRaca;
-        document.getElementById("inputAltura").value = desaparecido.altura;
-        document.getElementById("inputCidade").value = desaparecido.cidade;
-        document.getElementById("maisInformacoes").value = desaparecido.maisInformacoes;
+    //Preenche os campos do formulário
+    document.getElementById("inputId").value = desaparecido.id;
+    document.getElementById("myfile").files[0] = desaparecido.foto;
+    document.getElementById("inputNome").value = desaparecido.nome;
+    document.getElementById("inputIdade").value = desaparecido.idade;
+    document.getElementById("inputSexo").value = desaparecido.sexo;
+    document.getElementById("inputCorRaca").value = desaparecido.corRaca;
+    document.getElementById("inputAltura").value = desaparecido.altura;
+    document.getElementById("inputCidade").value = desaparecido.cidade;
+    document.getElementById("maisInformacoes").value = desaparecido.maisInformacoes;  
 
 
-    }
+  }
 
-    function excluirDesaparecido() {
-        //Obtendo id do formulário
-        const id = document.getElementById("inputId").value;
+  function excluirDesaparecido() {
+    //Obtendo id do formulário
+    const id = parseInt(document.getElementById("inputId").value);
+    
+    //Obtendo o banco de dados do localStorage, colocando o conteúdo em um array
+    let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
 
-        //Obtendo o banco de dados do localStorage, colocando o conteúdo em um array
-        let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
+    //Removendo desaparecido do array
+    db_desaparecidos.splice(db_desaparecidos.findIndex(function (desaparecido) {
+      return desaparecido.id == id;
+    }), 1);
 
-        //Removendo desaparecido do array
-        db_desaparecidos.splice(db_desaparecidos.findIndex(function (desaparecido) {
-            return desaparecido.id == id;
-        }), 1);
+    //Atualizando banco de dados com o array de desaparecido atualizado
+    localStorage.setItem('db_desaparecidos', JSON.stringify(db_desaparecidos));
+    alert("Desaparecido excluído com sucesso!");
 
-        //Atualizando banco de dados com o array de desaparecido atualizado
-        localStorage.setItem('db_desaparecidos', JSON.stringify(db_desaparecidos));
-        alert("Desaparecido excluído com sucesso!");
-
-        //Redirecionando para a página de listagem
-        window.location.href = "lista-desaparecidos.html";
-    }
+    //Redirecionando para a página de listagem
+    window.location.href = "lista-desaparecidos.html";
+  }
 </script>
 
 </html>
