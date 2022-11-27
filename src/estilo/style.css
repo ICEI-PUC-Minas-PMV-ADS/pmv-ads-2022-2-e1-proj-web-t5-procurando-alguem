@@ -667,7 +667,7 @@ li.dropdown {
 }
 
 /*Estilo da página "Meu Perfil" começa aqui*/
-.dados-usuario{
+/*.dados-usuario{
     background-color: #2F2841;
     border-radius: 20px;
     width: 60vw;
@@ -678,25 +678,19 @@ li.dropdown {
     left: 585px;
     top: 200px;
     
-}
+}*/
 
-.menu-opcoes{
-    width: 15vw;
-    height: 70vh;
-    background-color: #2F2841;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 200px;
-    left: 280px;
-}
+
 .itens-menu-opcoes{
-    text-decoration: none;
+    font-size: 25px;
     list-style: none;
-    
-    justify-content: center;
+    justify-content: left;
     position: absolute;
     top: 100px;
-    
 }
+/*.dados-usuario {
+    position: absolute;
+    top: 200px;
+    left: 450px;
+
+}*/
