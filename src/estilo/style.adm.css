@@ -121,6 +121,11 @@
     left: 195px;
 }
 
+.label_status-adm {
+    position: relative;
+    top: 100px;
+    left: -80px;
+}
 .label7-adm {
     font-size: 18px;
     position: absolute;
@@ -205,6 +210,6 @@
     font-weight: bolder;
     -webkit-text-stroke: 1px 1px 5px #000;
     position: relative;
-    top: 240px;
+    top: 260px;
     left: 100px;
 }
