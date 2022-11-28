@@ -37,8 +37,30 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
  
 ![Jean na lista de encontrados](https://user-images.githubusercontent.com/98750413/204166333-5f452106-1db5-4115-bf17-cbbbd4d57728.png)
 
- 
 
+<h2>Registro de Tela dos testes realizados por Pedro Henrique da Silva Santos</h2>
+
+![Alerta Solicitando Login para Cadastrar Desaparecido](https://user-images.githubusercontent.com/112659128/204174823-4e7ece63-e625-4056-8d06-42e9f340987a.PNG)
+
+![Tentativa de Cadastro de Desaparecido sem preencher os campos obrigatórios](https://user-images.githubusercontent.com/112659128/204174947-60c0979b-dfd1-4c89-a11b-d7e312d88b53.PNG)
+
+ ![Desaparecido incluido com sucesso](https://user-images.githubusercontent.com/112659128/204174841-613c06d4-0ab1-4c1b-8e47-3d7def147249.PNG)
+
+![Alerta de Edição do Desaparecido](https://user-images.githubusercontent.com/112659128/204174854-3b34d468-318c-4961-bc29-2062fdd98669.PNG)
+
+![Alerta de Exclusão de desaparecido](https://user-images.githubusercontent.com/112659128/204174874-43cdd736-ac08-469e-ac30-e814fb19b7dd.PNG)
+
+![Listagem de Desaparecidos Cadastrados](https://user-images.githubusercontent.com/112659128/204174916-f299db31-8231-4ea1-be0b-e1346588551e.PNG)
+
+![Botões Editar e Excluir](https://user-images.githubusercontent.com/112659128/204174987-bc93e5dd-6b11-4ef5-89e6-04efc011bcf3.PNG)
+
+![Status Desaparecido](https://user-images.githubusercontent.com/112659128/204175056-28827921-8186-4be0-bb43-61478b79bbc1.PNG)
+
+![Status Encontrado](https://user-images.githubusercontent.com/112659128/204175081-36e993a3-f2a1-4d23-8de4-ec46e898615e.PNG)
+
+![Caso o status sejá alterado para encontrado, ele aparecerá na listagem de encontrados](https://user-images.githubusercontent.com/112659128/204175092-9d9e11a5-7302-4123-ab96-f92d41c87a5a.PNG)<br>
+
+![Informações do Encontrado](https://user-images.githubusercontent.com/112659128/204175104-c74e2551-4c65-4bca-85df-421f474e0adf.PNG)
 
 
 > **Links Úteis**:
