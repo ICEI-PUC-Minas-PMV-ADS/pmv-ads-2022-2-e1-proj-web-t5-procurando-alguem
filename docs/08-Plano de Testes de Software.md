@@ -40,9 +40,133 @@ Critérios de Êxito: Notícia aparecer na Home page, no topo das Notícias sobr
  Passos 5: Verificar que ele está na página de encontradosdos<br> 
  Critérios de Êxito: Desaparecido cadastrado deve migrar para a página encontrados após a troca de status.
 
+<h1>Stephanye Castellano</h1>
+<h2>Desenvolvi testes nas páginas do Pedro Henrique da Silva Santos</h2>
 
+<h3>Casos de Teste da tela de Login</h3>
+<h5> Objetivo do Teste: Realizar login com usuário padrão e senha corretos</h5>
+<br> Passo 1: Acesso a tela Login 
+<br> Passo 2: Insiro os dados de login e senha de usuário corretamente 
+<br> Passo 3: Login será realizado com sucesso
+<br> Passo 4: Serei redirecionada para a tela Home Page 
+<br> Resultado esperado: login realizado com sucesso, encaminhado para a página Home Page
+<br> <br> 
 
+<h5> Objetivo do Teste: Realizar login com usuário admin e senha corretos</h5>
+<br> Passo 1: Acesso a tela Login 
+<br> Passo 2: Insiro os dados de login e senha de admin corretamente  
+<br> Passo 3: Login será realizado com sucesso
+<br> Passo 4: Serei redirecionada para a tela Administrador 
+<br> Resultado esperado: login realizado com sucesso, encaminhado para a página que lista usuários na tela de admin 
+<br> <br> 
 
+<h5> Objetivo do Teste: Realizar login com senha invalida </h5>
+<br> Passo 1: Acesso a tela Login 
+<br> Passo 2: Insiro usuário correto   
+<br> Passo 3: Senha inválida 
+<br> Passo 4: Ao clicar em Login deverá aparecer uma mensagem dizendo que Usuário ou Senha incorretos.  
+<br> Resultado esperado: Mostrar um alert com mensagem: Usuário ou Senha incorretos!<br> <br> 
+
+<h5> Objetivo do Teste: Realizar login com usuário invalido</h5>
+<br> Passo 1: Acesso a tela Login 
+<br> Passo 2: Insiro usuário errado   
+<br> Passo 3: Senha correta 
+<br> Passo 4: Ao clicar em Login deverá aparecer uma mensagem dizendo que Usuário ou Senha incorretos.  
+<br> Resultado esperado: Mostrar um alert com mensagem: Usuário ou Senha incorretos!<br> <br> 
+
+<h5> Objetivo do Teste: Acessar Cadastro de Novo Usuário através do Login</h5>
+<br> Passo 1: Clico no botão de Cadastrar Novo Usuário  
+<br> Passo 2: Abrirá a modal de Cadastrar Novo Usuário  
+<br> Resultado esperado: Mostrar um alert com mensagem: Usuário ou Senha incorretos!<br> <br> 
+
+<h5> Objetivo do Teste: Realizar o Cadastro inserindo Usuário, Nome Completo, E-mail, Senha e Confirmação de Senha Corretamente</h5>
+<br> Passo 1: Acesso a tela Login 
+<br> Passo 2: Abrir modal de Cadastrar Novo Usuário    
+<br> Passo 3: Inserir todos os dados corretamente: usuário, nome completo, e-mail, senha e confirmação de senha iguais 
+<br> Passo 4: Clico no botão Cadastrar   
+<br> Passo 5: Aparecerá uma mensagem informando que o usuário foi cadastrado com sucesso 
+<br> Resultado esperado: Mostrar um alert com mensagem: Cadastro de Usuário Concluído. Prossiga com o login para acessar o site<br> <br>  
+
+<h5> Objetivo do Teste: Tentar realizar cadastro com os campos Senha e Confirmar Senha diferentes</h5>
+<br> Passo 1: Acesso a tela Login 
+<br> Passo 2: Abrir modal de Cadastrar Novo Usuário    
+<br> Passo 3: Inserir todos os dados: usuário, nome completo, e-mail, senha e confirmação de senha diferentes 
+<br> Passo 4: Clico no botão Cadastrar   
+<br> Passo 5: Aparecerá uma mensagem informando que as senhas são diferentes uma da outra 
+<br> Resultado esperado: Mostrar um alert informando que senhas não são compatíveis<br> <br> 
+
+<h5> Objetivo do Teste: Tentar realizar cadastro sem e-mail</h5>
+<br> Passo 1: Acesso a tela Login 
+<br> Passo 2: Abrir modal de Cadastrar Novo Usuário    
+<br> Passo 3: Inserir os dados: usuário, nome completo, senha e confirmação de senha iguais 
+<br> Passo 4: Não preencho o e-mail  
+<br> Passo 5: Clico no botão Cadastrar   
+<br> Passo 6: Aparecerá uma mensagem informando para preencher todos os campos obrigatórios 
+<br> Resultado esperado: Mostrar um alert informando que todos os campos são obrigatórios<br> <br> 
+
+<h5> Objetivo do Teste: Tentar realizar cadastro sem senha e confirmação de senha </h5>
+<br> Passo 1: Acesso a tela Login 
+<br> Passo 2: Abrir modal de Cadastrar Novo Usuário    
+<br> Passo 3: Inserir os dados: usuário, nome completo e e-mail 
+<br> Passo 4: Não preencho senha e confirmação de senha iguais  
+<br> Passo 5: Clico no botão Cadastrar   
+<br> Passo 6: Aparecerá uma mensagem informando para preencher todos os campos obrigatórios 
+<br> Resultado esperado: Mostrar um alert informando que todos os campos são obrigatórios<br> <br> 
+
+<h5> Objetivo do Teste: Tentar realizar cadastro sem Nome Completo</h5>
+<br> Passo 1: Acesso a tela Login 
+<br> Passo 2: Abrir modal de Cadastrar Novo Usuário    
+<br> Passo 3: Inserir os dados: usuário, e-mail, senha e confirmação de senha iguais  
+<br> Passo 4: Não preencho o nome completo  
+<br> Passo 5: Clico no botão Cadastrar   
+<br> Passo 6: Aparecerá uma mensagem informando para preencher todos os campos obrigatórios  
+<br> Resultado esperado: Mostrar um alert informando que todos os campos são obrigatórios<br> <br> 
+
+<h5> Objetivo do Teste: Tentar realizar cadastro sem Usuário</h5>
+<br> Passo 1: Acesso a tela Login 
+<br> Passo 2: Abrir modal de Cadastrar Novo Usuário    
+<br> Passo 3: Inserir os dados: nome completo, e-mail, senha e confirmação de senha iguais   
+<br> Passo 4: Não preencho o usuário   
+<br> Passo 5: Clico no botão Cadastrar   
+<br> Passo 6: Aparecerá uma mensagem informando para preencher todos os campos obrigatórios  
+<br> Resultado esperado: Mostrar um alert informando que todos os campos são obrigatórios<br> <br> 
+
+<h5> Objetivo do Teste: Cadastrar um usuário com o mesmo login que um usuário já cadastrado</h5>
+<br> Passo 1: Acesso a tela Login 
+<br> Passo 2: Abrir modal de Cadastrar Novo Usuário    
+<br> Passo 3: Inserir os dados: nome completo, e-mail, senha e confirmação de senha iguais   
+<br> Passo 4: E um usuário o um que já foi cadastrado   
+<br> Passo 5: Clico no botão Cadastrar   
+<br> Passo 6: Aparecerá uma mensagem informando que usuário já foi cadastrado  
+<br> Resultado esperado: Mostrar um alert informando que usuário já foi cadastrado <br> <br> 
+
+<h5> Objetivo do Teste: Cadastrar um usuário com mesmo e-mail que um usuário já cadastrado</h5>
+<br> Passo 1: Acesso a tela Login 
+<br> Passo 2: Abrir modal de Cadastrar Novo Usuário    
+<br> Passo 3: Inserir os dados: usuário, nome completo, e-mail, senha e confirmação de senha iguais    
+<br> Passo 4: E um e-mail o um que já foi cadastrado  
+<br> Passo 5: Clico no botão Cadastrar   
+<br> Passo 6: Aparecerá uma mensagem informando que e-mail já foi cadastrado  
+<br> Resultado esperado: Mostrar um alert informando que e-mail já foi cadastrado <br> <br> 
+
+<h5> Objetivo do Teste: Clicar no botão Cancelar</h5>
+<br> Passo 1: Acesso a tela Login 
+<br> Passo 2: Abrir modal de Cadastrar Novo Usuário    
+<br> Passo 3: Clico no botão Cancelar      
+<br> Passo 4: Deverá fechar a modal Cadastrar Novo Usuário   
+<br> Resultado esperado: Fechar a modal assim que for clicado no botão Cancelar<br> <br> 
+
+<br> <h3>Tela login-index</h3>
+<h5> Objetivo do Teste: Listar usuários cadastrados</h5>
+<br> Passo 1: Acesso a tela login-index usando um admin 
+<br> Passo 2: Consigo visualizar todas as contas cadastradas 
+<br> Resultado esperado: Visualizar todos os usuários cadastrados no sistema<br> <br> 
+
+<h5> Objetivo do Teste: Clicar no botão Logout</h5>
+<br> Passo 1: Acesso a tela login-index usando um admin  
+<br> Passo 2: Clico no botão Logout     
+<br> Passo 3: Serei redirecionada para a tela de login 
+<br> Resultado esperado: O usuário logado, deverá tem sua sessionStorage encerrada e retornará para a tela de login<br> <br> 
  
 ## Ferramentas de Testes (Opcional)
 
