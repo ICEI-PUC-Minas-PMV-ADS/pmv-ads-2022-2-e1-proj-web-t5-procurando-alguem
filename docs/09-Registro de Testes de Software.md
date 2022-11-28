@@ -62,6 +62,10 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 
 ![Informações do Encontrado](https://user-images.githubusercontent.com/112659128/204175104-c74e2551-4c65-4bca-85df-421f474e0adf.PNG)
 
+<h2>Registro de Tela dos testes realizados por Stephanye Castellano</h2>
+Testes da funcionalidades de Login, Cadastrar Novo Usuario e a tela de Listar Usuarios 
+Obs! Vídeo muito grande para postar aqui no GitHub
+https://drive.google.com/file/d/1_YEc2cXb27NmgTYAgM5AYFCGl76Imd3V/view?usp=share_link
 
 > **Links Úteis**:
 > - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
