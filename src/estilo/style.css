@@ -27,6 +27,8 @@ body {
 }
 
 /* Página cadastro, lista, editar e excluir-desaparecidos começa*/
+
+
 .label_status{
     position: relative;
     top: 150px;
@@ -60,6 +62,7 @@ body {
     border-radius: 100px;
     box-shadow: 100px 0px 100px #00000056;
     display: flex;
+    z-index: 1;
 }
 
 .p1 > h1 {
