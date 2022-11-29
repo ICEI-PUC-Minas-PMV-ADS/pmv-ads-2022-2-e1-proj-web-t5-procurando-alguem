@@ -372,7 +372,7 @@ body {
 }
 /* /* Página cadastro, lista, editar e excluir-desaparecidos termina aqui*/
 
-a {
+a, #loginMenu {
     font-family: Karma;
     font-weight: bold;
     text-align: center;

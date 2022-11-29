@@ -1,45 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../../estilo/style.css">
-	<title>Cadastro de Depoimentos</title>
+    <link rel="stylesheet" href="../../estilo/style.css">
+    <script type="text/javascript" src="../../js/banco-desaparecidos.js"></script>
+    <script type="text/javascript" src="../../js/menu.js"></script>
+    <title>Cadastro de Depoimentos</title>
 </head>
+
 <body onload="init()">
-
-    <div class="logo">
-        <h1>Procurando Alguém?</h1>
-        <img src="..\..\imagens\imagem-logo.svg" class="imagem-logo" alt="Imagem da Logo">
-    </div>
-
-    <div class="barra-menu">
-      <ul>
-          <li class="itens-menu"><a class="links-menu" href="#">Sobre</a></li>
-      </ul>
-      <ul>    
-          <li class="itens-menu"><a class="links-menu" href="#">Contato</a></li>
-      </ul>
-      <ul>
-          <li class="itens-menu"><a class="links-menu" href="#">Encontrados</a></li>
-      </ul>
-
-      <ul>
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Meu Perfil</a>
-            <div class="dropdown-content">
-              <a class="links-drop" href="#">Meu Perfil</a>
-              <a class="links-drop" href="#">Login</a>
-              <a class="links-drop" href="#">Cadastro</a>
-              <a class="links-drop" href="#">Chat e Amigos</a>
-              <a class="links-drop" href="#">Depoimentos</a>
-              <a class="links-drop" href="#">Configurações</a>
+    <header>
+        <nav class="p1">
+            <h1>Procurando Alguém?</h1>
+            <img src="../../imagens/imagem-logo.svg" class="imagem-logo-todas" alt="Imagem da Logo">
+        </nav>
+        <nav class="navbar-expand-sm">
+            <div class="container-fluid" id="menuPrincipal">
             </div>
-          </li>
-      </ul>
-   </div>
+        </nav>
+    </header>
 
     <h1 id="page-title">Cadastro de Depoimentos</h1>
 
@@ -64,21 +53,23 @@
             <div class="form-group row">
                 <div class="col-sm-5">
                     <label for="inputDepoimento">Depoimento (*)</label>
-                    <textarea class="form-control" name="depoimento" id="inputDepoimento" required placeholder="Depoimento" cols="30" rows="10"></textarea>
+                    <textarea class="form-control" name="depoimento" id="inputDepoimento" required
+                        placeholder="Depoimento" cols="30" rows="10"></textarea>
                 </div>
-            <div class="form-group row" id="campos-obr">
-                <div class="col-sm-12">
-                    <small>"(*)" = Campos obrigatórios</small>
+                <div class="form-group row" id="campos-obr">
+                    <div class="col-sm-12">
+                        <small>"(*)" = Campos obrigatórios</small>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="form-group row">
-                <div class="col-sm-12 all-btns">
-                    <input type="button" class="btn btn-success" id="btnInsert" value="Enviar">
-                    <input type="button" class="btn btn-secondary" id="btnClear" value="Limpar Formulário">
-                    <a href="depoimentos.html"><input type="button" class="btn btn-warning" id="btnClear" value="Pesquisar Depoimentos"></a>
+
+                <div class="form-group row">
+                    <div class="col-sm-12 all-btns">
+                        <input type="button" class="btn btn-success" id="btnInsert" value="Enviar">
+                        <input type="button" class="btn btn-secondary" id="btnClear" value="Limpar Formulário">
+                        <a href="depoimentos.html"><input type="button" class="btn btn-warning" id="btnClear"
+                                value="Pesquisar Depoimentos"></a>
+                    </div>
                 </div>
-            </div>
         </form>
 
     </div>
@@ -86,13 +77,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="app.js"></script>
     <script>
+        window.onload = (event) => {
+            menuPaginaAtual("cadastro-depoimento");
+        }
+
         function exibeDepoimentos() {
             // Remove todas as linhas do corpo da tabela
             $("#table-depoimentos").html("");
 
             // Popula a tabela com os registros do banco de dados
             for (i = 0; i < db.data.length; i++) {
-                let depoimento = db.data[i];    
+                let depoimento = db.data[i];
                 $("#table-depoimentos").append(`<tr><td scope="row">${depoimento.id}</td>
                                                 <td>${depoimento.nome}</td>
                                                 <td>${depoimento.depoimento}</td>
@@ -113,8 +108,9 @@
                 let campoNome = $("#inputNome").val();
                 let campoDepoimento = $("#inputDepoimento").val();
                 let Depoimentos = {
-                    nome: campoNome, 
-                    depoimento: campoDepoimento};
+                    nome: campoNome,
+                    depoimento: campoDepoimento
+                };
 
                 insertDepoimento(depoimento);
 
@@ -135,8 +131,10 @@
                 }
                 let campoNome = $("#inputNome").val();
                 let campoDepoimento = $("#inputDepoimento").val();
-                let Depoimentos = { nome: campoNome, 
-                    depoimento: campoDepoimento };
+                let Depoimentos = {
+                    nome: campoNome,
+                    depoimento: campoDepoimento
+                };
 
                 updateDepoimento(parseInt(campoId), depoimento);
 
@@ -191,9 +189,3 @@
         }
     </script>
 </body>
-
-
-
-
-
-
