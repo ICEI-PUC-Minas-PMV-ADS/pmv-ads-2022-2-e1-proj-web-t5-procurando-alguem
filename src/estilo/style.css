@@ -7,50 +7,29 @@ body {
     height: 100%;
 }
 
-/* Página sobre começa*/
-.menu-procurando-sobre {
+/* Menu */
+.menu-alinhamento{
+    padding-top: 35px;
+    padding-left: 20px;
     font-size: 25px;
-    position: relative;
-    top: 40px;
-    left: 290px;
 }
 
-.menor-drop-sobre {
-    font-size: medium;
-    position: relative;
-    left: 40px;
+.menu-login {
+    padding-top: 5px;
+    padding-left: 20px;
 }
 
-.subir-sobre {
-    position: relative;
-    top: 20px;
+.menu-perfil {
+    padding-top: 20px;
+    padding-left: 15px;
+    vertical-align: bottom;
+}
+
+.menu-principal {
+    text-align: right;
 }
 
 /* Página cadastro, lista, editar e excluir-desaparecidos começa*/
-
-.local_status{
-    position: relative;
-    top: 150px;
-    left: 200px;
-
-}
-.space-menu {
-    padding-left: 40px;
-    font-size: 25px;
-    position: relative;
-    top: 41px;
-    left: 310px;
-}
-
-.menor-drop {
-    padding-left: 97px;
-    padding-top: 3px;   
-}
-
-.menor-size {
-    font-size: 15px;   
-}
-
 .imagem-logo-todas {
     float: auto;
     width: 150px;
@@ -426,7 +405,7 @@ button, .button {
 
 .container-fluid {
     position: absolute;
-    width: 911px;
+    width: 875px;
     height: 111px;
     left: 465px;
     top: 65px;
@@ -769,4 +748,8 @@ li.dropdown {
 }
 #inputNome{
     color: #ffffff;
+}
+
+.table-striped{
+    color: ffffff;
 }
