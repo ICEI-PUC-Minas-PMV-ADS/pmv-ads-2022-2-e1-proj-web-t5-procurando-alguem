@@ -6,11 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cadastro de Depoimentos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="../../estilo/style.css">
+    <script type="text/javascript" src="../../js/banco-desaparecidos.js"></script>
+    <script type="text/javascript" src="../../js/menu.js"></script>
 </head>
 
 <body onload="ListaDepoimentos()">
+    <header>
+        <nav class="p1">
+            <h1>Procurando Alguém?</h1>
+            <img src="../../imagens/imagem-logo.svg" class="imagem-logo-todas" alt="Imagem da Logo">
+        </nav>
+        <nav class="navbar-expand-sm">
+            <div class="container-fluid" id="menuPrincipal">
+            </div>
+        </nav>
+    </header>
+    
     <h1>Listagem de Depoimentos</h1>
 
     <div class="container">
@@ -22,10 +41,11 @@
 
         <div class="row">
             <div id="msg" class="col-sm-2 offset-sm-10 ">
-                <a href="cadastro-depoimento.html"><input type="button" class="btn btn-warning" id="btnClear" value="Cadastro"></a>
+                <a href="cadastro-depoimento.html"><input type="button" class="btn btn-warning" id="btnClear"
+                        value="Cadastro"></a>
             </div>
-        </div>        
-        
+        </div>
+
         <!-- <form id="form-depoimento">            
             <div class="form-group row">
                 <div class="col-sm-4">
@@ -71,9 +91,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="app.js"></script>
     <script>
+        window.onload = (event) => {
+            menuPaginaAtual("depoimentos");
+        }
         // função para listar na tabela os depoimentos que estão associados aos filtros 
         function ListaDepoimentos() {
-            
+
             // Obtem os dados informados pelo usuário nos filtros
             let fc = document.getElementById('filtro_cidade').value;
             let fcg = document.getElementById('filtro_categoria').value;
@@ -88,7 +111,7 @@
                 // Verifica se os dados do depoimento batem com os filtros
                 if (((depoimento.cidade == fc) || (fc == '')) &&
                     ((depoimento.categoria == fcg) || (fcg == ''))) {
-                    
+
                     // Inclui o depoimento na tabela    
                     $("#table-depoimentos").append(`<tr><td scope="row">${depoimento.id}</td>
                                                     <td>${depoimento.nome}</td>
