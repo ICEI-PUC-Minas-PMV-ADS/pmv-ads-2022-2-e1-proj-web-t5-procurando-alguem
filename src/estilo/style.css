@@ -22,11 +22,10 @@ body {
 .menu-perfil {
     padding-top: 20px;
     padding-left: 15px;
-    vertical-align: bottom;
 }
 
-.menu-principal {
-    text-align: right;
+.ul-menu {
+    align-items: right;
 }
 
 /* Página cadastro, lista, editar e excluir-desaparecidos começa*/
