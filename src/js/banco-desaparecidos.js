@@ -77,3 +77,64 @@ if (!db_desaparecidos || db_desaparecidos.length == 0) {
     ]
     localStorage.setItem('db_desaparecidos', JSON.stringify(db_desaparecidos));
 }
+
+function buscarTodosDesaparecidos(status) {
+    let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
+
+    if (!db_desaparecidos || db_desaparecidos.length == 0) {
+        let albumDesaparecidos = document.getElementById("albumDesaparecidos");
+        albumDesaparecidos.innerHTML = "<h6>Nenhum desaparecido cadastrado!</h6>";
+    }
+    else {
+        let albumDesaparecidos = document.getElementById("albumDesaparecidos");
+        let conteudoHTML = "";
+        
+        for (let i = 0; i <= db_desaparecidos.length - 1; i++) {
+            if (db_desaparecidos[i].status == status) {
+                conteudoHTML += `<div class="col">`;
+                conteudoHTML += `<div class="card textfield-label" style="width: 18rem;">`;
+                conteudoHTML += `<img src="${db_desaparecidos[i].foto}" class="card-img-top" width="70px" height="250px>`;
+                conteudoHTML += `<div class="card-body">`;
+                conteudoHTML += `<br><h5 class="card-title">${db_desaparecidos[i].nome}</h5>`;
+                conteudoHTML += `<p class="card-text">${db_desaparecidos[i].cidade}.</p>`;
+                conteudoHTML += `<a href="perfil-desaparecido.html?id=${db_desaparecidos[i].id}" class="button">Ver Perfil</a>`;
+                conteudoHTML += `</div>`;
+                conteudoHTML += `</div>`;
+                conteudoHTML += `</div>`;
+            }
+        }
+
+        albumDesaparecidos.innerHTML = conteudoHTML;
+    }
+}
+
+function buscarPorNome(status) {
+    let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
+    let conteudoHTML = "";
+    const nomePesquisado = document.getElementById("pesquisar").value;
+    let albumDesaparecidos = document.getElementById("albumDesaparecidos");
+
+    if (nomePesquisado != null || nomePesquisado.trim() != "") { 
+        for (let i = 0; i <= db_desaparecidos.length - 1; i++) {
+            const nomePesquisadoAtual = nomePesquisado.toLowerCase()
+            const nomeAtual = db_desaparecidos[i].nome.toLowerCase()
+            
+            if (db_desaparecidos[i].status == status && nomeAtual.includes(nomePesquisadoAtual)) {
+                conteudoHTML += `<div class="col">`;
+                conteudoHTML += `<div class="card textfield-label" style="width: 18rem;">`;
+                conteudoHTML += `<img src="${db_desaparecidos[i].foto}" class="card-img-top" width="70px" height="250px>`;
+                conteudoHTML += `<div class="card-body">`;
+                conteudoHTML += `<br><h5 class="card-title">${db_desaparecidos[i].nome}</h5>`;
+                conteudoHTML += `<p class="card-text">${db_desaparecidos[i].cidade}.</p>`;
+                conteudoHTML += `<a href="perfil-desaparecido.html?id=${db_desaparecidos[i].id}" class="button">Ver Perfil</a>`;
+                conteudoHTML += `</div>`;
+                conteudoHTML += `</div>`;
+                conteudoHTML += `</div>`;
+            }
+        }
+    }
+    else {
+        conteudoHTML += "<h4>Busca não encontrada</h4>"
+    }
+    albumDesaparecidos.innerHTML = conteudoHTML;
+}

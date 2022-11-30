@@ -33,6 +33,12 @@
 
   <div class="titulo-caixa">
     <p>Lista de Desaparecidos</p>
+  </div> <br>
+
+  <div class="pesquisar">
+    <input type="text" name="pesquisar" class="input-pesquisar" id="pesquisar"
+      placeholder="Digite o nome do desaparecido">
+    <img src="../../imagens/icone-pesquisar.png" width="50" height="50" id="clicar-icone-pesquisar" onclick="buscarPorNome(true)">
   </div>
 
   <section class="section-content">
@@ -44,35 +50,19 @@
   <script type="application/javascript">
     window.onload = (event) => {
       menuPaginaAtual("desaparecidos");
-      
-      let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
 
-      if (!db_desaparecidos || db_desaparecidos.length == 0) {
-        let albumDesaparecidos = document.getElementById("albumDesaparecidos");
-        albumDesaparecidos.innerHTML = "<h6>Nenhum desaparecido cadastrado!</h6>";
-      }
-      else {
-        let albumDesaparecidos = document.getElementById("albumDesaparecidos");
-
-        let conteudoHTML = "";
-        for (let i = 0; i <= db_desaparecidos.length - 1; i++) {
-          if (db_desaparecidos[i].status == true) {
-            conteudoHTML += `<div class="col">`;
-            conteudoHTML += `<div class="card textfield-label" style="width: 18rem;">`;
-            conteudoHTML += `<img src="${db_desaparecidos[i].foto}" class="card-img-top" width="70px" height="250px>`;
-            conteudoHTML += `<div class="card-body">`;
-            conteudoHTML += `<br><h5 class="card-title">${db_desaparecidos[i].nome}</h5>`;
-            conteudoHTML += `<p class="card-text">${db_desaparecidos[i].cidade}.</p>`;
-            conteudoHTML += `<a href="perfil-desaparecido.html?id=${db_desaparecidos[i].id}" class="button">Ver Perfil</a>`;
-            conteudoHTML += `</div>`;
-            conteudoHTML += `</div>`;
-            conteudoHTML += `</div>`;
-          }
-        }
-
-        albumDesaparecidos.innerHTML = conteudoHTML;
-      }
+      buscarTodosDesaparecidos(true);
     };
+
+    // let search = document.getElementById("pesquisar").value;
+
+    // if(search == null || search.trim() == ""){
+    //   // procurarPorNome('desaparecido', search)
+    //   document.getElementById("clicar-icone-pesquisar").addEventListener("click", procurarPorNome('desaparecido', search));
+    // }
+
+    // search = document.getElementById("clicar-icone-pesquisar").addEventListener("click", procurarPorNome('desaparecido', 'pesquisar'));
+
   </script>
 
 </body>
