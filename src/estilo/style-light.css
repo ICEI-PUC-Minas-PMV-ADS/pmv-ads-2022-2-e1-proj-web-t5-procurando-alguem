@@ -1,9 +1,9 @@
 body {
-    background-color: rgba(32, 27, 44, 1);
+    background-color: rgb(246, 244, 252);
     font-family: Karma;
     font-weight: bold;
     text-align: center;
-    color: #ffffff;
+    color: #000000;
     height: 100%;
 }
 
@@ -26,10 +26,6 @@ body {
 
 .ul-menu {
     align-items: right;
-}
-
-.nome-desaparecido{
-    color: #00FF88;
 }
 
 /* Página cadastro, lista, editar e excluir-desaparecidos começa*/

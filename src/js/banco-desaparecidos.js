@@ -88,14 +88,14 @@ function buscarTodosDesaparecidos(status) {
     else {
         let albumDesaparecidos = document.getElementById("albumDesaparecidos");
         let conteudoHTML = "";
-        
+
         for (let i = 0; i <= db_desaparecidos.length - 1; i++) {
             if (db_desaparecidos[i].status == status) {
                 conteudoHTML += `<div class="col">`;
                 conteudoHTML += `<div class="card textfield-label" style="width: 18rem;">`;
                 conteudoHTML += `<img src="${db_desaparecidos[i].foto}" class="card-img-top" width="70px" height="250px>`;
                 conteudoHTML += `<div class="card-body">`;
-                conteudoHTML += `<br><h5 class="card-title">${db_desaparecidos[i].nome}</h5>`;
+                conteudoHTML += `<br><h5 class="card-title nome-desaparecido"><a class="nome-desaparecido" href="perfil-desaparecido.html?id=${db_desaparecidos[i].id}">${db_desaparecidos[i].nome}<a></h5>`;
                 conteudoHTML += `<p class="card-text">${db_desaparecidos[i].cidade}.</p>`;
                 conteudoHTML += `<a href="perfil-desaparecido.html?id=${db_desaparecidos[i].id}" class="button">Ver Perfil</a>`;
                 conteudoHTML += `</div>`;
@@ -114,26 +114,23 @@ function buscarPorNome(status) {
     const nomePesquisado = document.getElementById("pesquisar").value;
     let albumDesaparecidos = document.getElementById("albumDesaparecidos");
 
-    if (nomePesquisado != null || nomePesquisado.trim() != "") { 
-        for (let i = 0; i <= db_desaparecidos.length - 1; i++) {
-            const nomePesquisadoAtual = nomePesquisado.toLowerCase()
-            const nomeAtual = db_desaparecidos[i].nome.toLowerCase()
-            
-            if (db_desaparecidos[i].status == status && nomeAtual.includes(nomePesquisadoAtual)) {
-                conteudoHTML += `<div class="col">`;
-                conteudoHTML += `<div class="card textfield-label" style="width: 18rem;">`;
-                conteudoHTML += `<img src="${db_desaparecidos[i].foto}" class="card-img-top" width="70px" height="250px>`;
-                conteudoHTML += `<div class="card-body">`;
-                conteudoHTML += `<br><h5 class="card-title">${db_desaparecidos[i].nome}</h5>`;
-                conteudoHTML += `<p class="card-text">${db_desaparecidos[i].cidade}.</p>`;
-                conteudoHTML += `<a href="perfil-desaparecido.html?id=${db_desaparecidos[i].id}" class="button">Ver Perfil</a>`;
-                conteudoHTML += `</div>`;
-                conteudoHTML += `</div>`;
-                conteudoHTML += `</div>`;
-            }
+    listaFiltrada = db_desaparecidos.filter(
+        x => x.nome.toLowerCase().includes(nomePesquisado.toLowerCase()) && x.status == status);
+
+    if (listaFiltrada.length > 0) { 
+        for (let i = 0; i <= listaFiltrada.length - 1; i++) {
+            conteudoHTML += `<div class="col">`;
+            conteudoHTML += `<div class="card textfield-label" style="width: 18rem;">`;
+            conteudoHTML += `<img src="${listaFiltrada[i].foto}" class="card-img-top" width="70px" height="250px>`;
+            conteudoHTML += `<div class="card-body">`;
+            conteudoHTML += `<br><h5 class="card-title nome-desaparecido"><a class="nome-desaparecido" href="perfil-desaparecido.html?id=${db_desaparecidos[i].id}">${listaFiltrada[i].nome}</a></h5>`;
+            conteudoHTML += `<p class="card-text">${listaFiltrada[i].cidade}.</p>`;
+            conteudoHTML += `<a href="perfil-desaparecido.html?id=${listaFiltrada[i].id}" class="button">Ver Perfil</a>`;
+            conteudoHTML += `</div>`;
+            conteudoHTML += `</div>`;
+            conteudoHTML += `</div>`;
         }
-    }
-    else {
+    } else {
         conteudoHTML += "<h4>Busca não encontrada</h4>"
     }
     albumDesaparecidos.innerHTML = conteudoHTML;
