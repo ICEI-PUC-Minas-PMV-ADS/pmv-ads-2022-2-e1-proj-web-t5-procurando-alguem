@@ -2,7 +2,7 @@ function menuPaginaAtual(ondeEstou){
     let menuPrincipal = document.getElementById("menuPrincipal");
     let conteudoHTML = "";
     
-    conteudoHTML += `<ul class="nav ul-menu">`;
+    conteudoHTML += `<ul class="nav">`;
 
     if(ondeEstou != "home-page"){
         conteudoHTML += `<li class="nav-item menu-alinhamento"><a class="nav-item" href="home-page.html">Home Page</a></li>`;
@@ -57,4 +57,19 @@ function ultimoItemMenu(){
 function logoutUsuario() {
     sessionStorage.setItem('usuarioCorrente', null);
     window.location.href = "login.html";
+}
+
+
+function menuPaginaTeste(){
+    let menuPrincipal = document.getElementById("menuPrincipal");
+    let conteudoHTML = "";
+
+    conteudoHTML += `<li class="nav-item menu-alinhamento"><a class="nav-link" href="home-page.html">Home Page</a></li>`;
+    conteudoHTML += `<li class="nav-item menu-alinhamento"><a class="nav-link" href="desaparecidos.html">Desaparecidos</a></li>`;
+    conteudoHTML += `<li class="nav-item menu-alinhamento"><a class="nav-link" href="encontrados.html">Encontrados</a></li>`;
+    conteudoHTML += `<li class="nav-item menu-alinhamento"><a class="nav-link" href="sobre.html">Sobre</a></li>`;
+
+    conteudoHTML += ultimoItemMenu();
+
+    menuPrincipal.innerHTML = conteudoHTML;
 }
