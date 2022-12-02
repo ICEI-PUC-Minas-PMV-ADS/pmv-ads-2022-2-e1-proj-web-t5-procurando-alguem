@@ -12,7 +12,6 @@
         integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../estilo/style.css">
     <script type="text/javascript" src="../../js/banco-desaparecidos.js"></script>
     <script type="text/javascript" src="../../js/menu.js"></script>
     <script type="text/javascript" src="../../js/banco-noticias.js"></script>
@@ -37,6 +36,14 @@
             </ul>
         </nav>
     </header>
+
+    <div class="label-cor-tema">
+        <label for="cor-tema">Tema</label>
+        <select id="cor-tema">
+          <option value="true">Escuro</option>
+          <option value="false">Claro</option>
+        </select>
+    </div>
 
     <section class="section-content">
         <div class="row div-content-home-page">
@@ -78,6 +85,9 @@
             </div>
         </div>
     </section>
+
+    
+    <div id="selecionar-tema"></div>
 </body>
 
 <script type="application/javascript">
@@ -88,6 +98,7 @@
         //Se existir registros será mostrado uma listagem de notícas
 
         menuPaginaAtual("home-page");
+        colorPage();
 
         //Seção notícias
         let db_noticias = JSON.parse(localStorage.getItem('db_noticias'));

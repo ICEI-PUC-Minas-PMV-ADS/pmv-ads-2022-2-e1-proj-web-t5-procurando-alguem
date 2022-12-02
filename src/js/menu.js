@@ -56,3 +56,17 @@ function logoutUsuario() {
     sessionStorage.setItem('usuarioCorrente', null);
     window.location.href = "login.html";
 }
+
+function colorPage(){    
+    let corPage = document.getElementById("cor-tema").value;
+    let selecionarTema = document.getElementById("selecionar-tema");
+    let conteudoHTML = "";
+
+    if(corPage == "true") {        
+        conteudoHTML += `<link rel="stylesheet" href="../../estilo/style.css">`;
+    } else {
+        conteudoHTML += `<link rel="stylesheet" href="../../estilo/style-light.css">`;
+    }
+
+    selecionarTema.innerHTML = conteudoHTML;
+}
