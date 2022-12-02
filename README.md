@@ -11,8 +11,6 @@ Estamos criando uma aplicação Web para oferecer um meio alternativo para a bus
 ## Integrantes
 
 * Daniel Mendes Rufino Silva 
-* Ewerton Magno Messias Oliveira 
-* Luca Da Rocha Trece 
 * Pedro Henrique dos Santos 
 * Stephanye Castellano 
 

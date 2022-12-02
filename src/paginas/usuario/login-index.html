@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha aplicação</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="../../estilo/loginstyle.css"></script>
+    <script src="../../js/login.js"></script>
     <script>
-                
+        /*        
         if (!usuarioCorrente.login) {
             window.location.href = LOGIN_URL;
         }
-
+        */
         function exibeUsuarios() {
             
             
@@ -23,7 +23,7 @@
             }
 
             
-            document.getElementById("table-usuarios").innerHTML = listaUsuarios
+            document.getElementById("table-usuarios").innerHTML = listaUsuarios;
 
         }
 
@@ -33,7 +33,7 @@
             document.getElementById('btn_logout').addEventListener('click', logoutUser);
 
             
-            document.getElementById('nomeUsuario').innerHTML = usuarioCorrente.nome;
+            document.getElementById('nomeUsuario').innerHTML = usuarioCorrente.login = "Administrador, seja bem vindo!";
 
             
             exibeUsuarios ();
@@ -46,6 +46,31 @@
 </head>
 
 <body>
+
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Painel do Administrador</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../usuario/login-index.html">Usuários</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../admin/lista-desaparecidos-adm.html">Desaparecidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../admin/lista-noticia.html">Notícias</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <h1>Olá <span id="nomeUsuario">, seja bem-vindo!</span></h1>
     <button id="btn_logout">Efetuar Logout</button>
 

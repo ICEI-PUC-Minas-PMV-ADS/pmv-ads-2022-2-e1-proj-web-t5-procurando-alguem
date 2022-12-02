@@ -7,35 +7,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../estilo/style.css">
+    <script type="text/javascript" src="../../js/banco-desaparecidos.js"></script>
+    <script type="text/javascript" src="../../js/menu.js"></script>
+    <script type="text/javascript" src="../../js/banco-noticias.js"></script>
     <title>Home Page</title>
 </head>
 
 <body>
-    <section class="section-content">
-        <div class="row div-content">
-            <div class="col col-content">
-                <h4>O que fazer quando alguém desaparecer</h4>
-            </div>
-            <div class="col-6 col-content">
-                <h2>Notícias sobre os ultimos desaparecimentos</h2>
-            </div>
-            <div class="col col-content">
-                <h4>Últimos Desaparecido</h4>
+    <header>
+        <nav class="p1">
+            <h1>Procurando Alguém?</h1>
+            <img src="../../imagens/imagem-logo.svg" class="imagem-logo-todas" alt="Imagem da Logo">
+        </nav>
+        <nav class="navbar-expand-sm alinhar-menu">
+            <div class="container-fluid" id="menuPrincipal"></div>
+        </nav>
+    </header>
 
-                <ul>
-                    <li class="dropdown-item lista-desaparecido">Daniela Soares</li>
-                    <li class="dropdown-item lista-desaparecido">Lucas Santos</li>
-                    <li class="dropdown-item lista-desaparecido">Matheus Sousa</li>
-                    <li class="dropdown-item lista-desaparecido">Letícia Oliveira</li>
-                    <li class="dropdown-item lista-desaparecido">Jenipher Vignatti</li>
-                    <li class="dropdown-item lista-desaparecido">Christopher Kerik</li>
-                    <li class="dropdown-item lista-desaparecido">Larissa Josefa</li>
-                    <li class="dropdown-item lista-desaparecido">Meredith Grey</li>
+    <section class="section-content">
+        <div class="row div-content-home-page">
+            <div class="col col-content-home-page">
+                <h4>O que fazer quando alguém desaparecer</h4>
+                <ol id="oQueFazer">
+                    <li>Mantenha a calma;</li>
+                    <li>O primeiro lugar onde se deve procurar uma pessoa desaparecida é próximo ao local em que
+                        supostamente ela sumiu. Pergunte a todos aqueles que se encontram pela imediações e aqueles que
+                        estão passando pela região;</li>
+                    <li>Faça uma rápida busca pelas delegacias de polícia, pelos hospitais e pronto-socorros;</li>
+                    <li>Registre imediatamente o boletim de ocorrência em uma delegacia de polícia civil, dando
+                        preferência à delegacia especializada na proteção à criança e ao adolescente (DPCA), se existir
+                        em seu município. Não é necessário esperar 24 horas para registrar o boletim de ocorrência.
+                        Lembre-se de que as primeiras horas que sucedem o desaparecimento são vitais para garantir a
+                        localização e proteção do desaparecido;</li>
+                    <li>Mantenha alguém no local onde a criança foi vista pela última vez, pois ela poderá retornar ao
+                        local;</li>
+                    <li>Deixe alguém para atender o telefone indicado no cartão de identificação da criança, para
+                        centralizar informações;</li>
+                    <li>Avise amigos e parentes o mais rápido possível, principalmente os de endereço conhecido da
+                        criança, para onde ela possa se dirigir;</li>
+                    <li>Percorra os locais de preferência da criança;</li>
+                    <li>Tenha sempre uma foto da criança atualizada;</li>
+                    <li>E memorize a vestimenta da criança e outros detalhes para melhor descrevê-la quando precisar.
+                    </li>
+                </ol>
+            </div>
+            <div class="col-6 col-content-home-page">
+                <h2>Notícias sobre desaparecimentos</h2>
+                <div id="titulo-noticia">
+                </div>
+            </div>
+            <div class="col col-content-home-page">
+                <h4>Últimos Desaparecidos</h4>
+
+                <ul id="lista-desaparecidos-home-page">
                 </ul>
             </div>
         </div>
     </section>
 </body>
+
+<script type="application/javascript">
+    window.onload = (event) => {
+        //window.onload acontece quando a tela é carregada
+        //Buscando banco de dados do localstorage.
+        //Se não existir ou estivar vazio será mostrado uma mensagem que não existem notícias
+        //Se existir registros será mostrado uma listagem de notícas
+
+        menuPaginaAtual("home-page");
+
+        //Seção notícias
+        let db_noticias = JSON.parse(localStorage.getItem('db_noticias'));
+
+        let listarNoticias = document.getElementById("titulo-noticia");
+
+        if (!db_noticias || db_noticias.length == 0) {
+            listarNoticias.innerHTML = "<h4> Nenhuma notícia cadastrada</h4>";
+        }
+        else {
+            let conteudoHTML = "";
+
+            for (let i = db_noticias.length - 1; i >= 0; i--) {
+                conteudoHTML += `<h6> <br> <a href="noticia.html?id=${db_noticias[i].id}"> ${db_noticias[i].titulo}</a> </h6>`;
+                conteudoHTML += `<p class="texto-noticia">${limitarTexto(db_noticias[i].texto)} <a class="link-ver-mais-noticias" href="noticia.html?id=${db_noticias[i].id}">Ver mais</a> </p>`;
+            }
+
+            listarNoticias.innerHTML = conteudoHTML;
+        }
+
+        //Seção desaparecidos
+        let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
+
+        let listarDesaparecidos = document.getElementById("lista-desaparecidos-home-page")
+
+        if (!db_desaparecidos || db_desaparecidos.length == 0) {
+            listarDesaparecidos.innerHTML = "<h4> Nenhuma notícia cadastrada</h4>";
+        }
+        else {
+            let conteudoHTML = "";
+
+            for (let i = db_desaparecidos.length - 1; i >= 0; i--) {
+                if (db_desaparecidos[i].status == true) {
+                    conteudoHTML += `<li class="dropdown-item lista-desaparecido"> <a href="perfil-desaparecido.html?id=${db_desaparecidos[i].id}">${db_desaparecidos[i].nome}</a> </li>`;
+                }
+            }
+
+            listarDesaparecidos.innerHTML = conteudoHTML;
+        }
+    };
+
+    function limitarTexto(texto) {
+        const words = texto.split(' ');
+        let resultado = "";
+
+        if (words.length <= 50) {
+            resultado = texto;
+        } else {
+            for (let i = 0; i < 50; i++) {
+                resultado += words[i] + " ";
+            }
+            resultado += "...";
+        }
+
+        return resultado;
+    }
+</script>
 
 </html>

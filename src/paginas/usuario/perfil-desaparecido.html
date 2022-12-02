@@ -1,58 +1,84 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="../../estilo/style.css">
-	<title>Perfil Desaparecido</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+  integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+  integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../estilo/style.css">
+<script type="text/javascript" src="../../js/banco-desaparecidos.js"></script>
+<script type="text/javascript" src="../../js/menu.js"></script>
+  <title>Perfil Desaparecido</title>
 </head>
+
 <body>
+  <header>
+      <nav class="p1">
+          <h1>Procurando Alguém?</h1>
+          <img src="../../imagens/imagem-logo.svg" class="imagem-logo-todas" alt="Imagem da Logo">
+      </nav>
+      <nav class="navbar-expand-sm">
+          <div class="container-fluid" id="menuPrincipal">
+          </div>
+      </nav>
+  </header>
 
-    <div class="logo">
-        <h1>Procurando Alguém?</h1>
-        <img src="../../imagens/imagem-logo.svg" class="imagem-logo" alt="Imagem da Logo">
+  <div class="titulo-caixa">
+    <p>Informações do Desaparecido</p>
+  </div>
+
+  <section class="section-content">
+    <div class="row div-content">
+      <div class="col col-content">
+        <img id="foto" src="" width="230px" height="300px"></td>
+      </div>
+      <div class="col-6 col-content">
+        <h5 class="textfield-label" id="nome"></h5>
+        <h5 class="textfield-label" id="idade"></h5>
+        <h5 class="textfield-label" id="sexo"></h5>
+        <h5 class="textfield-label" id="corRaca"></h5>
+        <h5 class="textfield-label" id="altura"></h5>
+        <h5 class="textfield-label" id="cidade"></h5>
+        <h5 class="textfield-label" id="maisInformacoesPerfil"></h5>
+
+      </div>
+      <div class="col col-content">
+        <h4>Viu esta pessoa? Envie mensagem com as informações para manter a família atualizada e ajuda-la a encontrar
+          com mais facilidade<br></h4>
+        E-mail: contato@procurandoalguem.com
+      </div>
     </div>
-
-
-     <div class="barra-menu">
-        <ul>
-            <li class="itens-menu"><a class="links-menu" href="#">Sobre</a></li>
-        </ul>
-        <ul>    
-            <li class="itens-menu"><a class="links-menu" href="#">Contato</a></li>
-        </ul>
-        <ul>
-            <li class="itens-menu"><a class="links-menu" href="#">Encontrados</a></li>
-        </ul>
-
-        <ul>
-            <li class="dropdown">
-              <a href="javascript:void(0)" class="dropbtn">Meu Perfil</a>
-              <div class="dropdown-content">
-                <a class="links-drop" href="#">Meu Perfil</a>
-                <a class="links-drop" href="#">Login</a>
-                <a class="links-drop" href="#">Cadastro</a>
-                <a class="links-drop" href="#">Chat e Amigos</a>
-                <a class="links-drop" href="#">Depoimentos</a>
-                <a class="links-drop" href="#">Configurações</a>
-              </div>
-            </li>
-        </ul>
-     </div>
-
-    <div class="section-desaparecido">
-        <div class="colunas-desaparecido">
-            <div class="coluna-fotos">
-                <h4>Modelo 2 - Coluna 1</h4>
-            </div>
-            <div class="coluna-infos">
-                <h2>Modelo 2 - Coluna 2</h2>
-            </div>
-            <div class="coluna-infos-compartilhadas">
-                <h4>Modelo 2 - Coluna 3</h4>
-            </div>
-        </div>
-    </div>
-
+  </section>
 </body>
+
+<script>
+  window.onload = (event) => {
+    menuPaginaAtual("perfil-desaparecido");
+
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    let id = urlParams.get('id');
+
+    let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
+    let desaparecido = db_desaparecidos.find(x => x.id == id);
+
+    // Preenchendo os campos da label
+    document.getElementById("foto").src = desaparecido.foto;
+    document.getElementById("nome").innerHTML = "Nome: " + desaparecido.nome;
+    document.getElementById("idade").innerHTML = "Idade: " + desaparecido.idade;
+    document.getElementById("sexo").innerHTML = "Sexo: " + desaparecido.sexo;
+    document.getElementById("corRaca").innerHTML = "Cor/Raça: " + desaparecido.corRaca;
+    document.getElementById("altura").innerHTML = "Altura: " + desaparecido.altura;
+    document.getElementById("cidade").innerHTML = "Cidade: " + desaparecido.cidade;
+    document.getElementById("maisInformacoesPerfil").innerHTML = "Mais informações: " + desaparecido.maisInformacoes;
+  }
+</script>
+
+</html>

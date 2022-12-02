@@ -110,10 +110,10 @@
     const data = document.getElementById("Data").value;
     const texto = document.getElementById("Texto").value;
 
-    if (titulo === undefined || titulo === null || titulo === "" ||
-      categoria === undefined || categoria === null || categoria === "" ||
-      data === undefined || data === null || data === "" ||
-      texto === undefined || texto === null || texto === "") {
+    if (titulo === undefined || titulo === null || titulo.trim() === "" ||
+      categoria === undefined || categoria === null || categoria.trim() === "" ||
+      data === undefined || data === null || data.trim() === "" ||
+      texto === undefined || texto === null || texto.trim() === "") {
       alert("Preencha todos os campos obrigatórios!")
       return;
     }
@@ -124,10 +124,10 @@
     //Montando objeto de noticia para alterado no banco de dados do localstorage
     const noticia = {
       "id": id,
-      "titulo": titulo,
-      "categoria": categoria,
+      "titulo": titulo.trim(),
+      "categoria": categoria.trim(),
       "data": data,
-      "texto": texto
+      "texto": texto.trim()
     };
 
     //Editando notícia no array de notícias buscado anteriormente
