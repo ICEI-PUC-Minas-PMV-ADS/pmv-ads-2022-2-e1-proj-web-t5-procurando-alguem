@@ -5,6 +5,9 @@ body {
     text-align: center;
     color: #ffffff;
     height: 100%;
+    /*display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;*/
 }
 
 /* Menu */
@@ -44,7 +47,7 @@ body {
 }
 
 .p1 > h1 {
-    font-size: 25px;
+    font-size: 1.5em;
     font-family: Karma;
     display: flex;
     flex-direction: column;
