@@ -91,8 +91,8 @@
     let id = urlParams.get('id');
 
     //Busca a notícia no banco de dados do localStorage, usando o id como chave, colocando o conteúdo em um array
-    let db_noticnoticiaias = JSON.parse(localStorage.getItem('db_noticias'));
-    let  = db_noticias.find(x => x.id == id);
+    let db_noticias = JSON.parse(localStorage.getItem('db_noticias'));
+    let noticia = db_noticias.find(x => x.id == id);
 
     //Preenche os campos do formulário
     document.getElementById("Id").value = noticia.id;
