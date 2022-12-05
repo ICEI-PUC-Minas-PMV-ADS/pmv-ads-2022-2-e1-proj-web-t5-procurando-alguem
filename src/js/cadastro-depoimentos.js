@@ -1,4 +1,4 @@
-// declara um conjunto inicial de depoimentos
+/* // declara um conjunto inicial de depoimentos
 var db_depoimentos_inicial = {
     "data": [
         {
@@ -85,7 +85,7 @@ function displayMessage(msg) {
     $('#msg').html('<div class="alert alert-warning">' + msg + '</div>');
 }
 
-function insertDepoimento(depoimento) {
+function inserirDepoimento(depoimento) {
     // Calcula novo Id a partir do último código existente no array (PODE GERAR ERRO SE A BASE ESTIVER VAZIA)
     let novoId = 1;
     if (db.data.length != 0) 
@@ -93,7 +93,6 @@ function insertDepoimento(depoimento) {
     let novoDepoimento = {
         "id": novoId,
         "nome": depoimento.nome,
-        "email" : depoimento.email,
         "depoimento": depoimento.depoimento,
 
     };
@@ -103,7 +102,7 @@ function insertDepoimento(depoimento) {
     displayMessage("Depoimento inserido com sucesso");
 
     // Atualiza os dados no Local Storage
-    localStorage.setItem('db_depoimento', JSON.stringify(db));
+    localStorage.setItem('db_depoimentos', JSON.stringify(db));
 }
 
 function updateDepoimento(id, depoimento) {
@@ -129,4 +128,4 @@ function deleteDepoimento(id) {
 
     // Atualiza os dados no Local Storage
     localStorage.setItem('db_depoimento', JSON.stringify(db));
-}
+} */

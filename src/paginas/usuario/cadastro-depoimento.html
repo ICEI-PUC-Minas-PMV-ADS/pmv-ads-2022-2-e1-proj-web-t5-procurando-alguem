@@ -71,7 +71,7 @@
 
                 <div class="form-group row">
                     <div class="col-sm-12 all-btns">
-                        <input type="button" class="btn btn-success" id="btnInsert" value="Enviar">
+                        <button class="btn btn-success" id="btnInsert" value="Enviar" onclick="inserirDepoimento()"></button>
                         <input type="button" class="btn btn-secondary" id="btnClear" value="Limpar Formulário">
                         <a href="depoimentos.html"><input type="button" class="btn btn-warning" id="btnClear"
                                 value="Pesquisar Depoimentos"></a>
@@ -83,12 +83,48 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="app.js"></script>
-    <script>
+    <script type="application/javascript">
         window.onload = (event) => {
             menuPaginaAtual("cadastro-depoimento");
         }
 
-        function exibeDepoimentos() {
+        function inserirDepoimento() {
+            let id = 0;
+            const nome = document.getElementById("Nome").value;
+            const txt_depoimento = document.getElementById("txt_Depoimento").value;
+
+            if (nome === undefined || nome === null || nome.trim() === "" ||
+                depoimento === undefined || depoimento === null || depoimento.trim() === "") {
+                alert('Preencha todos os campos obrigatórios corretamente antes de enviar seu Depoimento!')
+                return;
+            }
+
+            var db_depoimentos = JSON.parse(localStorage.getItem('db.depoimentos'));
+            if (!db_depoimentos || db_depoimentos.length == 0){
+                db_depoimentos = [];
+                id = 1;
+            }
+            else{
+                id = db_depoimentos[db_depoimentos.length - 1].id + 1;
+            }
+
+            const depoimento = {
+                "id": id,
+                "nome": nome.trim(),
+                "txt_depoimento": txt_depoimento.trim()
+            };
+
+            db_depoimentos.push(depoimento);
+
+            localStorage.setItem('db_depoimentos', JSON.stringify(db_depoimentos));
+            alert('Depoimento incluído com sucesso ao nosso sistema!')
+
+            window.location.href = "depoimentos.html";
+
+        }
+
+
+/*         function exibeDepoimentos() {
             // Remove todas as linhas do corpo da tabela
             $("#table-depoimentos").html("");
 
@@ -102,31 +138,31 @@
             }
         }
 
-        function init() {
-            // Adiciona funções para tratar os eventos 
-            $("#btnInsert").click(function () {
-                // Verfica se o formulário está preenchido corretamente
-                if (!$('#form-depoimento')[0].checkValidity()) {
-                    displayMessage("Preencha o formulário corretamente.");
-                    return;
-                }
+         function init() 
+             // Adiciona funções para tratar os eventos 
+             $("#btnInsert").click(function () {
+                 // Verfica se o formulário está preenchido corretamente
+                 if (!$('#form-depoimento')[0].checkValidity()) {
+                     displayMessage("Preencha o formulário corretamente.");
+                     return;
+                 }
 
-                // Obtem os valores dos campos do formulário
-                let campoNome = $("#inputNome").val();
-                let campoDepoimento = $("#inputDepoimento").val();
-                let Depoimentos = {
-                    nome: campoNome,
+                 // Obtem os valores dos campos do formulário
+                 let campoNome = $("#inputNome").val();
+                 let campoDepoimento = $("#inputDepoimento").val();
+                 let Depoimentos = {
+                     nome: campoNome,
                     depoimento: campoDepoimento
-                };
+                 };
 
                 insertDepoimento(depoimento);
 
-                // Reexibe os depoimentos
+                 // Reexibe os depoimentos
                 exibeDepoimentos();
 
                 // Limpa o formulario
                 $("#form-depoimento")[0].reset();
-            });
+             });
 
             // Intercepta o click do botão Alterar
             $("#btnUpdate").click(function () {
@@ -192,7 +228,7 @@
                 $("#inputDepoimento").val(colunas[2].innerText);
             });
 
-            exibeDepoimentos();
-        }
+            exibeDepoimentos(); */
+        
     </script>
 </body>
