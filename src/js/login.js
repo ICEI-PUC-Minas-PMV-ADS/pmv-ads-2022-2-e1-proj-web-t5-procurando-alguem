@@ -51,9 +51,7 @@ function initLoginApp () {
 
     // Faz a verificação do localstorage
     if (!usuariosJSON) {  
-        alert('Dados de usuários não encontrados no localStorage. \n -----> Fazendo carga inicial.');
-
-        
+        // alert('Dados de usuários não encontrados no localStorage. \n -----> Fazendo carga inicial.');        
         db_usuarios = dadosIniciais;
 
         

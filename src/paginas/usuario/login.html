@@ -14,6 +14,7 @@
 		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../../estilo/style.css">
+	<link rel="stylesheet" href="../../estilo/loginstyle.css">
 	<script type="text/javascript" src="../../js/menu.js"></script>
 
 	<title>Faça seu Login</title>
@@ -139,7 +140,7 @@
 			resultadoLogin = loginUser(username, password);
 			if (resultadoLogin) {
 				alert('Login Efetuado com Sucesso!')
-				location.href = 'cadastro-desaparecido.html';
+				location.href = 'home-page.html';
 			}
 			else if (username == "admin" && password == "admin") {
 				localStorage.setItem("acesso", true);
