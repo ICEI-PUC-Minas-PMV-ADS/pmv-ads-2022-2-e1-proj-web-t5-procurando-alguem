@@ -16,6 +16,10 @@ function menuPaginaAtual(ondeEstou){
 
     if(ondeEstou != "sobre"){
         conteudoHTML += `<li class="nav-item menu-alinhamento"><a class="nav-item" href="sobre.html">Sobre</a></li>`;
+    }   
+    
+    if(ondeEstou != "depoimentos"){
+        conteudoHTML += `<li class="nav-item menu-alinhamento"><a class="nav-item" href="depoimentos.html">Depoimentos</a></li>`;
     }
     
     conteudoHTML += ultimoItemMenu();

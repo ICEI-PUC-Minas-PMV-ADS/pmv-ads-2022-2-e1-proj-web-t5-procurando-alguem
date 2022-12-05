@@ -118,6 +118,7 @@ function buscarPorNome(status) {
         x => x.nome.toLowerCase().includes(nomePesquisado.toLowerCase()) && x.status == status);
 
     if (listaFiltrada.length > 0) { 
+        
         for (let i = 0; i <= listaFiltrada.length - 1; i++) {
             conteudoHTML += `<div class="col">`;
             conteudoHTML += `<div class="card textfield-label" style="width: 18rem;">`;
