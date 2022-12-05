@@ -12,7 +12,7 @@
     integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../../estilo/style.css">  
+  <link rel="stylesheet" href="../../estilo/style.css">
   <script type="text/javascript" src="../../js/menu.js"></script>
 
   <title>Sobre</title>
@@ -21,14 +21,21 @@
 
 <body>
   <header>
-      <nav class="p1">
-          <h1>Procurando Alguém?</h1>
-          <img src="../../imagens/imagem-logo.svg" class="imagem-logo-todas" alt="Imagem da Logo">
-      </nav>
-      <nav class="navbar-expand-sm">
-          <div class="container-fluid" id="menuPrincipal">
-          </div>
-      </nav>
+    <nav class="navbar navbar-expand-lg menu-css">
+      <ul class="navbar-nav mr-auto menu-css-logo">
+        <li class="nav-item">
+          <a class="nav-link" href="home-page.html">
+            <nav class="p1">
+              <h1>Procurando Alguém?</h1>
+              <img src="../../imagens/imagem-logo.svg" class="imagem-logo-todas" alt="Imagem da Logo">
+            </nav>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto menu-opcoes-css" id="menuPrincipal">
+      </ul>
+    </nav>
   </header>
 
   <section class="section-content">
@@ -57,8 +64,9 @@
   </section>
   <script>
     window.onload = (event) => {
-        menuPaginaAtual("sobre");
+      menuPaginaAtual("sobre");
     }
-   </script>
-  </body>    
-  </html>
+  </script>
+</body>
+
+</html>

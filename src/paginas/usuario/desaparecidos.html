@@ -21,13 +21,20 @@
 
 <body>
   <header>
-    <nav class="p1">
-      <h1>Procurando Alguém?</h1>
-      <img src="../../imagens/imagem-logo.svg" class="imagem-logo-todas" alt="Imagem da Logo">
-    </nav>
-    <nav class="navbar-expand-sm">
-      <div class="container-fluid" id="menuPrincipal">
-      </div>
+    <nav class="navbar navbar-expand-lg menu-css">
+      <ul class="navbar-nav mr-auto menu-css-logo">
+        <li class="nav-item">
+          <a class="nav-link" href="home-page.html">
+            <nav class="p1">
+              <h1>Procurando Alguém?</h1>
+              <img src="../../imagens/imagem-logo.svg" class="imagem-logo-todas" alt="Imagem da Logo">
+            </nav>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto menu-opcoes-css" id="menuPrincipal">
+      </ul>
     </nav>
   </header>
 
@@ -38,7 +45,8 @@
   <div class="pesquisar">
     <input type="text" name="pesquisar" class="input-pesquisar" id="pesquisar"
       placeholder="Digite o nome do desaparecido">
-    <img src="../../imagens/icone-pesquisar.png" width="50" height="50" id="clicar-icone-pesquisar" onclick="buscarPorNome(true)">
+    <img src="../../imagens/icone-pesquisar.png" width="50" height="50" id="clicar-icone-pesquisar"
+      onclick="buscarPorNome(true)">
   </div>
 
   <section class="section-content">
