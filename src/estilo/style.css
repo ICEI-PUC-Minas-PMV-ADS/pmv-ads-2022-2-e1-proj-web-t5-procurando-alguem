@@ -8,7 +8,6 @@ body {
 }
 
 #scroll{
-    height: 150px;
     overflow: auto;
     border-radius: 5px;
 }
@@ -539,7 +538,6 @@ button, .button {
     background-color: #514869;
     color: #ffffff;
     margin: 10px;
-    /* height: 800px; */
     border-radius: 15px;
     padding-bottom: 60%;
     margin-bottom: 15px;
@@ -549,15 +547,15 @@ button, .button {
 .div-content-home-page {
     padding: 15px;
     flex-direction: row;
+    height: 830px;
 }
 
 .col-content-home-page {
     background-color: #514869;
     color: #ffffff;
     margin: 10px;
-    height: 500px;
+    height: 780px;
     border-radius: 15px;
-    padding-bottom: 60%;
     margin-bottom: 15px;
     padding-top: 1.5%;
 }
