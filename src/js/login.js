@@ -64,27 +64,25 @@ function initLoginApp () {
 
 
 // Verifica se o login do usuário está correto, caso esteja, leva para a página inicial
-function loginUser (login, senha) {
-    
+function loginUser (login, senha) {  
 
     for (var i = 0; i < db_usuarios.usuarios.length; i++) {
         var usuario = db_usuarios.usuarios[i];
 
         // Se encontrou login, carrega usuário e salva
         if (login == usuario.login && senha == usuario.senha) {
-            usuarioCorrente.id = usuario.id;
-            usuarioCorrente.login = usuario.login;
-            usuarioCorrente.email = usuario.email;
-            usuarioCorrente.nome = usuario.nome;
-            
+            const usuarioCorrente = {
+                "id": usuario.id,
+                "login": usuario.login,
+                "email": usuario.email,
+                "nome": usuario.nome
+            };            
             
             sessionStorage.setItem ('usuarioCorrente', JSON.stringify (usuarioCorrente));
 
-            
             return true;
         }
     }
-
 
     return false;
 }
