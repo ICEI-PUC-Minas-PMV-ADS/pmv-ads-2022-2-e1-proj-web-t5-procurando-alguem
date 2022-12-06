@@ -834,3 +834,15 @@ li.dropdown {
 .table-striped{
     color: ffffff;
 }
+
+
+/*
+@media (max-width: 1340px) {
+    .p1, .imagem-logo-todas {
+        display: none;
+      }}
+      @media (max-width: 1140px) {
+        .nav-link {
+          display: flex;
+          
+        }*/
