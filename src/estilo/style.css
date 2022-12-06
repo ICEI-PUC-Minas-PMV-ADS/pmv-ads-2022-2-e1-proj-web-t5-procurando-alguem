@@ -11,6 +11,7 @@ body {
     overflow: auto;
     border-radius: 5px;
 }
+
 ::-webkit-scrollbar{
     background-color: rgba(32, 27, 44, 1);
     width: 5px;
@@ -41,10 +42,6 @@ body {
     padding-right: 40px;
 }
 
-.ul-menu {
-    align-items: right;
-}
-
 .nome-desaparecido{
     color: #00FF88;
 }
@@ -62,8 +59,7 @@ body {
     height: 150px;
     border-radius: 80px;
     align-items: center;
-    padding-left: 15px;
-    
+    padding-left: 15px;    
 }
 
 .sub-menu{
@@ -417,10 +413,7 @@ a, #loginMenu {
     color: #ffffff;
 }
 
-h1,
-h2,
-h3,
-h4, h6 {
+h1, h2, h3, h4, h6 {
     text-shadow:
         -1.8px -1.8px #000,
         /*esquerda - pra cima*/
@@ -429,7 +422,7 @@ h4, h6 {
         1.8px -1.8px #000,
         /*direita - pra cima*/
         1.8px 1.8px 15px #000;
-    /*direita - pra baixo*/
+        /*direita - pra baixo*/
     font-weight: bolder;
     text-align: center;
 }
@@ -658,8 +651,7 @@ button, .button {
     list-style: none;
 }
 
-.links-drop:hover,
-.dropdown:hover .dropbtn {
+.links-drop:hover, .dropdown:hover .dropbtn {
     background-color: #161220;
 }
 
@@ -707,7 +699,6 @@ li.dropdown {
     text-decoration: none;
     border-radius: 15px 15px 0px 0px;
 }
-
 /* Configurações de Estilo do Botão "Meu Perfil" com o DropDown (Termina Aqui)*/
 
 .section-desaparecido {
@@ -758,14 +749,12 @@ li.dropdown {
 }
 
 /*Estilo da página "Meu Perfil" começa aqui*/
-
 .itens-menu-opcoes{
     text-decoration: none;
     list-style: none;    
     justify-content: center;
     position: absolute;
-    top: 100px;
-    
+    top: 100px;    
 }
 
 /*Estilo da página de Cadastro de Depoimentos*/
@@ -775,6 +764,7 @@ li.dropdown {
     left: -585px;
     
 }
+
 #page-title{
     background-color: #2F2841;
     width: 30vw;
@@ -787,6 +777,7 @@ li.dropdown {
     font-size: 30px;
     box-shadow: 5px 5px #161220;
 }
+
 .container{
     background-color: #2F2841;
     width: 60vw;
@@ -794,37 +785,42 @@ li.dropdown {
     border-radius: 20px;
     padding: 30px 30px;
 }
+
 .form-control{
     background-color: #514869;
-    border: none;
-    
-    
+    border: none;   
 }
+
 #inputId{
     background-color: #514869;
     border: none;
     
 }
+
 .all-btns{
     position: relative;
     top: 300px;
     left: -590px;
 }
+
 .lista_depoimentos{
     position: relative;
     left: -550px;
     top: 50px;
 }
+
 #inputDepoimento{
     width: 56.7vw;
     color: #ffffff;
     
 }
+
 #campos-obr{
     position: relative;
     top: -100px;
     left: 450px;
 }
+
 #inputNome{
     color: #ffffff;
 }
