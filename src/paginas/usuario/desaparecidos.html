@@ -46,7 +46,7 @@
     <input type="text" name="pesquisar" class="input-pesquisar" id="pesquisar"
       placeholder="Digite o nome do desaparecido">
     <img src="../../imagens/icone-pesquisar.png" width="50" height="50" id="clicar-icone-pesquisar"
-      onclick="buscarPorNome(true)">
+      onclick="buscarDesaparecido(true)">
   </div>
 
   <section class="section-content">
@@ -58,19 +58,8 @@
   <script type="application/javascript">
     window.onload = (event) => {
       menuPaginaAtual("desaparecidos");
-
-      buscarTodosDesaparecidos(true);
+      buscarDesaparecido(true);
     };
-
-    // let search = document.getElementById("pesquisar").value;
-
-    // if(search == null || search.trim() == ""){
-    //   // procurarPorNome('desaparecido', search)
-    //   document.getElementById("clicar-icone-pesquisar").addEventListener("click", procurarPorNome('desaparecido', search));
-    // }
-
-    // search = document.getElementById("clicar-icone-pesquisar").addEventListener("click", procurarPorNome('desaparecido', 'pesquisar'));
-
   </script>
 
 </body>

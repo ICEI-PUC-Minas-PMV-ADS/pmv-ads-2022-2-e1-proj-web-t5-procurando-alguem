@@ -40,7 +40,7 @@
 
     <section class="section-content">
         <div class="row div-content-home-page">
-            <div class="col col-content-home-page">
+            <div class="col col-content-home-page" id="scroll">
                 <h4>O que fazer quando alguém desaparecer</h4>
                 <ol id="oQueFazer">
                     <li>Mantenha a calma;</li>
@@ -65,7 +65,7 @@
                     </li>
                 </ol>
             </div>
-            <div class="col-6 col-content-home-page">
+            <div class="col-6 col-content-home-page" id="scroll">
                 <h2>Notícias sobre desaparecimentos</h2>
                 <div id="titulo-noticia">
                 </div>
@@ -84,8 +84,6 @@
     window.onload = (event) => {
         //window.onload acontece quando a tela é carregada
         //Buscando banco de dados do localstorage.
-        //Se não existir ou estivar vazio será mostrado uma mensagem que não existem notícias
-        //Se existir registros será mostrado uma listagem de notícas
 
         menuPaginaAtual("home-page");
 
@@ -128,6 +126,9 @@
             listarDesaparecidos.innerHTML = conteudoHTML;
         }
     };
+
+    var objDiv = document.getElementById("scroll");
+    objDiv.scrollTop = objDiv.scrollTop;
 
     function limitarTexto(texto) {
         const words = texto.split(' ');
