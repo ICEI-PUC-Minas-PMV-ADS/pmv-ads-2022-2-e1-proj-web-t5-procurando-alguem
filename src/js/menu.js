@@ -28,17 +28,15 @@ function menuPaginaAtual(ondeEstou) {
 }
 
 function ultimoItemMenu() {
-    var usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
     let conteudoHTML = "";
 
-    if (usuarioCorrente == null) {
+    if (sessionStorage.getItem("usuarioCorrente") == "{}") {
         conteudoHTML += `<li class="nav-item menu-login">`;
         conteudoHTML += `<img src="../../imagens/imagem-perfil.png" width="40" height="50"><a class="dropdown-item menu-imagem" id="loginMenu" href="login.html"> Login /<br>Cadastro</a>`;
         conteudoHTML += `</li>`;
-        conteudoHTML += `</ul>`;
     } else {
         const usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
-        
+
         conteudoHTML += `<li class="nav-item menu-perfil">`;
         conteudoHTML += `<a class="nav-item dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">`;
         conteudoHTML += `<img src="../../imagens/imagem-perfil.png" width="40" height="50"><br>Meu Perfil</a>`;
@@ -52,15 +50,12 @@ function ultimoItemMenu() {
         conteudoHTML += `<li><a class="dropdown-item item-list-sub-menu" href="#">Configurações</a></li>`;
         conteudoHTML += `</ul>`;
         conteudoHTML += `</li>`;
-        conteudoHTML += `</ul>`;
     }
 
     return conteudoHTML;
 }
 
 function logoutUsuario() {
-    sessionStorage.setItem('usuarioCorrente', null);
+    sessionStorage.setItem('usuarioCorrente', JSON.stringify({}));
     window.location.href = "login.html";
-    // sessionStorage.setItem ('usuarioCorrente', JSON.stringify ({}));
-    // window.location.href = LOGIN_URL;
 }
