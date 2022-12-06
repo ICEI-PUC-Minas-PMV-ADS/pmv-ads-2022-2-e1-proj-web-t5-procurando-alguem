@@ -55,37 +55,7 @@
   <script type="application/javascript">
     window.onload = (event) => {
       menuPaginaAtual("encontrados");
-
-      buscarTodosDesaparecidos(false);
-      buscarPorNome(false);
-
-      // let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
-
-      // if (!db_desaparecidos || db_desaparecidos.length == 0) {
-      //   let albumEncontrados = document.getElementById("albumEncontrados");
-      //   albumEncontrados.innerHTML = "<h6>Nenhum encontrado cadastrado!</h6>";
-      // }
-      // else {
-      //   let albumEncontrados = document.getElementById("albumEncontrados");
-
-      //   let conteudoHTML = "";
-      //   for (let i = 0; i <= db_desaparecidos.length - 1; i++) {
-      //     if (db_desaparecidos[i].status == false) {
-      //       conteudoHTML += `<div class="col">`;
-      //       conteudoHTML += `<div class="card textfield-label" style="width: 18rem;">`;
-      //       conteudoHTML += `<img src="${db_desaparecidos[i].foto}" class="card-img-top" width="70px" height="250px>`;
-      //       conteudoHTML += `<div class="card-body">`;
-      //       conteudoHTML += `<br><h5 class="card-title">${db_desaparecidos[i].nome}</h5>`;
-      //       conteudoHTML += `<p class="card-text">${db_desaparecidos[i].cidade}.</p>`;
-      //       conteudoHTML += `<a href="perfil-encontrado.html?id=${db_desaparecidos[i].id}" class="button">Ver Perfil</a>`;
-      //       conteudoHTML += `</div>`;
-      //       conteudoHTML += `</div>`;
-      //       conteudoHTML += `</div>`;
-      //     }
-      //   }
-
-      //   albumEncontrados.innerHTML = conteudoHTML;
-      // }
+      buscarDesaparecido(false);
     };
   </script>
 
