@@ -539,6 +539,15 @@ button, .button {
     color: #ffffff;
     margin: 10px;
     border-radius: 15px;
+    margin-bottom: 15px;
+    padding-top: 1.5%;
+}
+
+.coluna-sobre{
+    background-color: #514869;
+    color: #ffffff;
+    margin: 10px;
+    border-radius: 15px;
     padding-bottom: 60%;
     margin-bottom: 15px;
     padding-top: 1.5%;
