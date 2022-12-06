@@ -1,79 +1,43 @@
-/* // declara um conjunto inicial de depoimentos
-var db_depoimentos_inicial = {
-    "data": [
+ // declara um conjunto inicial de depoimentos
+let db_depoimentos = JSON.parse(localStorage.getItem('db_depoimentos')); 
+    
+    if (!db_depoimentos || db_depoimentos.length == 0) {
+        db_depoimentos = [   
         {
             "id": 1,
             "nome": "Leanne Graham",
-            "depoimento": "...",
-            "email": "Sincere@april.biz",
-  
+            "depoimento": "AAAAAAAAAAAA",
+             
         },
         {
             "id": 2,
             "nome": "Ervin Howell",
             "depoimento": "...",
-            "email": "Shanna@melissa.tv",
- 
+            
         },
         {
             "id": 3,
             "nome": "Clementine Bauch",
             "depoimento": "...",
-            "email": "Nathan@yesenia.net",
- 
+           
         },
         {
             "id": 4,
             "nome": "Patricia Lebsack",
             "depoimento": "...",
-            "email": "Julianne.OConner@kory.org",
- 
+            
         },
         {
             "id": 5,
             "nome": "Chelsey Dietrich",
             "depoimento": "...",
-            "email": "Lucio_Hettinger@annie.ca",
-
-        },
-        {
-            "id": 6,
-            "nome": "Mrs. Dennis Schulist",
-            "depoimento": "...",
-            "email": "Karley_Dach@jasper.info",
-
-        },
-        {
-            "id": 7,
-            "nome": "Kurtis Weissnat",
-            "depoimento": "...",
-            "email": "Telly.Hoeger@billy.biz",
-
-        },
-        {
-            "id": 8,
-            "nome": "Nicholas Runolfsdottir V",
-            "depoimento": "...",
-            "email": "Sherwood@rosamond.me",
-
-        },
-        {
-            "id": 9,
-            "nome": "Glenna Reichert",
-            "depoimento": "...",
-            "email": "Chaim_McDermott@dana.io",
-
-        },
-        {
-            "id": 10,
-            "nome": "Clementina DuBuque",
-            "depoimento": "...",
-            "email": "Rey.Padberg@karina.biz",
-
         }
-    ]
-}
+        ]
+        localStorage.setItem('db_depoimentos', JSON.stringify(db_depoimentos));
+    }
 
+    
+/*
 // Caso os dados já estejam no Local Storage, caso contrário, carrega os dados iniciais
 var db = JSON.parse(localStorage.getItem('db_depoimento'));
 if (!db) {

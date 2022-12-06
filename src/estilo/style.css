@@ -774,8 +774,7 @@ li.dropdown {
 .form-control{
     background-color: #514869;
     border: none;
-    
-    
+       
 }
 #inputId{
     background-color: #514869;
@@ -792,20 +791,6 @@ li.dropdown {
     left: -550px;
     top: 50px;
 }
-#inputDepoimento{
-    width: 56.7vw;
-    color: #ffffff;
-    
-}
-#campos-obr{
-    position: relative;
-    top: -100px;
-    left: 450px;
-}
-#inputNome{
-    color: #ffffff;
-}
-
 .table-striped{
     color: ffffff;
 }
