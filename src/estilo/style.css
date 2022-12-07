@@ -59,15 +59,12 @@ body {
     height: 150px;
     border-radius: 80px;
     align-items: center;
-    padding-left: 15px; 
-    position: relative;
-    right: 100px;
-
+    padding-left: 15px;    
 }
 
 .sub-menu{
     text-align: right;
-    margin-left: 1100px;
+    margin-left: 82.5%;
     border-radius: 10px;
     background-color:  #514869;
     color: #fff;
@@ -92,8 +89,8 @@ body {
     float: auto;
     width: 150px;
     position: relative;
-    top: -20px;
-    left: 180px;
+    top: -30px;
+    left: 60px;
     background-color: #2f2841;
     border-radius: 100px;
     box-shadow: 100px 0px 100px #00000056;
@@ -108,8 +105,8 @@ body {
     justify-content: left;
     align-items: flex-start;
     position: relative;
-    top: 85px;
-    left: 300px;
+    top: 80px;
+    left: 175px;
     background-color: #2f2841;
     width: 280px;
     border-radius: 30px;
@@ -768,13 +765,14 @@ li.dropdown {
     
 }
 
-#page-title{
+.page-title{
     background-color: #2F2841;
     width: 30vw;
     justify-content: center;
     display: flex;
     position: relative;
     left: 650px;
+    top: 90px;
     border-radius: 25px;
     color: #00FF88;
     font-size: 30px;
@@ -787,11 +785,16 @@ li.dropdown {
     height: 50vh;
     border-radius: 20px;
     padding: 30px 30px;
+    position: relative;
+    top: 100px;
 }
 
 .form-control{
     background-color: #514869;
     border: none;   
+}
+.form-control > input::content{
+    color: #000000;
 }
 
 #inputId{
@@ -829,5 +832,5 @@ li.dropdown {
 }
 
 .table-striped{
-    color: ffffff;
+    color: #ffffff;
 }

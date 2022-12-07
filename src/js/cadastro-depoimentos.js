@@ -5,32 +5,32 @@ let db_depoimentos = JSON.parse(localStorage.getItem('db_depoimentos'));
         db_depoimentos = [   
         {
             "id": 1,
-            "nome": "Leanne Graham",
-            "depoimento": "AAAAAAAAAAAA",
+            "inputNome": "Leanne Graham",
+            "inputDepoimento": "AAAAAAAAAAAA",
              
         },
         {
             "id": 2,
-            "nome": "Ervin Howell",
-            "depoimento": "...",
+            "inputNome": "Ervin Howell",
+            "inputDepoimento": "...",
             
         },
         {
             "id": 3,
-            "nome": "Clementine Bauch",
-            "depoimento": "...",
+            "inputNome": "Clementine Bauch",
+            "inputDepoimento": "...",
            
         },
         {
             "id": 4,
-            "nome": "Patricia Lebsack",
-            "depoimento": "...",
+            "inputNome": "Patricia Lebsack",
+            "inputDepoimento": "...",
             
         },
         {
             "id": 5,
-            "nome": "Chelsey Dietrich",
-            "depoimento": "...",
+            "inputNome": "Chelsey Dietrich",
+            "inputDepoimento": "...",
         }
         ]
         localStorage.setItem('db_depoimentos', JSON.stringify(db_depoimentos));
