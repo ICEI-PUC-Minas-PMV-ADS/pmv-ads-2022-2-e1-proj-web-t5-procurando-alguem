@@ -14,23 +14,30 @@
 		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../../estilo/style.css">
+	<link rel="stylesheet" href="../../estilo/loginstyle.css">
 	<script type="text/javascript" src="../../js/menu.js"></script>
 
 	<title>Faça seu Login</title>
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg menu-css">
+            <ul class="navbar-nav mr-auto menu-css-logo">
+                <li class="nav-item">
+                    <a class="nav-link" href="home-page.html">
+                        <nav class="p1">
+                            <h1>Procurando Alguém?</h1>
+                            <img src="../../imagens/imagem-logo.svg" class="imagem-logo-todas" alt="Imagem da Logo">
+                        </nav>
+                    </a>
+                </li>
+            </ul>
 
-	<header>
-		<nav class="p1">
-			<h1>Procurando Alguém?</h1>
-			<img src="../../imagens/imagem-logo.svg" class="imagem-logo-todas" alt="Imagem da Logo">
-		</nav>
-		<nav class="navbar-expand-sm">
-			<div class="container-fluid" id="menuPrincipal">
-			</div>
-		</nav>
-	</header>
+            <ul class="navbar-nav ml-auto menu-opcoes-css" id="menuPrincipal">
+            </ul>
+        </nav>
+    </header>
 
 	<div class="main-login">
 
@@ -139,7 +146,7 @@
 			resultadoLogin = loginUser(username, password);
 			if (resultadoLogin) {
 				alert('Login Efetuado com Sucesso!')
-				location.href = 'cadastro-desaparecido.html';
+				location.href = 'home-page.html';
 			}
 			else if (username == "admin" && password == "admin") {
 				localStorage.setItem("acesso", true);

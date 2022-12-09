@@ -1,69 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
-        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../estilo/style.css">
-    <script type="text/javascript" src="../../js/banco-desaparecidos.js"></script>
-    <script type="text/javascript" src="../../js/menu.js"></script>
-    <title>Meu Perfil</title>
-  </head>
-  
-  <body>
-    <header>
-        <nav class="p1">
-            <h1>Procurando Alguém?</h1>
-            <img src="../../imagens/imagem-logo.svg" class="imagem-logo-todas" alt="Imagem da Logo">
-        </nav>
-        <nav class="navbar-expand-sm">
-            <div class="container-fluid" id="menuPrincipal">
-            </div>
-        </nav>
-    </header>
 
-    <section class="section-content">
-      <div class="row div-content">
-          <div class="col-xl-3 col-content">
-            <h1>Menu de Opções</h1>
-            <ul class="itens-menu-opcoes">
-              <li>Meus Dados</li>
-              <li>Segurança e Privacidade</li>
-              <li>Preferências</li>
-              <li>Notificações</li>
-              <li>Configurações</li>
-              <li>SAIR</li>
-          </ul>
-          </div>
-          <div class="col-xl col-content">
-            
-              <h1>Meus Dados</h1>
-          </div>
-          
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../estilo/style.css">
+  <script type="text/javascript" src="../../js/banco-desaparecidos.js"></script>
+  <script type="text/javascript" src="../../js/menu.js"></script>
+  <title>Meu Perfil</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg menu-css">
+      <ul class="navbar-nav mr-auto menu-css-logo">
+        <li class="nav-item">
+          <a class="nav-link" href="home-page.html">
+            <nav class="p1">
+              <h1>Procurando Alguém?</h1>
+              <img src="../../imagens/imagem-logo.svg" class="imagem-logo-todas" alt="Imagem da Logo">
+            </nav>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto menu-opcoes-css" id="menuPrincipal">
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section-content">
+    <div class="row div-content">
+      <div class="col-xl col-content" id="Dados-Usuario">
+
+        <h5 class="textfield-label" id="usuario"></h5>
+        <h5 class="textfield-label" id="nome"></h5>
+        <h5 class="textfield-label" id="email"></h5>
       </div>
+    </div>
   </section>
-  </body>
+</body>
 
 
 <script type="application/javascript">
+
   window.onload = (event) => {
     menuPaginaAtual("meu-perfil");
 
-    var usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
-    console.log(usuarioCorrente)
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    let id = urlParams.get('id');
 
-    if (usuarioCorrente == null) {
-      window.location.href = "login.html";
-      alert("Você deve efetuar o login para acessar essa página!")
-    }
+    var usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
+
+    /*for (i = 0; i < db_usuarios.length; i++) {
+      if (db_usuarios[i].listaUsuarioCorrente == usuarioCorrente.id) {
+        listaUsuarioCorrente.push(db_usuarios[i]);
+      }
+    }*/
+    // console.log(listaUsuarioCorrente);
+
+    // if (listaUsuarioCorrente != null || listaUsuarioCorrente != []) {
+    //   let dadosUsuario = document.getElementById("Dados-Usuario");
+    //   let conteudoHTML = "";
+    //   listaUsuarioCorrente.findIndex(x => x.id == id)
+
+      document.getElementById("usuario").innerHTML = "Usuário: " + usuarioCorrente.login
+      document.getElementById("nome").innerHTML = "Nome: " + usuarioCorrente.nome
+      document.getElementById("email").innerHTML = "Email: " + usuarioCorrente.email
+
+    //   dadosUsuario.innerHTML = conteudoHTML;
+    // }
   }
-  </script>
-  </html>
+</script>
+
+</html>

@@ -77,3 +77,41 @@ if (!db_desaparecidos || db_desaparecidos.length == 0) {
     ]
     localStorage.setItem('db_desaparecidos', JSON.stringify(db_desaparecidos));
 }
+
+function buscarDesaparecido(status) {
+    let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
+    let conteudoHTML = "";
+    const nomePesquisado = document.getElementById("pesquisar").value;
+    let albumDesaparecidos = document.getElementById("albumDesaparecidos");
+
+    listaFiltrada = db_desaparecidos.filter(
+        x => x.nome.toLowerCase().includes(nomePesquisado.toLowerCase()) && x.status == status);
+
+    if (listaFiltrada.length > 0) { 
+        
+        for (let i = 0; i <= listaFiltrada.length - 1; i++) {
+            let encaminhamento = "";
+
+            if (status == true) {    
+                encaminhamento = "perfil-desaparecido.html"
+            } else {
+                encaminhamento = "perfil-encontrado.html"
+            }
+
+            conteudoHTML += `<div class="col">`;
+            conteudoHTML += `<div class="card textfield-label" style="width: 18rem;">`;
+            conteudoHTML += `<img src="${listaFiltrada[i].foto}" class="card-img-top" width="70px" height="250px>`;
+            conteudoHTML += `<div class="card-body">`;
+            conteudoHTML += `<br><h5 class="card-title nome-desaparecido"><a class="nome-desaparecido" href="${encaminhamento}.html?id=${db_desaparecidos[i].id}">${listaFiltrada[i].nome}</a></h5>`;
+            conteudoHTML += `<p class="card-text">${listaFiltrada[i].cidade}.</p>`;
+            conteudoHTML += `<a href="${encaminhamento}?id=${listaFiltrada[i].id}" class="button">Ver Perfil</a>`;
+            conteudoHTML += `</div>`;
+            conteudoHTML += `</div>`;
+            conteudoHTML += `</div>`;          
+        }
+    } else {
+        conteudoHTML += "<h4>Busca não encontrada</h4>"
+    }
+    
+    albumDesaparecidos.innerHTML = conteudoHTML;
+}

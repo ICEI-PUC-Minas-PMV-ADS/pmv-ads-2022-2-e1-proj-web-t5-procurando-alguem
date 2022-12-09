@@ -19,56 +19,43 @@
 
 <body>
   <header>
-    <nav class="p1">
-      <h1>Procurando Alguém?</h1>
-      <img src="../../imagens/imagem-logo.svg" class="imagem-logo-todas" alt="Imagem da Logo">
-    </nav>
-    <nav class="navbar-expand-sm">
-      <div class="container-fluid" id="menuPrincipal">
-      </div>
+    <nav class="navbar navbar-expand-lg menu-css">
+      <ul class="navbar-nav mr-auto menu-css-logo">
+        <li class="nav-item">
+          <a class="nav-link" href="home-page.html">
+            <nav class="p1">
+              <h1>Procurando Alguém?</h1>
+              <img src="../../imagens/imagem-logo.svg" class="imagem-logo-todas" alt="Imagem da Logo">
+            </nav>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto menu-opcoes-css" id="menuPrincipal">
+      </ul>
     </nav>
   </header>
 
   <div class="titulo-caixa">
     <p>Lista de Encontrados</p>
+  </div> <br>
+
+  <div class="pesquisar">
+    <input type="text" name="pesquisar" class="input-pesquisar" id="pesquisar"
+      placeholder="Digite o nome do encontrado">
+    <img src="../../imagens/icone-pesquisar.png" width="50" height="50" id="clicar-icone-pesquisar"
+      onclick="buscarDesaparecido(false)">
   </div>
 
   <section class="section-content">
-    <div class="row div-content" id="albumEncontrados">
+    <div class="row div-content" id="albumDesaparecidos">
     </div>
   </section>
 
   <script type="application/javascript">
     window.onload = (event) => {
       menuPaginaAtual("encontrados");
-
-      let db_desaparecidos = JSON.parse(localStorage.getItem('db_desaparecidos'));
-
-      if (!db_desaparecidos || db_desaparecidos.length == 0) {
-        let albumEncontrados = document.getElementById("albumEncontrados");
-        albumEncontrados.innerHTML = "<h6>Nenhum encontrado cadastrado!</h6>";
-      }
-      else {
-        let albumEncontrados = document.getElementById("albumEncontrados");
-
-        let conteudoHTML = "";
-        for (let i = 0; i <= db_desaparecidos.length - 1; i++) {
-          if (db_desaparecidos[i].status == false) {
-            conteudoHTML += `<div class="col">`;
-            conteudoHTML += `<div class="card textfield-label" style="width: 18rem;">`;
-            conteudoHTML += `<img src="${db_desaparecidos[i].foto}" class="card-img-top" width="70px" height="250px>`;
-            conteudoHTML += `<div class="card-body">`;
-            conteudoHTML += `<br><h5 class="card-title">${db_desaparecidos[i].nome}</h5>`;
-            conteudoHTML += `<p class="card-text">${db_desaparecidos[i].cidade}.</p>`;
-            conteudoHTML += `<a href="perfil-encontrado.html?id=${db_desaparecidos[i].id}" class="button">Ver Perfil</a>`;
-            conteudoHTML += `</div>`;
-            conteudoHTML += `</div>`;
-            conteudoHTML += `</div>`;
-          }
-        }
-
-        albumEncontrados.innerHTML = conteudoHTML;
-      }
+      buscarDesaparecido(false);
     };
   </script>
 
