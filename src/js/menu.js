@@ -29,14 +29,13 @@ function menuPaginaAtual(ondeEstou) {
 
 function ultimoItemMenu() {
     let conteudoHTML = "";
+    const usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"))
 
-    if (sessionStorage.getItem("usuarioCorrente") == "{}") {
+    if (usuarioCorrente == "{}" || usuarioCorrente == null || usuarioCorrente == undefined || usuarioCorrente == {}) {
         conteudoHTML += `<li class="nav-item menu-login">`;
         conteudoHTML += `<img src="../../imagens/imagem-perfil.png" width="40" height="50"><a class="dropdown-item menu-imagem" id="loginMenu" href="login.html"> Login /<br>Cadastro</a>`;
         conteudoHTML += `</li>`;
     } else {
-        const usuarioCorrente = JSON.parse(sessionStorage.getItem("usuarioCorrente"));
-
         conteudoHTML += `<li class="nav-item menu-perfil">`;
         conteudoHTML += `<a class="nav-item dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">`;
         conteudoHTML += `<img src="../../imagens/imagem-perfil.png" width="40" height="50"><br>Meu Perfil</a>`;

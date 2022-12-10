@@ -69,6 +69,7 @@ body {
     background-color:  #514869;
     color: #fff;
     margin-top: -20px;
+    position: relative;
     box-shadow:
         -2px -2px 15px #2f2841,
         /*esquerda - pra cima*/
