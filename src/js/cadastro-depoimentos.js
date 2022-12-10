@@ -6,31 +6,31 @@ let db_depoimentos = JSON.parse(localStorage.getItem('db_depoimentos'));
         {
             "id": 1,
             "inputNome": "Leanne Graham",
-            "inputDepoimento": "AAAAAAAAAAAA",
+            "inputDepoimento": "Eu sou um futuro programador!",
              
         },
         {
             "id": 2,
             "inputNome": "Ervin Howell",
-            "inputDepoimento": "...",
+            "inputDepoimento": "Ano passado perdi um familiar, porém o encontrei aqui neste site!",
             
         },
         {
             "id": 3,
             "inputNome": "Clementine Bauch",
-            "inputDepoimento": "...",
+            "inputDepoimento": "Essa plataforma me ajudou a encontrar um conhecido muito querido!",
            
         },
         {
             "id": 4,
             "inputNome": "Patricia Lebsack",
-            "inputDepoimento": "...",
+            "inputDepoimento": "Posso afirmar que esse site já ajudou muitas pessoas!",
             
         },
         {
             "id": 5,
             "inputNome": "Chelsey Dietrich",
-            "inputDepoimento": "...",
+            "inputDepoimento": "Sinto orgulho dos alunos que fizeram este projeto!",
         }
         ]
         localStorage.setItem('db_depoimentos', JSON.stringify(db_depoimentos));
