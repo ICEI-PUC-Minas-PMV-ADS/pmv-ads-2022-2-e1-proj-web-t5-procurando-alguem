@@ -41,6 +41,7 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 # Hospedagem
 
 * Insira o endereço eletrônico público de acesso ao conteúdo publicado. 
+<h3>https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/src/paginas/usuario/home-page.html</h3>
 
 # Armazenamento do Código-Fonte
 
