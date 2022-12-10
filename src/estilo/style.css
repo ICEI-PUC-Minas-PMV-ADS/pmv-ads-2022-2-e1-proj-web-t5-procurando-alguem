@@ -766,13 +766,14 @@ li.dropdown {
     
 }
 
-#page-title{
+.page-title{
     background-color: #2F2841;
     width: 30vw;
     justify-content: center;
     display: flex;
     position: relative;
     left: 650px;
+    top: 90px;
     border-radius: 25px;
     color: #00FF88;
     font-size: 30px;
@@ -785,11 +786,16 @@ li.dropdown {
     height: 50vh;
     border-radius: 20px;
     padding: 30px 30px;
+    position: relative;
+    top: 100px;
 }
 
 .form-control{
     background-color: #514869;
     border: none;   
+}
+.form-control > input::content{
+    color: #000000;
 }
 
 #inputId{

@@ -25,7 +25,7 @@ body * {
 	flex-direction: column;
 }
 
-.logo > h1{
+/* .logo > h1{
 	color: #77ffc0;
 	font-family: Times-New-Roman;
 	font-size: 30px;
@@ -43,18 +43,19 @@ body * {
 	float: auto;
 	width: 10vw;
 	position: relative;
-	top: -50px;
+	top: -40px;
 	background-color: #2f2841;
 	border-radius: 100px;
 	box-shadow: 10px 0px 100px #00000056;
 	left: -70px;
 	display: flex;
-}
+} */
 
 .imagem-login{
 	float: auto;
 	width: 30vw;
 	position: relative;
+	top: -150px;
 	
 }
 
@@ -76,14 +77,15 @@ body * {
 	background-color: #2f2841;
 	border-radius: 20px;
 	box-shadow: 0px 10px 100px #00000056;
+	position: relative;
+	top: -150px;
+	right: 100px;
 }
 
 .titulo-login{
 	color: #00ff88;
 	font-weight: 800;
 	margin: 0;
-	
-	
 }
 
 .textfield-login{
@@ -128,6 +130,8 @@ body * {
 	left: -22px;
 	top: 50px;
 	cursor: pointer;
+	box-shadow: 0px 5px 15px #000000;
+
 }
 .btn-newuser{
 	width: 60%;
@@ -138,18 +142,23 @@ body * {
 	background-color: #00ff88;
 	position: relative;
 	left: 90px;
-	top: -55px;
+	top: -80px;
 	cursor: pointer;
+	box-shadow: 0px 5px 15px #000000;
 }
 .modal{
-	width: 300px;
-	height: 500px;
+	width: 400px;
+	height: 535px;
 	background-color: #2f2841;
-	border-radius: 30px;
+	border-radius: 25px;
 	position: relative;
-	left: 10px;
+	top: -160px;
+	left: -90px;
 	display: flex;
-	padding: 25px 25px;
+	padding: 5px 10px 15px 10px;
+}
+.modal-content{
+	background-color: #2f2841;
 }
 .form-control-cadastro{
 	width: 100%;
@@ -170,7 +179,7 @@ body * {
 	padding: 10px 10px;
 	background-color: #00ff88;
 	position: relative;
-	top: 20px;
+	top: -10px;
 	cursor: pointer;
 }
 .btn-send{
@@ -180,7 +189,7 @@ body * {
 	padding: 10px 10px;
 	background-color: #00ff88;
 	position: relative;
-	top: 45px;
+	top: 15px;
 	cursor: pointer;
 }
 .text-info-modal{
@@ -190,10 +199,14 @@ body * {
 	color: #00ff88;
 	font-size: large;
 }
+.modal-footer{
+	height: 20vh;
+	
+}
 .close{
+	color: #00ff88;
 	position: relative;
-	left: 220px;
-	top: -20px;
+	left: -10px;
 	border: none;
 	border-radius: 20px;
 	background-color: #00ff88;
