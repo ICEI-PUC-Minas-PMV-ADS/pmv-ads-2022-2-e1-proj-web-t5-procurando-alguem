@@ -5,7 +5,7 @@ if (!db_noticias || db_noticias.length == 0) {
     db_noticias = [
         {
             "id": 1,
-            "titulo": "Desaparecimentos de Crianças e Adolescente",
+            "titulo": "O número de crianças e adolescentes desaparecidos cresce a cada dia",
             "categoria": "Desaparecimentos de Crianças e Adolescente",
             "data": "2022-11-15",
             "texto": "Segundo a Organização das Nações Unidas (ONU), existem milhões de crianças e adolescentes desaparecidas e 46 milhões trabalhadores escravos no mundo (40% crianças e adolescentes). O índice de desaparecimento de crianças e adolescentes no mundo vem se elevando a uma taxa a 10% anualmente. No Brasil, são 250 mil pessoas desaparecidas. A cada 15 minutos uma criança ou adolescente desaparece, segundo dados da CPI da Câmara dos Deputados de 2010. <br><br> Quais as causas mais comuns para explicar o desaparecimento? <br> Conflitos familiares, uso de drogas ou álcool, maus tratos e abuso sexual, trabalho escravo, remoção de órgãos e adoção ilegal estão entre as principais causas de desaparecimento."
