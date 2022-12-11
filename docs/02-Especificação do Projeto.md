@@ -172,8 +172,8 @@ A tabela a seguir apresenta os requisitos funcionais do projeto, identificando a
 |RF-12| sobre o que fazer e quais providências tomar, para alguém |  ALTA      |
 |     | que acaba de vivenciar o desaparecimento de alguém.       |            |
 |-----|-----------------------------------------------------------|------------|
-|RF-13| O sistema deve possibilitar o armazenamento dos           |  BAIXA     |
-|     | depoimentos de nossos usuários.                           |            |
+|RF-13| O sistema deve possibilitar o cadastro, a listagem e a    |  BAIXA     |
+|     | visualização dos depoimentos de nossos usuários.          |            |
 |-----|-----------------------------------------------------------|------------|
 |RF-14| O sistema deve oferecer um campo de suporte para o        |  ALTA      |
 |     | usuário, no caso de dúvidas ou reclamações.               |            |
