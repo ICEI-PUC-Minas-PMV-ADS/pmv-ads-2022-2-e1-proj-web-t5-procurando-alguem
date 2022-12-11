@@ -55,19 +55,17 @@ escolher salvar ou deletar o post. Em ambos os casos o status é
 notificado para o usuário (Tela 8) e em seguida ele é redirecionado
 para a Tela 2.
 
-![Exemplo de UserFlow](img/userflow.jpg)
+
+![User Flow](https://user-images.githubusercontent.com/112659128/206935478-1f8e5d11-e212-44ee-9afe-5180f7054a3a.PNG)
 
 
 ## Tecnologias Utilizadas
-
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
-
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+Utilizamos os navegadores: Google, Opera GX e FireFox. Utilizamos as linguagens: HTML, CSS e JavaScript. Os formatos de imagem foram: .SVG e .PNG. E para Hospedagem utilizamos o GitHub PAGES.
 
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
+Utilizamos o GitHub PAGES. Ele está puxando as atualizações e códigos diretamente da branch "MAIN".
 
 > **Links Úteis**:
 >
