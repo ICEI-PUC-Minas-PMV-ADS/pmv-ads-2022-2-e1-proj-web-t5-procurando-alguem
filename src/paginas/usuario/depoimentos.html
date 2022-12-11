@@ -6,19 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cadastro de Depoimentos</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
-        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../estilo/style.css">
     <script type="text/javascript" src="../../js/banco-desaparecidos.js"></script>
     <script type="text/javascript" src="../../js/menu.js"></script>
 </head>
 
-<body onload="ListaDepoimentos()">
+<body>
     <header>
         <nav class="navbar navbar-expand-lg menu-css">
             <ul class="navbar-nav mr-auto menu-css-logo">
@@ -37,98 +34,81 @@
         </nav>
     </header>
     
-    <h1>Listagem de Depoimentos</h1>
+    <section class="section-content">
 
-    <div class="container">
-        <div class="row">
-            <div id="msg" class="col-sm-10 offset-sm-1 ">
-                <!--<div class="alert alert-warning">Contato não encontrado.</div>-->
-            </div>
-        </div>
+    <h1 class="page-title">Listagem de Depoimentos</h1>
+    
+        <br>
 
         <div class="row">
             <div id="msg" class="col-sm-2 offset-sm-10 ">
-                <a href="cadastro-depoimento.html"><input type="button" class="btn btn-warning" id="btnClear"
-                        value="Cadastro"></a>
+                <a href="cadastro-depoimento.html"><input type="button" class="btn btn-warning" id="btnCadastrar" value="Cadastrar Depoimento"></a>
             </div>
         </div>
 
-        <!-- <form id="form-depoimento">            
-            <div class="form-group row">
-                <div class="col-sm-4">
-                    <select name="filtro_cidade" id="filtro_cidade" onchange="ListaDepoimentos()" class="form-control">
-                        <option value="">Selecione a Cidade</option>
-                        <option value="Betim">Betim</option>
-                        <option value="Belo Horizonte">Belo Horizonte</option>
-                        <option value="Rio de Janeiro">Rio de Janeiro</option>
-                        <option value="São Paulo">São Paulo</option>
-                        <option value="Goiânia">Goiânia</option>
-                    </select>                    
-                </div>
-                <div class="col-sm-8">
-                    <select name="filtro_categoria" id="filtro_categoria" onchange="ListaDepoimentos()"  class="form-control">
-                        <option value="">Selecione a Categoria</option>
-                        <option value="amigos">Amigos</option>
-                        <option value="familia">Familia</option>
-                        <option value="trabalho">Trabalho</option>
-                    </select>
-                </div>
-            </div>
-        </form> -->
-
-
-        <div class="row">
+        <div class="row-12">
             <div class="col-sm-12">
-                <table id="grid-depoimentos" class="table table-striped">
+                <table class="table table-striped">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
                             <th scope="col">Nome</th>
-                            <th scope="col">E-mail</th>
                             <th scope="col">Depoimento</th>
                         </tr>
                     </thead>
-                    <tbody id="table-depoimentos">
+                    <tbody id="Tabela-Depoimentos">
                     </tbody>
                 </table>
             </div>
         </div>
-    </div>
+    
+    </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="app.js"></script>
-    <script>
+    <script src="../../js/cadastro-depoimentos.js"></script>
+    <script type="application/javascript">
         window.onload = (event) => {
-            menuPaginaAtual("depoimentos");
-        }
-        // função para listar na tabela os depoimentos que estão associados aos filtros 
-        function ListaDepoimentos() {
+            menuPaginaAtual("depoimentos")
 
-            // Obtem os dados informados pelo usuário nos filtros
-            let fc = document.getElementById('filtro_cidade').value;
-            let fcg = document.getElementById('filtro_categoria').value;
+            let db_depoimentos = JSON.parse(localStorage.getItem('db_depoimentos'));
 
-            // limpa a lista de depoimentos apresentados
-            $("#table-depoimentos").empty();
-
-            // Popula a tabela com os registros do banco de dados
-            for (let index = 0; index < db.data.length; index++) {
-                const depoimento = db.data[index];
-
-                // Verifica se os dados do depoimento batem com os filtros
-                if (((depoimento.cidade == fc) || (fc == '')) &&
-                    ((depoimento.categoria == fcg) || (fcg == ''))) {
-
-                    // Inclui o depoimento na tabela    
-                    $("#table-depoimentos").append(`<tr><td scope="row">${depoimento.id}</td>
-                                                    <td>${depoimento.nome}</td>
-                                                    <td>${depoimento.depoimento}</td>
-                                                    <td>${depoimento.email}</td>
-                                                </tr>`);
-                }
+            if (!db_depoimentos || db_depoimentos.length == 0){
+                let tabelaDepoimentos = document.getElementById("Tabela-Depoimentos");
+                tabelaDepoimentos.innerHTML = "<tr><td colspan='6' class='text-center'>Nenhum Depoimento Cadastrado no Momento</td></tr>";
             }
+            else {
+                let tabelaDepoimentos = document.getElementById("Tabela-Depoimentos");
 
+                let conteudoHTML = "";
+                for (let i=0; i <= db_depoimentos.length-1; i++) {
+                    conteudoHTML += "<tr>";
+                    conteudoHTML += `<td>${db_depoimentos[i].id}</td>`;
+                    conteudoHTML += `<td><a href="depoimentos-individuais.html?id=${db_depoimentos[i].id}"> ${db_depoimentos[i].inputNome}</a></td>`;
+                    conteudoHTML += `<td>${limitarTexto(db_depoimentos[i].inputDepoimento)} <a class="link-ver-mais-noticias" href="depoimentos-individuais.html?id=${db_depoimentos[i].id}">Mostrar mais</a> </td>`
+                    conteudoHTML += "</tr>";
+                }
+
+                tabelaDepoimentos.innerHTML = conteudoHTML;
+            }
+        };
+
+        function limitarTexto(texto) {
+        const words = texto.split('');
+        let resultado = "";
+
+        if (words.length <= 30) {
+            resultado = texto;
+        }  
+        else {
+        for (let i = 0; i < 30; i++) {
+            resultado += words[i] + "";
+        }      
+            resultado += "...";
         }
+
+        return resultado;
+    };
+
     </script>
 
 </body>
