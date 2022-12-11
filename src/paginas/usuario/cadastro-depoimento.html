@@ -5,12 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
-        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../estilo/style.css">
     <script type="text/javascript" src="../../js/banco-desaparecidos.js"></script>
@@ -37,14 +34,13 @@
         </nav>
     </header>
 
+<section class="section-content">
+
     <h1 class="page-title">Cadastro de Depoimentos</h1>
 
-    <div class="container">
-        <div class="row">
-            <div id="msg" class="col-sm-10 offset-sm-1 ">
-                
-            </div>
-        </div>
+    <br>
+
+
 
         <div class="row">
             <div class="col-sm-4">
@@ -62,19 +58,19 @@
         <div class="row">
             <div class="col-12">
                 <label for="inputDepoimento" class="form-label">Depoimento*</label>
-                <textarea class="form-control" id="inputDepoimento" placeholder="Depoimento" cols="50" rows="10"></textarea>
+                <textarea type="text" class="form-control" id="inputDepoimento" placeholder="Depoimento" cols="50" rows="10"></textarea>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row all-btns">
             <div class="col-6">
                 <button class="btn btn-success" id="btnInsert" onclick="inserirDepoimento()">Salvar</button>
-                <a href="depoimentos.html" class="btn btn-warning" value="Pesquisar Depoimentos">Lista de Depoimentos</a>
-                <input type="button" class="btn btn-secondary" id="btnClear" value="Limpar Formulário">
+                <a href="depoimentos.html" class="btn btn-primary" value="Pesquisar Depoimentos">Lista de Depoimentos</a>
+                
             </div>
         </div>
 
-</div>
+</section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="../../js/cadastro-depoimentos.js"></script>
@@ -82,6 +78,7 @@
         window.onload = (event) => {
             menuPaginaAtual("cadastro-depoimento");
         }
+
 
         function inserirDepoimento() {
             let id = 0;
@@ -118,113 +115,6 @@
 
 
         };
-
-
-/*         function exibeDepoimentos() {
-            // Remove todas as linhas do corpo da tabela
-            $("#table-depoimentos").html("");
-
-            // Popula a tabela com os registros do banco de dados
-            for (i = 0; i < db.data.length; i++) {
-                let depoimento = db.data[i];
-                $("#table-depoimentos").append(`<tr><td scope="row">${depoimento.id}</td>
-                                                <td>${depoimento.nome}</td>
-                                                <td>${depoimento.depoimento}</td>
-                                            </tr>`);
-            }
-        }
-
-         function init() 
-             // Adiciona funções para tratar os eventos 
-             $("#btnInsert").click(function () {
-                 // Verfica se o formulário está preenchido corretamente
-                 if (!$('#form-depoimento')[0].checkValidity()) {
-                     displayMessage("Preencha o formulário corretamente.");
-                     return;
-                 }
-
-                 // Obtem os valores dos campos do formulário
-                 let campoNome = $("#inputNome").val();
-                 let campoDepoimento = $("#inputDepoimento").val();
-                 let Depoimentos = {
-                     nome: campoNome,
-                    depoimento: campoDepoimento
-                 };
-
-                insertDepoimento(depoimento);
-
-                 // Reexibe os depoimentos
-                exibeDepoimentos();
-
-                // Limpa o formulario
-                $("#form-depoimento")[0].reset();
-             });
-
-            // Intercepta o click do botão Alterar
-            $("#btnUpdate").click(function () {
-                // Obtem os valores dos campos do formulário
-                let campoId = $("#inputId").val();
-                if (campoId == "") {
-                    displayMessage("Selecione um Depoimento para ser alterado.");
-                    return;
-                }
-                let campoNome = $("#inputNome").val();
-                let campoDepoimento = $("#inputDepoimento").val();
-                let Depoimentos = {
-                    nome: campoNome,
-                    depoimento: campoDepoimento
-                };
-
-                updateDepoimento(parseInt(campoId), depoimento);
-
-                // Reexibe os depoimentos
-                exibeDepoimentos();
-
-                // Limpa o formulario
-                $("#form-depoimento")[0].reset();
-            });
-
-            // Intercepta o click do botão Excluir
-            $("#btnDelete").click(function () {
-                let campoId = $("#inputId").val();
-                if (campoId == "") {
-                    displayMessage("Selecione um depoimento a ser excluído.");
-                    return;
-                }
-                deleteDepoimento(parseInt(campoId));
-
-                // Reexibe os depoimentos
-                exibeDepoimentos();
-
-                // Limpa o formulario
-                $("#form-depoimento")[0].reset();
-            });
-
-            // Intercepta o click do botão Listar Depoimentos
-            $("#btnClear").click(function () {
-                $("#form-depoimento")[0].reset();
-            });
-
-            // Oculta a mensagem de aviso após alguns segundos
-            $('#msg').bind("DOMSubtreeModified", function () {
-                window.setTimeout(function () {
-                    $(".alert").fadeTo(500, 0).slideUp(500, function () {
-                        $(this).remove();
-                    });
-                }, 5000);
-            });
-
-            // Preenche o formulário quando o usuario clicar em uma linha da tabela 
-            $("#grid-depoimentos").on("click", "tr", function (e) {
-                let linhaDepoimento = this;
-                colunas = linhaDepoimento.querySelectorAll("td");
-
-                $("#inputId").val(colunas[0].innerText);
-                $("#inputNome").val(colunas[1].innerText);
-                $("#inputDepoimento").val(colunas[2].innerText);
-            });
-
-            exibeDepoimentos(); */
         
     </script>
 </body>
