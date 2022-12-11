@@ -55,7 +55,7 @@ body * {
 	float: auto;
 	width: 30vw;
 	position: relative;
-	top: -150px;
+	top: -40px;
 	
 }
 
@@ -78,7 +78,7 @@ body * {
 	border-radius: 20px;
 	box-shadow: 0px 10px 100px #00000056;
 	position: relative;
-	top: -150px;
+	top: -50px;
 	right: 100px;
 }
 
@@ -152,7 +152,7 @@ body * {
 	background-color: #2f2841;
 	border-radius: 25px;
 	position: relative;
-	top: -160px;
+	top: -58px;
 	left: -90px;
 	display: flex;
 	padding: 5px 10px 15px 10px;
