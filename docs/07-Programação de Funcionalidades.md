@@ -1,14 +1,15 @@
 # Programação de Funcionalidades
 
 <h1>Pedro Henrique da Silva Santos</h1>
-Desenvolvi a página de LOGIN, com a possibilidade de CADASTRO na mesma, de acordo com os padrões que criamos para o nosso projeto nos quesitos visuais e funcionais. Fiz uma separação entre o Usuário Comum e o Administrador, logo o administrador terá suas próprias credenciais pré-definidas por nós para acessar toda a parte de administração da nossa aplicação. Foquei em fazer estas funcionalidades, pois o meu grupo vai precisar delas para desenvolver suas próprias funcionalidades na etapa seguinte, ou seja, precisavamos ter isso pronto para poder avançar. 
+Desenvolvi a página de LOGIN, com a possibilidade de CADASTRO na mesma, de acordo com os padrões que criamos para o nosso projeto nos quesitos visuais e funcionais. Fiz uma separação entre o Usuário Comum e o Administrador, logo o administrador terá suas próprias credenciais pré-definidas por nós para acessar toda a parte de administração da nossa aplicação. Foquei em fazer estas funcionalidades, pois o meu grupo vai precisar delas para desenvolver suas próprias funcionalidades na etapa seguinte, ou seja, precisavamos ter isso pronto para poder avançar. Também desenvolvi as páginas de Cadastro de Depoimentos, Listagem de Depoimentos e o View do Depoimento Completo.
 
-<h3>Os requisitos atendidos por essas funcionalidades que eu desenvolvi são: RF-20 e RNF-12.</h3>
+<h3>Os requisitos atendidos por essas funcionalidades que eu desenvolvi são: RF-20, RNF-12 e RF-13.</h3>
 
 <h4>Links Referentes as Funcionalidades que Desenvolvi:<br></h4>
 Página de Login e Cadastro = https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/login.html<br><br>
 Página de Administrador = https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/login-index.html<br><br>
 Arquivo JavaScript utilizado nessas páginas = https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/js/login.js<br><br><br>
+
 
 
 1 - Tela de Login padrão sem o overlay de cadastro, bastando inserir suas credencias caso já seja cadastrado.
