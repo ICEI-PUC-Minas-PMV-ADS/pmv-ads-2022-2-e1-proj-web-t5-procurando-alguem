@@ -7,7 +7,8 @@ Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com
 Em nossa aplicação, as páginas não serão todas exatamente iguais, mas teremos alguns elementos padrões que vamos usar. E alguns deles são:
 
 1 - NavBar funcional para os usuários terem um acesso rápido a todas as páginas da nossa aplicação.
-![Barra de Menu que ficará em todas as páginas de usuário](https://user-images.githubusercontent.com/112659128/200711917-315f5a75-27be-4bdd-bbcc-985f1d944854.PNG)
+![Menu Principal Presente em todas as páginas](https://user-images.githubusercontent.com/112659128/206935023-569b8820-e8ce-4ab3-a05c-fdccd4fbe593.PNG)
+
 
 2 - Logo padrão, compondo a identidade visual da nossa aplicação WEB.
 ![Logo que ficará em todas as páginas](https://user-images.githubusercontent.com/112659128/200712195-02f13219-b5d7-4ea1-96e2-1f2d51984837.PNG)
