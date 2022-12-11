@@ -25,67 +25,87 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg menu-css">
-        <ul class="navbar-nav mr-auto menu-css-logo">
-            <li class="nav-item">
-                <a class="nav-link" href="home-page.html">
-                    <nav class="p1">
-                        <h1>Procurando Alguém?</h1>
-                        <img src="../../imagens/imagem-logo.svg" class="imagem-logo-todas" alt="Imagem da Logo">
-                    </nav>
-                </a>
-            </li>
-        </ul>
+      <ul class="navbar-nav mr-auto menu-css-logo">
+        <li class="nav-item">
+          <a class="nav-link" href="home-page.html">
+            <nav class="p1">
+              <h1>Procurando Alguém?</h1>
+              <img src="../../imagens/imagem-logo.svg" class="imagem-logo-todas" alt="Imagem da Logo">
+            </nav>
+          </a>
+        </li>
+      </ul>
 
-        <ul class="navbar-nav ml-auto menu-opcoes-css" id="menuPrincipal">
-        </ul>
+      <ul class="navbar-nav ml-auto menu-opcoes-css" id="menuPrincipal">
+      </ul>
     </nav>
-</header>
-
-  <div class="titulo-caixa">
-    <p>Insira as Informações do Desaparecido que você deseja Cadastrar no Site</p>
-  </div>
-
+  </header>
   <section class="caixa-central">
-    <div class="form-group">
+
+    <div class="titulo-caixa">
+      <p>Insira as Informações do Desaparecido que você deseja Cadastrar no Site</p>
+    </div>
+
+
+    <!-- <div class="form-group"> -->
       <div class="informacoes-especificas">
+
         <div class="nome-desaparecido text-md-left">
           <label for="inputNome">Digite o nome do Desaparecido:</label></br>
           <input type="text" name="inputNome" id="inputNome" placeholder="Nome do Desaparecido">
         </div>
 
-        <label class="label1" for="inputId">Id</label>
-        <input class="input1" type="number" name="inputId" id="inputId" placeholder="ID" disabled>
+        <div class="label1-input1 text-md-left">
+          <label  for="inputId">Id</label>
+          <input type="number" name="inputId" id="inputId" placeholder="ID" disabled>
+        </div>
 
-        <label class="label2" for="inputIdade">Idade:</label>
-        <input class="input2" type="number" min="0" name="inputIdade" id="inputIdade" placeholder="Idade">
+        <div class="label2-input2 text-md-left">
+          <label for="inputIdade">Idade:</label>
+          <input  type="number" min="0" name="inputIdade" id="inputIdade" placeholder="Idade">
+        </div>
 
-        <label class="label3" for="inputSexo">Sexo:</label>
-        <input class="input3" type="text" name="inputSexo" id="inputSexo" placeholder="Sexo">
+        <div class="label3-input3">
+          <label for="inputSexo">Sexo:</label>
+          <input type="text" name="inputSexo" id="inputSexo" placeholder="Sexo">
+        </div>
 
-        <label class="label4" for="inputCorRaca">Cor/Raça:</label>
-        <input class="input4" type="text" name="inputCorRaca" id="inputCorRaca" placeholder="cor/raça">
+        <div class="label4-input4">
+          <label for="inputCorRaca">Cor/Raça:</label>
+          <input type="text" name="inputCorRaca" id="inputCorRaca" placeholder="cor/raça">
+        </div>
 
-        <label class="label5" for="inputAltura">Altura:</label>
-        <input class="input5" type="number" min="20" name="inputAltura" id="inputAltura" placeholder="Em cm">
+        <div class="label5-input5">
+          <label for="inputAltura">Altura:</label>
+          <input type="number" min="20" name="inputAltura" id="inputAltura" placeholder="Em cm">
+        </div>
 
-        <label class="label6" for="inputCidade">Cidade:</label>
-        <input class="input6" type="text" name="inputCidade" id="inputCidade" placeholder="Cidade">
+        <div class="label6-input6">
+          <label for="inputCidade">Cidade:</label>
+          <input type="text" name="inputCidade" id="inputCidade" placeholder="Cidade">
+        </div>
 
-        <label class="label7" for="maisInformacoes">Mais Informações:</label>
-        <textarea type="text" name="maisInformacoes" id="maisInformacoes" cols="10" maxlength="800"
-          placeholder="Digite nesse campo informações adicionais como: medicamentos essenciais ou alguma informação importante e relevante sobre o Desaparecido, locais que frequenta e últimos locais onde foi visto, além do que estava vestindo no último dia que foi visto."></textarea>
+        <div class="label7-input7">
+          <label for="maisInformacoes">Mais Informações:</label>
+          <textarea type="text" name="maisInformacoes" id="maisInformacoes" cols="10" maxlength="800"
+            placeholder="Digite nesse campo informações adicionais como: medicamentos essenciais ou alguma informação importante e relevante sobre o Desaparecido, locais que frequenta e últimos locais onde foi visto, além do que estava vestindo no último dia que foi visto."></textarea>
+        </div>
 
-        <label class="mensagem-botao-foto" for="mensagem-botao-foto">Clique no botão abaixo para inserir uma foto da
-          pessoa desaparecida:</label>
-        <button id="botao-foto" name="botao-foto">Buscar arquivo<img id="imagem-botao"
-            src="../../imagens/imagem-botao-foto.svg" width="40">
-          <input type="file" id="myfile" name="myfile">
+        <div class="mensagem-botao">
+          <label for="mensagem-botao-foto">Clique no botão abaixo para inserir uma foto da
+            pessoa desaparecida:</label>
+          <button id="botao-foto" name="botao-foto">Buscar arquivo<img id="imagem-botao"
+              src="../../imagens/imagem-botao-foto.svg" width="40"></button>
+            <input type="file" id="myfile" name="myfile">
+          
+        </div>
 
-          <button class="enviar-cadastro" onclick="inserirDesaparecido()">Enviar cadastro</button>
-          <a href="lista-desaparecidos.html" class="botao-voltar">Voltar</a>
-
+        <div class="enviar-botao-voltar">
+          <button id="enviar-cadastro" onclick="inserirDesaparecido()">Enviar cadastro</button>
+          <a href="lista-desaparecidos.html" id="botao-voltar">Voltar</a>
+        </div>
       </div>
-    </div>
+    <!-- </div> -->
   </section>
 </body>
 
