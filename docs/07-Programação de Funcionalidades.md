@@ -3,12 +3,17 @@
 <h1>Pedro Henrique da Silva Santos</h1>
 Desenvolvi a página de LOGIN, com a possibilidade de CADASTRO na mesma, de acordo com os padrões que criamos para o nosso projeto nos quesitos visuais e funcionais. Fiz uma separação entre o Usuário Comum e o Administrador, logo o administrador terá suas próprias credenciais pré-definidas por nós para acessar toda a parte de administração da nossa aplicação. Foquei em fazer estas funcionalidades, pois o meu grupo vai precisar delas para desenvolver suas próprias funcionalidades na etapa seguinte, ou seja, precisavamos ter isso pronto para poder avançar. Também desenvolvi as páginas de Cadastro de Depoimentos, Listagem de Depoimentos e o View do Depoimento Completo.
 
-<h3>Os requisitos atendidos por essas funcionalidades que eu desenvolvi são: RF-20, RNF-12 e RF-13.</h3>
+<h3>Os requisitos atendidos por essas funcionalidades que eu desenvolvi são: RF-20, RF-13 e RNF-12.</h3>
 
 <h4>Links Referentes as Funcionalidades que Desenvolvi:<br></h4>
 Página de Login e Cadastro = https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/login.html<br><br>
-Página de Administrador = https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/login-index.html<br><br>
-Arquivo JavaScript utilizado nessas páginas = https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/js/login.js<br><br><br>
+Página de Administrador = https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/login-index.html<br
+<br>
+Página de Cadastro de Depoimentos = https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/cadastro-depoimento.html<br><br>
+Página de Listagem de Depoimentos = https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/depoimentos.html<br><br>
+Página da View Completa e Individual de Depoimentos = https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/depoimentos-individuais.html<br><br>
+Arquivo JavaScript utilizado nas páginas de Login e Cadastro = https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/js/login.js<br><br><br>
+Arquivo JavaScript utilizado nas páginas de Cadastro de Depoimentos, Listagem de Depoimentos e o View Completo e Individual dos Depoimentos = https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/js/cadastro-depoimentos.js<br><br>
 
 
 
@@ -32,6 +37,22 @@ Arquivo JavaScript utilizado nessas páginas = https://github.com/ICEI-PUC-Minas
 
 7 - Já no caso de novos usuários, basta clicar no botão "Cadastro de Novo Usuário", preencher as informações solicitadas e enviar o formulário clicando no botão "Enviar Cadastro". O sistema vai ler as inforações inseridas e verificar se a Senha e a Senha de Confirmação são iguais. Caso sejam, um alerta será emitido e o cadastro estará concluído, caso não sejam o sistema emitirá um alerta informando que as senhas são inválidas.
 ![Validação de Cadastro](https://user-images.githubusercontent.com/112659128/200729566-5bd76d00-23ef-41eb-ae8a-8e9ed55bb86a.PNG)
+
+8 - No caso da página de Cadastro de Depoimentos, todos os usuários podem cadastrar depoimentos, preenchendo os campos de "Nome" e "Depoimento". Após preencher todos os campos basta clicar no botão "Salvar" que o seu depoimento será armazenado no Local Storage. Caso você não queira cadastrar nenhum depoimento, mas quiser apenas visualizar a página de Listagem de Depoimentos, basta clicar no botão "Lista de Depoimentos".
+![Cadastro de Depoimentos](https://user-images.githubusercontent.com/112659128/206933614-4f8ffef6-4995-48e8-bbac-1356052cfd5e.PNG)
+
+9 - Ainda na página de Cadastro de Depoimentos temos dois alertas:<br> 
+O Alerta de Validação do Preenchimento dos Campos Obrigatórios<br>
+![Validação de Preenchimento dos Campos Obrigatórios](https://user-images.githubusercontent.com/112659128/206934134-35c766d4-c8b4-454f-ac2e-fbebdf5cc84e.PNG)<br>
+Alerta de Sucesso na Inclusão do Depoimento no Sistema.<br>
+![Alerta de Sucesso na Inclusão do Depoimento](https://user-images.githubusercontent.com/112659128/206934145-d331c992-b8a3-4996-af82-e72a984c4fc7.PNG)
+
+10 - Passando para a página de Listagem de Depoimentos, temos 5 exemplos de depoimentos fixos e logo em seguida todos os outros depoimentos cadastrados pelos usuários. Clicando tanto no "Nome do Usuário" que cadastrou o depoimento, quanto no botão "Mostrar Mais" de cada depoimento, você será direcionado para uma página de visualização completa e individual de cada Depoimento.
+![Listagem de Depoimentos](https://user-images.githubusercontent.com/112659128/206934396-26fe55f3-613f-463a-80f3-12b8fbe03f92.PNG)
+
+11 - A página individual e completa dos depoimentos é a mais simples até agora, pois é apenas a visualização do Depoimento que já foi anteriormente cadastrado e listado. Ao clicar no botão "Voltar" você será direcionado novamente para a página de Listagem.
+![View completa dos depoimentos](https://user-images.githubusercontent.com/112659128/206934545-2b984575-d69a-421c-90df-fdfeac843a4b.PNG)
+
 
 
 <h1>Daniel Mendes Rufino Silva</h1>
