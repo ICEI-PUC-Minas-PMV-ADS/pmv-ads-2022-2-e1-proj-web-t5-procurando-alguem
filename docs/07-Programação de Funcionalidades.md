@@ -8,11 +8,11 @@ Desenvolvi a página de LOGIN, com a possibilidade de CADASTRO na mesma, de acor
 <h4>Links Referentes as Funcionalidades que Desenvolvi:<br></h4>
 Página de Login e Cadastro = https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/login.html<br><br>
 Página de Administrador = https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/login-index.html<br
-<br>
+<br><br>
 Página de Cadastro de Depoimentos = https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/cadastro-depoimento.html<br><br>
 Página de Listagem de Depoimentos = https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/depoimentos.html<br><br>
 Página da View Completa e Individual de Depoimentos = https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/paginas/usuario/depoimentos-individuais.html<br><br>
-Arquivo JavaScript utilizado nas páginas de Login e Cadastro = https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/js/login.js<br><br><br>
+Arquivo JavaScript utilizado nas páginas de Login e Cadastro = https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/js/login.js<br><br>
 Arquivo JavaScript utilizado nas páginas de Cadastro de Depoimentos, Listagem de Depoimentos e o View Completo e Individual dos Depoimentos = https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem/blob/main/src/js/cadastro-depoimentos.js<br><br>
 
 
