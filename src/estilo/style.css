@@ -518,7 +518,7 @@ button, .button {
 .section-content {
     background-color: #2F2841;
     border-radius: 15px;
-    padding: 0px 15px 0px 15px;
+    padding: 0px 25px 0px 15px;
     margin: 50px;
     box-shadow: 15px 15px #161220;
 }
@@ -535,6 +535,7 @@ button, .button {
     border-radius: 15px;
     margin-bottom: 15px;
     padding-top: 1.5%;
+    padding-bottom: 1.5%;
 }
 
 .coluna-sobre{
@@ -759,21 +760,14 @@ li.dropdown {
 }
 
 /*Estilo da página de Cadastro de Depoimentos*/
-.form-btns{
-    position: relative;
-    top: 100px;
-    left: -585px;
-    
-}
-
 .page-title{
     background-color: #2F2841;
     width: 30vw;
     justify-content: center;
     display: flex;
     position: relative;
-    left: 650px;
-    top: 90px;
+    left: 30%;
+    top: 10px;
     border-radius: 25px;
     color: #00FF88;
     font-size: 30px;
@@ -791,23 +785,19 @@ li.dropdown {
 }
 
 .form-control{
+    color: #ffffff;
     background-color: #514869;
     border: none;   
-}
-.form-control > input::content{
-    color: #000000;
 }
 
 #inputId{
     background-color: #514869;
-    border: none;
-    
+    border: none;   
 }
 
 .all-btns{
     position: relative;
-    top: 300px;
-    left: -590px;
+    left: -305px ;
 }
 
 .lista_depoimentos{
@@ -816,22 +806,30 @@ li.dropdown {
     top: 50px;
 }
 
-#inputDepoimento{
-    width: 56.7vw;
-    color: #ffffff;
-    
-}
-
 #campos-obr{
     position: relative;
     top: -100px;
     left: 450px;
 }
 
-#inputNome{
-    color: #ffffff;
-}
-
 .table-striped{
     color: #ffffff;
+    text-align: left;
+}
+
+#btnCadastrar{
+    position: relative;
+    top: -50px;
+    left: 35px;
+    background-color: #00FF88;
+    border: none;   
+}
+
+.texto-depoimentos {
+    text-align: justify;
+    text-indent: 15px;
+    font-size: larger;
+    overflow-wrap: break-word;
+    text-overflow: clip;
+    box-sizing: content-box;   
 }
