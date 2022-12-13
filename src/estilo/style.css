@@ -122,7 +122,7 @@ body {
 }
 
 .caixa-central {
-    display: block;
+    display: grid;
     background-color: #2F2841;
     border-radius: 15px;
     padding: 0px 15px 0px 15px;
@@ -132,9 +132,19 @@ body {
     position: relative;
     top: 30px;
 }
+
+@media screen and (max-width: 1000px){
+    .caixa-central {
+        width: 100%;
+    }
+}
+
 .informacoes-especificas {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    /* grid-template-columns: 1fr; */
+    /* grid-template-rows: 10px 100px 30px 1fr 10px 1px 10px 1fr 1px 10px 100px; */
+    
 }
 
 .titulo-caixa {
@@ -150,11 +160,12 @@ body {
     font-size: 22px;
     box-shadow: 7px 7px #161220;
     z-index: 1;
+   
 }
-/* @media screen and (max-width: 1100px){
-	.titulo-caixa {float: left;}
+/* @media screen and (max-width: 1100px){ */
+	/* .titulo-caixa {float: left;}} */
 	
-} */
+
 
 #inputNome, #inputId, #inputIdade, #inputSexo, #inputCorRaca, #inputAltura ,#inputCidade{
         background-color: #514869;
@@ -165,7 +176,7 @@ body {
     font-size: 18px;
     position: relative;
     top: 35px;
-    left: 20px;
+    left: 90px;
 } 
 .nome-desaparecido>input {
     width: 80%;
@@ -180,14 +191,15 @@ body {
     box-sizing: border-box;
     position: relative;
     top: 30px;
-    left: 27px;
+    left: 90px;
 } 
 
 .label1-input1 > label {
     font-size: 18px;
     position: relative;
-    top: 145px;
-    left: -800px;
+    top: 35px;
+    left: 94px;
+    
 
 }
 
@@ -203,15 +215,15 @@ body {
     outline: none;
     box-sizing: border-box;
     position: relative;
-    top: 185px;
-    left: -830px;
+    top: 75px;
+    left: 70px;
 }
 
 .label2-input2 > label {
     font-size: 18px;
     position: relative;
-    top: 50px;
-    left: 225px;
+    top: -18px;
+    left: 215px;
 }
 
 .label2-input2 > input {
@@ -226,15 +238,15 @@ body {
     outline: none;
     box-sizing: border-box;
     position: relative;
-    top: 95px;
-    left: 165px;
+    top: 25px;
+    left: 155px;
 }
 
 .label3-input3 > label {
     font-size: 18px;
     position: relative;
-    top: 45px;
-    left: -890px;
+    top: -74px;
+    left: 340px;
 }
 
 .label3-input3 > input {
@@ -249,15 +261,15 @@ body {
     outline: none;
     box-sizing: border-box;
     position: relative;
-    top: 95px;
-    left: -940px;
+    top: -28px;
+    left: 290px;
 }
 
 .label4-input4 > label {
     font-size: 18px;
     position: relative;
-    top: -5px;
-    left: 182px;
+    top: -128px;
+    left: 492px;
 }
 
 .label4-input4 > input {
@@ -272,15 +284,15 @@ body {
     outline: none;
     box-sizing: border-box;
     position: relative;
-    top: 45px;
-    left: 100px;
+    top: -82px;
+    left: 410px;
 }
 
 .label5-input5 > label {
     font-size: 18px;
     position: relative;
-    top: -5px;
-    left: -560px;
+    top: -185px;
+    left: 650px;
 }
 
 .label5-input5 > input {
@@ -295,15 +307,15 @@ body {
     outline: none;
     box-sizing: border-box;
     position: relative;
-    top: 50px;
-    left: -620px;
+    top: -140px;
+    left: 590px;
 }
 
 .label6-input6 > label {
     font-size: 18px;
     position: relative;
-    top: -55px;
-    left: 490px;
+    top: -239px;
+    left: 780px;
 }
 
 .label6-input6 > input {
@@ -318,8 +330,8 @@ body {
     outline: none;
     box-sizing: border-box;
     position: relative;
-    top: -5px;
-    left: 415px;
+    top: -195px;
+    left: 715px;
 } 
 
 .label_status {
@@ -332,7 +344,7 @@ body {
     font-size: 18px;
     position: absolute;
     top: 370px;
-    left: 70px;
+    left: 110px;
 }
 /*
 .label7-editar {
@@ -343,8 +355,8 @@ body {
 } */
 
 #maisInformacoes {
-    width: 90%;
-    height: 100px;
+    width: 80%;
+    height: 130px;
     border: none;
     border-radius: 10px;
     padding: 15px;
@@ -353,16 +365,16 @@ body {
     font-size: 14pt;
     box-shadow: 0px 5px 80px #000000;
     position: relative;
-    top: 170px;
-    left: -920px;
+    top: -60px;
+    left: 100px;
     resize: none;
 }
 
 .mensagem-botao > label{
     font-size: 18px;
     position: relative;
-    top: 150px;
-    left: 90px;
+    top: -60px;
+    left: 100px;
 } 
 
 .mensagem-botao > input {
@@ -370,8 +382,8 @@ body {
     width: 100px;
     height: 100px;
     position: relative;
-    top: 170px;
-    left: -250px;
+    top: 30px;
+    left: -700px;
 }
 
 #botao-foto {
@@ -387,8 +399,8 @@ body {
     font-weight: bolder;
     -webkit-text-stroke: 1px 1px 5px #000;
     position: relative;
-    top: 220px;
-    left: -555px;
+    top: 10px;
+    left: -505px;
 }
 
 #enviar-cadastro {
@@ -404,8 +416,8 @@ body {
     font-weight: bolder;
     -webkit-text-stroke: 1px 1px 5px #000;
     position: relative;
-    top: 280px;
-    left: -455px;
+    top: -50px;
+    left: 335px;
 }
 
 #botao-voltar {
@@ -421,8 +433,8 @@ body {
     font-weight: bolder;
     -webkit-text-stroke: 1px 1px 5px #000;
     position: relative;
-    top: 350px;
-    left: -670px;
+    top: 10px;
+    left: 100px;
 }
 /* /* Página cadastro, lista, editar e excluir-desaparecidos termina aqui*/
 
