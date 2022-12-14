@@ -122,32 +122,42 @@ body {
 }
 
 .caixa-central {
-    display: grid;
     background-color: #2F2841;
     border-radius: 15px;
     padding: 0px 15px 0px 15px;
     margin: 50px;
     box-shadow: 15px 15px #161220;
-    height: 850px;
+    height: 870px;
     position: relative;
     top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px 100px 200px 100px 100px 100px;
+    justify-content: center;
+   
 }
 
-@media screen and (max-width: 1000px){
+/* @media screen and (max-width: 1000px){
     .caixa-central {
         width: 100%;
     }
-}
+} */
 
-.informacoes-especificas {
+/* .informacoes-especificas {
     display: grid;
     text-align: left;
-    /* grid-template-columns: 1fr; */
-    /* grid-template-rows: 10px 100px 30px 1fr 10px 1px 10px 1fr 1px 10px 100px; */
+    /* grid-template-columns: repeat(auto-fit, minmax(auto)); */
+     /* grid-template-rows: 1fr; 
     
+} */
+
+.caixa-central div {
+    border: 1px solid blueviolet;
+
 }
 
-.titulo-caixa {
+
+/* .titulo-caixa {
     color: #00FF88;
     background-color: #2F2841;
     border-radius: 25px;
@@ -161,7 +171,7 @@ body {
     box-shadow: 7px 7px #161220;
     z-index: 1;
    
-}
+} */
 /* @media screen and (max-width: 1100px){ */
 	/* .titulo-caixa {float: left;}} */
 	
@@ -172,13 +182,13 @@ body {
         border: none;
     }
 
-.nome-desaparecido> label {
+/* .nome-desaparecido> label {
     font-size: 18px;
     position: relative;
     top: 35px;
     left: 90px;
-} 
-.nome-desaparecido>input {
+}  */
+/* .nome-desaparecido>input {
     width: 80%;
     border: none;
     border-radius: 10px;
@@ -192,9 +202,9 @@ body {
     position: relative;
     top: 30px;
     left: 90px;
-} 
+}  */
 
-.label1-input1 > label {
+/* .label1-input1 > label {
     font-size: 18px;
     position: relative;
     top: 35px;
@@ -222,7 +232,7 @@ body {
 .label2-input2 > label {
     font-size: 18px;
     position: relative;
-    top: -18px;
+    top: -20px;
     left: 215px;
 }
 
@@ -238,7 +248,7 @@ body {
     outline: none;
     box-sizing: border-box;
     position: relative;
-    top: 25px;
+    top: 20px;
     left: 155px;
 }
 
@@ -354,7 +364,7 @@ body {
     left: 70px;
 } */
 
-#maisInformacoes {
+/* #maisInformacoes {
     width: 80%;
     height: 130px;
     border: none;
@@ -368,42 +378,32 @@ body {
     top: -60px;
     left: 100px;
     resize: none;
-}
+} */
 
-.mensagem-botao > label{
+/* .mensagem-botao > label{
     font-size: 18px;
     position: relative;
     top: -60px;
     left: 100px;
-} 
+}  */
 
-.mensagem-botao > input {
+/* .mensagem-botao > button {
+    position: relative;
+    top: 10px;
+    left: -460px;
+} */
+
+/* .mensagem-botao > input {
     font-size: 10px;
     width: 100px;
     height: 100px;
     position: relative;
     top: 30px;
-    left: -700px;
-}
-
-/* .enviar-botao-voltar > button {
-    width: 250px;
-    height: 70px;
-    border: none;
-    border-radius: 10px;
-    margin: 25px;
-    padding: 8px;
-    background-color: #00ff88;
-    color: #000;
-    font-size: 20px;
-    font-weight: bolder;
-    -webkit-text-stroke: 1px 1px 5px #000;
-    position: relative;
-    top: 10px;
-    left: -505px;
+    left: -600px;
 } */
 
-.enviar-botao-voltar > button  {
+
+/* .enviar-botao > button  {
     width: 250px;
     height: 70px;
     border: none;
@@ -417,10 +417,10 @@ body {
     -webkit-text-stroke: 1px 1px 5px #000;
     position: relative;
     top: -50px;
-    left: 335px;
-}
+    left: 585px;
+} */
 
-.bt-voltar > a {
+/* .bt-voltar > a {
     width: 250px;
     height: 70px;
     border: none;
@@ -433,9 +433,9 @@ body {
     font-weight: bolder;
     -webkit-text-stroke: 1px 1px 5px #000;
     position: relative;
-    top: 10px;
-    left: 100px;
-}
+    top: -50px;
+    left: 700px;
+}  */
 /* /* Página cadastro, lista, editar e excluir-desaparecidos termina aqui*/
 
 a, #loginMenu {
@@ -475,7 +475,7 @@ h5 {
     text-align: center;
 }
 
-button, .button {
+/* button, .button {
     border: none;
     border-radius: 10px;
     margin: 25px;
@@ -485,7 +485,7 @@ button, .button {
     font-size: 20px;
     font-weight: bolder;
     -webkit-text-stroke: 1px 1px 5px #000;
-}
+} */
 
 .container-fluid {
     position: absolute;
