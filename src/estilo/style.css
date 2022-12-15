@@ -132,8 +132,9 @@ body {
     top: 30px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 100px 100px 200px 100px 100px 100px;
+    /* grid-template-rows: 40px 100px 100px 150px 100px 100px 100px; */
     justify-content: center;
+    gap: 5px;
    
 }
 
@@ -153,31 +154,33 @@ body {
 
 .caixa-central div {
     border: 1px solid blueviolet;
+    font-size: 18px;
 
 }
 
 
-/* .titulo-caixa {
-    color: #00FF88;
-    background-color: #2F2841;
-    border-radius: 25px;
-    padding: 10px 5px 10px 5px;
-    width: 800px;
-    margin-bottom: -30px;
-    position: relative;
-    left: 550px;
-    top: -20px;
+ .titulo-caixa {
+    /* padding: 10px 5px 10px 5px; */
+    /* width: 800px; */
+    /* margin-bottom: -30px; */
     font-size: 22px;
     box-shadow: 7px 7px #161220;
     z-index: 1;
-   
-} */
+    color: #00FF88;
+    background-color: #2F2841;
+    border-radius: 25px;
+    /* position: relative;
+    left: 550px;
+    top: -20px;  */
+} 
 /* @media screen and (max-width: 1100px){ */
 	/* .titulo-caixa {float: left;}} */
 	
+#idLabel, #inputId {
+        display: none;
+    }
 
-
-#inputNome, #inputId, #inputIdade, #inputSexo, #inputCorRaca, #inputAltura ,#inputCidade{
+#inputNome, #inputIdade, #inputSexo, #inputCorRaca, #inputAltura ,#inputCidade{
         background-color: #514869;
         border: none;
     }
@@ -188,7 +191,7 @@ body {
     top: 35px;
     left: 90px;
 }  */
-/* .nome-desaparecido>input {
+.nome-desaparecido>input {
     width: 80%;
     border: none;
     border-radius: 10px;
@@ -199,22 +202,20 @@ body {
     box-shadow: 0px 5px 80px #000000;
     outline: none;
     box-sizing: border-box;
-    position: relative;
+    /* position: relative;
     top: 30px;
-    left: 90px;
-}  */
+    left: 90px; */
+}  
 
 /* .label1-input1 > label {
     font-size: 18px;
     position: relative;
     top: 35px;
     left: 94px;
-    
-
-}
+}*/
 
 .label1-input1 > input {
-    width: 90px;
+    width: 10%;
     border: none;
     border-radius: 10px;
     padding: 15px;
@@ -224,11 +225,11 @@ body {
     box-shadow: 0px 5px 80px #000000;
     outline: none;
     box-sizing: border-box;
-    position: relative;
+    /* position: relative;
     top: 75px;
-    left: 70px;
+    left: 70px; */
 }
-
+/*
 .label2-input2 > label {
     font-size: 18px;
     position: relative;
@@ -364,9 +365,10 @@ body {
     left: 70px;
 } */
 
-/* #maisInformacoes {
+/* #maisInformacoes */
+.label7-input7 > textarea {
     width: 80%;
-    height: 130px;
+    height: 100px;
     border: none;
     border-radius: 10px;
     padding: 15px;
@@ -374,11 +376,11 @@ body {
     color: #ffffff;
     font-size: 14pt;
     box-shadow: 0px 5px 80px #000000;
-    position: relative;
+    /* position: relative;
     top: -60px;
-    left: 100px;
+    left: 100px; */
     resize: none;
-} */
+} 
 
 /* .mensagem-botao > label{
     font-size: 18px;
@@ -403,7 +405,7 @@ body {
 } */
 
 
-/* .enviar-botao > button  {
+.enviar-botao > button  {
     width: 250px;
     height: 70px;
     border: none;
@@ -415,12 +417,12 @@ body {
     font-size: 20px;
     font-weight: bolder;
     -webkit-text-stroke: 1px 1px 5px #000;
-    position: relative;
+    /* position: relative;
     top: -50px;
-    left: 585px;
-} */
+    left: 585px; */
+}
 
-/* .bt-voltar > a {
+.bt-voltar > a {
     width: 250px;
     height: 70px;
     border: none;
@@ -432,10 +434,10 @@ body {
     font-size: 20px;
     font-weight: bolder;
     -webkit-text-stroke: 1px 1px 5px #000;
-    position: relative;
+    /* position: relative;
     top: -50px;
-    left: 700px;
-}  */
+    left: 700px; */
+}  
 /* /* Página cadastro, lista, editar e excluir-desaparecidos termina aqui*/
 
 a, #loginMenu {
