@@ -127,14 +127,17 @@ body {
     padding: 0px 15px 0px 15px;
     margin: 50px;
     box-shadow: 15px 15px #161220;
-    height: 870px;
+    height: 90vh;
     position: relative;
     top: 30px;
     display: grid;
     grid-template-columns: 1fr;
-    /* grid-template-rows: 40px 100px 100px 150px 100px 100px 100px; */
-    justify-content: center;
-    gap: 5px;
+    /*grid-template-rows: auto;
+    /* horizontal */
+    /*justify-content: center; */
+    /* vertical */
+    /* align-items: center; */
+    /* gap: 5px; */
    
 }
 
@@ -176,7 +179,7 @@ body {
 /* @media screen and (max-width: 1100px){ */
 	/* .titulo-caixa {float: left;}} */
 	
-#idLabel, #inputId {
+#labelId, #inputId {
         display: none;
     }
 
@@ -213,8 +216,15 @@ body {
     top: 35px;
     left: 94px;
 }*/
+#idadeLabel {
+    grid-column-start: 1;
+    grid-column-end: 2;
 
-.label1-input1 > input {
+    
+}
+
+
+.idadeInput > input {
     width: 10%;
     border: none;
     border-radius: 10px;
@@ -366,7 +376,7 @@ body {
 } */
 
 /* #maisInformacoes */
-.label7-input7 > textarea {
+.maisInformacoesLabelInput > textarea {
     width: 80%;
     height: 100px;
     border: none;
@@ -395,15 +405,41 @@ body {
     left: -460px;
 } */
 
-/* .mensagem-botao > input {
+.mensagem-botao > input {
     font-size: 10px;
     width: 100px;
     height: 100px;
-    position: relative;
-    top: 30px;
-    left: -600px;
-} */
+} 
 
+#botao-foto, #enviar-cadastro {
+    width: 250px;
+    height: 70px;
+    border: none;
+    border-radius: 10px;
+    margin: 25px;
+    padding: 8px;
+    background-color: #00ff88;
+    color: #000;
+    font-size: 20px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px 1px 5px #000;
+
+}
+
+/* .mensagem-botao > button {
+    width: 250px;
+    height: 70px;
+    border: none;
+    border-radius: 10px;
+    margin: 25px;
+    padding: 8px;
+    background-color: #00ff88;
+    color: #000;
+    font-size: 20px;
+    font-weight: bolder;
+    -webkit-text-stroke: 1px 1px 5px #000;
+
+}
 
 .enviar-botao > button  {
     width: 250px;
@@ -416,13 +452,13 @@ body {
     color: #000;
     font-size: 20px;
     font-weight: bolder;
-    -webkit-text-stroke: 1px 1px 5px #000;
+    -webkit-text-stroke: 1px 1px 5px #000; */
     /* position: relative;
     top: -50px;
     left: 585px; */
 }
 
-.bt-voltar > a {
+#botao-voltar {
     width: 250px;
     height: 70px;
     border: none;
