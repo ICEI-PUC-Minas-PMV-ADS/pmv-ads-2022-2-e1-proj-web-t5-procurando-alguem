@@ -41,19 +41,15 @@
     </nav>
   </header>
   <div class="caixa-central">
-
-
-
     <!-- <div class="form-group"> -->
     <!-- <div class="informacoes-especificas"> -->
 
-
-    <div class="titulo-caixa">
+    <div class="titulo-caixa" id="tituloCaixa">
       <p>Insira as Informações do Desaparecido que você deseja Cadastrar no Site</p>
     </div>
 
-    <div class="nome-desaparecido text-md-left"> <!-- class="text-md-left" -->
-      <label for="inputNome">Digite o nome do Desaparecido:</label></br>
+    <div class="nome-desaparecido text-md-left">
+      <label id="labelNome" for="labelNome">Digite o nome do Desaparecido:</label></br>
       <input type="text" name="inputNome" id="inputNome" placeholder="Nome do Desaparecido">
     </div>
 
@@ -63,30 +59,30 @@
     </div>
 
 
-    <div class="idadeLabelInput text-md-left">
+    <div class="idadeSexoLabelInput text-md-left">
       <label id="labelIdade" for="labelIdade">Idade:</label>
       <input type="number" min="0" name="inputIdade" id="inputIdade" placeholder="Idade">
-    </div>
-
-    <div class="sexoLabelInput text-md-left">
+    <!-- </div> -->
+<!-- 
+    <div class="sexoLabelInput text-md-left"> -->
       <label id="labelSexo" for="labelSexo">Sexo:</label>
       <input type="text" name="inputSexo" id="inputSexo" placeholder="Sexo">
     </div>
 
 
-    <div class="corLabelInput text-md-left">
+    <div class="corAlturaLabelInput text-md-left">
       <label id="labelCorRaca" for="labelCorRaca">Cor/Raça:</label>
       <input type="text" name="inputCorRaca" id="inputCorRaca" placeholder="cor/raça">
-    </div>
+    <!-- </div> -->
 
-    <div class="alturaLabelInput text-md-left">
+    <!-- <div class="alturaLabelInput text-md-left"> -->
       <label id="labelAltura" for="labelAltura">Altura:</label>
       <input type="number" min="20" name="inputAltura" id="inputAltura" placeholder="Em cm">
     </div>
 
     <div class="cidadeLabelInput text-md-left">
-      <label id="labelCidade" for="labelCidade">Cidade:</label>
-      <input type="text" name="inputCidade" id="inputCidade" placeholder="Cidade">
+      <label id="labelCidade" for="labelCidade">Cidade/Estado:</label>
+      <input type="text" name="inputCidade" id="inputCidade" placeholder="Cidade               /   Estado">
     </div>
 
     <div class="maisInformacoesLabelInput text-md-left">
@@ -99,11 +95,8 @@
       <label id="mensagem-botao-foto" for="mensagem-botao-foto">Clique no botão abaixo para inserir uma foto da
         pessoa desaparecida:</label>
       <button id="botao-foto" name="botao-foto">Buscar arquivo<img id="imagem-botao"
-          src="../../imagens/imagem-botao-foto.svg" width="40"></button>
-
-      <input type="file" id="myfile" name="myfile">
+          src="../../imagens/imagem-botao-foto.svg" width="40"><input type="file" id="myfile" name="myfile"></button>
     </div>
-
 
     <div class="enviar-botao">
       <button id="enviar-cadastro" onclick="inserirDesaparecido()">Enviar cadastro</button>
@@ -112,8 +105,7 @@
     <div class="bt-voltar">
       <a href="lista-desaparecidos.html" id="botao-voltar">Voltar</a>
     </div>
-    <!-- </div> -->
-    <!-- </div> -->
+
   </div>
 </body>
 
