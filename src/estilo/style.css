@@ -214,12 +214,12 @@ body {
     float: left; */
 } 
 
-@media (max-width: 800px) {
+/* @media (max-width: 1000px) {
     .idSeCorAltCid {
-        
-      
+        float: inline-start;
+       
     }
-}
+} */
 
 /* .idSeCorAltCid {
     display: flex;
