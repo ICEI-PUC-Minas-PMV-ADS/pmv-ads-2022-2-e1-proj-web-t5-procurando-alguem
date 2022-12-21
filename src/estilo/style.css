@@ -206,13 +206,23 @@ body {
 .idSeCorAltCid {
     display: flex;
     flex-direction: row;
-    justify-content: left;
-    gap: 5px;
+    /* justify-content: space-evenly; */
+    padding: 30px 205px 30px 0px;
+    /* gap: 5px; */
     
     /* flex-flow: nowrap; */
     /* align-items: left;
     float: left; */
 } 
+
+.idSeCorAltCid label {
+    margin: -32px -45px 20px 0px;
+}
+
+.idSeCorAltCid input {
+    margin: 12px 35px -10px 0px;
+}
+
 
 /* @media (max-width: 1000px) {
     .idSeCorAltCid {
