@@ -168,10 +168,10 @@ body {
 
 
 #tituloCaixa {
-    display: grid;
+    display:  flexbox;
     float: none;
     /* padding: 1% 1% 2% 1%;  */
-    /* width: 800px;*/
+    width: 50%;
     /* margin-bottom: 4%; */
     font-size: 1.4em;
     box-shadow: 7px 7px #161220;
@@ -181,10 +181,16 @@ body {
     border-radius: 25px;
     /* grid-column: 1/4; */
     /*grid-column-end: 4; */
+    position: relative;
+    left: 22%;
+    top: -45%;
 }
 
-/* @media screen and (max-width: 1100px){ */
-/* .titulo-caixa {float: left;}} */
+/* @media screen and (max-width: 1000px){ 
+    .titulo-caixa {
+        font-size: 30em;
+    }} */
+
 .nome-desaparecido          {
     display: grid;
     flex-direction: row;
@@ -199,12 +205,13 @@ body {
 #inputNome, #inputIdade, #inputSexo, #inputCorRaca, #inputAltura, #inputCidade {
     background-color: #514869;
     border: none;
+    /* margin-left: -70%; */
 
 }
 
-#labelNome {
+/* #labelNome {
     margin-top: 3%;
-}
+} */
 
 #inputNome {
     width: 60%;
@@ -217,13 +224,15 @@ body {
     box-shadow: 0px 5px 80px #000000;
     outline: none;
     box-sizing: border-box;
+    
 }
 
 #inputIdade, #inputAltura {
-    width: 7%;
+    width: 15%;
     border: none;
     border-radius: 10px;
     padding: 1.5%;
+    /* margin-left: -77%; */
     /* padding: 3% 1% 2% 0%;
     margin-top: 0.2%; */
     background-color: #2F2841;
@@ -235,11 +244,14 @@ body {
 }
 
 .idSeCorAltCid {
-    display: flexbox;
-    flex-direction: row;
-    float: left;
-    justify-content: space-between;
-    margin-top: 4%;
+    /* display: flexbox;
+    flex-direction: column;
+    float: left; */
+    display: grid;
+    grid-template-columns: auto auto;
+    /* justify-content: space-between; */
+    margin-top: 1%;
+    margin-left: 10%;
     /*padding: 2% 4% 50% 1%; */
     width: 90%;
     /* gap: 5px; */
@@ -250,15 +262,16 @@ body {
 } 
 
 /* .idSeCorAltCid label {
-    margin-top: 2%;
-    padding: -1% -1% 1% 20%;
-    background-color: pink;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto; */
+     /* grid-column: 1/2;
+    grid-column-end: 1; 
+}*/
 
-} */
+
 
 /* .idSeCorAltCid input {
-    margin: 5% 1% 1% -3%;
-    padding: 2% 4% 1% 1%;
+    display: flexbox;
 } */
 
 
@@ -337,16 +350,16 @@ body {
 
 .maisInformacoesLabelInput {
     display: grid;
-    margin-top: 3%;
+    margin-top: 1%;
 }
 
 
 #maisInformacoes {
     width: 60%;
-    height: 80%;
+    /* height: 80%; */
     border: none;
     border-radius: 10px;
-    margin-top: 3%;
+    margin-top: -1%;
     /* padding: 5% 2%; */
     background-color: #2F2841;
     color: #ffffff;
@@ -354,14 +367,18 @@ body {
     box-shadow: 0px 5px 80px #000000;
     resize: none;
 }
-
+.mensagem-botao {
+    display: grid;
+    margin-top: 3%;
+    margin-bottom: -2%;
+}
 #botao-foto, #enviar-cadastro {
     width: 15%;
-    height: 40%;
+    /* height: 40%; */
     border: none;
     border-radius: 10px;
-    margin: 25px;
-    padding: 8px;
+    margin: 20px;
+    padding: 10px;
     background-color: #00ff88;
     color: #000;
     font-size: 1.1em;
@@ -372,7 +389,8 @@ body {
 #myfile {
     font-size: 10px;
     width: 25%;
-    height: 35%; 
+    height: 75%; 
+    display: flexbox;
 }
 
 #botao-voltar {
@@ -381,13 +399,14 @@ body {
     border: none;
     border-radius: 10px;
     /* margin: 25px;*/
-    padding: 8px; 
+    padding: 1%; 
     background-color: #6a6f6d;
     color: #000;
     font-size: 1.1em;
     font-weight: bolder;
     -webkit-text-stroke: 1px 1px 5px #000;
-    text-decoration: none
+    text-decoration: none;
+    display: flexbox;
 }
 /* Página cadastro, lista, editar e excluir-desaparecidos termina aqui*/
 
