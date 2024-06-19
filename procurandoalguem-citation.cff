@@ -1,0 +1,18 @@
+message: Please cite this software using these metadata.
+title: Procurando Alguém?
+authors:
+  - family-names: Mendes Rufino Silva
+    given-names: Daniel   
+    - family-names: Henrique da Silva Santos 
+    given-names: Pedro  
+  - family-names: Castellano
+    given-names: Stephanye 
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Alves Nogueira
+    given-names: Simone   
+keywords:
+  - Busca por pessoas desaparecidas
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e1-proj-web-t5-procurando-alguem
+version: 2.0.0
+date-released: 2022-12-11
